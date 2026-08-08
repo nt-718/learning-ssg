@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 500" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+  <!-- Header -->
+  <rect x="20" y="20" width="800" height="55" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="420" y="55" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">キャッシュフロー表 ＆ 個人バランスシートの概念構造</text>
+
+  <!-- Left Side: Cashflow Table -->
+  <g transform="translate(20, 95)">
+    <rect x="0" y="0" width="390" height="380" rx="12" fill="#f8fafc" stroke="#2563eb" stroke-width="2"/>
+    <rect x="0" y="0" width="390" height="45" rx="12" fill="#2563eb"/>
+    <rect x="0" y="30" width="390" height="15" fill="#2563eb"/>
+    <text x="195" y="28" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">1. キャッシュフロー表（フロー情報）</text>
+
+    <!-- Formula Box 1 -->
+    <rect x="15" y="60" width="360" height="75" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="30" y="85" font-size="14" font-weight="bold" fill="#1d4ed8">【可処分所得の計算】</text>
+    <text x="30" y="115" font-size="14" font-weight="bold" fill="#0f172a">可処分所得 ＝ 年間収入 －（社会保険料 ＋ 所得税・住民税）</text>
+
+    <!-- Formula Box 2 -->
+    <rect x="15" y="150" width="360" height="75" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="30" y="175" font-size="14" font-weight="bold" fill="#047857">【年間収支の計算】</text>
+    <text x="30" y="205" font-size="14" font-weight="bold" fill="#0f172a">年間収支 ＝ 可処分所得 － 年間支出</text>
+
+    <!-- Formula Box 3 -->
+    <rect x="15" y="240" width="360" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="30" y="265" font-size="14" font-weight="bold" fill="#b45309">【翌年貯蓄残高の計算（重要）】</text>
+    <text x="30" y="295" font-size="13" font-weight="bold" fill="#d97706">翌年残高 ＝ 当年残高 × (1 ＋ 運用利率) ＋ 翌年年間収支</text>
+    <text x="30" y="325" font-size="12" fill="#64748b">※生命保険料や住宅ローン返済は「年間支出」に含む</text>
+    <text x="30" y="343" font-size="12" fill="#64748b">※可処分所得を引く段階では住宅ローン等は差し引かない</text>
+  </g>
+
+  <!-- Right Side: Personal Balance Sheet -->
+  <g transform="translate(430, 95)">
+    <rect x="0" y="0" width="390" height="380" rx="12" fill="#f8fafc" stroke="#059669" stroke-width="2"/>
+    <rect x="0" y="0" width="390" height="45" rx="12" fill="#059669"/>
+    <rect x="0" y="30" width="390" height="15" fill="#059669"/>
+    <text x="195" y="28" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">2. 個人バランスシート（ストック情報）</text>
+
+    <!-- BS Visual Layout -->
+    <!-- Assets (Left Box) -->
+    <rect x="15" y="60" width="170" height="230" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+    <rect x="15" y="60" width="170" height="35" rx="8" fill="#2563eb"/>
+    <text x="100" y="83" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">資産の部（時価評価）</text>
+    <text x="25" y="118" font-size="13" fill="#0f172a">• 預貯金・現金</text>
+    <text x="25" y="142" font-size="13" fill="#0f172a">• 有価証券（株式/投信）</text>
+    <text x="25" y="166" font-size="13" fill="#0f172a">• 不動産（自宅・土地）</text>
+    <text x="25" y="190" font-size="13" fill="#0f172a">• 生命保険解約返戻金</text>
+    <text x="25" y="214" font-size="13" fill="#0f172a">• ゴルフ会員権等</text>
+    <text x="100" y="265" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">資産合計</text>
+
+    <!-- Liabilities (Top Right Box) -->
+    <rect x="205" y="60" width="170" height="105" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="205" y="60" width="170" height="35" rx="8" fill="#dc2626"/>
+    <text x="290" y="83" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">負債の部（残債）</text>
+    <text x="215" y="118" font-size="13" fill="#0f172a">• 住宅ローン残高</text>
+    <text x="215" y="142" font-size="13" fill="#0f172a">• 自動車ローン等</text>
+
+    <!-- Net Assets (Bottom Right Box) -->
+    <rect x="205" y="175" width="170" height="115" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="205" y="175" width="170" height="35" rx="8" fill="#059669"/>
+    <text x="290" y="198" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">純資産の部</text>
+    <text x="215" y="233" font-size="14" font-weight="bold" fill="#047857">純資産 ＝</text>
+    <text x="215" y="255" font-size="13" font-weight="bold" fill="#047857">資産合計 － 負債合計</text>
+
+    <!-- Key rule -->
+    <rect x="15" y="305" width="360" height="55" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="195" y="328" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">【評価基準の原則】</text>
+    <text x="195" y="348" font-size="12" fill="#0f172a" text-anchor="middle">宅地・建物・株式などは「作成時点の時価」で計上する</text>
+  </g>
+</svg>

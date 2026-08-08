@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <title>FP技能士3級→2級 合格参考書 [Mobile-First Web App]</title>
+  <meta name="description" content="FP技能士3級・2級の合格参考書スマホ専用Webアプリ。豊かな図解、6係数電卓、年金・税額シミュレータ、全160問演習を搭載。" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-bg-color text-foreground font-sans antialiased select-none sm:select-auto pb-16 md:pb-0">
+
+  <!-- Mobile Top Header -->
+  <div id="app-header"></div>
+
+  <!-- Main App Viewport -->
+  <div class="flex-1 flex overflow-hidden relative">
+    
+    <!-- Sidebar / Drawer Wrapper -->
+    <div id="app-sidebar-wrapper" class="fixed md:static inset-0 z-40 hidden md:block transition-all duration-200">
+      <!-- Backdrop for mobile drawer -->
+      <div id="app-sidebar-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm md:hidden"></div>
+      <div id="app-sidebar" class="h-full relative z-10 w-72 md:w-64"></div>
+    </div>
+
+    <!-- Content Screen Area -->
+    <main id="app-main" class="flex-1 overflow-y-auto min-h-[calc(100vh-56px)] pb-12 md:pb-6">
+      <!-- Dynamic views -->
+    </main>
+
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar (Fixed for Mobile-First ergonomics) -->
+  <div id="app-bottom-nav" class="md:hidden fixed bottom-0 left-0 right-0 z-30"></div>
+
+  <!-- Search Modal -->
+  <div id="app-modal"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

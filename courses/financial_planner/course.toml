@@ -1,0 +1,27 @@
+# 教材設定ファイル (Course Meta Config)
+
+id = "financial_planner"
+title = "FP技能士 3級→2級 合格参考書"
+subtitle = "日本FP協会「資産設計提案業務」対応・2026年度版"
+description = "基礎から実技計算まで一冊で段階的に学ぶスマホ専用インタラクティブ参考書"
+author = "Financial Planner Team"
+version = "2026.1"
+theme = "dark"
+
+[features]
+quiz = true
+simulators = true
+search = true
+
+[categories]
+ch01 = "ライフプランニング"
+ch02 = "社会保険・公的年金"
+ch03 = "リスク管理・保険"
+ch04 = "金融資産運用"
+ch05 = "タックスプランニング"
+ch06 = "不動産"
+ch07 = "相続・事業承継"
+ch08 = "実技計算攻略"
+ch09 = "直前暗記・公式集"
+ch10 = "合格学習計画"
+ch11 = "分野別追加96問"

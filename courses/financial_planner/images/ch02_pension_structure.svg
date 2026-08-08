@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 540" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+  <!-- Header -->
+  <rect x="20" y="20" width="800" height="55" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="420" y="55" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">日本の公的年金・私的年金の「3階建て」構造</text>
+
+  <!-- 3rd Floor (Private Pensions) -->
+  <g transform="translate(20, 95)">
+    <rect x="0" y="0" width="800" height="85" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="85" rx="10" fill="#d97706"/>
+    <rect x="110" y="0" width="10" height="85" fill="#d97706"/>
+    <text x="60" y="48" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">3 階</text>
+    <text x="60" y="68" font-size="12" fill="#fef3c7" text-anchor="middle">私的年金</text>
+
+    <!-- Sub boxes -->
+    <rect x="140" y="15" width="200" height="55" rx="6" fill="#ffffff" stroke="#d97706"/>
+    <text x="240" y="38" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">iDeCo (個人型DC)</text>
+    <text x="240" y="56" font-size="11" fill="#64748b" text-anchor="middle">自営業・会社員・主婦等</text>
+
+    <rect x="360" y="15" width="210" height="55" rx="6" fill="#ffffff" stroke="#d97706"/>
+    <text x="465" y="38" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">企業型DC / DB (企業年金)</text>
+    <text x="465" y="56" font-size="11" fill="#64748b" text-anchor="middle">会社員（企業の制度による）</text>
+
+    <rect x="590" y="15" width="195" height="55" rx="6" fill="#ffffff" stroke="#d97706"/>
+    <text x="687" y="38" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">国民年金基金</text>
+    <text x="687" y="56" font-size="11" fill="#64748b" text-anchor="middle">第1号被保険者専用</text>
+  </g>
+
+  <!-- 2nd Floor (Employees' Pension) -->
+  <g transform="translate(20, 195)">
+    <rect x="0" y="0" width="800" height="110" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="110" rx="10" fill="#2563eb"/>
+    <rect x="110" y="0" width="10" height="110" fill="#2563eb"/>
+    <text x="60" y="55" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">2 階</text>
+    <text x="60" y="75" font-size="12" fill="#dbeafe" text-anchor="middle">公的年金</text>
+
+    <!-- Employees' Pension Box -->
+    <rect x="360" y="15" width="425" height="80" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="572" y="48" font-size="18" font-weight="bold" fill="#1d4ed8" text-anchor="middle">厚生年金保険 （報酬比例）</text>
+    <text x="572" y="73" font-size="13" fill="#64748b" text-anchor="middle">対象：第2号被保険者（会社員・公務員など）</text>
+
+    <!-- Blank/Not Applicable for No.1 and No.3 -->
+    <rect x="140" y="15" width="200" height="80" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-dasharray="4"/>
+    <text x="240" y="58" font-size="13" fill="#94a3b8" text-anchor="middle">2階部分はなし</text>
+  </g>
+
+  <!-- 1st Floor (National Pension) -->
+  <g transform="translate(20, 320)">
+    <rect x="0" y="0" width="800" height="110" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="110" rx="10" fill="#059669"/>
+    <rect x="110" y="0" width="10" height="110" fill="#059669"/>
+    <text x="60" y="55" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">1 階</text>
+    <text x="60" y="75" font-size="12" fill="#d1fae5" text-anchor="middle">公的年金</text>
+
+    <!-- National Pension Box (Universal) -->
+    <rect x="140" y="15" width="645" height="80" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+    <text x="462" y="48" font-size="18" font-weight="bold" fill="#047857" text-anchor="middle">国民年金 （基礎年金：定額）</text>
+    <text x="462" y="73" font-size="13" fill="#64748b" text-anchor="middle">日本国内に居住する20歳以上60歳未満の全員が加入（定額給付）</text>
+  </g>
+
+  <!-- Insured Person Categories (Footer) -->
+  <g transform="translate(20, 445)">
+    <rect x="140" y="0" width="200" height="75" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="240" y="28" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">第1号被保険者</text>
+    <text x="240" y="52" font-size="12" fill="#475569" text-anchor="middle">自営業・農林漁業・学生など</text>
+
+    <rect x="360" y="0" width="210" height="75" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="465" y="28" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">第2号被保険者</text>
+    <text x="465" y="52" font-size="12" fill="#475569" text-anchor="middle">会社員・公務員（厚生年金加入）</text>
+
+    <rect x="590" y="0" width="195" height="75" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="687" y="28" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">第3号被保険者</text>
+    <text x="687" y="52" font-size="12" fill="#475569" text-anchor="middle">第2号に扶養される配偶者</text>
+  </g>
+</svg>

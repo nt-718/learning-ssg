@@ -1,0 +1,13 @@
+# 宅建士 合格テキスト 教材設定ファイル
+
+id = "takken"
+title = "宅建士 合格テキスト"
+subtitle = "標準スマホ学習テキスト"
+description = "スマホファーストのインタラクティブ学習参考書"
+author = "Learning SSG Author"
+version = "1.0.0"
+
+[features]
+quiz = true
+simulators = false
+search = true

@@ -1,0 +1,29 @@
+{
+  "name": "learning-ssg",
+  "version": "1.0.0",
+  "description": "Multi-course Mobile-First Static Site Generator for learning apps",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "ssg": "node scripts/ssg.js",
+    "build": "node scripts/ssg.js build financial_planner",
+    "serve": "node scripts/ssg.js serve financial_planner",
+    "list": "node scripts/ssg.js list",
+    "new": "node scripts/ssg.js new",
+    "dev": "vite"
+  },
+  "keywords": [
+    "ssg",
+    "learning",
+    "financial-planner",
+    "mobile-first"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.2.1"
+  },
+  "dependencies": {
+    "marked": "^18.0.9"
+  }
+}

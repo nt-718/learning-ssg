@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 540" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+  <!-- Header -->
+  <rect x="20" y="20" width="800" height="55" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="420" y="55" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">建蔽率・容積率 ＆ セットバック（2項道路）制限図解</text>
+
+  <!-- Left: Building Coverage & Floor Area Ratio Diagram -->
+  <g transform="translate(20, 95)">
+    <rect x="0" y="0" width="380" height="425" rx="12" fill="#f8fafc" stroke="#2563eb" stroke-width="2"/>
+    <rect x="0" y="0" width="380" height="45" rx="12" fill="#2563eb"/>
+    <rect x="0" y="30" width="380" height="15" fill="#2563eb"/>
+    <text x="190" y="28" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">1. 建蔽率 と 容積率の概念</text>
+
+    <!-- Visual Building Model -->
+    <rect x="20" y="60" width="340" height="210" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+
+    <!-- Plot (敷地面積 200m2) -->
+    <rect x="50" y="210" width="280" height="45" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4"/>
+    <text x="190" y="238" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">敷地面積 ＝ 200 ㎡</text>
+
+    <!-- Building footprint (建築面積 120m2 = 建蔽率60%) -->
+    <rect x="90" y="140" width="200" height="70" fill="#3b82f6" opacity="0.75" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="190" y="180" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">建築面積 ＝ 120 ㎡ （1階真上投影）</text>
+
+    <!-- 2nd Floor (延床面積合計 240m2 = 容積率120%) -->
+    <rect x="90" y="80" width="200" height="55" fill="#2563eb" opacity="0.85" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="190" y="112" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">2階面積 ＝ 120 ㎡</text>
+
+    <!-- Formulas -->
+    <g transform="translate(15, 280)">
+      <rect x="0" y="0" width="350" height="60" rx="6" fill="#ffffff" stroke="#2563eb"/>
+      <text x="175" y="25" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">建蔽率 ＝ 建築面積 ÷ 敷地面積 × 100</text>
+      <text x="175" y="48" font-size="13" fill="#0f172a" text-anchor="middle">例: 120㎡ ÷ 200㎡ ＝ 60％</text>
+    </g>
+
+    <g transform="translate(15, 350)">
+      <rect x="0" y="0" width="350" height="60" rx="6" fill="#ffffff" stroke="#059669"/>
+      <text x="175" y="25" font-size="14" font-weight="bold" fill="#047857" text-anchor="middle">容積率 ＝ 延床面積合計 ÷ 敷地面積 × 100</text>
+      <text x="175" y="48" font-size="13" fill="#0f172a" text-anchor="middle">例: (120＋120)㎡ ÷ 200㎡ ＝ 120％</text>
+    </g>
+  </g>
+
+  <!-- Right: Road Width & Setback Diagram -->
+  <g transform="translate(420, 95)">
+    <rect x="0" y="0" width="400" height="425" rx="12" fill="#f8fafc" stroke="#059669" stroke-width="2"/>
+    <rect x="0" y="0" width="400" height="45" rx="12" fill="#059669"/>
+    <rect x="0" y="30" width="400" height="15" fill="#059669"/>
+    <text x="200" y="28" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">2. 前面道路幅員制限 ＆ セットバック</text>
+
+    <!-- Setback Diagram Box -->
+    <rect x="15" y="60" width="370" height="200" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+
+    <!-- Existing Road (width 3m < 4m) -->
+    <rect x="30" y="80" width="120" height="160" fill="#e2e8f0"/>
+    <line x1="90" y1="80" x2="90" y2="240" stroke="#d97706" stroke-dasharray="4" stroke-width="2"/>
+    <text x="90" y="155" font-size="11" fill="#b45309" text-anchor="middle" transform="rotate(-90 90 155)">道路中心線</text>
+    <text x="60" y="110" font-size="12" fill="#0f172a">現況道路</text>
+    <text x="60" y="130" font-size="12" font-weight="bold" fill="#dc2626">幅員 3m</text>
+
+    <!-- Setback Area (0.5m setback from boundary) -->
+    <rect x="150" y="80" width="30" height="160" fill="#fef2f2" stroke="#dc2626" stroke-dasharray="3"/>
+    <text x="165" y="160" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle" transform="rotate(-90 165 160)">セットバック（0.5m後退）</text>
+
+    <!-- Buildable Site -->
+    <rect x="180" y="80" width="190" height="160" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+    <text x="275" y="150" font-size="15" font-weight="bold" fill="#047857" text-anchor="middle">建築可能敷地</text>
+    <text x="275" y="175" font-size="12" fill="#0f172a" text-anchor="middle">（建蔽率・容積率の対象）</text>
+
+    <!-- Rules Box -->
+    <g transform="translate(15, 270)">
+      <rect x="0" y="0" width="370" height="140" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="15" y="25" font-size="13" font-weight="bold" fill="#b45309">【前面道路幅員制限（12m未満）】</text>
+      <text x="15" y="48" font-size="12" fill="#0f172a">上限容積率 ＝ 指定容積率 と ［前面道路幅員 × 法定乗数］</text>
+      <text x="15" y="66" font-size="12" font-weight="bold" fill="#1d4ed8">　　　　　　の【小さい方】を適用！ （住居系：0.4, その他：0.6）</text>
+
+      <text x="15" y="95" font-size="13" font-weight="bold" fill="#b91c1c">【セットバック部分の扱い】</text>
+      <text x="15" y="118" font-size="12" fill="#0f172a">• 後退部分は道路とみなされ、<tspan font-weight="bold" fill="#dc2626">敷地面積に算入不可</tspan></text>
+    </g>
+  </g>
+</svg>
