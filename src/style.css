@@ -145,23 +145,30 @@ button, input, select {
   cursor: pointer;
 }
 
-/* Prose Mobile Table formatting */
-.prose table {
+/* Course text tables */
+.chapter-body table {
   width: 100%;
   display: block;
   overflow-x: auto;
-  white-space: nowrap;
-  margin-bottom: 1.2rem;
+  margin: 20px 0 26px;
   border-collapse: collapse;
-  font-size: 0.85rem;
-  border-radius: 0.5rem;
+  font-size: 12px;
+  line-height: 1.65;
+  scrollbar-width: thin;
 }
-.prose th, .prose td {
-  padding: 0.6rem 0.75rem;
+.chapter-body th,
+.chapter-body td {
+  min-width: 100px;
+  padding: 11px 12px;
   border: 1px solid var(--border-glass);
+  text-align: left;
+  vertical-align: top;
 }
-.prose th {
+.chapter-body th {
   background-color: var(--surface);
+  color: var(--foreground);
+  font-size: 11px;
+  font-weight: 700;
 }
 
 /* Alert boxes */
@@ -675,6 +682,75 @@ button, input, select {
 .toc-page .sidebar-chapter-item { min-height: 64px; padding-inline: 12px; }
 .toc-page .sidebar-chapter-copy strong { font-size: 12px; }
 
+/* Reading view */
+.chapter-container {
+  --chapter-accent: var(--primary);
+  width: 100%;
+  max-width: 780px !important;
+  padding-bottom: 112px !important;
+}
+.chapter-banner { padding: 24px !important; }
+.chapter-banner h2 { max-width: 620px; font-size: clamp(22px, 4vw, 30px) !important; font-weight: 750 !important; letter-spacing: -0.035em !important; line-height: 1.35 !important; }
+.chapter-banner h2 + p { max-width: 620px; color: var(--muted); font-size: 12px !important; line-height: 1.7; }
+.chapter-body {
+  color: var(--foreground);
+  font-size: 15px;
+  line-height: 1.95;
+  letter-spacing: 0.015em;
+  overflow-wrap: anywhere;
+}
+.chapter-body > h1:first-child { display: none; }
+.chapter-body h2 {
+  position: relative;
+  margin: 46px 0 20px;
+  padding: 0 0 12px 15px;
+  border-bottom: 1px solid var(--border-glass);
+  color: var(--foreground);
+  font-size: 20px;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  line-height: 1.5;
+}
+.chapter-body h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 4px;
+  height: 1.05em;
+  border-radius: 999px;
+  background: var(--chapter-accent);
+}
+.chapter-body h3 {
+  margin: 32px 0 14px;
+  padding-left: 11px;
+  border-left: 3px solid color-mix(in srgb, var(--chapter-accent) 62%, var(--border-glass));
+  color: var(--foreground);
+  font-size: 16px;
+  font-weight: 730;
+  letter-spacing: -0.01em;
+  line-height: 1.55;
+}
+.chapter-body h4 { margin: 26px 0 10px; color: var(--foreground); font-size: 14px; font-weight: 720; }
+.chapter-body p { margin: 0 0 18px; }
+.chapter-body h2 + p,
+.chapter-body h3 + p { margin-top: 0; }
+.chapter-body strong { font-weight: 750; }
+.chapter-body a { color: var(--chapter-accent); font-weight: 650; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--chapter-accent) 45%, transparent); text-underline-offset: 3px; }
+.chapter-body ul,
+.chapter-body ol { margin: 16px 0 22px; padding-left: 1.5em; }
+.chapter-body li { margin: 7px 0; padding-left: 0.2em; }
+.chapter-body li::marker { color: var(--chapter-accent); font-weight: 700; }
+.chapter-body hr { margin: 36px 0; border: 0; border-top: 1px solid var(--border-glass); }
+.chapter-body code { padding: 2px 5px; border-radius: 4px; background: var(--surface); color: var(--foreground); font-size: 0.88em; }
+.chapter-body pre { margin: 20px 0 26px; padding: 16px; overflow-x: auto; border: 1px solid var(--border-glass); border-radius: 9px; background: var(--surface); font-size: 12px; line-height: 1.7; }
+.chapter-body pre code { padding: 0; background: transparent; }
+
+.chapter-figure { margin: 28px 0 32px; padding: 12px; border: 1px solid var(--border-glass); border-radius: 12px; background: var(--card-bg); }
+.chapter-figure-frame { overflow: hidden; padding: 8px; border-radius: 8px; background: var(--surface); }
+.chapter-figure img { width: 100%; max-height: 520px; display: block; object-fit: contain; }
+.chapter-figure figcaption { padding: 10px 6px 2px; color: var(--chapter-accent); font-size: 10px; font-weight: 650; line-height: 1.6; text-align: center; }
+
 /* Keep the same quiet visual language in content views. */
 .chapter-banner,
 .quiz-card,
@@ -682,7 +758,7 @@ button, input, select {
 .chapter-course-label {
   display: block;
   margin-bottom: 10px;
-  color: var(--primary);
+  color: var(--chapter-accent, var(--primary));
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -699,9 +775,14 @@ button, input, select {
   cursor: pointer;
 }
 .chapter-read-button.is-read { border-color: color-mix(in srgb, var(--emerald) 40%, var(--border-glass)); color: var(--emerald); }
-.alert-box { border-radius: 8px !important; box-shadow: none !important; }
+.chapter-body .alert-box { margin: 24px 0 !important; padding: 17px 18px !important; border-radius: 9px !important; box-shadow: none !important; color: var(--foreground); }
 .alert-box > span:first-child { display: none; }
-.chapter-footer #btn-footer-quiz { background-image: none !important; background-color: var(--primary) !important; color: #fff !important; box-shadow: none !important; border-radius: 8px !important; }
+.chapter-body .alert-box > div { min-width: 0; }
+.chapter-body .alert-box > div > div:first-child { margin-bottom: 7px !important; color: var(--muted); font-size: 10px !important; }
+.chapter-body .alert-box > div > div:last-child { font-size: 13px !important; line-height: 1.8; }
+.chapter-body .alert-important > div > div:first-child { color: #d94b58; }
+.chapter-body .alert-tip > div > div:first-child { color: #258bb2; }
+.chapter-footer #btn-footer-quiz { background-image: none !important; background-color: var(--chapter-accent, var(--primary)) !important; color: #fff !important; box-shadow: none !important; border-radius: 8px !important; }
 .sidebar-nav .bg-indigo-100 { background: color-mix(in srgb, var(--primary) 10%, var(--card-bg)) !important; color: var(--primary) !important; border-color: color-mix(in srgb, var(--primary) 30%, var(--border-glass)) !important; }
 
 /* Practice view */
@@ -864,6 +945,26 @@ button, input, select {
   .course-card { padding: 18px; gap: 18px; }
   .course-details { padding-left: 0; }
   .toc-page { padding-top: 24px; }
+  .chapter-container { padding: 24px 17px 100px !important; }
+  .chapter-banner { margin-bottom: 30px !important; padding: 20px !important; }
+  .chapter-banner h2 { font-size: 21px !important; }
+  .chapter-banner h2 + p { font-size: 11px !important; }
+  .chapter-body { font-size: 14px; line-height: 1.9; }
+  .chapter-body h2 { margin: 40px 0 17px; padding: 0 0 10px 13px; font-size: 18px; }
+  .chapter-body h2::before { width: 3px; }
+  .chapter-body h3 { margin: 28px 0 12px; font-size: 15px; }
+  .chapter-body p { margin-bottom: 16px; }
+  .chapter-body ul,
+  .chapter-body ol { margin: 14px 0 20px; }
+  .chapter-body li { margin: 6px 0; }
+  .chapter-body table { margin: 18px 0 24px; font-size: 11px; }
+  .chapter-body th,
+  .chapter-body td { min-width: 88px; padding: 9px 10px; }
+  .chapter-body th { font-size: 10px; }
+  .chapter-body .alert-box { margin: 21px 0 !important; padding: 15px !important; }
+  .chapter-body .alert-box > div > div:last-child { font-size: 12px !important; }
+  .chapter-figure { margin: 24px 0 28px; padding: 9px; }
+  .chapter-figure-frame { padding: 5px; }
   .quiz-container { padding: 26px 17px 100px; }
   .quiz-page-header { margin-bottom: 17px; }
   .quiz-page-header h2 { font-size: 23px; }

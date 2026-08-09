@@ -10,6 +10,8 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
   const readList = Storage.getReadChapters();
   const isRead = readList.includes(chapter.id);
   const isDark = Storage.getTheme() === 'dark';
+  const categoryColor = courseConfig.category?.color;
+  const categoryStyle = categoryColor ? ` style="--chapter-accent:${categoryColor}"` : '';
 
   // Configure marked
   marked.setOptions({
@@ -22,12 +24,12 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
   // Replace image markdown tags with stylized image containers
   rawHtml = rawHtml.replace(/<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/?>/g, (match, src, alt) => {
     return `
-      <div class="my-6 p-4 bg-surface/80 rounded-2xl border border-glass text-center shadow-md group">
-        <div class="overflow-hidden rounded-xl border border-glass bg-card-bg p-2">
-          <img src="${src}" alt="${alt}" class="w-full h-auto max-h-[500px] object-contain mx-auto transition transform group-hover:scale-[1.01]" />
+      <figure class="chapter-figure">
+        <div class="chapter-figure-frame">
+          <img src="${src}" alt="${alt}" />
         </div>
-        ${alt ? `<p class="mt-2 text-xs font-semibold text-accent">${alt}</p>` : ''}
-      </div>
+        ${alt ? `<figcaption>${alt}</figcaption>` : ''}
+      </figure>
     `;
   });
 
@@ -63,7 +65,7 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
   const nextCh = chIndex < currentChapters.length - 1 ? currentChapters[chIndex + 1] : null;
 
   container.innerHTML = `
-    <div class="chapter-container max-w-4xl mx-auto px-4 py-8">
+    <div class="chapter-container max-w-4xl mx-auto px-4 py-8"${categoryStyle}>
       
       <!-- Chapter Banner Header -->
       <div class="chapter-banner mb-8 p-6 rounded-2xl bg-card-bg border border-glass shadow-lg relative overflow-hidden">
@@ -83,7 +85,7 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
       </div>
 
       <!-- Main Chapter Body HTML -->
-      <article class="prose ${isDark ? 'prose-invert' : 'prose-slate'} max-w-none prose-headings:font-extrabold prose-a:text-accent prose-table:w-full prose-table:border-collapse">
+      <article class="chapter-body prose ${isDark ? 'prose-invert' : 'prose-slate'} max-w-none">
         ${rawHtml}
       </article>
 
