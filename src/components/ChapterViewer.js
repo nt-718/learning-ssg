@@ -7,7 +7,8 @@ import { updateHeaderProgress } from './Header.js';
 export function renderChapterViewer(container, chapterId, { chapters = [], courseConfig = {}, onNavigateChapter, onSelectView }) {
   const currentChapters = chapters.length > 0 ? chapters : [];
   const chapter = currentChapters.find(c => c.id === chapterId) || currentChapters[0] || { title: '', content: '' };
-  const readList = Storage.getReadChapters();
+  const courseId = courseConfig.id;
+  const readList = Storage.getReadChapters(courseId);
   const isRead = readList.includes(chapter.id);
   const isDark = Storage.getTheme() === 'dark';
   const categoryColor = courseConfig.category?.color;
@@ -109,8 +110,8 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
   const readBtn = container.querySelector('#btn-toggle-read');
   if (readBtn) {
     readBtn.addEventListener('click', () => {
-      Storage.toggleReadChapter(chapter.id);
-      updateHeaderProgress(currentChapters.length);
+      Storage.toggleReadChapter(courseId, chapter.id);
+      updateHeaderProgress(courseId, currentChapters.length);
       renderChapterViewer(container, chapterId, { chapters, courseConfig, onNavigateChapter, onSelectView });
     });
   }

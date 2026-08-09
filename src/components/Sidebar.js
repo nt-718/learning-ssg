@@ -1,7 +1,7 @@
 import { Storage } from '../utils/storage.js';
 
 export function renderSidebar(container, { chapters = [], quizQuestions = [], courseConfig = {}, activeView, activeChapterId, activeQuizFilter = 'all', onSelectView, onClose, mode = 'sidebar' }) {
-  const readChapters = Storage.getReadChapters();
+  const readChapters = Storage.getReadChapters(courseConfig.id);
   const wrongCount = Storage.getWrongQuestions().length;
   const categories = courseConfig.categories || {};
   const courseChIds = chapters.map(ch => ch.id);

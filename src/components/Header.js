@@ -1,7 +1,7 @@
 import { Storage } from '../utils/storage.js';
 
 export function renderHeader(container, { activeView, activeCourseId, allCourses, onSelectCourse, onOpenSearch, onSelectView, totalChaptersCount = 11 }) {
-  const readList = Storage.getReadChapters();
+  const readList = Storage.getReadChapters(activeCourseId);
   const totalCh = totalChaptersCount || 1;
   const progressPct = Math.min(100, Math.round((readList.length / totalCh) * 100));
   const currentTheme = Storage.getTheme();
@@ -53,8 +53,8 @@ export function renderHeader(container, { activeView, activeCourseId, allCourses
   });
 }
 
-export function updateHeaderProgress(totalChaptersCount = 11) {
-  const readList = Storage.getReadChapters();
+export function updateHeaderProgress(courseId, totalChaptersCount = 11) {
+  const readList = Storage.getReadChapters(courseId);
   const progressPct = Math.min(100, Math.round((readList.length / (totalChaptersCount || 1)) * 100));
   const txt = document.querySelector('#header-progress-text');
   if (txt) txt.textContent = `${progressPct}%`;

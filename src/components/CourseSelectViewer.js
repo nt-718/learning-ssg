@@ -1,10 +1,11 @@
 import { Storage } from '../utils/storage.js';
 
 export function renderCourseSelectViewer(container, { allCourses = {}, activeCourseId, onSelectCourse }) {
-  const readList = Storage.getReadChapters();
   const courseIds = Object.keys(allCourses);
-  const totalChapterIds = courseIds.flatMap(id => (allCourses[id]?.chapters || []).map(ch => ch.id));
-  const totalReadCount = readList.filter(id => totalChapterIds.includes(id)).length;
+  const totalReadCount = courseIds.reduce((total, courseId) => {
+    const chapterIds = (allCourses[courseId]?.chapters || []).map(chapter => chapter.id);
+    return total + Storage.getReadChapters(courseId).filter(id => chapterIds.includes(id)).length;
+  }, 0);
 
   const getCourseMark = (id, title) => {
     if (id.includes('takken') || title.includes('宅建')) return '宅';
@@ -31,6 +32,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
     const chapters = course?.chapters || [];
     const quizQuestions = course?.quizQuestions || [];
     const isCurrent = courseId === activeCourseId;
+    const readList = Storage.getReadChapters(courseId);
     const mark = getCourseMark(courseId, config.title || '');
     const chapterIds = chapters.map(ch => ch.id);
     const readCount = readList.filter(id => chapterIds.includes(id)).length;

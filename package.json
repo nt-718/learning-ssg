@@ -7,6 +7,7 @@
   "scripts": {
     "ssg": "node scripts/ssg.js",
     "build": "node scripts/ssg.js build financial_planner && vite build",
+    "test": "node --test",
     "build:data": "node scripts/ssg.js build financial_planner",
     "serve": "node scripts/ssg.js serve financial_planner",
     "list": "node scripts/ssg.js list",

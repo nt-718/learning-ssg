@@ -18,6 +18,12 @@ function getLocalDateKey(date = new Date()) {
   return `${year}-${month}-${day}`;
 }
 
+const READ_CHAPTER_SEPARATOR = '::';
+
+function getReadChapterKey(courseId, chapterId) {
+  return `${courseId}${READ_CHAPTER_SEPARATOR}${chapterId}`;
+}
+
 export const Storage = {
   getTheme() {
     return localStorage.getItem(KEYS.THEME) || 'light';
@@ -49,20 +55,44 @@ export const Storage = {
     }
   },
 
-  getReadChapters() {
+  getReadChapters(courseId) {
     try {
-      return JSON.parse(localStorage.getItem(KEYS.READ_CHAPTERS)) || [];
+      if (!courseId) return [];
+      const list = JSON.parse(localStorage.getItem(KEYS.READ_CHAPTERS)) || [];
+      const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+      return list
+        .filter(key => typeof key === 'string' && key.startsWith(prefix))
+        .map(key => key.slice(prefix.length));
     } catch {
       return [];
     }
   },
-  toggleReadChapter(chapterId) {
-    const list = this.getReadChapters();
-    const idx = list.indexOf(chapterId);
+  migrateLegacyReadChapters(courseId) {
+    if (!courseId) return;
+    try {
+      const list = JSON.parse(localStorage.getItem(KEYS.READ_CHAPTERS)) || [];
+      const migrated = list.map(key => {
+        if (typeof key !== 'string' || key.includes(READ_CHAPTER_SEPARATOR)) return key;
+        return getReadChapterKey(courseId, key);
+      });
+      localStorage.setItem(KEYS.READ_CHAPTERS, JSON.stringify([...new Set(migrated)]));
+    } catch {
+      localStorage.setItem(KEYS.READ_CHAPTERS, '[]');
+    }
+  },
+  toggleReadChapter(courseId, chapterId) {
+    let list;
+    try {
+      list = JSON.parse(localStorage.getItem(KEYS.READ_CHAPTERS)) || [];
+    } catch {
+      list = [];
+    }
+    const key = getReadChapterKey(courseId, chapterId);
+    const idx = list.indexOf(key);
     if (idx >= 0) {
       list.splice(idx, 1);
     } else {
-      list.push(chapterId);
+      list.push(key);
       this.recordActivity('read');
     }
     localStorage.setItem(KEYS.READ_CHAPTERS, JSON.stringify(list));
