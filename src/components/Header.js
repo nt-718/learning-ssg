@@ -24,7 +24,6 @@ export function renderHeader(container, { activeView, activeCourseId, allCourses
 
       <div class="header-actions">
         ${!isGlobalView ? `
-          <button id="btn-go-portal" class="header-catalog-button">教材一覧</button>
           <select id="course-select-dropdown" class="header-course-select" aria-label="教材を切り替える">
             ${Object.keys(allCourses || {}).map(cId => {
               const cName = allCourses[cId]?.config?.title || cId;
@@ -46,7 +45,6 @@ export function renderHeader(container, { activeView, activeCourseId, allCourses
   `;
 
   container.querySelector('#btn-trigger-search-mobile').addEventListener('click', onOpenSearch);
-  container.querySelector('#btn-go-portal')?.addEventListener('click', () => onSelectView('course_select'));
   container.querySelector('#course-select-dropdown')?.addEventListener('change', (event) => onSelectCourse?.(event.target.value));
   container.querySelector('#header-brand').addEventListener('click', () => onSelectView('course_select'));
   container.querySelector('#btn-theme-toggle').addEventListener('click', () => {

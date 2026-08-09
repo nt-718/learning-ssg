@@ -15,7 +15,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
 
   const categories = new Map();
   courseIds.forEach(courseId => {
-    const category = allCourses[courseId]?.config?.category || { id: 'uncategorized', title: 'その他', order: 999 };
+    const category = allCourses[courseId]?.config?.category || { id: 'uncategorized', title: 'その他', order: 999, color: null };
     if (!categories.has(category.id)) categories.set(category.id, { ...category, courseIds: [] });
     categories.get(category.id).courseIds.push(courseId);
   });
@@ -92,7 +92,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
         </div>
         <div class="course-category-list">
           ${categoryGroups.map(category => `
-            <section class="course-category" aria-labelledby="category-${category.id}">
+            <section class="course-category" aria-labelledby="category-${category.id}"${category.color ? ` style="--category-color:${category.color}"` : ''}>
               <div class="course-category-heading">
                 <h4 id="category-${category.id}">${category.title}</h4>
                 <span>${category.courseIds.length}</span>

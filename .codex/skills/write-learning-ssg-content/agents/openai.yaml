@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning SSG 教材作成"
+  short_description: "このアプリ向けの章Markdownと演習問題を正しく作成"
+  default_prompt: "$write-learning-ssg-content を使って、このアプリに合う教材Markdownを作成してください。"

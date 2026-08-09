@@ -20,6 +20,12 @@ const args = process.argv.slice(2);
 const command = args[0] || 'build';
 const courseIdArg = args[1] || 'financial_planner';
 
+function normalizeCategoryColor(color) {
+  if (typeof color !== 'string') return null;
+  const normalized = color.trim();
+  return /^#[0-9a-f]{6}$/i.test(normalized) ? normalized : null;
+}
+
 function readCategoryConfig(categoryPath, categoryId) {
   const configPath = path.join(categoryPath, 'category.toml');
   const config = fs.existsSync(configPath)
@@ -28,7 +34,8 @@ function readCategoryConfig(categoryPath, categoryId) {
   return {
     id: config.id || categoryId,
     title: config.title || categoryId,
-    order: Number.isFinite(config.order) ? config.order : 999
+    order: Number.isFinite(config.order) ? config.order : 999,
+    color: normalizeCategoryColor(config.color)
   };
 }
 
@@ -45,7 +52,7 @@ function discoverCourses() {
       entries.push({
         directoryId: name,
         coursePath: topPath,
-        category: { id: 'uncategorized', title: 'その他', order: 999 }
+        category: { id: 'uncategorized', title: 'その他', order: 999, color: null }
       });
       return;
     }
@@ -139,6 +146,8 @@ function buildCourse(targetCourseId) {
         title: m[1].trim()
       }));
 
+      extractQuestionsFromMarkdown(body, chId, title, quizQuestions);
+
       chapters.push({
         id: chId,
         number: metadata.number ?? index,
@@ -146,10 +155,8 @@ function buildCourse(targetCourseId) {
         shortTitle: metadata.short_title || title.replace(/^第[0-9]+章\s*/, ''),
         summary: metadata.summary || '',
         sections: sections,
-        content: body
+        content: stripStandardChapterQuiz(body)
       });
-
-      extractQuestionsFromMarkdown(body, chId, title, quizQuestions);
     });
 
     chapters.sort((a, b) => a.number - b.number);
@@ -218,7 +225,7 @@ function newCourse(coursePathArg, courseTitle) {
   fs.mkdirSync(path.join(newDir, 'images'), { recursive: true });
   const categoryConfigPath = path.join(categoryDir, 'category.toml');
   if (!fs.existsSync(categoryConfigPath)) {
-    fs.writeFileSync(categoryConfigPath, `id = "${categoryId}"\ntitle = "${categoryId}"\norder = 999\n`);
+    fs.writeFileSync(categoryConfigPath, `id = "${categoryId}"\ntitle = "${categoryId}"\norder = 999\ncolor = "#2563eb"\n`);
   }
 
   const tomlContent = `# ${courseTitle} 教材設定ファイル
@@ -321,10 +328,22 @@ function serveCourse() {
 }
 
 // Helper to extract quiz questions from markdown text
+function matchStandardChapterQuiz(text) {
+  return text.match(/### 章末問題\d*\s*\n\n(.*?)\n\n### 解答・解説\d*\s*\n\n(.*?)(?=\n# |\n### |$)/s);
+}
+
+function stripStandardChapterQuiz(text) {
+  const match = matchStandardChapterQuiz(text);
+  if (!match || match.index === undefined) return text;
+
+  const before = text.slice(0, match.index).trimEnd();
+  const after = text.slice(match.index + match[0].length).trimStart();
+  return after ? `${before}\n\n${after}` : `${before}\n`;
+}
+
 function extractQuestionsFromMarkdown(text, chId, chTitle, questions) {
   // Pattern 1: Chapter 1-8 end questions
-  const patternCh = /### 章末問題\d*\s*\n\n(.*?)\n\n### 解答・解説\d*\s*\n\n(.*?)(?=\n# |\n### |\Z)/s;
-  const matchCh = text.match(patternCh);
+  const matchCh = matchStandardChapterQuiz(text);
   if (matchCh) {
     const qBlock = matchCh[1].trim();
     const ansBlock = matchCh[2].trim();

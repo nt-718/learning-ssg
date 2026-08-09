@@ -1,8 +1,21 @@
 // Quiz & Flashcard practice component
 
+import { marked } from 'marked';
 import { Storage } from '../utils/storage.js';
 
-export function renderQuizViewer(container, filterType = 'all', quizQuestions = []) {
+const icons = {
+  lightbulb: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4M8.5 14.5A6 6 0 1 1 15.5 14.5c-.9.7-1.5 1.5-1.5 2.5h-4c0-1-.6-1.8-1.5-2.5Z"/></svg>',
+  check: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8"/></svg>',
+  review: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>',
+  left: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>',
+  right: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>'
+};
+
+function renderInlineMarkdown(value) {
+  return marked.parseInline(value || '');
+}
+
+export function renderQuizViewer(container, filterType = 'all', quizQuestions = [], courseConfig = {}) {
   let questionsList = quizQuestions.length > 0 ? [...quizQuestions] : [];
 
   if (filterType === '3級' || filterType === '2級') {
@@ -14,23 +27,29 @@ export function renderQuizViewer(container, filterType = 'all', quizQuestions = 
     questionsList = questionsList.filter(q => q.chapterId === filterType);
   }
 
+  const categoryColor = courseConfig.category?.color;
+  const categoryStyle = categoryColor ? ` style="--quiz-accent:${categoryColor}"` : '';
+  const filterLabel = filterType === 'all'
+    ? 'すべての問題'
+    : filterType === 'wrong'
+      ? '要復習の問題'
+      : filterType === '3級' || filterType === '2級'
+        ? `${filterType}の問題`
+        : questionsList[0]?.chapterTitle || '章別演習';
+
   if (questionsList.length === 0) {
     container.innerHTML = `
-      <div class="max-w-xl mx-auto px-4 py-16 text-center">
-        <div class="text-4xl mb-4">🎉</div>
-        <h3 class="text-xl font-bold text-foreground mb-2">該当する問題がありません</h3>
-        <p class="text-xs text-muted mb-6">要復習ノートは空か、指定の条件に一致する問題がありません。</p>
-        <button id="btn-quiz-reset-all" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-md transition">
-          全問題を表示する
-        </button>
+      <div class="quiz-container quiz-empty"${categoryStyle}>
+        <span class="quiz-empty-mark" aria-hidden="true">✓</span>
+        <p class="quiz-eyebrow">問題演習</p>
+        <h2>該当する問題はありません</h2>
+        <p>要復習の問題がないか、指定した条件に一致する問題がありません。</p>
+        <button id="btn-quiz-reset-all" class="quiz-primary-button">すべての問題を表示</button>
       </div>
     `;
-    const resetBtn = container.querySelector('#btn-quiz-reset-all');
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        renderQuizViewer(container, 'all', quizQuestions);
-      });
-    }
+    container.querySelector('#btn-quiz-reset-all')?.addEventListener('click', () => {
+      renderQuizViewer(container, 'all', quizQuestions, courseConfig);
+    });
     return;
   }
 
@@ -39,129 +58,112 @@ export function renderQuizViewer(container, filterType = 'all', quizQuestions = 
 
   const renderCard = () => {
     const q = questionsList[currentIndex];
-    const history = Storage.getQuizHistory();
     const wrongIds = Storage.getWrongQuestions();
     const isWrong = wrongIds.includes(q.id);
+    const progressPct = Math.round(((currentIndex + 1) / questionsList.length) * 100);
 
     container.innerHTML = `
-      <div class="quiz-container max-w-3xl mx-auto px-4 py-8">
-        
-        <!-- Header status bar -->
-        <div class="flex items-center justify-between gap-4 mb-6">
-          <div class="flex items-center gap-2">
-            <span class="px-2.5 py-1 rounded-md text-xs font-bold ${q.level === '3級' ? 'bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-500/20 dark:text-emerald-300' : 'bg-purple-100 text-purple-800 border border-purple-300 dark:bg-purple-500/20 dark:text-purple-300'}">
-              ${q.level || '演習'}
-            </span>
-            <span class="text-xs text-muted font-bold">${q.chapterTitle || ''} ${q.qNumber ? '・' + q.qNumber : ''}</span>
+      <div class="quiz-container"${categoryStyle}>
+        <header class="quiz-page-header">
+          <div>
+            <p class="quiz-eyebrow">問題演習</p>
+            <h2>理解度を確かめる</h2>
+            <p>${filterLabel}</p>
           </div>
+          <div class="quiz-count" aria-label="${questionsList.length}問中${currentIndex + 1}問目">
+            <strong>${currentIndex + 1}</strong><span>/ ${questionsList.length}</span>
+          </div>
+        </header>
 
-          <div class="text-xs font-mono font-bold text-accent">
-            ${currentIndex + 1} / ${questionsList.length} 問
-          </div>
+        <div class="quiz-progress-track" aria-hidden="true">
+          <div style="width:${progressPct}%"></div>
         </div>
 
-        <!-- Question Card -->
-        <div class="quiz-card p-6 md:p-8 rounded-2xl bg-card-bg border border-glass shadow-lg relative mb-6">
-          
-          ${isWrong ? '<div class="absolute top-4 right-4 text-xs font-bold text-amber-700 bg-amber-100 border border-amber-300 dark:text-amber-400 dark:bg-amber-500/20 dark:border-amber-500/30 px-2 py-0.5 rounded">⚠️ 要復習</div>' : ''}
+        <div class="quiz-meta-row">
+          <span class="quiz-level quiz-level-${q.level === '3級' ? 'basic' : q.level === '2級' ? 'advanced' : 'general'}">${q.level || '演習'}</span>
+          <span class="quiz-location">${q.chapterTitle || ''}${q.qNumber ? `<b>・${q.qNumber}</b>` : ''}</span>
+          ${isWrong ? '<span class="quiz-review-label">要復習</span>' : ''}
+        </div>
 
-          <div class="text-xs text-muted uppercase font-bold tracking-wider mb-2">【問題】</div>
-          <h3 class="text-lg md:text-xl font-bold text-foreground leading-relaxed mb-6">
-            ${q.question}
-          </h3>
+        <article class="quiz-card">
+          <div class="quiz-question-label"><span>Q</span> 問題</div>
+          <h3>${renderInlineMarkdown(q.question)}</h3>
 
-          <!-- Reveal Answer Button or Answer Details -->
           ${!showAnswer ? `
-            <div class="text-center py-6 border-t border-glass">
-              <button id="btn-show-ans" class="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg transition">
-                💡 解答・解説を表示する
+            <div class="quiz-reveal-area">
+              <p>答えを考えてから、解説を確認しましょう。</p>
+              <button id="btn-show-ans" class="quiz-primary-button">
+                ${icons.lightbulb}<span>解答・解説を見る</span>
               </button>
             </div>
           ` : `
-            <div class="answer-box mt-6 pt-6 border-t border-glass animate-fade-in">
-              <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-2">【解答・解説】</div>
-              <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 dark:bg-emerald-950/30 dark:border-emerald-500/30 dark:text-emerald-100 text-sm md:text-base font-medium leading-relaxed mb-6">
-                ${q.explanation || q.answer}
+            <div class="quiz-answer animate-fade-in">
+              <div class="quiz-answer-heading">
+                <span>${icons.check}</span>
+                <strong>解答・解説</strong>
               </div>
+              <div class="quiz-answer-content">${renderInlineMarkdown(q.explanation || q.answer)}</div>
 
-              <!-- Self-assessment score buttons -->
-              <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <button id="btn-mark-correct" class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md transition flex items-center justify-center gap-2">
-                  <span>⭕ 正解した！（次へ）</span>
-                </button>
-                <button id="btn-mark-wrong" class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold shadow-md transition flex items-center justify-center gap-2">
-                  <span>❌ 間違えた / 要復習</span>
-                </button>
+              <div class="quiz-assessment">
+                <div>
+                  <strong>自己採点</strong>
+                  <span>理解できたか記録してください</span>
+                </div>
+                <div class="quiz-assessment-actions">
+                  <button id="btn-mark-correct" class="quiz-assessment-button is-correct">
+                    ${icons.check}<span>理解できた</span>
+                  </button>
+                  <button id="btn-mark-wrong" class="quiz-assessment-button is-review">
+                    ${icons.review}<span>要復習にする</span>
+                  </button>
+                </div>
               </div>
             </div>
           `}
+        </article>
 
-        </div>
-
-        <!-- Controls Footer -->
-        <div class="flex items-center justify-between gap-4">
-          <button id="btn-prev-q" ${currentIndex === 0 ? 'disabled class="opacity-40 cursor-not-allowed px-4 py-2 rounded-xl bg-surface border border-glass text-xs text-muted"' : 'class="px-4 py-2 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-foreground transition"'}>
-            ← 前の問題
+        <nav class="quiz-navigation" aria-label="問題の移動">
+          <button id="btn-prev-q" class="quiz-nav-button" ${currentIndex === 0 ? 'disabled' : ''}>
+            ${icons.left}<span>前の問題</span>
           </button>
-
-          <button id="btn-next-q" ${currentIndex === questionsList.length - 1 ? 'disabled class="opacity-40 cursor-not-allowed px-4 py-2 rounded-xl bg-surface border border-glass text-xs text-muted"' : 'class="px-4 py-2 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-foreground transition"'}>
-            次の問題 →
+          <span>${currentIndex + 1} / ${questionsList.length}</span>
+          <button id="btn-next-q" class="quiz-nav-button" ${currentIndex === questionsList.length - 1 ? 'disabled' : ''}>
+            <span>次の問題</span>${icons.right}
           </button>
-        </div>
-
+        </nav>
       </div>
     `;
 
-    // Attach listeners
-    const showAnsBtn = container.querySelector('#btn-show-ans');
-    if (showAnsBtn) {
-      showAnsBtn.addEventListener('click', () => {
-        showAnswer = true;
-        renderCard();
-      });
-    }
+    container.querySelector('#btn-show-ans')?.addEventListener('click', () => {
+      showAnswer = true;
+      renderCard();
+    });
 
-    const markCorrectBtn = container.querySelector('#btn-mark-correct');
-    if (markCorrectBtn) {
-      markCorrectBtn.addEventListener('click', () => {
-        Storage.recordQuizAnswer(q.id, true);
-        showAnswer = false;
-        if (currentIndex < questionsList.length - 1) {
-          currentIndex++;
-        }
-        renderCard();
-      });
-    }
+    container.querySelector('#btn-mark-correct')?.addEventListener('click', () => {
+      Storage.recordQuizAnswer(q.id, true);
+      showAnswer = false;
+      if (currentIndex < questionsList.length - 1) currentIndex++;
+      renderCard();
+    });
 
-    const markWrongBtn = container.querySelector('#btn-mark-wrong');
-    if (markWrongBtn) {
-      markWrongBtn.addEventListener('click', () => {
-        Storage.recordQuizAnswer(q.id, false);
-        showAnswer = false;
-        if (currentIndex < questionsList.length - 1) {
-          currentIndex++;
-        }
-        renderCard();
-      });
-    }
+    container.querySelector('#btn-mark-wrong')?.addEventListener('click', () => {
+      Storage.recordQuizAnswer(q.id, false);
+      showAnswer = false;
+      if (currentIndex < questionsList.length - 1) currentIndex++;
+      renderCard();
+    });
 
-    const prevQBtn = container.querySelector('#btn-prev-q');
-    if (prevQBtn && currentIndex > 0) {
-      prevQBtn.addEventListener('click', () => {
-        showAnswer = false;
-        currentIndex--;
-        renderCard();
-      });
-    }
+    container.querySelector('#btn-prev-q')?.addEventListener('click', () => {
+      showAnswer = false;
+      currentIndex--;
+      renderCard();
+    });
 
-    const nextQBtn = container.querySelector('#btn-next-q');
-    if (nextQBtn && currentIndex < questionsList.length - 1) {
-      nextQBtn.addEventListener('click', () => {
-        showAnswer = false;
-        currentIndex++;
-        renderCard();
-      });
-    }
+    container.querySelector('#btn-next-q')?.addEventListener('click', () => {
+      showAnswer = false;
+      currentIndex++;
+      renderCard();
+    });
   };
 
   renderCard();

@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const quizWrapper = document.createElement('div');
       quizWrapper.className = 'animate-fade-in';
       mainContainer.appendChild(quizWrapper);
-      renderQuizViewer(quizWrapper, state.activeQuizFilter, quizQuestions);
+      renderQuizViewer(quizWrapper, state.activeQuizFilter, quizQuestions, courseConfig);
     }
   };
 
