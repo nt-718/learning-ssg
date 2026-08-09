@@ -3,7 +3,6 @@ id: "ch06"
 number: 6
 title: "第6章 不動産"
 summary: "登記、宅建業法、建蔽率・容積率、譲渡所得、NOI"
-visualizers: ['real_estate_sim']
 ---
 
 # 第6章　不動産
@@ -129,7 +128,6 @@ visualizers: ['real_estate_sim']
 高さ制限には道路斜線、隣地斜線、北側斜線、絶対高さ、日影規制などがある。用途地域や地域指定で適用が異なる。接道義務では、建築物の敷地が建築基準法上の道路へ原則2m以上接する必要がある。
 
 ![図6-1 建蔽率・容積率＆セットバック制限](images/ch06_building_coverage_ratio.svg)
-
 
 ## 6-15　取得・保有・譲渡時の税金
 

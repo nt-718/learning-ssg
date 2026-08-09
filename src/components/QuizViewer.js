@@ -1,10 +1,9 @@
-// Quiz & Flashcard practice component for all 160 questions
+// Quiz & Flashcard practice component
 
-import { QUIZ_QUESTIONS } from '../data/quizData.js';
 import { Storage } from '../utils/storage.js';
 
-export function renderQuizViewer(container, filterType = 'all') {
-  let questionsList = [...QUIZ_QUESTIONS];
+export function renderQuizViewer(container, filterType = 'all', quizQuestions = []) {
+  let questionsList = quizQuestions.length > 0 ? [...quizQuestions] : [];
 
   if (filterType === '3級' || filterType === '2級') {
     questionsList = questionsList.filter(q => q.level === filterType);
@@ -19,16 +18,19 @@ export function renderQuizViewer(container, filterType = 'all') {
     container.innerHTML = `
       <div class="max-w-xl mx-auto px-4 py-16 text-center">
         <div class="text-4xl mb-4">🎉</div>
-        <h3 class="text-xl font-bold text-white mb-2">該当する問題がありません</h3>
-        <p class="text-xs text-muted mb-6">要復習ノートは空か、指定の条件に一致する問題がまだありません。</p>
+        <h3 class="text-xl font-bold text-foreground mb-2">該当する問題がありません</h3>
+        <p class="text-xs text-muted mb-6">要復習ノートは空か、指定の条件に一致する問題がありません。</p>
         <button id="btn-quiz-reset-all" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-md transition">
-          全160問を表示する
+          全問題を表示する
         </button>
       </div>
     `;
-    container.querySelector('#btn-quiz-reset-all').addEventListener('click', () => {
-      renderQuizViewer(container, 'all');
-    });
+    const resetBtn = container.querySelector('#btn-quiz-reset-all');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        renderQuizViewer(container, 'all', quizQuestions);
+      });
+    }
     return;
   }
 
@@ -38,7 +40,6 @@ export function renderQuizViewer(container, filterType = 'all') {
   const renderCard = () => {
     const q = questionsList[currentIndex];
     const history = Storage.getQuizHistory();
-    const qRecord = history[q.id];
     const wrongIds = Storage.getWrongQuestions();
     const isWrong = wrongIds.includes(q.id);
 
@@ -48,10 +49,10 @@ export function renderQuizViewer(container, filterType = 'all') {
         <!-- Header status bar -->
         <div class="flex items-center justify-between gap-4 mb-6">
           <div class="flex items-center gap-2">
-            <span class="px-2.5 py-1 rounded-md text-xs font-bold ${q.level === '3級' ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-purple-500/20 text-purple-300 border border-purple-500/30'}">
-              ${q.level}
+            <span class="px-2.5 py-1 rounded-md text-xs font-bold ${q.level === '3級' ? 'bg-emerald-100 text-emerald-800 border border-emerald-300 dark:bg-emerald-500/20 dark:text-emerald-300' : 'bg-purple-100 text-purple-800 border border-purple-300 dark:bg-purple-500/20 dark:text-purple-300'}">
+              ${q.level || '演習'}
             </span>
-            <span class="text-xs text-muted font-bold">${q.chapterTitle}・${q.qNumber}</span>
+            <span class="text-xs text-muted font-bold">${q.chapterTitle || ''} ${q.qNumber ? '・' + q.qNumber : ''}</span>
           </div>
 
           <div class="text-xs font-mono font-bold text-accent">
@@ -60,12 +61,12 @@ export function renderQuizViewer(container, filterType = 'all') {
         </div>
 
         <!-- Question Card -->
-        <div class="quiz-card p-6 md:p-8 rounded-2xl bg-card-bg border border-glass shadow-2xl relative mb-6">
+        <div class="quiz-card p-6 md:p-8 rounded-2xl bg-card-bg border border-glass shadow-lg relative mb-6">
           
-          ${isWrong ? '<div class="absolute top-4 right-4 text-xs font-bold text-amber-400 bg-amber-500/20 px-2 py-0.5 rounded border border-amber-500/30">⚠️ 要復習</div>' : ''}
+          ${isWrong ? '<div class="absolute top-4 right-4 text-xs font-bold text-amber-700 bg-amber-100 border border-amber-300 dark:text-amber-400 dark:bg-amber-500/20 dark:border-amber-500/30 px-2 py-0.5 rounded">⚠️ 要復習</div>' : ''}
 
           <div class="text-xs text-muted uppercase font-bold tracking-wider mb-2">【問題】</div>
-          <h3 class="text-lg md:text-xl font-bold text-white leading-relaxed mb-6">
+          <h3 class="text-lg md:text-xl font-bold text-foreground leading-relaxed mb-6">
             ${q.question}
           </h3>
 
@@ -78,9 +79,9 @@ export function renderQuizViewer(container, filterType = 'all') {
             </div>
           ` : `
             <div class="answer-box mt-6 pt-6 border-t border-glass animate-fade-in">
-              <div class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2">【解答・公式解説】</div>
-              <div class="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/30 text-sm md:text-base text-emerald-100 font-medium leading-relaxed mb-6">
-                ${q.explanation}
+              <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-2">【解答・解説】</div>
+              <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 dark:bg-emerald-950/30 dark:border-emerald-500/30 dark:text-emerald-100 text-sm md:text-base font-medium leading-relaxed mb-6">
+                ${q.explanation || q.answer}
               </div>
 
               <!-- Self-assessment score buttons -->
@@ -99,11 +100,11 @@ export function renderQuizViewer(container, filterType = 'all') {
 
         <!-- Controls Footer -->
         <div class="flex items-center justify-between gap-4">
-          <button id="btn-prev-q" ${currentIndex === 0 ? 'disabled class="opacity-40 cursor-not-allowed px-4 py-2 rounded-xl bg-surface border border-glass text-xs text-muted"' : 'class="px-4 py-2 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-white transition"'}>
+          <button id="btn-prev-q" ${currentIndex === 0 ? 'disabled class="opacity-40 cursor-not-allowed px-4 py-2 rounded-xl bg-surface border border-glass text-xs text-muted"' : 'class="px-4 py-2 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-foreground transition"'}>
             ← 前の問題
           </button>
 
-          <button id="btn-next-q" ${currentIndex === questionsList.length - 1 ? 'disabled class="opacity-40 cursor-not-allowed px-4 py-2 rounded-xl bg-surface border border-glass text-xs text-muted"' : 'class="px-4 py-2 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-white transition"'}>
+          <button id="btn-next-q" ${currentIndex === questionsList.length - 1 ? 'disabled class="opacity-40 cursor-not-allowed px-4 py-2 rounded-xl bg-surface border border-glass text-xs text-muted"' : 'class="px-4 py-2 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-foreground transition"'}>
             次の問題 →
           </button>
         </div>

@@ -3,7 +3,6 @@ id: "ch09"
 number: 9
 title: "第9章 直前暗記・公式集"
 summary: "重要数値・計算式・期限一覧・直前チェック"
-visualizers: []
 ---
 
 # 第9章　直前暗記・公式集

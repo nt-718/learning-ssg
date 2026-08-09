@@ -49,27 +49,27 @@ export function renderInheritanceSim(container) {
           <div>
             <h4 class="font-bold text-md mb-3 text-accent border-b border-glass pb-2">法定相続分 & 基礎控除内訳</h4>
 
-            <div class="result-highlight my-3 p-4 rounded-xl bg-gradient-to-r from-emerald-900/50 to-indigo-900/50 border border-emerald-500/30">
-              <div class="text-xs text-emerald-300 mb-1">相続税の基礎控除額 (非課税枠)</div>
+            <div class="result-highlight my-3 p-4 rounded-xl bg-gradient-to-r from-emerald-600 to-indigo-600 text-white shadow-md">
+              <div class="text-xs text-emerald-100 mb-1 font-medium">相続税の基礎控除額 (非課税枠)</div>
               <div class="text-3xl font-extrabold text-white" id="inh-deduction-val">4,800 万円</div>
-              <div class="text-xs text-emerald-200 mt-1" id="inh-deduction-formula">3,000万円 ＋ (600万円 × 法定相続人 3人)</div>
+              <div class="text-xs text-emerald-100/90 mt-1" id="inh-deduction-formula">3,000万円 ＋ (600万円 × 法定相続人 3人)</div>
             </div>
 
             <div class="space-y-2 text-xs">
-              <div class="p-2.5 rounded bg-surface/50 border border-glass flex justify-between items-center">
+              <div class="p-2.5 rounded bg-surface border border-glass flex justify-between items-center">
                 <div>
-                  <span class="font-bold text-sm block" id="inh-spouse-title">配偶者の法定相続分</span>
+                  <span class="font-bold text-sm block text-foreground" id="inh-spouse-title">配偶者の法定相続分</span>
                   <span class="text-muted">配偶者 1/2</span>
                 </div>
-                <span class="text-base font-bold font-mono text-indigo-300" id="inh-spouse-share">1/2 (4,000万円)</span>
+                <span class="text-base font-bold font-mono text-indigo-700 dark:text-indigo-300" id="inh-spouse-share">1/2 (4,000万円)</span>
               </div>
 
-              <div class="p-2.5 rounded bg-surface/50 border border-glass flex justify-between items-center">
+              <div class="p-2.5 rounded bg-surface border border-glass flex justify-between items-center">
                 <div>
-                  <span class="font-bold text-sm block" id="inh-others-title">子の法定相続分 (全体 1/2)</span>
+                  <span class="font-bold text-sm block text-foreground" id="inh-others-title">子の法定相続分 (全体 1/2)</span>
                   <span class="text-muted" id="inh-others-sub">1人あたり 1/4</span>
                 </div>
-                <span class="text-base font-bold font-mono text-emerald-400" id="inh-others-share">1人2,000万円</span>
+                <span class="text-base font-bold font-mono text-emerald-600 dark:text-emerald-400" id="inh-others-share">1人2,000万円</span>
               </div>
             </div>
           </div>

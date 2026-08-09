@@ -15,21 +15,21 @@ export function renderTaxCalculator(container) {
         <p class="text-xs text-muted mb-3">赤字が発生したときに他の黒字所得と相殺できる4つの所得。※不動産所得の土地取得利子は通算不可など試験頻出のひっかけに注意！</p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-center text-xs">
-          <div class="p-2.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30">
-            <span class="block font-bold text-emerald-400">1. 不動産所得 (不)</span>
-            <span class="text-[11px] text-emerald-200/70">賃料収入・駐車場</span>
+          <div class="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 dark:bg-emerald-950/40 dark:border-emerald-500/30">
+            <span class="block font-bold text-emerald-800 dark:text-emerald-400">1. 不動産所得 (不)</span>
+            <span class="text-[11px] text-emerald-700 dark:text-emerald-200/70">賃料収入・駐車場</span>
           </div>
-          <div class="p-2.5 rounded-lg bg-blue-950/40 border border-blue-500/30">
-            <span class="block font-bold text-blue-400">2. 事業所得 (事)</span>
-            <span class="text-[11px] text-blue-200/70">個人事業・売上</span>
+          <div class="p-2.5 rounded-lg bg-blue-50 border border-blue-200 dark:bg-blue-950/40 dark:border-blue-500/30">
+            <span class="block font-bold text-blue-800 dark:text-blue-400">2. 事業所得 (事)</span>
+            <span class="text-[11px] text-blue-700 dark:text-blue-200/70">個人事業・売上</span>
           </div>
-          <div class="p-2.5 rounded-lg bg-amber-950/40 border border-amber-500/30">
-            <span class="block font-bold text-amber-400">3. 山林所得 (山)</span>
-            <span class="text-[11px] text-amber-200/70">山林の伐採・譲渡</span>
+          <div class="p-2.5 rounded-lg bg-amber-50 border border-amber-200 dark:bg-amber-950/40 dark:border-amber-500/30">
+            <span class="block font-bold text-amber-800 dark:text-amber-400">3. 山林所得 (山)</span>
+            <span class="text-[11px] text-amber-700 dark:text-amber-200/70">山林の伐採・譲渡</span>
           </div>
-          <div class="p-2.5 rounded-lg bg-purple-950/40 border border-purple-500/30">
-            <span class="block font-bold text-purple-400">4. 譲渡所得 (譲)</span>
-            <span class="text-[11px] text-purple-200/70">ゴルフ会員権・資産売却</span>
+          <div class="p-2.5 rounded-lg bg-purple-50 border border-purple-200 dark:bg-purple-950/40 dark:border-purple-500/30">
+            <span class="block font-bold text-purple-800 dark:text-purple-400">4. 譲渡所得 (譲)</span>
+            <span class="text-[11px] text-purple-700 dark:text-purple-200/70">ゴルフ会員権・資産売却</span>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ export function renderTaxCalculator(container) {
       <!-- Interactive 5-Step Tax Calculator -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Input Form -->
-        <div class="calc-panel p-5 bg-card-bg rounded-xl border border-glass">
+        <div class="calc-panel p-5 bg-card-bg rounded-xl border border-glass shadow-sm">
           <h4 class="font-bold text-md mb-4 text-accent border-b border-glass pb-2">Step 1 & 2: 収入と所得控除の入力</h4>
 
           <div class="form-group mb-4">
@@ -69,42 +69,42 @@ export function renderTaxCalculator(container) {
         </div>
 
         <!-- Result Breakdown Steps -->
-        <div class="result-panel p-5 bg-card-bg rounded-xl border border-glass flex flex-col justify-between">
+        <div class="result-panel p-5 bg-card-bg rounded-xl border border-glass shadow-sm flex flex-col justify-between">
           <div>
             <h4 class="font-bold text-md mb-3 text-accent border-b border-glass pb-2">5ステップ 税額計算内訳</h4>
 
             <div class="space-y-3 text-xs">
-              <div class="p-2.5 rounded-lg bg-surface/60 border border-glass flex justify-between items-center">
+              <div class="p-2.5 rounded-lg bg-surface border border-glass flex justify-between items-center">
                 <div>
-                  <span class="font-bold block text-sm text-indigo-300">Step 1: 総所得金額 (損益通算後)</span>
+                  <span class="font-bold block text-sm text-indigo-700 dark:text-indigo-300">Step 1: 総所得金額 (損益通算後)</span>
                   <span class="text-muted" id="step1-sub">給与所得436万円 ＋ 他所得0 - 赤字0</span>
                 </div>
-                <span class="text-base font-bold font-mono text-white" id="step1-val">4,360,000 円</span>
+                <span class="text-base font-bold font-mono text-foreground" id="step1-val">4,360,000 円</span>
               </div>
 
-              <div class="p-2.5 rounded-lg bg-surface/60 border border-glass flex justify-between items-center">
+              <div class="p-2.5 rounded-lg bg-surface border border-glass flex justify-between items-center">
                 <div>
-                  <span class="font-bold block text-sm text-indigo-300">Step 2: 課税総所得金額</span>
+                  <span class="font-bold block text-sm text-indigo-700 dark:text-indigo-300">Step 2: 課税総所得金額</span>
                   <span class="text-muted">総所得金額 － 所得控除合計</span>
                 </div>
-                <span class="text-base font-bold font-mono text-white" id="step2-val">3,160,000 円</span>
+                <span class="text-base font-bold font-mono text-foreground" id="step2-val">3,160,000 円</span>
               </div>
 
-              <div class="p-2.5 rounded-lg bg-surface/60 border border-glass">
+              <div class="p-2.5 rounded-lg bg-surface border border-glass">
                 <div class="flex justify-between items-center mb-1">
                   <div>
-                    <span class="font-bold block text-sm text-indigo-300">Step 3 & 4: 超過累進税率・算出税額</span>
+                    <span class="font-bold block text-sm text-indigo-700 dark:text-indigo-300">Step 3 & 4: 超過累進税率・算出税額</span>
                     <span class="text-muted" id="step3-sub">税率 10% ／ 控除額 9.75万円</span>
                   </div>
-                  <span class="text-base font-bold font-mono text-emerald-400" id="step3-val">218,500 円</span>
+                  <span class="text-base font-bold font-mono text-emerald-600 dark:text-emerald-400" id="step3-val">218,500 円</span>
                 </div>
               </div>
 
-              <div class="p-2.5 rounded-lg bg-gradient-to-r from-emerald-950/60 to-indigo-950/60 border border-emerald-500/40">
+              <div class="p-2.5 rounded-lg bg-gradient-to-r from-emerald-600 to-indigo-600 text-white shadow-md">
                 <div class="flex justify-between items-center">
                   <div>
-                    <span class="font-bold block text-sm text-emerald-300">Step 5: 最終納付所得税額</span>
-                    <span class="text-muted" id="step5-sub">算出税額21.85万 － 税額控除10万円</span>
+                    <span class="font-bold block text-sm text-emerald-100">Step 5: 最終納付所得税額</span>
+                    <span class="text-emerald-100/90 text-xs" id="step5-sub">算出税額21.85万 － 税額控除10万円</span>
                   </div>
                   <span class="text-xl font-extrabold font-mono text-white" id="step5-val">118,500 円</span>
                 </div>

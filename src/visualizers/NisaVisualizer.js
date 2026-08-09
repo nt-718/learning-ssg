@@ -11,55 +11,55 @@ export function renderNisaVisualizer(container) {
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <!-- つみたて投資枠 -->
-        <div class="p-5 rounded-xl bg-gradient-to-b from-emerald-950/40 to-card-bg border border-emerald-500/30">
-          <div class="flex items-center justify-between mb-3 border-b border-emerald-500/20 pb-2">
-            <span class="text-xs font-bold text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/20">枠①</span>
-            <h4 class="text-lg font-bold text-emerald-300">つみたて投資枠</h4>
+        <div class="p-5 rounded-xl bg-emerald-50 border border-emerald-200 dark:bg-emerald-950/40 dark:border-emerald-500/30 shadow-sm">
+          <div class="flex items-center justify-between mb-3 border-b border-emerald-200 dark:border-emerald-500/20 pb-2">
+            <span class="text-xs font-bold text-emerald-800 dark:text-emerald-400 px-2 py-0.5 rounded bg-emerald-200/60 dark:bg-emerald-500/20">枠①</span>
+            <h4 class="text-lg font-bold text-emerald-800 dark:text-emerald-300">つみたて投資枠</h4>
           </div>
           
           <ul class="space-y-2 text-xs text-muted">
             <li class="flex justify-between border-b border-glass pb-1">
               <span>年間投資枠上限:</span>
-              <span class="font-bold text-white font-mono">120 万円 / 年</span>
+              <span class="font-bold text-foreground font-mono">120 万円 / 年</span>
             </li>
             <li class="flex justify-between border-b border-glass pb-1">
               <span>投資方法:</span>
-              <span class="font-bold text-white">定期かつ継続的な積立のみ</span>
+              <span class="font-bold text-foreground">定期かつ継続的な積立のみ</span>
             </li>
             <li class="flex justify-between border-b border-glass pb-1">
               <span>対象商品:</span>
-              <span class="font-bold text-white">長期・積立・分散に適した公募投資信託</span>
+              <span class="font-bold text-foreground">長期・積立・分散に適した公募投資信託</span>
             </li>
             <li class="flex justify-between">
               <span>非課税保有期間:</span>
-              <span class="font-bold text-emerald-400">無期限化</span>
+              <span class="font-bold text-emerald-600 dark:text-emerald-400">無期限化</span>
             </li>
           </ul>
         </div>
 
         <!-- 成長投資枠 -->
-        <div class="p-5 rounded-xl bg-gradient-to-b from-indigo-950/40 to-card-bg border border-indigo-500/30">
-          <div class="flex items-center justify-between mb-3 border-b border-indigo-500/20 pb-2">
-            <span class="text-xs font-bold text-indigo-400 px-2 py-0.5 rounded bg-indigo-500/20">枠②</span>
-            <h4 class="text-lg font-bold text-indigo-300">成長投資枠</h4>
+        <div class="p-5 rounded-xl bg-indigo-50 border border-indigo-200 dark:bg-indigo-950/40 dark:border-indigo-500/30 shadow-sm">
+          <div class="flex items-center justify-between mb-3 border-b border-indigo-200 dark:border-indigo-500/20 pb-2">
+            <span class="text-xs font-bold text-indigo-800 dark:text-indigo-400 px-2 py-0.5 rounded bg-indigo-200/60 dark:bg-indigo-500/20">枠②</span>
+            <h4 class="text-lg font-bold text-indigo-800 dark:text-indigo-300">成長投資枠</h4>
           </div>
 
           <ul class="space-y-2 text-xs text-muted">
             <li class="flex justify-between border-b border-glass pb-1">
               <span>年間投資枠上限:</span>
-              <span class="font-bold text-white font-mono">240 万円 / 年</span>
+              <span class="font-bold text-foreground font-mono">240 万円 / 年</span>
             </li>
             <li class="flex justify-between border-b border-glass pb-1">
               <span>投資方法:</span>
-              <span class="font-bold text-white">一括購入 ＆ 積立の両方可能</span>
+              <span class="font-bold text-foreground">一括購入 ＆ 積立の両方可能</span>
             </li>
             <li class="flex justify-between border-b border-glass pb-1">
               <span>対象商品:</span>
-              <span class="font-bold text-white">上場株式・公募投信等 (デリバティブ等除く)</span>
+              <span class="font-bold text-foreground">上場株式・公募投信等 (デリバティブ等除く)</span>
             </li>
             <li class="flex justify-between">
               <span>非課税保有期間:</span>
-              <span class="font-bold text-indigo-300">無期限化</span>
+              <span class="font-bold text-indigo-600 dark:text-indigo-300">無期限化</span>
             </li>
           </ul>
         </div>

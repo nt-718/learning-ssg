@@ -47,6 +47,7 @@ jspm_packages/
 
 # Build & Cache outputs
 dist/
+public/
 dist-ssr/
 .cache/
 .vite/

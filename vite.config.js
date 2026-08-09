@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
+  base: process.env.VITE_BASE_PATH || '/',
   root: '.',
-  publicDir: 'images',
+  publicDir: 'public',
   server: {
     port: 3000,
     open: false

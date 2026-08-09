@@ -10,19 +10,19 @@ export function renderPensionSimulator(container) {
       </div>
 
       <!-- Pension 2-layer structure visualization -->
-      <div class="mb-6 p-4 bg-card-bg rounded-xl border border-glass">
+      <div class="mb-6 p-4 bg-card-bg rounded-xl border border-glass shadow-sm">
         <h4 class="font-bold text-md mb-2 text-accent">⛩️ 日本の公的年金の「2階建て」構造</h4>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-          <div class="p-3 rounded-lg bg-amber-950/30 border border-amber-500/30">
-            <div class="font-bold text-amber-400 text-sm mb-1">【3階】私的年金</div>
+          <div class="p-3 rounded-lg bg-amber-50 border border-amber-200 dark:bg-amber-950/30 dark:border-amber-500/30">
+            <div class="font-bold text-amber-800 dark:text-amber-400 text-sm mb-1">【3階】私的年金</div>
             <p class="text-muted">iDeCo、企業型DC、確定給付企業年金 (DB)</p>
           </div>
-          <div class="p-3 rounded-lg bg-indigo-950/40 border border-indigo-500/40">
-            <div class="font-bold text-indigo-300 text-sm mb-1">【2階】厚生年金保険</div>
+          <div class="p-3 rounded-lg bg-indigo-50 border border-indigo-200 dark:bg-indigo-950/40 dark:border-indigo-500/40">
+            <div class="font-bold text-indigo-800 dark:text-indigo-300 text-sm mb-1">【2階】厚生年金保険</div>
             <p class="text-muted">会社員・公務員（第2号被保険者）が加入。報酬比例給付</p>
           </div>
-          <div class="p-3 rounded-lg bg-blue-950/40 border border-blue-500/40">
-            <div class="font-bold text-blue-300 text-sm mb-1">【1階】国民年金 (基礎年金)</div>
+          <div class="p-3 rounded-lg bg-blue-50 border border-blue-200 dark:bg-blue-950/40 dark:border-blue-500/40">
+            <div class="font-bold text-blue-800 dark:text-blue-300 text-sm mb-1">【1階】国民年金 (基礎年金)</div>
             <p class="text-muted">20歳以上60歳未満の全員。満額約81.6万円/年 (2026年基準)</p>
           </div>
         </div>
@@ -30,7 +30,7 @@ export function renderPensionSimulator(container) {
 
       <!-- Interactive Pension Age Slider -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="calc-panel p-5 bg-card-bg rounded-xl border border-glass">
+        <div class="calc-panel p-5 bg-card-bg rounded-xl border border-glass shadow-sm">
           <h4 class="font-bold text-md mb-4 text-accent border-b border-glass pb-2">受給開始条件の設定</h4>
 
           <div class="form-group mb-4">
@@ -51,7 +51,7 @@ export function renderPensionSimulator(container) {
             </div>
           </div>
 
-          <div class="p-3 rounded-lg bg-surface/50 border border-glass text-xs space-y-1">
+          <div class="p-3 rounded-lg bg-surface border border-glass text-xs space-y-1">
             <div class="flex justify-between">
               <span class="text-muted">増減率の基準:</span>
               <span class="font-bold" id="pension-rate-label">0.0% (増減なし)</span>
@@ -68,28 +68,28 @@ export function renderPensionSimulator(container) {
         </div>
 
         <!-- Result & Break-even analysis -->
-        <div class="result-panel p-5 bg-card-bg rounded-xl border border-glass flex flex-col justify-between">
+        <div class="result-panel p-5 bg-card-bg rounded-xl border border-glass shadow-sm flex flex-col justify-between">
           <div>
             <h4 class="font-bold text-md mb-3 text-accent border-b border-glass pb-2">受給額 & 損益分岐点</h4>
 
-            <div class="result-highlight my-3 p-4 rounded-xl bg-gradient-to-r from-blue-900/50 to-indigo-900/50 border border-indigo-500/30">
-              <div class="text-xs text-indigo-300 mb-1" id="pension-result-title">65歳から受給開始する場合</div>
+            <div class="result-highlight my-3 p-4 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white shadow-md">
+              <div class="text-xs text-indigo-100 mb-1 font-medium" id="pension-result-title">65歳から受給開始する場合</div>
               <div class="text-3xl font-extrabold text-white" id="pension-monthly-val">16.0 万円 / 月</div>
-              <div class="text-xs text-indigo-200 mt-1" id="pension-yearly-val">年間: 192.0 万円</div>
+              <div class="text-xs text-indigo-100 mt-1" id="pension-yearly-val">年間: 192.0 万円</div>
             </div>
 
             <div class="space-y-2 text-xs">
-              <div class="p-2 rounded bg-surface/50 flex justify-between">
+              <div class="p-2.5 rounded-lg bg-surface flex justify-between">
                 <span>80歳時点の累積受給額:</span>
-                <span class="font-bold font-mono" id="pension-cum-80">2,880 万円</span>
+                <span class="font-bold font-mono text-foreground" id="pension-cum-80">2,880 万円</span>
               </div>
-              <div class="p-2 rounded bg-surface/50 flex justify-between">
+              <div class="p-2.5 rounded-lg bg-surface flex justify-between">
                 <span>85歳時点の累積受給額:</span>
-                <span class="font-bold font-mono" id="pension-cum-85">3,840 万円</span>
+                <span class="font-bold font-mono text-foreground" id="pension-cum-85">3,840 万円</span>
               </div>
-              <div class="p-2 rounded bg-surface/50 flex justify-between">
+              <div class="p-2.5 rounded-lg bg-surface flex justify-between">
                 <span>90歳時点の累積受給額:</span>
-                <span class="font-bold font-mono" id="pension-cum-90">4,800 万円</span>
+                <span class="font-bold font-mono text-foreground" id="pension-cum-90">4,800 万円</span>
               </div>
             </div>
           </div>

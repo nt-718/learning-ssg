@@ -3,7 +3,6 @@ id: "intro"
 number: 0
 title: "はじめに"
 summary: "本書の使い方と学習概要"
-visualizers: []
 ---
 
 # はじめに

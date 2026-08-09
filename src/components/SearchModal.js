@@ -1,24 +1,21 @@
 // Full-text search modal component
 
-import { CHAPTERS } from '../data/contentData.js';
-import { QUIZ_QUESTIONS } from '../data/quizData.js';
-
-export function renderSearchModal(container, { onClose, onSelectResult }) {
+export function renderSearchModal(container, { chapters = [], quizQuestions = [], onClose, onSelectResult }) {
   container.innerHTML = `
-    <div id="search-overlay" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-start justify-center pt-16 px-4 animate-fade-in">
+    <div id="search-overlay" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-start justify-center pt-16 px-4 animate-fade-in">
       <div class="w-full max-w-2xl bg-card-bg border border-glass rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
         
         <!-- Search Input Header -->
         <div class="p-4 border-b border-glass flex items-center gap-3">
-          <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          <input 
-            type="text" 
-            id="search-input" 
-            class="w-full bg-transparent border-none text-white text-base focus:outline-none placeholder-muted" 
-            placeholder="キーワード・制度名・数式・問題を入力 (例: NISA, 損益通算, 6係数)..." 
+          <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"></path></svg>
+          <input
+            type="text"
+            id="search-input"
+            class="w-full bg-transparent border-none text-foreground text-base focus:outline-none placeholder-muted"
+            placeholder="キーワード・制度名・問題を入力..."
             autofocus
           >
-          <button id="btn-close-search" class="p-1 rounded text-muted hover:text-white transition">
+          <button id="btn-close-search" class="p-1 rounded text-muted hover:text-foreground transition">
             ✕
           </button>
         </div>
@@ -26,13 +23,13 @@ export function renderSearchModal(container, { onClose, onSelectResult }) {
         <!-- Search Results List -->
         <div id="search-results" class="p-4 overflow-y-auto space-y-3 flex-1">
           <div class="text-center py-8 text-xs text-muted">
-            キーワードを入力すると参考書本文（全11章）および演習問題（全160問）から即座に検索します
+            キーワードを入力すると本文および演習問題から即座に全文検索します
           </div>
         </div>
 
         <div class="p-3 border-t border-glass bg-surface/40 text-[11px] text-muted flex justify-between items-center">
           <span>Escキーで閉じる</span>
-          <span>FP技能士 3級→2級 合格参考書</span>
+          <span>学習検索</span>
         </div>
       </div>
     </div>
@@ -65,26 +62,27 @@ export function renderSearchModal(container, { onClose, onSelectResult }) {
     if (!q) {
       resultsDiv.innerHTML = `
         <div class="text-center py-8 text-xs text-muted">
-          キーワードを入力すると参考書本文（全11章）および演習問題（全160問）から即座に検索します
+          キーワードを入力すると本文および演習問題から即座に全文検索します
         </div>
       `;
       return;
     }
 
     const matchedChs = [];
-    CHAPTERS.forEach(ch => {
-      if (ch.title.toLowerCase().includes(q) || ch.content.toLowerCase().includes(q)) {
-        // Find match snippet
-        const idx = ch.content.toLowerCase().indexOf(q);
+    chapters.forEach(ch => {
+      if ((ch.title && ch.title.toLowerCase().includes(q)) || (ch.content && ch.content.toLowerCase().includes(q))) {
+        const idx = ch.content ? ch.content.toLowerCase().indexOf(q) : -1;
         const start = Math.max(0, idx - 40);
-        const end = Math.min(ch.content.length, idx + 80);
-        const snippet = ch.content.slice(start, end).replace(/\n/g, ' ');
-        matchedChs.append ? matchedChs.append() : matchedChs.push({ ch, snippet });
+        const end = Math.min(ch.content ? ch.content.length : 0, idx + 80);
+        const snippet = ch.content ? ch.content.slice(start, end).replace(/\n/g, ' ') : '';
+        matchedChs.push({ ch, snippet });
       }
     });
 
-    const matchedQuizzes = QUIZ_QUESTIONS.filter(qz => 
-      qz.question.toLowerCase().includes(q) || qz.explanation.toLowerCase().includes(q) || qz.qNumber.toLowerCase().includes(q)
+    const matchedQuizzes = quizQuestions.filter(qz =>
+      (qz.question && qz.question.toLowerCase().includes(q)) ||
+      (qz.explanation && qz.explanation.toLowerCase().includes(q)) ||
+      (qz.qNumber && qz.qNumber.toLowerCase().includes(q))
     );
 
     if (matchedChs.length === 0 && matchedQuizzes.length === 0) {
@@ -107,7 +105,7 @@ export function renderSearchModal(container, { onClose, onSelectResult }) {
                 data-type="ch"
                 data-id="${m.ch.id}"
               >
-                <div class="text-xs font-bold text-white mb-1">${m.ch.title}</div>
+                <div class="text-xs font-bold text-foreground mb-1">${m.ch.title}</div>
                 <div class="text-[11px] text-muted truncate">...${m.snippet}...</div>
               </div>
             `).join('')}
@@ -117,7 +115,7 @@ export function renderSearchModal(container, { onClose, onSelectResult }) {
 
       ${matchedQuizzes.length > 0 ? `
         <div>
-          <div class="text-[11px] font-bold uppercase text-emerald-400 mb-2">演習問題ヒット (${matchedQuizzes.length}件)</div>
+          <div class="text-[11px] font-bold uppercase text-emerald-600 dark:text-emerald-400 mb-2">演習問題ヒット (${matchedQuizzes.length}件)</div>
           <div class="space-y-2">
             ${matchedQuizzes.slice(0, 5).map(qz => `
               <div 
@@ -126,8 +124,8 @@ export function renderSearchModal(container, { onClose, onSelectResult }) {
                 data-id="${qz.id}"
               >
                 <div class="flex justify-between text-xs font-bold mb-1">
-                  <span class="text-white">${qz.chapterTitle} (${qz.qNumber})</span>
-                  <span class="text-emerald-400 text-[10px]">${qz.level}</span>
+                  <span class="text-foreground">${qz.chapterTitle || ''} (${qz.qNumber || ''})</span>
+                  <span class="text-emerald-600 dark:text-emerald-400 text-[10px]">${qz.level || ''}</span>
                 </div>
                 <div class="text-[11px] text-muted truncate">${qz.question}</div>
               </div>

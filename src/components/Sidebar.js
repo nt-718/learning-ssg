@@ -1,125 +1,97 @@
-// Sidebar navigation component
-
-import { CHAPTERS } from '../data/contentData.js';
 import { Storage } from '../utils/storage.js';
 
-export function renderSidebar(container, { activeView, activeChapterId, activeToolId, onSelectView }) {
+export function renderSidebar(container, { chapters = [], courseConfig = {}, activeView, activeChapterId, onSelectView, onClose, mode = 'sidebar' }) {
   const readChapters = Storage.getReadChapters();
   const wrongCount = Storage.getWrongQuestions().length;
+  const categories = courseConfig.categories || {};
+  const courseChIds = chapters.map(ch => ch.id);
+  const readCount = readChapters.filter(id => courseChIds.includes(id)).length;
+  const progressPct = chapters.length > 0 ? Math.min(100, Math.round((readCount / chapters.length) * 100)) : 0;
+  const courseMark = courseConfig.id?.includes('takken') || courseConfig.title?.includes('宅建') ? '宅' : 'FP';
 
-  const toolsList = [
-    { id: 'six_coefficients', title: '⚡ 6係数 電卓 & 診断', badge: '第1章' },
-    { id: 'pension_sim', title: '🏛️ 公的年金 繰上/繰下試算', badge: '第2章' },
-    { id: 'tax_calc', title: '🗻 富士山 損益通算 & 税金', badge: '第5章' },
-    { id: 'real_estate_sim', title: '🏙️ 建蔽率・容積率 2D', badge: '第6章' },
-    { id: 'nisa_map', title: '🌱 新NISA 制度マップ', badge: '第4章' },
-    { id: 'inheritance_tree', title: '🌳 法定相続分 & 控除ツリー', badge: '第7章' }
-  ];
+  const getChapterLabel = (chapter, index) => {
+    if (chapter.id === 'intro') return '序';
+    return String(chapter.number ?? index).padStart(2, '0');
+  };
 
   container.innerHTML = `
-    <aside class="sidebar-nav w-64 bg-sidebar-bg border-r border-glass flex flex-col h-full overflow-y-auto">
-      <div class="p-4 space-y-6">
-        
-        <!-- Main Navigation Section -->
+    <aside class="sidebar-nav ${mode === 'page' ? 'toc-page' : ''}">
+      <div class="sidebar-header">
         <div>
-          <div class="text-[11px] font-bold uppercase tracking-wider text-muted mb-2 px-2">参考書 本文 (全11章)</div>
-          <nav class="space-y-1">
-            ${CHAPTERS.map(ch => {
-              const isRead = readChapters.includes(ch.id);
-              const isActive = activeView === 'chapter' && activeChapterId === ch.id;
-              return `
-                <button 
-                  class="nav-item w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left transition ${isActive ? 'bg-primary/30 text-accent font-bold border border-primary/40' : 'hover:bg-surface/50 text-foreground'}"
-                  data-ch-id="${ch.id}"
-                >
-                  <span class="truncate flex-1">${ch.shortTitle}</span>
-                  ${isRead ? '<span class="text-emerald-400 text-xs font-bold ml-1">✓</span>' : ''}
-                </button>
-              `;
-            }).join('')}
-          </nav>
+          <span class="sidebar-eyebrow">LEARNING SSG</span>
+          <h2>目次</h2>
         </div>
-
-        <!-- Interactive Simulators Section -->
-        <div>
-          <div class="text-[11px] font-bold uppercase tracking-wider text-accent mb-2 px-2 flex items-center gap-1">
-            <span>🛠️ インタラクティブ図解・工具</span>
-          </div>
-          <nav class="space-y-1">
-            ${toolsList.map(t => {
-              const isActive = activeView === 'tool' && activeToolId === t.id;
-              return `
-                <button 
-                  class="nav-item w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left transition ${isActive ? 'bg-indigo-600/30 text-indigo-300 font-bold border border-indigo-500/40' : 'hover:bg-surface/50 text-muted hover:text-white'}"
-                  data-tool-id="${t.id}"
-                >
-                  <span class="truncate flex-1">${t.title}</span>
-                  <span class="text-[9px] px-1.5 py-0.5 rounded bg-surface border border-glass text-muted">${t.badge}</span>
-                </button>
-              `;
-            }).join('')}
-          </nav>
-        </div>
-
-        <!-- Problem Sets & Quiz Section -->
-        <div>
-          <div class="text-[11px] font-bold uppercase tracking-wider text-muted mb-2 px-2">問題演習・復習</div>
-          <nav class="space-y-1">
-            <button 
-              class="nav-quiz-item w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left transition ${activeView === 'quiz' ? 'bg-emerald-600/30 text-emerald-300 font-bold border border-emerald-500/40' : 'hover:bg-surface/50 text-muted hover:text-white'}"
-              data-quiz-filter="all"
-            >
-              <span class="flex items-center gap-2">
-                <span>📝 全160問 演習モード</span>
-              </span>
-            </button>
-
-            <button 
-              class="nav-quiz-item w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left hover:bg-surface/50 text-muted hover:text-white transition"
-              data-quiz-filter="3級"
-            >
-              <span>3級 基礎問題のみ</span>
-            </button>
-
-            <button 
-              class="nav-quiz-item w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left hover:bg-surface/50 text-muted hover:text-white transition"
-              data-quiz-filter="2級"
-            >
-              <span>2級 深掘り問題のみ</span>
-            </button>
-
-            <button 
-              class="nav-quiz-item w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left hover:bg-surface/50 text-amber-300 transition"
-              data-quiz-filter="wrong"
-            >
-              <span class="flex items-center justify-between w-full">
-                <span>⚠️ 要復習ノート</span>
-                ${wrongCount > 0 ? `<span class="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-amber-400 font-bold text-[10px]">${wrongCount}</span>` : ''}
-              </span>
-            </button>
-          </nav>
-        </div>
-
+        ${mode === 'sidebar' ? `
+          <button id="btn-sidebar-close" class="sidebar-close-button" aria-label="目次を閉じる">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        ` : ''}
       </div>
+
+      <div class="sidebar-course">
+        <div class="sidebar-course-top">
+          <div class="sidebar-book-mark" aria-hidden="true">${courseMark}</div>
+          <div class="sidebar-course-copy">
+            <span>学習中の教材</span>
+            <strong>${courseConfig.title || '合格参考書'}</strong>
+          </div>
+        </div>
+        <div class="sidebar-progress-label">
+          <span>学習進捗</span>
+          <strong>${readCount}/${chapters.length}章 · ${progressPct}%</strong>
+        </div>
+        <div class="sidebar-progress-track" aria-hidden="true"><div style="width:${progressPct}%"></div></div>
+        <button id="btn-sidebar-portal" class="sidebar-switch-button">教材を切り替える</button>
+      </div>
+
+      <section class="sidebar-section" aria-labelledby="sidebar-chapters-title">
+        <div class="sidebar-section-heading">
+          <h3 id="sidebar-chapters-title">章一覧</h3>
+          <span>${chapters.length}章</span>
+        </div>
+        <nav class="sidebar-chapter-list">
+          ${chapters.map((chapter, index) => {
+            const isRead = readChapters.includes(chapter.id);
+            const isActive = (activeView === 'chapter' || activeView === 'toc') && activeChapterId === chapter.id;
+            const category = categories[chapter.id] || '';
+            return `
+              <button class="sidebar-chapter-item ${isActive ? 'is-active' : ''} ${isRead ? 'is-read' : ''}" data-ch-id="${chapter.id}">
+                <span class="sidebar-chapter-index">${getChapterLabel(chapter, index)}</span>
+                <span class="sidebar-chapter-copy">
+                  <strong>${chapter.shortTitle || chapter.title}</strong>
+                  ${category ? `<small>${category}</small>` : ''}
+                </span>
+                ${isRead ? '<span class="sidebar-read-check" aria-label="読了済み">✓</span>' : '<span class="sidebar-chevron" aria-hidden="true">›</span>'}
+              </button>
+            `;
+          }).join('')}
+        </nav>
+      </section>
+
+      <section class="sidebar-section sidebar-practice" aria-labelledby="sidebar-practice-title">
+        <div class="sidebar-section-heading">
+          <h3 id="sidebar-practice-title">問題演習</h3>
+        </div>
+        <nav>
+          <button class="sidebar-practice-item ${activeView === 'quiz' ? 'is-active' : ''}" data-quiz-filter="all">
+            <span>すべての問題</span><span>›</span>
+          </button>
+          <button class="sidebar-practice-item" data-quiz-filter="3級"><span>3級 基礎問題</span><span>›</span></button>
+          <button class="sidebar-practice-item" data-quiz-filter="2級"><span>2級 応用問題</span><span>›</span></button>
+          <button class="sidebar-practice-item" data-quiz-filter="wrong">
+            <span>要復習</span><span>${wrongCount > 0 ? wrongCount : '›'}</span>
+          </button>
+        </nav>
+      </section>
     </aside>
   `;
 
-  // Attach handlers
+  container.querySelector('#btn-sidebar-close')?.addEventListener('click', () => onClose?.());
+  container.querySelector('#btn-sidebar-portal')?.addEventListener('click', () => onSelectView('course_select'));
   container.querySelectorAll('[data-ch-id]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      onSelectView('chapter', btn.dataset.chId);
-    });
+    btn.addEventListener('click', () => onSelectView('chapter', btn.dataset.chId));
   });
-
-  container.querySelectorAll('[data-tool-id]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      onSelectView('tool', btn.dataset.toolId);
-    });
-  });
-
   container.querySelectorAll('[data-quiz-filter]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      onSelectView('quiz', btn.dataset.quizFilter);
-    });
+    btn.addEventListener('click', () => onSelectView('quiz', btn.dataset.quizFilter));
   });
 }

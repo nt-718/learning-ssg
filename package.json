@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "ssg": "node scripts/ssg.js",
-    "build": "node scripts/ssg.js build financial_planner",
+    "build": "node scripts/ssg.js build financial_planner && vite build",
+    "build:data": "node scripts/ssg.js build financial_planner",
     "serve": "node scripts/ssg.js serve financial_planner",
     "list": "node scripts/ssg.js list",
     "new": "node scripts/ssg.js new",

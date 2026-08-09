@@ -20,6 +20,55 @@ const args = process.argv.slice(2);
 const command = args[0] || 'build';
 const courseIdArg = args[1] || 'financial_planner';
 
+function readCategoryConfig(categoryPath, categoryId) {
+  const configPath = path.join(categoryPath, 'category.toml');
+  const config = fs.existsSync(configPath)
+    ? parseToml(fs.readFileSync(configPath, 'utf-8'))
+    : {};
+  return {
+    id: config.id || categoryId,
+    title: config.title || categoryId,
+    order: Number.isFinite(config.order) ? config.order : 999
+  };
+}
+
+function discoverCourses() {
+  if (!fs.existsSync(COURSES_DIR)) return [];
+  const entries = [];
+  const topLevelDirs = fs.readdirSync(COURSES_DIR)
+    .filter(name => fs.statSync(path.join(COURSES_DIR, name)).isDirectory())
+    .sort();
+
+  topLevelDirs.forEach(name => {
+    const topPath = path.join(COURSES_DIR, name);
+    if (fs.existsSync(path.join(topPath, 'course.toml'))) {
+      entries.push({
+        directoryId: name,
+        coursePath: topPath,
+        category: { id: 'uncategorized', title: 'その他', order: 999 }
+      });
+      return;
+    }
+
+    const category = readCategoryConfig(topPath, name);
+    fs.readdirSync(topPath)
+      .filter(child => {
+        const childPath = path.join(topPath, child);
+        return fs.statSync(childPath).isDirectory() && fs.existsSync(path.join(childPath, 'course.toml'));
+      })
+      .sort()
+      .forEach(child => {
+        entries.push({ directoryId: child, coursePath: path.join(topPath, child), category });
+      });
+  });
+
+  return entries.sort((a, b) =>
+    a.category.order - b.category.order ||
+    a.category.title.localeCompare(b.category.title, 'ja') ||
+    a.directoryId.localeCompare(b.directoryId, 'ja')
+  );
+}
+
 function main() {
   console.log(`\n🚀 [Learning SSG] Executing command: '${command}'...\n`);
 
@@ -46,125 +95,143 @@ function main() {
 }
 
 // 1. BUILD COMMAND
-function buildCourse(courseId) {
-  const coursePath = path.join(COURSES_DIR, courseId);
-  if (!fs.existsSync(coursePath)) {
-    console.error(`❌ Course directory not found: ${coursePath}`);
+function buildCourse(targetCourseId) {
+  if (!fs.existsSync(COURSES_DIR)) {
+    console.error(`❌ Courses directory not found: ${COURSES_DIR}`);
     process.exit(1);
   }
 
-  console.log(`📦 Building course '${courseId}' from ${coursePath}...`);
+  const courseEntries = discoverCourses();
 
-  // Parse course.toml
-  const tomlFile = path.join(coursePath, 'course.toml');
-  let courseConfig = { id: courseId, title: courseId };
-  if (fs.existsSync(tomlFile)) {
-    courseConfig = parseToml(fs.readFileSync(tomlFile, 'utf-8'));
-  }
+  console.log(`📦 Building ${courseEntries.length} course(s)...`);
 
-  // Parse all markdown files
-  const files = fs.readdirSync(coursePath).filter(f => f.endsWith('.md')).sort();
-  const chapters = [];
-  const quizQuestions = [];
+  const allCoursesData = {};
 
-  files.forEach((file, index) => {
-    const raw = fs.readFileSync(path.join(coursePath, file), 'utf-8');
-    const { metadata, body } = parseFrontmatter(raw);
+  courseEntries.forEach(({ directoryId, coursePath, category }) => {
+    const tomlFile = path.join(coursePath, 'course.toml');
+    let courseConfig = { id: directoryId, title: directoryId };
+    if (fs.existsSync(tomlFile)) {
+      courseConfig = parseToml(fs.readFileSync(tomlFile, 'utf-8'));
+    }
+    const courseId = courseConfig.id || directoryId;
+    courseConfig.id = courseId;
+    courseConfig.category = category;
 
-    const chId = metadata.id || `ch${index.toString().padStart(2, '0')}`;
-    const firstHeader = (body.match(/^#\s+(.*)/m) || [])[1] || file;
-    const title = metadata.title || firstHeader;
+    if (allCoursesData[courseId]) {
+      throw new Error(`Duplicate course id '${courseId}' found in ${coursePath}`);
+    }
 
-    // Extract H2 sections
-    const secMatches = [...body.matchAll(/^##\s+(.*)/gm)];
-    const sections = secMatches.map((m, sIdx) => ({
-      id: `${chId}_sec_${sIdx + 1}`,
-      title: m[1].trim()
-    }));
+    const files = fs.readdirSync(coursePath).filter(f => f.endsWith('.md')).sort();
+    const chapters = [];
+    const quizQuestions = [];
 
-    chapters.append ? chapters.append() : chapters.push({
-      id: chId,
-      number: metadata.number ?? index,
-      title: title,
-      shortTitle: metadata.short_title || title.replace(/^第[0-9]+章\s*/, ''),
-      summary: metadata.summary || '',
-      sections: sections,
-      content: body
+    files.forEach((file, index) => {
+      const raw = fs.readFileSync(path.join(coursePath, file), 'utf-8');
+      const { metadata, body } = parseFrontmatter(raw);
+
+      const chId = metadata.id || `ch${index.toString().padStart(2, '0')}`;
+      const firstHeader = (body.match(/^#\s+(.*)/m) || [])[1] || file;
+      const title = metadata.title || firstHeader;
+
+      const secMatches = [...body.matchAll(/^##\s+(.*)/gm)];
+      const sections = secMatches.map((m, sIdx) => ({
+        id: `${chId}_sec_${sIdx + 1}`,
+        title: m[1].trim()
+      }));
+
+      chapters.push({
+        id: chId,
+        number: metadata.number ?? index,
+        title: title,
+        shortTitle: metadata.short_title || title.replace(/^第[0-9]+章\s*/, ''),
+        summary: metadata.summary || '',
+        sections: sections,
+        content: body
+      });
+
+      extractQuestionsFromMarkdown(body, chId, title, quizQuestions);
     });
 
-    // Extract quiz questions (Chapter 1-8 end-of-chapter questions & Chapter 11 questions)
-    extractQuestionsFromMarkdown(body, chId, title, quizQuestions);
+    chapters.sort((a, b) => a.number - b.number);
+
+    allCoursesData[courseId] = {
+      config: courseConfig,
+      chapters: chapters,
+      quizQuestions: quizQuestions
+    };
+
+    console.log(`  ✓ [${category.title}] ${courseId}: ${chapters.length} chapters, ${quizQuestions.length} questions.`);
+
+    // Sync image assets for each course
+    const courseImgDir = path.join(coursePath, 'images');
+    const srcImgDir = path.join(ROOT_DIR, 'public', 'images');
+    if (fs.existsSync(courseImgDir)) {
+      fs.mkdirSync(srcImgDir, { recursive: true });
+      fs.cpSync(courseImgDir, srcImgDir, { recursive: true });
+    }
   });
 
-  // Sort chapters by number
-  chapters.sort((a, b) => a.number - b.number);
-
-  console.log(`✅ Parsed ${chapters.length} chapter files and ${quizQuestions.length} practice questions.`);
-
-  // Write dataset JS files
   const dataDir = path.join(ROOT_DIR, 'src', 'data');
   fs.mkdirSync(dataDir, { recursive: true });
 
+  const courseIds = Object.keys(allCoursesData);
+  if (courseIds.length === 0) {
+    throw new Error('No courses found. Expected courses/<category>/<course>/course.toml');
+  }
+  const activeId = allCoursesData[targetCourseId] ? targetCourseId : courseIds[0];
+  const defaultCourse = allCoursesData[activeId];
+
+  fs.writeFileSync(
+    path.join(dataDir, 'coursesData.js'),
+    `export const ALL_COURSES = ${JSON.stringify(allCoursesData, null, 2)};\nexport const DEFAULT_COURSE_ID = ${JSON.stringify(activeId)};\n`
+  );
+
   fs.writeFileSync(
     path.join(dataDir, 'contentData.js'),
-    `export const CHAPTERS = ${JSON.stringify(chapters, null, 2)};\nexport const COURSE_CONFIG = ${JSON.stringify(courseConfig, null, 2)};\n`
+    `export const CHAPTERS = ${JSON.stringify(defaultCourse.chapters, null, 2)};\nexport const COURSE_CONFIG = ${JSON.stringify(defaultCourse.config, null, 2)};\n`
   );
 
   fs.writeFileSync(
     path.join(dataDir, 'quizData.js'),
-    `export const QUIZ_QUESTIONS = ${JSON.stringify(quizQuestions, null, 2)};\n`
+    `export const QUIZ_QUESTIONS = ${JSON.stringify(defaultCourse.quizQuestions, null, 2)};\n`
   );
 
-  // Sync image assets
-  const courseImgDir = path.join(coursePath, 'images');
-  const srcImgDir = path.join(ROOT_DIR, 'images');
-  if (fs.existsSync(courseImgDir)) {
-    fs.mkdirSync(srcImgDir, { recursive: true });
-    fs.cpSync(courseImgDir, srcImgDir, { recursive: true });
-  }
-
-  // Execute Vite build
-  console.log(`⚡ Running Vite build for AWS S3 static deployment...`);
-  try {
-    execSync('npx vite build', { cwd: ROOT_DIR, stdio: 'inherit' });
-    
-    // Copy images to dist/images
-    const distImgDir = path.join(ROOT_DIR, 'dist', 'images');
-    if (fs.existsSync(courseImgDir)) {
-      fs.mkdirSync(distImgDir, { recursive: true });
-      fs.cpSync(courseImgDir, distImgDir, { recursive: true });
-    }
-
-    console.log(`\n🎉 [Learning SSG] BUILD SUCCESSFUL!`);
-    console.log(`📁 Production bundle ready in dist/ directory for S3 hosting.\n`);
-  } catch (err) {
-    console.error(`❌ Vite build failed:`, err.message);
-    process.exit(1);
-  }
+  console.log(`\n🎉 [Learning SSG] Successfully bundled all courses into src/data/coursesData.js!`);
 }
 
 // 2. NEW COURSE COMMAND
-function newCourse(courseId, courseTitle) {
-  const newDir = path.join(COURSES_DIR, courseId);
+function newCourse(coursePathArg, courseTitle) {
+  const pathParts = coursePathArg.replaceAll('\\', '/').split('/').filter(Boolean);
+  if (pathParts.some(part => part === '..') || pathParts.length > 2) {
+    console.error(`❌ Invalid course path: ${coursePathArg}`);
+    process.exit(1);
+  }
+  const courseId = pathParts.pop();
+  const categoryId = pathParts.shift() || 'general';
+  const categoryDir = path.join(COURSES_DIR, categoryId);
+  const newDir = path.join(categoryDir, courseId);
   if (fs.existsSync(newDir)) {
     console.error(`❌ Course directory already exists: ${newDir}`);
     process.exit(1);
   }
 
   fs.mkdirSync(path.join(newDir, 'images'), { recursive: true });
+  const categoryConfigPath = path.join(categoryDir, 'category.toml');
+  if (!fs.existsSync(categoryConfigPath)) {
+    fs.writeFileSync(categoryConfigPath, `id = "${categoryId}"\ntitle = "${categoryId}"\norder = 999\n`);
+  }
 
   const tomlContent = `# ${courseTitle} 教材設定ファイル
 
 id = "${courseId}"
 title = "${courseTitle}"
 subtitle = "標準スマホ学習テキスト"
-description = "スマホファーストのインタラクティブ学習参考書"
+description = "スマホで読みやすい学習参考書"
 author = "Learning SSG Author"
 version = "1.0.0"
 
 [features]
 quiz = true
-simulators = false
 search = true
 `;
   fs.writeFileSync(path.join(newDir, 'course.toml'), tomlContent);
@@ -183,7 +250,7 @@ summary: "本教材の学習目標と効果的な活用方法"
 ## 効率的な学習手順
 
 1. 章ごとに本文を熟読する
-2. インタラクティブツールで視覚的に理解する
+2. 図解で重要な仕組みを理解する
 3. 章末問題と演習テストで反復復習する
 `;
   fs.writeFileSync(path.join(newDir, '00_intro.md'), introMd);
@@ -214,7 +281,7 @@ summary: "基礎理論と基本原則の理解"
   fs.writeFileSync(path.join(newDir, '01_chapter1.md'), ch1Md);
 
   console.log(`✨ [Learning SSG] Successfully generated new course template!`);
-  console.log(`📂 Location: courses/${courseId}/`);
+  console.log(`📂 Location: courses/${categoryId}/${courseId}/`);
   console.log(`👉 Run 'npm run ssg build ${courseId}' to build this new course!\n`);
 }
 
@@ -225,20 +292,20 @@ function listCourses() {
     return;
   }
 
-  const dirs = fs.readdirSync(COURSES_DIR).filter(d => fs.statSync(path.join(COURSES_DIR, d)).isDirectory());
+  const courseEntries = discoverCourses();
 
-  console.log(`\n📚 [Learning SSG] Available Courses (${dirs.length}):\n`);
+  console.log(`\n📚 [Learning SSG] Available Courses (${courseEntries.length}):\n`);
   console.log(`------------------------------------------------------------------`);
-  dirs.forEach(d => {
-    const cPath = path.join(COURSES_DIR, d);
-    const tomlPath = path.join(cPath, 'course.toml');
-    let title = d;
-    if (fs.existsSync(tomlPath)) {
-      const cfg = parseToml(fs.readFileSync(tomlPath, 'utf-8'));
-      title = cfg.title || d;
+  let currentCategory = '';
+  courseEntries.forEach(({ directoryId, coursePath, category }) => {
+    if (category.id !== currentCategory) {
+      currentCategory = category.id;
+      console.log(`\n  ${category.title} [${category.id}]`);
     }
-    const mdFiles = fs.readdirSync(cPath).filter(f => f.endsWith('.md'));
-    console.log(`  - [ID: ${d.padEnd(20)}] ${title} (${mdFiles.length} chapters)`);
+    const cfg = parseToml(fs.readFileSync(path.join(coursePath, 'course.toml'), 'utf-8'));
+    const courseId = cfg.id || directoryId;
+    const mdFiles = fs.readdirSync(coursePath).filter(f => f.endsWith('.md'));
+    console.log(`    - [ID: ${courseId.padEnd(20)}] ${cfg.title || courseId} (${mdFiles.length} chapters)`);
   });
   console.log(`------------------------------------------------------------------\n`);
 }

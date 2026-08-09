@@ -75,10 +75,10 @@ export function renderSixCoefficients(container) {
           <div>
             <h4 class="font-bold text-md mb-2 text-accent border-b border-glass pb-2">計算結果 & 試算内訳</h4>
             
-            <div class="result-highlight my-4 p-4 rounded-xl bg-gradient-to-r from-indigo-900/50 to-blue-900/50 border border-indigo-500/30">
-              <div class="text-xs text-indigo-300 mb-1" id="result-type-label">10年後の将来価値</div>
+            <div class="result-highlight my-4 p-4 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white shadow-md">
+              <div class="text-xs text-indigo-100 mb-1 font-medium" id="result-type-label">10年後の将来価値</div>
               <div class="text-3xl font-extrabold text-white tracking-tight" id="result-final-val">12,189,944 円</div>
-              <div class="text-xs text-indigo-200 mt-2" id="result-subtext">元本 1,000万円 ＋ 運用益 約219.0万円</div>
+              <div class="text-xs text-indigo-100 mt-2" id="result-subtext">元本 1,000万円 ＋ 運用益 約219.0万円</div>
             </div>
 
             <!-- All 6 coefficients summary table -->

@@ -3,7 +3,6 @@ id: "ch03"
 number: 3
 title: "第3章 リスク管理と保険"
 summary: "生命保険・損害保険・第三分野、必要保障額"
-visualizers: []
 ---
 
 # 第3章　リスク管理と保険
