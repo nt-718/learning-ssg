@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Learning SSG (Static Site Generator CLI Tool)
+ * AnS (Static Site Generator CLI Tool)
  * Inspired by ntea-blog architecture
  */
 
@@ -70,7 +70,7 @@ function discoverCourses() {
 }
 
 function main() {
-  console.log(`\n🚀 [Learning SSG] Executing command: '${command}'...\n`);
+  console.log(`\n🚀 [AnS] Executing command: '${command}'...\n`);
 
   switch (command) {
     case 'build':
@@ -196,7 +196,7 @@ function buildCourse(targetCourseId) {
     `export const QUIZ_QUESTIONS = ${JSON.stringify(defaultCourse.quizQuestions, null, 2)};\n`
   );
 
-  console.log(`\n🎉 [Learning SSG] Successfully bundled all courses into src/data/coursesData.js!`);
+  console.log(`\n🎉 [AnS] Successfully bundled all courses into src/data/coursesData.js!`);
 }
 
 // 2. NEW COURSE COMMAND
@@ -227,7 +227,7 @@ id = "${courseId}"
 title = "${courseTitle}"
 subtitle = "標準スマホ学習テキスト"
 description = "スマホで読みやすい学習参考書"
-author = "Learning SSG Author"
+author = "AnS"
 version = "1.0.0"
 
 [features]
@@ -245,7 +245,7 @@ summary: "本教材の学習目標と効果的な活用方法"
 
 # はじめに
 
-この教材は **Learning SSG** によって自動生成されたスマホ専用学習コンテンツです。
+この教材は **AnS** によって生成されたスマートフォン向け学習コンテンツです。
 
 ## 効率的な学習手順
 
@@ -280,7 +280,7 @@ summary: "基礎理論と基本原則の理解"
 `;
   fs.writeFileSync(path.join(newDir, '01_chapter1.md'), ch1Md);
 
-  console.log(`✨ [Learning SSG] Successfully generated new course template!`);
+  console.log(`✨ [AnS] Successfully generated new course template!`);
   console.log(`📂 Location: courses/${categoryId}/${courseId}/`);
   console.log(`👉 Run 'npm run ssg build ${courseId}' to build this new course!\n`);
 }
@@ -294,7 +294,7 @@ function listCourses() {
 
   const courseEntries = discoverCourses();
 
-  console.log(`\n📚 [Learning SSG] Available Courses (${courseEntries.length}):\n`);
+  console.log(`\n📚 [AnS] Available Courses (${courseEntries.length}):\n`);
   console.log(`------------------------------------------------------------------`);
   let currentCategory = '';
   courseEntries.forEach(({ directoryId, coursePath, category }) => {

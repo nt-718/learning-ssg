@@ -1,4 +1,4 @@
-// Course parser utility for Learning SSG
+// Course parser utility for AnS
 
 import fs from 'fs';
 import path from 'path';

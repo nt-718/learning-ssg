@@ -43,7 +43,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
           </div>
           <div class="course-card-copy">
             <div class="course-meta">
-              <span>${config.author || 'Learning SSG'}</span>
+              <span>${config.author || 'AnS'}</span>
               ${config.version ? `<span>v${config.version}</span>` : ''}
               ${isCurrent ? '<span class="current-label">学習中</span>' : ''}
             </div>

@@ -8,16 +8,16 @@ export function renderHeader(container, { activeView, activeCourseId, allCourses
   const isPortal = activeView === 'course_select';
   const isGlobalView = isPortal || activeView === 'activity';
   const currentCourse = (allCourses && allCourses[activeCourseId]) ? allCourses[activeCourseId] : null;
-  const courseTitle = isPortal ? 'Learning SSG' : (activeView === 'activity' ? '学習記録' : (currentCourse?.config?.title || '合格参考書'));
+  const courseTitle = isPortal ? 'AnS' : (activeView === 'activity' ? '学習記録' : (currentCourse?.config?.title || '合格参考書'));
 
   container.innerHTML = `
     <header class="top-header">
       <div class="header-left">
         <button class="header-brand" id="header-brand" aria-label="教材一覧へ戻る">
-          <span class="brand-mark">L</span>
+          <span class="brand-mark">A</span>
           <span class="brand-copy">
             <strong>${courseTitle}</strong>
-            ${!isPortal ? '<small>Learning SSG</small>' : ''}
+            ${!isPortal ? '<small>AnS</small>' : ''}
           </span>
         </button>
       </div>
