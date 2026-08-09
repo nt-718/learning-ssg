@@ -12,6 +12,9 @@
     "list": "node scripts/ssg.js list",
     "new": "node scripts/ssg.js new",
     "import:social-psychology": "node scripts/import-social-psychology.js",
+    "import:varian-microeconomics": "node scripts/import-varian-microeconomics.js",
+    "import:chinese-language": "node scripts/import-chinese-language.js",
+    "import:saito-macroeconomics": "node scripts/import-saito-macroeconomics.js",
     "dev": "vite"
   },
   "keywords": [
@@ -26,6 +29,8 @@
     "vite": "^8.2.1"
   },
   "dependencies": {
-    "marked": "^18.0.9"
+    "katex": "^0.17.0",
+    "marked": "^18.0.9",
+    "marked-katex-extension": "^5.1.10"
   }
 }

@@ -11,7 +11,11 @@ export function renderSidebar(container, { chapters = [], quizQuestions = [], co
     ? '宅'
     : courseConfig.id?.includes('financial') || courseConfig.title?.includes('FP')
       ? 'FP'
-      : '学';
+      : courseConfig.id?.includes('econom') || courseConfig.title?.includes('経済')
+        ? '経'
+        : courseConfig.id?.includes('chinese') || courseConfig.title?.includes('中国語')
+          ? '中'
+          : '学';
   const levelCounts = quizQuestions.reduce((counts, question) => {
     const level = question.level || '演習';
     counts.set(level, (counts.get(level) || 0) + 1);

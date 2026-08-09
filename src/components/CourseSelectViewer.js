@@ -10,6 +10,8 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
     if (id.includes('takken') || title.includes('宅建')) return '宅';
     if (id.includes('financial') || title.includes('FP')) return 'FP';
     if (id.includes('boki') || title.includes('簿記')) return '簿';
+    if (id.includes('econom') || title.includes('経済')) return '経';
+    if (id.includes('chinese') || title.includes('中国語')) return '中';
     return '学';
   };
 

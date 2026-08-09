@@ -1,6 +1,6 @@
 // Quiz & Flashcard practice component
 
-import { marked } from 'marked';
+import { marked } from '../utils/markdown.js';
 import { Storage } from '../utils/storage.js';
 
 const icons = {

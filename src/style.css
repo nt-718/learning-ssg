@@ -745,6 +745,19 @@ button, input, select {
 .chapter-body code { padding: 2px 5px; border-radius: 4px; background: var(--surface); color: var(--foreground); font-size: 0.88em; }
 .chapter-body pre { margin: 20px 0 26px; padding: 16px; overflow-x: auto; border: 1px solid var(--border-glass); border-radius: 9px; background: var(--surface); font-size: 12px; line-height: 1.7; }
 .chapter-body pre code { padding: 0; background: transparent; }
+.chapter-body .katex-display {
+  margin: 22px 0 26px;
+  padding: 14px 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid var(--border-glass);
+  border-radius: 9px;
+  background: var(--surface);
+  font-size: 0.95em;
+}
+.chapter-body .katex-display > .katex { min-width: max-content; text-align: center; }
+.quiz-card .katex { font-size: 1em; }
+.quiz-answer-content .katex-display { margin: 12px 0; overflow-x: auto; overflow-y: hidden; }
 
 .chapter-figure { margin: 28px 0 32px; padding: 12px; border: 1px solid var(--border-glass); border-radius: 12px; background: var(--card-bg); }
 .chapter-figure-frame { overflow: hidden; padding: 8px; border-radius: 8px; background: var(--surface); }

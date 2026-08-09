@@ -1,0 +1,37 @@
+id = "saito_macroeconomics"
+title = "マクロ経済学 新版 学習参考書"
+subtitle = "齊藤誠・岩本康志・太田聰一・柴田章久『マクロ経済学 新版』対応"
+description = "経済統計、短期・中期・長期モデル、政策、ミクロ的基礎を全18章で体系的に学ぶ副読本"
+author = "AnS"
+version = "1.0.0"
+
+[features]
+quiz = true
+search = true
+
+[categories]
+intro = "ガイド"
+ch01 = "マクロ経済の計測"
+ch02 = "マクロ経済の計測"
+ch03 = "マクロ経済の計測"
+ch04 = "マクロ経済の計測"
+ch05 = "基本モデル"
+ch06 = "基本モデル"
+ch07 = "基本モデル"
+ch08 = "基本モデル"
+ch09 = "基本モデル"
+ch10 = "基本モデル"
+ch11 = "基本モデル"
+ch12 = "経済政策"
+ch13 = "経済政策"
+ch14 = "ミクロ的基礎・経済成長"
+ch15 = "ミクロ的基礎・経済成長"
+ch16 = "ミクロ的基礎・経済成長"
+ch17 = "ミクロ的基礎・経済成長"
+ch18 = "ミクロ的基礎・経済成長"
+math = "資料"
+comprehensive = "総合演習"
+glossary = "資料"
+study_plan = "資料"
+resources = "資料"
+closing = "資料"
