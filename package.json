@@ -11,6 +11,7 @@
     "serve": "node scripts/ssg.js serve financial_planner",
     "list": "node scripts/ssg.js list",
     "new": "node scripts/ssg.js new",
+    "import:social-psychology": "node scripts/import-social-psychology.js",
     "dev": "vite"
   },
   "keywords": [

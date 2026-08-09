@@ -18,7 +18,8 @@ function renderInlineMarkdown(value) {
 export function renderQuizViewer(container, filterType = 'all', quizQuestions = [], courseConfig = {}) {
   let questionsList = quizQuestions.length > 0 ? [...quizQuestions] : [];
 
-  if (filterType === '3級' || filterType === '2級') {
+  const availableLevels = new Set(quizQuestions.map(question => question.level).filter(Boolean));
+  if (availableLevels.has(filterType)) {
     questionsList = questionsList.filter(q => q.level === filterType);
   } else if (filterType === 'wrong') {
     const wrongIds = Storage.getWrongQuestions();
@@ -33,7 +34,7 @@ export function renderQuizViewer(container, filterType = 'all', quizQuestions = 
     ? 'すべての問題'
     : filterType === 'wrong'
       ? '要復習の問題'
-      : filterType === '3級' || filterType === '2級'
+      : availableLevels.has(filterType)
         ? `${filterType}の問題`
         : questionsList[0]?.chapterTitle || '章別演習';
 

@@ -58,7 +58,7 @@ def validate_standard_quiz(path: Path, body: str, errors: list[str]) -> None:
     for line in match.group(1).splitlines():
         if not line.strip():
             continue
-        question = re.match(r"^(\d+)\.\s*［(3級|2級)］\s*(.+)$", line)
+        question = re.match(r"^(\d+)\.\s*［([^］]+)］\s*(.+)$", line)
         if not question:
             errors.append(f"{path}: unparseable standard quiz question: {line}")
         else:
@@ -197,4 +197,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

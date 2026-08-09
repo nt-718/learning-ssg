@@ -119,7 +119,7 @@ The standard extractor recognizes one paired block per chapter. Preserve the hea
 2. 解答。誤りやすい点も一行で説明する。
 ```
 
-The numeric suffix may be omitted, but matching chapter numbers are clearer. Only `3級` and `2級` are accepted as levels. Each answer number must match its question number. Questions that wrap onto a second physical line or use `-` bullets are displayed in the chapter but are not extracted into quiz mode.
+The numeric suffix may be omitted, but matching chapter numbers are clearer. The full-width bracket value becomes the practice level, such as `3級`, `2級`, or `基礎`. Keep level names consistent within a course. Each answer number must match its question number. Questions that wrap onto a second physical line or use `-` bullets are displayed in the chapter but are not extracted into quiz mode.
 
 The Markdown block remains the source of truth, but a successful SSG build removes this standard quiz block from the rendered chapter body and publishes it in the practice view. Do not delete the answers from the source chapter after extraction.
 

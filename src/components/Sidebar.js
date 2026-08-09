@@ -1,13 +1,23 @@
 import { Storage } from '../utils/storage.js';
 
-export function renderSidebar(container, { chapters = [], courseConfig = {}, activeView, activeChapterId, onSelectView, onClose, mode = 'sidebar' }) {
+export function renderSidebar(container, { chapters = [], quizQuestions = [], courseConfig = {}, activeView, activeChapterId, activeQuizFilter = 'all', onSelectView, onClose, mode = 'sidebar' }) {
   const readChapters = Storage.getReadChapters();
   const wrongCount = Storage.getWrongQuestions().length;
   const categories = courseConfig.categories || {};
   const courseChIds = chapters.map(ch => ch.id);
   const readCount = readChapters.filter(id => courseChIds.includes(id)).length;
   const progressPct = chapters.length > 0 ? Math.min(100, Math.round((readCount / chapters.length) * 100)) : 0;
-  const courseMark = courseConfig.id?.includes('takken') || courseConfig.title?.includes('宅建') ? '宅' : 'FP';
+  const courseMark = courseConfig.id?.includes('takken') || courseConfig.title?.includes('宅建')
+    ? '宅'
+    : courseConfig.id?.includes('financial') || courseConfig.title?.includes('FP')
+      ? 'FP'
+      : '学';
+  const levelCounts = quizQuestions.reduce((counts, question) => {
+    const level = question.level || '演習';
+    counts.set(level, (counts.get(level) || 0) + 1);
+    return counts;
+  }, new Map());
+  const levelLabel = level => level === '3級' ? '3級 基礎問題' : level === '2級' ? '2級 応用問題' : `${level} 問題`;
 
   const getChapterLabel = (chapter, index) => {
     if (chapter.id === 'intro') return '序';
@@ -73,12 +83,15 @@ export function renderSidebar(container, { chapters = [], courseConfig = {}, act
           <h3 id="sidebar-practice-title">問題演習</h3>
         </div>
         <nav>
-          <button class="sidebar-practice-item ${activeView === 'quiz' ? 'is-active' : ''}" data-quiz-filter="all">
+          <button class="sidebar-practice-item ${activeView === 'quiz' && activeQuizFilter === 'all' ? 'is-active' : ''}" data-quiz-filter="all">
             <span>すべての問題</span><span>›</span>
           </button>
-          <button class="sidebar-practice-item" data-quiz-filter="3級"><span>3級 基礎問題</span><span>›</span></button>
-          <button class="sidebar-practice-item" data-quiz-filter="2級"><span>2級 応用問題</span><span>›</span></button>
-          <button class="sidebar-practice-item" data-quiz-filter="wrong">
+          ${[...levelCounts.entries()].map(([level, count]) => `
+            <button class="sidebar-practice-item ${activeView === 'quiz' && activeQuizFilter === level ? 'is-active' : ''}" data-quiz-filter="${level}">
+              <span>${levelLabel(level)}</span><span>${count}</span>
+            </button>
+          `).join('')}
+          <button class="sidebar-practice-item ${activeView === 'quiz' && activeQuizFilter === 'wrong' ? 'is-active' : ''}" data-quiz-filter="wrong">
             <span>要復習</span><span>${wrongCount > 0 ? wrongCount : '›'}</span>
           </button>
         </nav>

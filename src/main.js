@@ -108,9 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render Sidebar
     renderSidebar(sidebarContainer, {
       chapters: chapters,
+      quizQuestions: quizQuestions,
       courseConfig: courseConfig,
       activeView: state.activeView,
       activeChapterId: state.activeChapterId,
+      activeQuizFilter: state.activeQuizFilter,
       onSelectView: (view, id) => {
         state.activeView = view;
         if (view === 'chapter') state.activeChapterId = id;
@@ -188,9 +190,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (state.activeView === 'toc') {
       renderSidebar(mainContainer, {
         chapters: chapters,
+        quizQuestions: quizQuestions,
         courseConfig: courseConfig,
         activeView: state.activeView,
         activeChapterId: state.activeChapterId,
+        activeQuizFilter: state.activeQuizFilter,
         mode: 'page',
         onSelectView: (view, id) => {
           state.activeView = view;

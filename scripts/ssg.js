@@ -357,7 +357,7 @@ function extractQuestionsFromMarkdown(text, chId, chTitle, questions) {
     });
 
     qLines.forEach(ql => {
-      const mQ = ql.match(/^(\d+)\.\s*［(3級|2級)］\s*(.*)/);
+      const mQ = ql.match(/^(\d+)\.\s*［([^］]+)］\s*(.*)/);
       if (mQ) {
         const qNo = mQ[1];
         const level = mQ[2];
