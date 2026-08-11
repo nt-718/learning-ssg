@@ -1,0 +1,32 @@
+id = "business_communication_english"
+title = "ビジネスコミュニケーション英語 完全版"
+subtitle = "英語で仕事を進めるための教科書・参考書・問題集"
+description = "実務で必要な報告、依頼、会議、交渉、提案を体系的に学ぶ教材"
+author = "AnS"
+version = "1.0.0"
+
+[features]
+quiz = true
+search = true
+
+[categories]
+intro = "ガイド"
+ch01 = "基礎"
+ch02 = "基礎"
+ch03 = "対人関係"
+ch04 = "メール"
+ch05 = "チャット"
+ch06 = "会議"
+ch07 = "報告・進捗"
+ch08 = "プレゼン"
+ch09 = "交渉"
+ch10 = "営業・提案"
+ch11 = "マネジメント"
+ch12 = "採用・面接"
+ch13 = "異文化"
+ch14 = "語彙"
+ch15 = "表現"
+ch16 = "ケーススタディ"
+ch17 = "総合演習"
+ch18 = "学習計画"
+ch19 = "最終確認"

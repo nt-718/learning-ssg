@@ -24,6 +24,10 @@ function getReadChapterKey(courseId, chapterId) {
   return `${courseId}${READ_CHAPTER_SEPARATOR}${chapterId}`;
 }
 
+function getQuizQuestionKey(courseId, questionId) {
+  return `${courseId}${READ_CHAPTER_SEPARATOR}${questionId}`;
+}
+
 export const Storage = {
   getTheme() {
     return localStorage.getItem(KEYS.THEME) || 'light';
@@ -118,16 +122,51 @@ export const Storage = {
     return list;
   },
 
-  getQuizHistory() {
+  getQuizHistory(courseId) {
     try {
-      return JSON.parse(localStorage.getItem(KEYS.QUIZ_HISTORY)) || {};
+      if (!courseId) return {};
+      const history = JSON.parse(localStorage.getItem(KEYS.QUIZ_HISTORY)) || {};
+      const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+      return Object.fromEntries(
+        Object.entries(history)
+          .filter(([key]) => key.startsWith(prefix))
+          .map(([key, value]) => [key.slice(prefix.length), value])
+      );
     } catch {
       return {};
     }
   },
-  recordQuizAnswer(questionId, isCorrect, userAns) {
-    const history = this.getQuizHistory();
-    history[questionId] = {
+  migrateLegacyQuizData(courseId) {
+    if (!courseId) return;
+    try {
+      const history = JSON.parse(localStorage.getItem(KEYS.QUIZ_HISTORY)) || {};
+      const migratedHistory = {};
+      Object.entries(history).forEach(([key, value]) => {
+        migratedHistory[key.includes(READ_CHAPTER_SEPARATOR) ? key : getQuizQuestionKey(courseId, key)] = value;
+      });
+      localStorage.setItem(KEYS.QUIZ_HISTORY, JSON.stringify(migratedHistory));
+
+      const wrong = JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || [];
+      const migratedWrong = wrong.map(key =>
+        typeof key === 'string' && !key.includes(READ_CHAPTER_SEPARATOR)
+          ? getQuizQuestionKey(courseId, key)
+          : key
+      );
+      localStorage.setItem(KEYS.WRONG_QUESTIONS, JSON.stringify([...new Set(migratedWrong)]));
+    } catch {
+      localStorage.setItem(KEYS.QUIZ_HISTORY, '{}');
+      localStorage.setItem(KEYS.WRONG_QUESTIONS, '[]');
+    }
+  },
+  recordQuizAnswer(courseId, questionId, isCorrect, userAns) {
+    let history;
+    try {
+      history = JSON.parse(localStorage.getItem(KEYS.QUIZ_HISTORY)) || {};
+    } catch {
+      history = {};
+    }
+    const key = getQuizQuestionKey(courseId, questionId);
+    history[key] = {
       isCorrect,
       userAns,
       timestamp: Date.now()
@@ -135,10 +174,15 @@ export const Storage = {
     localStorage.setItem(KEYS.QUIZ_HISTORY, JSON.stringify(history));
 
     // Manage wrong questions list
-    const wrong = this.getWrongQuestions();
-    const wIdx = wrong.indexOf(questionId);
+    let wrong;
+    try {
+      wrong = JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || [];
+    } catch {
+      wrong = [];
+    }
+    const wIdx = wrong.indexOf(key);
     if (!isCorrect && wIdx < 0) {
-      wrong.push(questionId);
+      wrong.push(key);
     } else if (isCorrect && wIdx >= 0) {
       wrong.splice(wIdx, 1);
     }
@@ -146,9 +190,14 @@ export const Storage = {
     this.recordActivity('quiz');
   },
 
-  getWrongQuestions() {
+  getWrongQuestions(courseId) {
     try {
-      return JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || [];
+      if (!courseId) return [];
+      const list = JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || [];
+      const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+      return list
+        .filter(key => typeof key === 'string' && key.startsWith(prefix))
+        .map(key => key.slice(prefix.length));
     } catch {
       return [];
     }

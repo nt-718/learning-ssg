@@ -2,7 +2,7 @@ import { Storage } from '../utils/storage.js';
 
 export function renderSidebar(container, { chapters = [], quizQuestions = [], courseConfig = {}, activeView, activeChapterId, activeQuizFilter = 'all', onSelectView, onClose, mode = 'sidebar' }) {
   const readChapters = Storage.getReadChapters(courseConfig.id);
-  const wrongCount = Storage.getWrongQuestions().length;
+  const wrongCount = Storage.getWrongQuestions(courseConfig.id).length;
   const categories = courseConfig.categories || {};
   const courseChIds = chapters.map(ch => ch.id);
   const readCount = readChapters.filter(id => courseChIds.includes(id)).length;
@@ -15,7 +15,9 @@ export function renderSidebar(container, { chapters = [], quizQuestions = [], co
         ? '経'
         : courseConfig.id?.includes('chinese') || courseConfig.title?.includes('中国語')
           ? '中'
-          : '学';
+          : courseConfig.id?.includes('english') || courseConfig.title?.includes('英語')
+            ? '英'
+            : '学';
   const levelCounts = quizQuestions.reduce((counts, question) => {
     const level = question.level || '演習';
     counts.set(level, (counts.get(level) || 0) + 1);

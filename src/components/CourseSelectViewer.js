@@ -13,6 +13,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
     if (id.includes('boki') || title.includes('簿記')) return '簿';
     if (id.includes('econom') || title.includes('経済')) return '経';
     if (id.includes('chinese') || title.includes('中国語')) return '中';
+    if (id.includes('english') || title.includes('英語')) return '英';
     return '学';
   };
 

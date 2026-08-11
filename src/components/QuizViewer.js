@@ -17,12 +17,13 @@ function renderInlineMarkdown(value) {
 
 export function renderQuizViewer(container, filterType = 'all', quizQuestions = [], courseConfig = {}) {
   let questionsList = quizQuestions.length > 0 ? [...quizQuestions] : [];
+  const courseId = courseConfig.id;
 
   const availableLevels = new Set(quizQuestions.map(question => question.level).filter(Boolean));
   if (availableLevels.has(filterType)) {
     questionsList = questionsList.filter(q => q.level === filterType);
   } else if (filterType === 'wrong') {
-    const wrongIds = Storage.getWrongQuestions();
+    const wrongIds = Storage.getWrongQuestions(courseId);
     questionsList = questionsList.filter(q => wrongIds.includes(q.id));
   } else if (filterType && filterType.startsWith('ch')) {
     questionsList = questionsList.filter(q => q.chapterId === filterType);
@@ -59,7 +60,7 @@ export function renderQuizViewer(container, filterType = 'all', quizQuestions = 
 
   const renderCard = () => {
     const q = questionsList[currentIndex];
-    const wrongIds = Storage.getWrongQuestions();
+    const wrongIds = Storage.getWrongQuestions(courseId);
     const isWrong = wrongIds.includes(q.id);
     const progressPct = Math.round(((currentIndex + 1) / questionsList.length) * 100);
 
@@ -141,14 +142,14 @@ export function renderQuizViewer(container, filterType = 'all', quizQuestions = 
     });
 
     container.querySelector('#btn-mark-correct')?.addEventListener('click', () => {
-      Storage.recordQuizAnswer(q.id, true);
+      Storage.recordQuizAnswer(courseId, q.id, true);
       showAnswer = false;
       if (currentIndex < questionsList.length - 1) currentIndex++;
       renderCard();
     });
 
     container.querySelector('#btn-mark-wrong')?.addEventListener('click', () => {
-      Storage.recordQuizAnswer(q.id, false);
+      Storage.recordQuizAnswer(courseId, q.id, false);
       showAnswer = false;
       if (currentIndex < questionsList.length - 1) currentIndex++;
       renderCard();

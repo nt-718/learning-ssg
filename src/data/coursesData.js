@@ -2497,6 +2497,1072 @@ export const ALL_COURSES = {
       }
     ]
   },
+  "business_communication_english": {
+    "config": {
+      "features": {
+        "quiz": true,
+        "search": true
+      },
+      "categories": {
+        "intro": "ガイド",
+        "ch01": "基礎",
+        "ch02": "基礎",
+        "ch03": "対人関係",
+        "ch04": "メール",
+        "ch05": "チャット",
+        "ch06": "会議",
+        "ch07": "報告・進捗",
+        "ch08": "プレゼン",
+        "ch09": "交渉",
+        "ch10": "営業・提案",
+        "ch11": "マネジメント",
+        "ch12": "採用・面接",
+        "ch13": "異文化",
+        "ch14": "語彙",
+        "ch15": "表現",
+        "ch16": "ケーススタディ",
+        "ch17": "総合演習",
+        "ch18": "学習計画",
+        "ch19": "最終確認"
+      },
+      "id": "business_communication_english",
+      "title": "ビジネスコミュニケーション英語 完全版",
+      "subtitle": "英語で仕事を進めるための教科書・参考書・問題集",
+      "description": "実務で必要な報告、依頼、会議、交渉、提案を体系的に学ぶ教材",
+      "author": "AnS",
+      "version": "1.0.0",
+      "category": {
+        "id": "languages",
+        "title": "語学",
+        "order": 15,
+        "color": "#168c8c"
+      }
+    },
+    "chapters": [
+      {
+        "id": "intro",
+        "number": 0,
+        "title": "はじめに",
+        "shortTitle": "はじめに",
+        "summary": "英語で仕事を正確に、円滑に、効率よく進めるための学習ガイド",
+        "sections": [
+          {
+            "id": "intro_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# はじめに\n\n## 概要\n\nビジネス英語の目的は、「英語を上手に話すこと」ではありません。\n\n最終的な目的は、\n\n> **英語を使って仕事を正確に、円滑に、効率よく進めること**\n\nです。\n\nしたがって、本書では単語・文法・フレーズだけではなく、\n\n- 情報を伝える\n- 依頼する\n- 認識を合わせる\n- 質問する\n- 説明する\n- 報告する\n- 意見を述べる\n- 反対する\n- 問題を指摘する\n- 説得する\n- 交渉する\n- 合意形成する\n- 会議を進行する\n- 顧客に提案する\n- 問題発生時に対応する\n- フィードバックする\n- 英語圏の相手と誤解なく仕事をする\n\nといった「仕事上の機能」を中心に学びます。\n"
+      },
+      {
+        "id": "ch01",
+        "number": 1,
+        "title": "第1章 ビジネス英語とは何か",
+        "shortTitle": "ビジネス英語とは何か",
+        "summary": "英語のテストで高得点を取れる人でも、実務では次のような問題を起こすことがあります。",
+        "sections": [
+          {
+            "id": "ch01_sec_1",
+            "title": "1.1 「英語力」と「ビジネスコミュニケーション力」は違う"
+          },
+          {
+            "id": "ch01_sec_2",
+            "title": "1.2 ビジネスコミュニケーションの基本構造"
+          },
+          {
+            "id": "ch01_sec_3",
+            "title": "1.3 「伝える」より「動かす」"
+          },
+          {
+            "id": "ch01_sec_4",
+            "title": "1.4 ビジネスコミュニケーションの7機能"
+          }
+        ],
+        "content": "\n# 第1章 ビジネス英語とは何か\n\n## 1.1 「英語力」と「ビジネスコミュニケーション力」は違う\n\n英語のテストで高得点を取れる人でも、実務では次のような問題を起こすことがあります。\n\n- 何を依頼しているのか分からない\n- 期限が書いていない\n- 誰が担当するのか不明\n- 結論が最後まで出てこない\n- 事実と推測が混ざっている\n- 丁寧すぎて要求が分からない\n- 相手の質問に答えていない\n\nつまり、\n\n> grammatical correctness ≠ communication effectiveness\n\nです。\n\n「文法的に正しいこと」と「コミュニケーションとして優れていること」は別物です。\n\n## 1.2 ビジネスコミュニケーションの基本構造\n\n仕事上のメッセージは、基本的に次の5要素で考えると整理できます。\n\n### 1. Context\n何について話しているか。\n\n### 2. Message\n最も伝えたい内容。\n\n### 3. Reason\n理由・背景。\n\n### 4. Action\n誰に何をしてほしいか。\n\n### 5. Deadline\nいつまでか。\n\n例えば、\n\n> Regarding the new website, we need to finalize the design this week because development starts next Monday. Could you review the attached mockup and send me your comments by Thursday?\n\nなら、\n\nContext  \n→ new website\n\nMessage  \n→ finalize the design this week\n\nReason  \n→ development starts Monday\n\nAction  \n→ review the mockup / send comments\n\nDeadline  \n→ Thursday\n\nとなります。\n\n## 1.3 「伝える」より「動かす」\n\n日常英語では、\n\n> I think this design is better.\n\nでも成立します。\n\nしかしビジネスでは、\n\n> I recommend using Design B because it makes the main call-to-action more visible. If there are no objections, I'd like to proceed with Design B.\n\nのように、\n\n**意見 → 理由 → 次のアクション**\n\nまで示す方が仕事が進みます。\n\n## 1.4 ビジネスコミュニケーションの7機能\n\nほぼすべての業務コミュニケーションは、次の機能に整理できます。\n\n### Inform\n情報提供\n\n> The release date has been changed to September 15.\n\n### Request\n依頼\n\n> Could you review the document?\n\n### Confirm\n確認\n\n> Just to confirm, the meeting starts at 2 p.m., correct?\n\n### Clarify\n明確化\n\n> Could you clarify what you mean by \"real-time\"?\n\n### Persuade\n説得\n\n> I believe this option gives us the best balance between cost and speed.\n\n### Coordinate\n調整\n\n> I'll handle the technical side. Could you coordinate with the client?\n\n### Resolve\n問題解決\n\n> Let's identify the cause first and then discuss possible solutions.\n"
+      },
+      {
+        "id": "ch02",
+        "number": 2,
+        "title": "第2章 明確で論理的な英語",
+        "shortTitle": "明確で論理的な英語",
+        "summary": "BLUFとは、",
+        "sections": [
+          {
+            "id": "ch02_sec_1",
+            "title": "2.1 BLUF"
+          },
+          {
+            "id": "ch02_sec_2",
+            "title": "2.2 PREP"
+          },
+          {
+            "id": "ch02_sec_3",
+            "title": "2.3 SCQA"
+          },
+          {
+            "id": "ch02_sec_4",
+            "title": "2.4 MECEに近い説明"
+          },
+          {
+            "id": "ch02_sec_5",
+            "title": "2.5 Signposting"
+          },
+          {
+            "id": "ch02_sec_6",
+            "title": "2.6 演習"
+          }
+        ],
+        "content": "\n# 第2章 明確で論理的な英語\n\n## 2.1 BLUF\n\nBLUFとは、\n\n> Bottom Line Up Front\n\nです。\n\n最も重要なことを最初に伝えます。\n\n### Before\n\n> We have been reviewing our development schedule, and several engineers have raised concerns about the testing period. Because of these concerns, we believe...\n\n### After\n\n> We recommend delaying the release by one week.\n\n続いて、\n\n> This will give the engineering team enough time to complete security testing.\n\nと理由を説明します。\n\n## 2.2 PREP\n\n説明や意見を述べるときに便利なのがPREPです。\n\nPoint  \n↓  \nReason  \n↓  \nExample  \n↓  \nPoint\n\n例：\n\n> I think we should introduce automated testing.\n\n> The main reason is that our current manual testing process takes too much time.\n\n> For example, regression testing currently requires almost two days before each release.\n\n> Therefore, automated testing should significantly improve our release process.\n\n## 2.3 SCQA\n\n複雑なビジネス課題ではSCQAも有効です。\n\nSituation  \nComplication  \nQuestion  \nAnswer\n\n例：\n\nSituation:\n\n> Our user base has grown rapidly over the past year.\n\nComplication:\n\n> However, customer support inquiries have increased even faster.\n\nQuestion:\n\n> How can we maintain service quality without significantly increasing headcount?\n\nAnswer:\n\n> We recommend introducing an AI-based support system for common inquiries.\n\n## 2.4 MECEに近い説明\n\n英語で説明するときも情報を分類します。\n\n例えばコスト増加の原因なら、\n\n> There are three main reasons.\n\n1. Higher labor costs\n2. Increased infrastructure usage\n3. Additional security requirements\n\nとします。\n\n「There are three reasons」と最初に宣言すると、相手が理解しやすくなります。\n\n## 2.5 Signposting\n\n話の構造を示す表現です。\n\n> First,...\n\n> Second,...\n\n> Finally,...\n\n> There are two reasons for this.\n\n> The main point is...\n\n> Let me explain why.\n\n> To summarize,...\n\nこれだけでも英語の説明力は大きく上がります。\n\n## 2.6 演習\n\n1. 「この提案を採用すべきです。理由は2つあります。」を英訳する。\n2. PREPで「リモートワークを週2日にすべき」を説明する。\n3. BLUFを使って「納期延期」を伝える。\n4. 「問題は3つあります」を自然な英語にする。\n5. 「第一にコスト、第二に時間です」を英訳する。\n6. 長い英文を2〜3文に分解する。\n7. SCQAで「問い合わせ増加→AIチャット導入」を説明する。\n8. 「要するに」を3種類の表現で書く。\n9. 「最も重要なのは〜です」を2種類書く。\n10. 結論が最後にある文章を、結論先行型に書き換える。\n"
+      },
+      {
+        "id": "ch03",
+        "number": 3,
+        "title": "第3章 英語における丁寧さ",
+        "shortTitle": "英語における丁寧さ",
+        "summary": "英語には日本語の尊敬語・謙譲語のような体系はありません。",
+        "sections": [
+          {
+            "id": "ch03_sec_1",
+            "title": "3.1 日本語の敬語とは違う"
+          },
+          {
+            "id": "ch03_sec_2",
+            "title": "3.2 依頼の強さ"
+          },
+          {
+            "id": "ch03_sec_3",
+            "title": "3.3 Pleaseの誤解"
+          },
+          {
+            "id": "ch03_sec_4",
+            "title": "3.4 Softener"
+          },
+          {
+            "id": "ch03_sec_5",
+            "title": "3.5 反対意見のレベル"
+          }
+        ],
+        "content": "\n# 第3章 英語における丁寧さ\n\n## 3.1 日本語の敬語とは違う\n\n英語には日本語の尊敬語・謙譲語のような体系はありません。\n\n代わりに、\n\n- modal verb\n- indirectness\n- softener\n- appreciation\n- explanation\n\nなどを使います。\n\n## 3.2 依頼の強さ\n\n### 最も直接的\n\n> Send me the report.\n\n命令。\n\n### 少し柔らかい\n\n> Please send me the report.\n\n### 標準的\n\n> Could you send me the report?\n\n### より丁寧\n\n> Could you please send me the report?\n\n### 遠回し\n\n> Would it be possible for you to send me the report?\n\n## 3.3 Pleaseの誤解\n\n日本人は、\n\n> Please = 丁寧\n\nと覚えがちです。\n\nしかし、\n\n> Please send this today.\n\nは状況によってはかなり強い要求です。\n\n対して、\n\n> Could you send this by the end of today?\n\nの方が柔らかく感じられる場合があります。\n\n## 3.4 Softener\n\n### slightly\n\n> The schedule may be slightly too aggressive.\n\n### a little\n\n> This may be a little difficult.\n\n### perhaps\n\n> Perhaps we should consider another option.\n\n### I think\n\n> I think we may need more time.\n\n### I'm not sure\n\n> I'm not sure this approach will scale.\n\n## 3.5 反対意見のレベル\n\n強：\n\n> I disagree.\n\n標準：\n\n> I don't think that's the best option.\n\n柔：\n\n> I'm not sure that's the best option.\n\nさらに柔：\n\n> I see your point, but I wonder if there might be another approach.\n"
+      },
+      {
+        "id": "ch04",
+        "number": 4,
+        "title": "第4章 ビジネスメールの設計",
+        "shortTitle": "ビジネスメールの設計",
+        "summary": "メールは次の順にすると安定します。",
+        "sections": [
+          {
+            "id": "ch04_sec_1",
+            "title": "4.1 基本構造"
+          },
+          {
+            "id": "ch04_sec_2",
+            "title": "4.2 Purposeを最初に置く"
+          },
+          {
+            "id": "ch04_sec_3",
+            "title": "4.3 件名"
+          },
+          {
+            "id": "ch04_sec_4",
+            "title": "4.4 依頼メール"
+          },
+          {
+            "id": "ch04_sec_5",
+            "title": "4.5 確認メール"
+          },
+          {
+            "id": "ch04_sec_6",
+            "title": "4.6 Follow-up"
+          },
+          {
+            "id": "ch04_sec_7",
+            "title": "4.7 催促"
+          },
+          {
+            "id": "ch04_sec_8",
+            "title": "4.8 謝罪メール"
+          },
+          {
+            "id": "ch04_sec_9",
+            "title": "4.9 演習"
+          },
+          {
+            "id": "ch04_sec_10",
+            "title": "ケーススタディ1　顧客への納期延期"
+          },
+          {
+            "id": "ch04_sec_11",
+            "title": "Situation"
+          },
+          {
+            "id": "ch04_sec_12",
+            "title": "悪い例"
+          },
+          {
+            "id": "ch04_sec_13",
+            "title": "改善例"
+          },
+          {
+            "id": "ch04_sec_14",
+            "title": "分析"
+          }
+        ],
+        "content": "\n# 第4章 ビジネスメールの設計\n\n## 4.1 基本構造\n\nメールは次の順にすると安定します。\n\nGreeting\n\nOpening\n\nPurpose\n\nDetails\n\nAction\n\nDeadline\n\nClosing\n\n## 4.2 Purposeを最初に置く\n\n悪い例：\n\n> Thank you very much for your support. As we discussed last week, there have been several developments...\n\n読む側は「何のメール？」となります。\n\n改善：\n\n> I'm writing to confirm the schedule for next week's product launch.\n\n## 4.3 件名\n\n良い件名は内容と要求が分かります。\n\n× Meeting\n\n○ Project Alpha — Meeting Schedule\n\nさらに具体的：\n\n> Action Required: Review of Project Alpha Proposal by Aug. 15\n\n## 4.4 依頼メール\n\n基本式：\n\n> Could you + action + object + deadline?\n\n例：\n\n> Could you review the attached proposal and send me your comments by Friday?\n\n理由：\n\n> We need to finalize the proposal before Monday's client meeting.\n\n## 4.5 確認メール\n\n> Just to confirm,...\n\n> I'd like to confirm...\n\n> My understanding is that...\n\n例：\n\n> Just to confirm, the client has approved Option B and we can start development on Monday. Is that correct?\n\n## 4.6 Follow-up\n\n> I'm following up on my email below.\n\n> I wanted to follow up regarding...\n\n> Just checking whether you've had a chance to review...\n\n## 4.7 催促\n\n弱：\n\n> Just checking if you have any updates.\n\n中：\n\n> Could you send me an update by tomorrow?\n\n強：\n\n> We need your confirmation by 3 p.m. today in order to meet the release deadline.\n\n## 4.8 謝罪メール\n\n良い謝罪は4つの要素があります。\n\n1. Apology\n2. Explanation\n3. Recovery\n4. Prevention\n\n例：\n\n> We apologize for the service interruption.\n\n> The outage was caused by an incorrect network configuration.\n\n> The configuration has now been corrected, and all services are operating normally.\n\n> We are reviewing our deployment procedures to prevent a recurrence.\n\n## 4.9 演習\n\n### 日本語→英語\n\n1. 添付資料をご確認ください。\n2. 金曜日までにコメントをいただけますか。\n3. 前回のメールについてフォローアップしています。\n4. 念のため確認ですが、開始日は9月1日で合っていますか。\n5. 返信が遅くなり申し訳ありません。\n6. 会議を木曜日に変更できますか。\n7. 問題があればお知らせください。\n8. 最新版を添付しています。\n9. 明日の正午までに承認が必要です。\n10. ご不明点があればお気軽にご連絡ください。\n\n### メール作成\n\n11. 上司に資料レビューを依頼するメールを書く。\n12. 顧客に納期延期を伝える。\n13. 返事のない取引先に催促する。\n14. 会議日程を変更する。\n15. 障害発生を顧客に通知する。\n\n## ケーススタディ1　顧客への納期延期\n\n## Situation\n\nあなたはSaaS企業のプロジェクトマネージャーです。\n\n金曜日に予定していた新機能リリースについて、セキュリティテストで重大な問題が発見されました。\n\n予定通りリリースすると危険です。\n\n顧客は来週から利用開始する予定です。\n\n## 悪い例\n\n> Sorry, but we have a problem so the release will be late.\n\n問題点：\n\n- 何が起きたのか曖昧\n- どれくらい遅れるのか不明\n- 対応が書かれていない\n- 顧客への影響が不明\n\n## 改善例\n\n> We need to postpone Friday's release by one week.\n\n> During final security testing, we identified an issue that could affect user authentication. Although no customer data has been affected, we do not believe it would be appropriate to release the feature until the issue has been fully resolved.\n\n> Our engineering team is currently working on a fix, and we expect to complete the additional testing by next Thursday.\n\n> We apologize for the inconvenience and will provide another update on Tuesday.\n\n## 分析\n\n最初に、\n\n> We need to postpone...\n\nと結論。\n\n続いて、\n\n原因  \n↓\n現在の影響  \n↓\n対応  \n↓\n次の予定\n\nの順です。\n"
+      },
+      {
+        "id": "ch05",
+        "number": 5,
+        "title": "第5章 チャットコミュニケーション",
+        "shortTitle": "チャットコミュニケーション",
+        "summary": "チャットではメールより短くします。",
+        "sections": [
+          {
+            "id": "ch05_sec_1",
+            "title": "5.1 よく使う応答"
+          },
+          {
+            "id": "ch05_sec_2",
+            "title": "5.2 状況確認"
+          },
+          {
+            "id": "ch05_sec_3",
+            "title": "5.3 FYI / FYA / Action Required"
+          },
+          {
+            "id": "ch05_sec_4",
+            "title": "5.4 スレッドでの明確さ"
+          },
+          {
+            "id": "ch05_sec_5",
+            "title": "演習"
+          }
+        ],
+        "content": "\n# 第5章 チャットコミュニケーション\n\nチャットではメールより短くします。\n\nメール：\n\n> Could you please send me the latest version of the document when you have a chance?\n\nSlack：\n\n> Could you send me the latest version?\n\nあるいは、\n\n> Do you have the latest version?\n\n## 5.1 よく使う応答\n\n> Got it.\n\n了解。\n\n> Sounds good.\n\nいいですね。\n\n> Works for me.\n\nそれで大丈夫です。\n\n> Makes sense.\n\n納得です。\n\n> Good point.\n\n確かに。\n\n> Will do.\n\nやっておきます。\n\n> On it.\n\n今対応します。\n\n## 5.2 状況確認\n\n> Any updates on this?\n\n> How's this going?\n\n> Where are we on this?\n\n> Do we have an ETA?\n\nETA = Estimated Time of Arrival\n\n仕事では「完了予定時刻・時期」の意味でもよく使います。\n\n## 5.3 FYI / FYA / Action Required\n\nFYI  \nFor Your Information\n\n「参考までに」\n\nFYA  \nFor Your Action\n\n「対応をお願いします」\n\nチャットでは、\n\n> FYI — the client moved the meeting to Friday.\n\nなどと使えます。\n\n## 5.4 スレッドでの明確さ\n\n単に、\n\n> Done.\n\nではなく、\n\n> Updated the pricing section and added the latest numbers. Ready for review.\n\nと書く方が状態が分かります。\n\n## 演習\n\n1. 「確認しました」を3種類書く。\n2. 「今対応しています」を英訳する。\n3. 「何か進捗ありますか？」を書く。\n4. 「今日中に終わりそうですか？」を書く。\n5. 「最新版を共有してもらえますか？」を書く。\n6. FYIを使って会議変更を伝える。\n7. 「私の方では問題ありません」を英訳。\n8. 「これはあとで確認します」を書く。\n9. 「念のため田中さんにも共有します」を書く。\n10. 進捗報告をSlack向けに3行で書く。\n"
+      },
+      {
+        "id": "ch06",
+        "number": 6,
+        "title": "第6章 会議を進める英語",
+        "shortTitle": "会議を進める英語",
+        "summary": "高度な会議では非常に重要です。",
+        "sections": [
+          {
+            "id": "ch06_sec_1",
+            "title": "6.1 Opening"
+          },
+          {
+            "id": "ch06_sec_2",
+            "title": "6.2 Agenda"
+          },
+          {
+            "id": "ch06_sec_3",
+            "title": "6.3 発言する"
+          },
+          {
+            "id": "ch06_sec_4",
+            "title": "6.4 意見"
+          },
+          {
+            "id": "ch06_sec_5",
+            "title": "6.5 賛成"
+          },
+          {
+            "id": "ch06_sec_6",
+            "title": "6.6 部分的賛成"
+          },
+          {
+            "id": "ch06_sec_7",
+            "title": "6.7 Clarification"
+          },
+          {
+            "id": "ch06_sec_8",
+            "title": "6.8 話を戻す"
+          },
+          {
+            "id": "ch06_sec_9",
+            "title": "6.9 決定する"
+          },
+          {
+            "id": "ch06_sec_10",
+            "title": "6.10 Action Items"
+          },
+          {
+            "id": "ch06_sec_11",
+            "title": "演習"
+          },
+          {
+            "id": "ch06_sec_12",
+            "title": "ケーススタディ2　意見が対立する会議"
+          },
+          {
+            "id": "ch06_sec_13",
+            "title": "Situation"
+          },
+          {
+            "id": "ch06_sec_14",
+            "title": "Marketing"
+          },
+          {
+            "id": "ch06_sec_15",
+            "title": "Engineering"
+          },
+          {
+            "id": "ch06_sec_16",
+            "title": "Marketing"
+          },
+          {
+            "id": "ch06_sec_17",
+            "title": "Engineering"
+          },
+          {
+            "id": "ch06_sec_18",
+            "title": "Facilitator"
+          },
+          {
+            "id": "ch06_sec_19",
+            "title": "学習ポイント"
+          }
+        ],
+        "content": "\n# 第6章 会議を進める英語\n\n## 6.1 Opening\n\n> Thanks everyone for joining.\n\n> Let's get started.\n\n> The purpose of today's meeting is to...\n\n## 6.2 Agenda\n\n> We have three items to cover today.\n\n> First,...\n\n> Second,...\n\n> Finally,...\n\n## 6.3 発言する\n\n> I'd like to add one point.\n\n> Can I jump in here?\n\n> If I may,...\n\n## 6.4 意見\n\n> I think...\n\n> My view is that...\n\n> From my perspective,...\n\n> I would argue that...\n\n## 6.5 賛成\n\n> I agree.\n\n> I completely agree.\n\n> That makes sense.\n\n> I think that's the right direction.\n\n## 6.6 部分的賛成\n\n高度な会議では非常に重要です。\n\n> I agree with the overall direction, but I have some concerns about the timeline.\n\n> I agree with the goal, but I'm not convinced this is the best approach.\n\n「全部反対」ではなく、\n\n**agree + reservation**\n\nを使います。\n\n## 6.7 Clarification\n\n> Could you clarify what you mean by...?\n\n> When you say X, do you mean...?\n\n> Just to make sure I understand,...\n\n## 6.8 話を戻す\n\n> Let's get back to the main topic.\n\n> Going back to the original question,...\n\n> I think we're getting slightly off track.\n\n## 6.9 決定する\n\n> Are we all comfortable with Option B?\n\n> Can we agree to move forward with this?\n\n> It sounds like we've agreed to...\n\n## 6.10 Action Items\n\n会議の最後に必ず明確にします。\n\n> John will update the proposal by Thursday.\n\n> Sarah will confirm the budget with Finance.\n\n> I'll schedule the next meeting.\n\n## 演習\n\n1. 会議を開始する。\n2. 今日の目的を説明する。\n3. 3つのアジェンダを提示する。\n4. 発言に割り込む。\n5. 相手の意見に賛成する。\n6. 一部賛成しつつ懸念を示す。\n7. 意味を確認する。\n8. 議題から脱線していることを指摘する。\n9. 合意を確認する。\n10. Action Itemsをまとめる。\n11. 「あと5分しかありません」と伝える。\n12. 「この議論は別の会議で扱いましょう」と提案する。\n13. 「決定に必要な情報が足りません」と述べる。\n14. 「今日は決めず持ち帰る」を表現する。\n15. 会議終了時の30秒まとめを書く。\n\n## ケーススタディ2　意見が対立する会議\n\n## Situation\n\nマーケティング部門：\n\n「来月リリースしたい」\n\n開発部門：\n\n「品質上難しい」\n\n## Marketing\n\n> From a marketing perspective, delaying the launch would significantly affect the campaign.\n\n## Engineering\n\n> I understand the concern. However, we're not confident that the current version is stable enough for production.\n\n## Marketing\n\n> Is there any way to launch a limited version?\n\n## Engineering\n\n> That's possible. We could release the core functionality first and postpone the reporting features.\n\n## Facilitator\n\n> It sounds like a phased release may be a workable compromise. Can we evaluate that option today?\n\n## 学習ポイント\n\n対立時には、\n\n> You're wrong.\n\nではなく、\n\n> I understand the concern. However,...\n\nを使用します。\n\nまた、「賛成 / 反対」だけではなく、\n\n**第三案を作る英語**\n\nが重要です。\n"
+      },
+      {
+        "id": "ch07",
+        "number": 7,
+        "title": "第7章 進捗報告",
+        "shortTitle": "進捗報告",
+        "summary": "良い進捗報告は、",
+        "sections": [
+          {
+            "id": "ch07_sec_1",
+            "title": "例"
+          },
+          {
+            "id": "ch07_sec_2",
+            "title": "7.1 RAG"
+          },
+          {
+            "id": "ch07_sec_3",
+            "title": "7.2 問題報告"
+          },
+          {
+            "id": "ch07_sec_4",
+            "title": "7.3 Impactを書く"
+          },
+          {
+            "id": "ch07_sec_5",
+            "title": "7.4 Ownerを書く"
+          },
+          {
+            "id": "ch07_sec_6",
+            "title": "7.5 ETA"
+          },
+          {
+            "id": "ch07_sec_7",
+            "title": "演習"
+          },
+          {
+            "id": "ch07_sec_8",
+            "title": "ケーススタディ3　システム障害"
+          },
+          {
+            "id": "ch07_sec_9",
+            "title": "Initial Update"
+          },
+          {
+            "id": "ch07_sec_10",
+            "title": "Second Update"
+          },
+          {
+            "id": "ch07_sec_11",
+            "title": "Final Update"
+          }
+        ],
+        "content": "\n# 第7章 進捗報告\n\n良い進捗報告は、\n\nStatus  \nCompleted  \nRemaining  \nRisk  \nNext Step\n\nで構成します。\n\n## 例\n\n> The project is currently on schedule.\n\n> We completed the UI implementation yesterday, and backend development is about 80% complete.\n\n> The remaining work is mainly integration testing.\n\n> The main risk is a potential delay in the external API review.\n\n> We expect to complete testing by Friday.\n\n## 7.1 RAG\n\nプロジェクト管理では、\n\nRed  \nAmber  \nGreen\n\nで状況を表すことがあります。\n\n> The project is currently Amber because the vendor integration is running three days behind schedule.\n\n## 7.2 問題報告\n\n悪い：\n\n> API is broken.\n\n良い：\n\n> We identified an issue with the payment API. Around 8% of requests are currently failing.\n\n## 7.3 Impactを書く\n\n問題そのものだけではなく影響を説明します。\n\n> This may delay the release by one or two days.\n\n> Customers can still use the existing payment method.\n\n## 7.4 Ownerを書く\n\n> The backend team is investigating the issue.\n\n## 7.5 ETA\n\n> We expect to have a fix by 4 p.m.\n\n## 演習\n\n1. 「プロジェクトは予定通りです。」\n2. 「開発は80%完了しています。」\n3. 「最大のリスクはAPI連携です。」\n4. 「1〜2日遅れる可能性があります。」\n5. 「現在原因を調査しています。」\n6. 「午後3時に次の報告をします。」\n7. 「顧客への影響はありません。」\n8. 「一部ユーザーに影響しています。」\n9. 「暫定対応を実施しました。」\n10. 「恒久対応を検討しています。」\n\n## ケーススタディ3　システム障害\n\n## Initial Update\n\n> We are currently investigating an issue affecting login for some users.\n\n> The issue began at approximately 10:15 a.m.\n\n> Our engineering team is working to identify the root cause.\n\n> We will provide another update within 30 minutes.\n\n## Second Update\n\n> We have identified the cause of the login issue.\n\n> The problem was related to a database connection limit introduced during this morning's deployment.\n\n> We have applied a temporary fix, and login success rates have returned to normal.\n\n> We are continuing to monitor the system.\n\n## Final Update\n\n> The incident has been fully resolved.\n\n> We have also rolled back the configuration change that caused the issue and added an additional deployment check to prevent recurrence.\n"
+      },
+      {
+        "id": "ch08",
+        "number": 8,
+        "title": "第8章 プレゼン英語",
+        "shortTitle": "プレゼン英語",
+        "summary": "20%増。",
+        "sections": [
+          {
+            "id": "ch08_sec_1",
+            "title": "Opening"
+          },
+          {
+            "id": "ch08_sec_2",
+            "title": "8.1 Preview"
+          },
+          {
+            "id": "ch08_sec_3",
+            "title": "8.2 Transition"
+          },
+          {
+            "id": "ch08_sec_4",
+            "title": "8.3 グラフ"
+          },
+          {
+            "id": "ch08_sec_5",
+            "title": "8.4 増減"
+          },
+          {
+            "id": "ch08_sec_6",
+            "title": "8.5 比較"
+          },
+          {
+            "id": "ch08_sec_7",
+            "title": "8.6 強調"
+          },
+          {
+            "id": "ch08_sec_8",
+            "title": "8.7 Q&A"
+          },
+          {
+            "id": "ch08_sec_9",
+            "title": "演習"
+          }
+        ],
+        "content": "\n# 第8章 プレゼン英語\n\n## Opening\n\n> Good morning, everyone.\n\n> Today I'd like to talk about our growth strategy for the next fiscal year.\n\n## 8.1 Preview\n\n> I'll cover three areas today: our current performance, the key challenges, and our proposed strategy.\n\n## 8.2 Transition\n\n> Let's move on to the next point.\n\n> Now I'd like to turn to...\n\n## 8.3 グラフ\n\n> This chart shows monthly active users over the past twelve months.\n\n> As you can see, growth accelerated significantly after April.\n\n## 8.4 増減\n\n> increased by 20%\n\n20%増。\n\n> increased to 120 million yen\n\n1億2,000万円まで増加。\n\nこの\n\nby / to\n\nを混同しないこと。\n\n## 8.5 比較\n\n> Sales were 15% higher than last year.\n\n> Conversion rates were roughly twice as high as before.\n\n## 8.6 強調\n\n> The key takeaway is...\n\n> What's important here is...\n\n> The most significant change is...\n\n## 8.7 Q&A\n\n分からない場合：\n\n> I don't have the exact number with me, but I can check and follow up after the meeting.\n\n質問が分からない：\n\n> Just to make sure I understand your question, are you asking about...?\n\n## 演習\n\n1. プレゼン開始。\n2. 3点説明すると予告する。\n3. グラフを紹介する。\n4. 売上20%増。\n5. 売上100万円まで増。\n6. 主要ポイントを強調。\n7. 次の話題へ移る。\n8. 不明な数字について回答。\n9. 質問の意味を確認。\n10. 最後に要約する。\n"
+      },
+      {
+        "id": "ch09",
+        "number": 9,
+        "title": "第9章 交渉英語",
+        "shortTitle": "交渉英語",
+        "summary": "交渉では「要求」だけではなく、",
+        "sections": [
+          {
+            "id": "ch09_sec_1",
+            "title": "9.1 PositionとInterest"
+          },
+          {
+            "id": "ch09_sec_2",
+            "title": "9.2 条件付き提案"
+          },
+          {
+            "id": "ch09_sec_3",
+            "title": "9.3 譲歩"
+          },
+          {
+            "id": "ch09_sec_4",
+            "title": "9.4 拒否"
+          },
+          {
+            "id": "ch09_sec_5",
+            "title": "9.5 Counteroffer"
+          },
+          {
+            "id": "ch09_sec_6",
+            "title": "演習"
+          },
+          {
+            "id": "ch09_sec_7",
+            "title": "ケーススタディ4　SaaS価格交渉"
+          }
+        ],
+        "content": "\n# 第9章 交渉英語\n\n交渉では「要求」だけではなく、\n\n- Interest\n- Constraint\n- Option\n- Trade-off\n- Agreement\n\nを扱います。\n\n## 9.1 PositionとInterest\n\nPosition：\n\n> We need a 20% discount.\n\nInterest：\n\n> We need to keep the total annual cost below $100,000.\n\n後者まで分かれば別の解決案を考えられます。\n\n## 9.2 条件付き提案\n\n> If you commit to a two-year contract, we can offer a 15% discount.\n\nこれは交渉で非常に重要な型です。\n\n> If you..., we can...\n\n## 9.3 譲歩\n\n> We may be able to...\n\n> We could consider...\n\n> We're willing to...\n\n## 9.4 拒否\n\n> I'm afraid that wouldn't work for us.\n\n> That would be difficult under the current budget.\n\n> We wouldn't be able to agree to that condition.\n\n## 9.5 Counteroffer\n\n> Would you consider a 10% discount instead?\n\n> What if we reduced the price by 10% and extended the contract to two years?\n\n## 演習\n\n1. 10%値引きを提案。\n2. 2年契約なら15%値引き。\n3. 相手の要求を丁寧に断る。\n4. 代替案を出す。\n5. 契約期間について質問。\n6. 予算制約を説明。\n7. 「その条件なら検討できます」。\n8. 「価格以外の条件も検討しましょう」。\n9. 「これが当社の最終提案です」。\n10. 合意内容をまとめる。\n\n## ケーススタディ4　SaaS価格交渉\n\nCustomer:\n\n> Your proposal is above our budget. We'd need at least a 20% discount.\n\nVendor:\n\n> I understand. Could I ask what budget range you're working with?\n\nCustomer:\n\n> We need to keep the annual cost under $80,000.\n\nVendor:\n\n> In that case, we may be able to adjust the package rather than simply reducing the price.\n\nCustomer:\n\n> What would that look like?\n\nVendor:\n\n> If we reduce the number of premium support hours and move to a two-year agreement, we can bring the annual cost down to $78,000.\n\nCustomer:\n\n> That could work.\n\nVendor:\n\n> Great. I'll send you a revised proposal today.\n"
+      },
+      {
+        "id": "ch10",
+        "number": 10,
+        "title": "第10章 営業コミュニケーション",
+        "shortTitle": "営業コミュニケーション",
+        "summary": "営業では「説明」よりも「質問」が重要です。",
+        "sections": [
+          {
+            "id": "ch10_sec_1",
+            "title": "10.1 Discovery"
+          },
+          {
+            "id": "ch10_sec_2",
+            "title": "10.2 深掘り"
+          },
+          {
+            "id": "ch10_sec_3",
+            "title": "10.3 Value Proposition"
+          },
+          {
+            "id": "ch10_sec_4",
+            "title": "10.4 Closing"
+          },
+          {
+            "id": "ch10_sec_5",
+            "title": "演習"
+          },
+          {
+            "id": "ch10_sec_6",
+            "title": "ケーススタディ5　採用SaaS営業"
+          },
+          {
+            "id": "ch10_sec_7",
+            "title": "学習ポイント"
+          }
+        ],
+        "content": "\n# 第10章 営業コミュニケーション\n\n営業では「説明」よりも「質問」が重要です。\n\n## 10.1 Discovery\n\n> Could you walk me through your current process?\n\n> What challenges are you currently facing?\n\n> What are your main priorities this year?\n\n> How are you handling this today?\n\n## 10.2 深掘り\n\n> How often does that happen?\n\n> How much time does that currently take?\n\n> Who is most affected by this issue?\n\n> What happens if the problem isn't solved?\n\n## 10.3 Value Proposition\n\n機能：\n\n> Our system uses AI.\n\n価値：\n\n> Our system automatically screens routine inquiries, which can reduce the workload on your recruiting team.\n\nさらに：\n\n> This allows recruiters to spend more time speaking directly with high-priority candidates.\n\n## 10.4 Closing\n\n> Would it make sense to run a pilot?\n\n> Would you be interested in seeing a demo?\n\n> Shall we discuss next steps?\n\n## 演習\n\n1. 現状プロセスを聞く。\n2. 最大の課題を聞く。\n3. 発生頻度を聞く。\n4. コストを聞く。\n5. 影響を聞く。\n6. 理想状態を聞く。\n7. AI機能を価値に変換して説明。\n8. デモを提案。\n9. PoCを提案。\n10. 次回商談につなげる。\n\n## ケーススタディ5　採用SaaS営業\n\nSales:\n\n> Could you walk me through how your team currently handles candidate inquiries?\n\nCustomer:\n\n> Recruiters answer most questions manually by email.\n\nSales:\n\n> Roughly how much time does that take?\n\nCustomer:\n\n> Probably ten to fifteen hours a week across the team.\n\nSales:\n\n> And what types of questions come up most often?\n\nCustomer:\n\n> Mostly questions about the selection process, benefits, working hours, and interview preparation.\n\nSales:\n\n> That sounds like an area where automation could help. Our system can answer common candidate questions using company-approved information while escalating more complex questions to recruiters.\n\nCustomer:\n\n> How much could it reduce our workload?\n\nSales:\n\n> That depends on inquiry volume, but based on similar use cases, we would first measure the percentage of questions that can be handled automatically during a pilot.\n\n## 学習ポイント\n\n優れた営業英語は、\n\n「当社にはAIがあります」\n\nではなく、\n\nCustomer problem  \n↓\nBusiness impact  \n↓\nSolution  \n↓\nExpected outcome\n\nで構成します。\n"
+      },
+      {
+        "id": "ch11",
+        "number": 11,
+        "title": "第11章 仕事を依頼する",
+        "shortTitle": "仕事を依頼する",
+        "summary": "悪い：",
+        "sections": [
+          {
+            "id": "ch11_sec_1",
+            "title": "11.1 Contextを付ける"
+          },
+          {
+            "id": "ch11_sec_2",
+            "title": "11.2 優先度"
+          },
+          {
+            "id": "ch11_sec_3",
+            "title": "11.3 Feedback"
+          },
+          {
+            "id": "ch11_sec_4",
+            "title": "11.4 Feedforward"
+          },
+          {
+            "id": "ch11_sec_5",
+            "title": "演習"
+          }
+        ],
+        "content": "\n# 第11章 仕事を依頼する\n\n悪い：\n\n> Do this by Friday.\n\n改善：\n\n> We need this for Monday's client meeting. Could you complete the first draft by Friday afternoon?\n\n## 11.1 Contextを付ける\n\n部下にとって、\n\n「なぜ必要なのか」\n\nが分かると仕事の質が上がります。\n\n> We need to decide whether to launch the feature next week. Could you summarize the remaining technical risks by tomorrow afternoon?\n\n## 11.2 優先度\n\n> This is our top priority today.\n\n> Please prioritize this over the documentation task.\n\n> This isn't urgent, so next week is fine.\n\n## 11.3 Feedback\n\nSBI：\n\nSituation  \nBehavior  \nImpact\n\n例：\n\n> In yesterday's client meeting, you summarized the technical issue before going into the details. That made it much easier for the client to understand the situation.\n\n改善：\n\n> In yesterday's presentation, the key recommendation didn't appear until the final slide. That made it difficult to understand the direction of the proposal early on.\n\n## 11.4 Feedforward\n\n未来の改善を示します。\n\n> Next time, I'd suggest starting with the recommendation and then explaining the supporting data.\n\n## 演習\n\n1. 部下に分析を依頼。\n2. 締切を伝える。\n3. 優先順位を変更する。\n4. 良かった点を具体的に褒める。\n5. 改善点を指摘する。\n6. 人格ではなく行動について伝える。\n7. 次回の改善案を提示する。\n8. 遅延理由を聞く。\n9. 支援が必要か確認する。\n10. 1on1で成長目標を聞く。\n"
+      },
+      {
+        "id": "ch12",
+        "number": 12,
+        "title": "第12章 Interview English",
+        "shortTitle": "Interview English",
+        "summary": "Situation",
+        "sections": [
+          {
+            "id": "ch12_sec_1",
+            "title": "面接官"
+          },
+          {
+            "id": "ch12_sec_2",
+            "title": "12.1 STAR"
+          },
+          {
+            "id": "ch12_sec_3",
+            "title": "12.2 Behavioral Interview"
+          },
+          {
+            "id": "ch12_sec_4",
+            "title": "12.3 数字を使う"
+          },
+          {
+            "id": "ch12_sec_5",
+            "title": "演習"
+          }
+        ],
+        "content": "\n# 第12章 Interview English\n\n## 面接官\n\n> Could you tell me a little about yourself?\n\n> Could you walk me through your experience?\n\n> What attracted you to this role?\n\n> Can you tell me about a difficult problem you solved?\n\n## 12.1 STAR\n\nSituation\n\nTask\n\nAction\n\nResult\n\n例：\n\n> In my previous role, our support team was receiving over 500 inquiries per week.\n\n> I was responsible for improving response time.\n\n> I analyzed the inquiry data and introduced a new categorization and routing process.\n\n> As a result, average response time fell by 35%.\n\n## 12.2 Behavioral Interview\n\n> Tell me about a time when...\n\nは非常によく使われます。\n\n> Tell me about a time when you disagreed with your manager.\n\n> Tell me about a time when you had to work under pressure.\n\n## 12.3 数字を使う\n\n弱い：\n\n> I improved sales.\n\n強い：\n\n> I increased monthly sales by approximately 20% over six months.\n\n## 演習\n\n1. 1分自己紹介。\n2. 志望理由。\n3. 最大の強み。\n4. 改善したい点。\n5. 困難を乗り越えた経験。\n6. チームで対立した経験。\n7. リーダー経験。\n8. 失敗経験。\n9. 成果を数字付きで説明。\n10. 面接官への質問を3つ作る。\n"
+      },
+      {
+        "id": "ch13",
+        "number": 13,
+        "title": "第13章 High-context / Low-context",
+        "shortTitle": "High-context / Low-context",
+        "summary": "日本のビジネスコミュニケーションでは、しばしばHigh-contextなコミュニケーションが行われます。",
+        "sections": [
+          {
+            "id": "ch13_sec_1",
+            "title": "13.1 Deadline"
+          },
+          {
+            "id": "ch13_sec_2",
+            "title": "13.2 Noを言う"
+          },
+          {
+            "id": "ch13_sec_3",
+            "title": "13.3 Yes問題"
+          },
+          {
+            "id": "ch13_sec_4",
+            "title": "13.4 Ownership"
+          },
+          {
+            "id": "ch13_sec_5",
+            "title": "演習"
+          }
+        ],
+        "content": "\n# 第13章 High-context / Low-context\n\n日本のビジネスコミュニケーションでは、しばしばHigh-contextなコミュニケーションが行われます。\n\n例：\n\n「なるべく早めにお願いします。」\n\n「ちょっと難しいですね。」\n\n「検討しておきます。」\n\nこれらは文脈依存です。\n\n英語でそのまま曖昧にすると誤解が起きます。\n\n## 13.1 Deadline\n\n× as soon as possible\n\nよりも、\n\n> by 3 p.m. tomorrow\n\nの方が明確です。\n\nASAPは必要な場面もありますが、期限としては不十分なことがあります。\n\n## 13.2 Noを言う\n\n日本語：\n\n「ちょっと難しいです。」\n\n英語：\n\n> That may be difficult.\n\nだと、「難しいが可能」と解釈される場合があります。\n\n本当に不可能なら、\n\n> Unfortunately, we won't be able to meet that deadline.\n\nと明確に伝えます。\n\n## 13.3 Yes問題\n\n英語でYesはAgreementと理解されやすいです。\n\n理解だけなら、\n\n> I understand.\n\n> I see.\n\n> Got it.\n\n## 13.4 Ownership\n\n日本語：\n\n「対応しておきます。」\n\n英語：\n\n> I'll take care of it.\n\nさらに期限：\n\n> I'll take care of it and send you an update by tomorrow afternoon.\n\n## 演習\n\n1. 「なるべく早く」を具体化する。\n2. 「難しいです」を明確な拒否にする。\n3. 「検討します」を期限付きにする。\n4. 「了解しました」を3種類。\n5. 「一旦持ち帰ります」を英訳。\n6. 「社内で確認して明日連絡します」を英訳。\n7. 担当者を明確にしたAction Itemを書く。\n8. 曖昧なdeadlineを修正。\n9. 「前向きに検討します」を具体化。\n10. 日本語的に曖昧なメールを明確に書き換える。\n"
+      },
+      {
+        "id": "ch14",
+        "number": 14,
+        "title": "第14章 プロジェクト・IT・経営語彙",
+        "shortTitle": "プロジェクト・IT・経営語彙",
+        "summary": "scope",
+        "sections": [
+          {
+            "id": "ch14_sec_1",
+            "title": "Project"
+          },
+          {
+            "id": "ch14_sec_2",
+            "title": "Problem Solving"
+          },
+          {
+            "id": "ch14_sec_3",
+            "title": "Strategy"
+          },
+          {
+            "id": "ch14_sec_4",
+            "title": "Finance"
+          },
+          {
+            "id": "ch14_sec_5",
+            "title": "Sales"
+          },
+          {
+            "id": "ch14_sec_6",
+            "title": "語彙演習"
+          }
+        ],
+        "content": "\n# 第14章 プロジェクト・IT・経営語彙\n\n## Project\n\nscope  \n範囲\n\nrequirement  \n要件\n\ndeliverable  \n成果物\n\ntimeline  \n工程\n\ndeadline  \n締切\n\nmilestone  \n節目\n\ndependency  \n依存関係\n\nstakeholder  \n利害関係者\n\nresource  \n人員・資源\n\nconstraint  \n制約\n\n## Problem Solving\n\nissue  \n問題・論点\n\nroot cause  \n根本原因\n\nworkaround  \n暫定回避策\n\nsolution  \n解決策\n\nimpact  \n影響\n\nrisk  \nリスク\n\nmitigation  \n緩和策\n\nrecurrence  \n再発\n\n## Strategy\n\nobjective  \n目的\n\ninitiative  \n施策\n\npriority  \n優先事項\n\nopportunity  \n機会\n\ncompetitive advantage  \n競争優位\n\nvalue proposition  \n価値提案\n\ntarget market  \n対象市場\n\n## Finance\n\nrevenue  \n売上\n\nprofit  \n利益\n\noperating profit  \n営業利益\n\nmargin  \n利益率\n\ncost  \n原価・費用\n\nexpense  \n経費\n\nbudget  \n予算\n\nforecast  \n予測\n\ncash flow  \nキャッシュフロー\n\n## Sales\n\nlead\n\nprospect\n\nopportunity\n\npipeline\n\nconversion\n\nproposal\n\nquotation\n\ncontract\n\nrenewal\n\nupsell\n\ncross-sell\n\n## 語彙演習\n\n以下を英語にしてください。\n\n1. 納期\n2. 成果物\n3. 利害関係者\n4. 制約\n5. 根本原因\n6. 暫定対応\n7. 再発防止\n8. 売上\n9. 利益率\n10. 見込み顧客\n11. 更新契約\n12. 競争優位\n13. 価値提案\n14. 依存関係\n15. リスク軽減策\n"
+      },
+      {
+        "id": "ch15",
+        "number": 15,
+        "title": "第15章 I think だけから卒業する",
+        "shortTitle": "I think だけから卒業する",
+        "summary": "日本語の「思う」は英語では状況によって変わります。",
+        "sections": [
+          {
+            "id": "ch15_sec_1",
+            "title": "15.1 Problem / Issue / Concern / Risk / Challenge"
+          },
+          {
+            "id": "ch15_sec_2",
+            "title": "演習"
+          }
+        ],
+        "content": "\n# 第15章 I think だけから卒業する\n\n日本語の「思う」は英語では状況によって変わります。\n\n### Opinion\n\n> I think...\n\n### Strong belief\n\n> I believe...\n\n### Expectation\n\n> I expect...\n\n### Assumption\n\n> I assume...\n\n### Understanding\n\n> My understanding is...\n\n### Recommendation\n\n> I recommend...\n\n### Estimate\n\n> I estimate...\n\n## 15.1 Problem / Issue / Concern / Risk / Challenge\n\n### problem\n\n明確に悪い問題。\n\n> We have a problem with the server.\n\n### issue\n\n中立的でビジネスで使いやすい。\n\n> We identified an issue with the API.\n\n### concern\n\n懸念。\n\n> I have some concerns about the timeline.\n\n### risk\n\n将来問題になる可能性。\n\n> Security is the main risk.\n\n### challenge\n\n克服すべき課題。\n\n> Hiring enough engineers is a major challenge.\n\n## 演習\n\n1. I thinkをexpectに変更すべき文章を作る。\n2. I thinkをrecommendに変える。\n3. issueとriskを使い分ける。\n4. concernを使って反対意見。\n5. challengeを使って事業課題を説明。\n6. assumeを使う。\n7. my understandingを使う。\n8. estimateを使う。\n9. believeを使う。\n10. 最適な単語を選択する問題を5問自作する。\n"
+      },
+      {
+        "id": "ch16",
+        "number": 16,
+        "title": "第16章 総合ケーススタディ",
+        "shortTitle": "総合ケーススタディ",
+        "summary": "海外チーム、上司、部下、顧客、経営会議での実践ケース",
+        "sections": [
+          {
+            "id": "ch16_sec_1",
+            "title": "ケーススタディ6　海外チームとの開発プロジェクト"
+          },
+          {
+            "id": "ch16_sec_2",
+            "title": "Reply"
+          },
+          {
+            "id": "ch16_sec_3",
+            "title": "ケーススタディ7　上司へのリスク報告"
+          },
+          {
+            "id": "ch16_sec_4",
+            "title": "ケーススタディ8　部下の成果物が不十分"
+          },
+          {
+            "id": "ch16_sec_5",
+            "title": "ケーススタディ9　顧客から無理な要求"
+          },
+          {
+            "id": "ch16_sec_6",
+            "title": "ケーススタディ10　経営会議で提案する"
+          }
+        ],
+        "content": "\n# 第16章 総合ケーススタディ\n\n## ケーススタディ6　海外チームとの開発プロジェクト\n\nあなたは日本側のプロジェクトマネージャーです。\n\n海外開発チームから次の連絡を受けました。\n\n> We may need some more time for the API integration.\n\nこれは非常に曖昧です。\n\nあなたは以下を確認する必要があります。\n\n- 何が原因か\n- どれくらい遅れるか\n- リリースへの影響\n- 対応案\n\n## Reply\n\n> Thanks for the update.\n\n> Could you clarify what is causing the delay and how much additional time you expect to need?\n\n> I'd also like to understand whether this affects the planned release date.\n\n> If possible, please send us an updated timeline and proposed next steps by 3 p.m. today.\n\n## ケーススタディ7　上司へのリスク報告\n\n状況：\n\n重要プロジェクトが遅延する可能性が30〜40%ある。\n\n悪い報告：\n\n> Everything is okay, but there might be a slight delay.\n\nこれではリスクが伝わりません。\n\n改善：\n\n> The project is currently on schedule, but there is a significant risk of delay.\n\n> The external API integration is three days behind plan. If the vendor does not complete the fix by Wednesday, our release may be delayed by approximately one week.\n\n> We are currently evaluating whether we can proceed with a temporary workaround.\n\n## ケーススタディ8　部下の成果物が不十分\n\n悪い：\n\n> This isn't good enough. Please redo it.\n\n改善：\n\n> Thanks for putting this together.\n\n> The overall structure works well, but I think the analysis needs more evidence to support the recommendation.\n\n> In particular, could you add customer data and competitor examples to sections 2 and 3?\n\n> If possible, please send me the revised version by tomorrow afternoon.\n\n## ケーススタディ9　顧客から無理な要求\n\nCustomer:\n\n> We need the new feature by Friday.\n\nあなた：\n\n> I understand that Friday is important for your launch.\n\n> Based on the remaining development and testing work, however, we would not be able to deliver a production-ready version by Friday without increasing the risk of defects.\n\n> We could offer two alternatives: a limited beta version on Friday, or the complete version next Wednesday.\n\n> Which option would work better for you?\n\n## ケーススタディ10　経営会議で提案する\n\n> I recommend increasing our investment in customer retention.\n\n> There are two main reasons.\n\n> First, our acquisition cost has increased by 35% over the past year.\n\n> Second, customers who remain with us for more than twelve months generate almost three times as much lifetime value as new customers.\n\n> Therefore, I propose shifting 15% of our acquisition budget toward retention initiatives.\n"
+      },
+      {
+        "id": "ch17",
+        "number": 17,
+        "title": "第17章 総合演習100",
+        "shortTitle": "総合演習100",
+        "summary": "依頼、確認、報告、会議、問題解決、営業、交渉などの総合演習",
+        "sections": [
+          {
+            "id": "ch17_sec_1",
+            "title": "A. 依頼"
+          },
+          {
+            "id": "ch17_sec_2",
+            "title": "B. 確認"
+          },
+          {
+            "id": "ch17_sec_3",
+            "title": "C. 報告"
+          },
+          {
+            "id": "ch17_sec_4",
+            "title": "D. 会議"
+          },
+          {
+            "id": "ch17_sec_5",
+            "title": "E. 問題解決"
+          },
+          {
+            "id": "ch17_sec_6",
+            "title": "F. 営業"
+          },
+          {
+            "id": "ch17_sec_7",
+            "title": "G. 交渉"
+          },
+          {
+            "id": "ch17_sec_8",
+            "title": "H. マネジメント"
+          },
+          {
+            "id": "ch17_sec_9",
+            "title": "I. プレゼン"
+          },
+          {
+            "id": "ch17_sec_10",
+            "title": "J. 総合"
+          }
+        ],
+        "content": "\n# 第17章 総合演習100\n\n## A. 依頼\n\n1. 資料を送ってください。\n2. 金曜までに確認してください。\n3. コメントをください。\n4. 最新版を共有してください。\n5. 顧客に確認してください。\n6. 優先して対応してください。\n7. 午後3時までに完了してください。\n8. 問題があれば教えてください。\n9. 会議を設定してください。\n10. 数字を更新してください。\n\n## B. 確認\n\n11. 認識が合っているか確認する。\n12. リリース日を確認。\n13. 価格を確認。\n14. 担当者を確認。\n15. 期限を確認。\n16. 相手の意図を確認。\n17. 「real-time」の意味を確認。\n18. 決定事項を確認。\n19. 予算を確認。\n20. 会議時間を確認。\n\n## C. 報告\n\n21. 順調です。\n22. 80%完了。\n23. 2日遅れ。\n24. 原因調査中。\n25. 暫定対応済み。\n26. 顧客影響あり。\n27. 顧客影響なし。\n28. 今日中に解決予定。\n29. リスクがある。\n30. 次回更新は午後5時。\n\n## D. 会議\n\n31. 開始する。\n32. アジェンダ提示。\n33. 意見を言う。\n34. 賛成。\n35. 部分的賛成。\n36. 反対。\n37. 割り込む。\n38. 確認。\n39. 脱線を戻す。\n40. 要約。\n\n## E. 問題解決\n\n41. 問題を特定する。\n42. 根本原因を聞く。\n43. 影響を確認。\n44. 暫定対応を聞く。\n45. 恒久対応を聞く。\n46. ETAを聞く。\n47. リスクを確認。\n48. 選択肢を提案。\n49. 優先順位を決める。\n50. Ownerを決める。\n\n## F. 営業\n\n51. 現状を聞く。\n52. 課題を聞く。\n53. 頻度を聞く。\n54. コストを聞く。\n55. 影響を聞く。\n56. 理想を聞く。\n57. 提案する。\n58. デモを提案。\n59. PoCを提案。\n60. 次回商談設定。\n\n## G. 交渉\n\n61. 値引きを提示。\n62. 条件付き値引き。\n63. 拒否。\n64. Counteroffer。\n65. 契約期間を交渉。\n66. 支払条件を交渉。\n67. 予算制約。\n68. 合意確認。\n69. 最終提案。\n70. 契約次ステップ。\n\n## H. マネジメント\n\n71. タスク依頼。\n72. 期限設定。\n73. 優先順位。\n74. 褒める。\n75. 改善指摘。\n76. 次回改善案。\n77. 支援を申し出る。\n78. 遅延理由を聞く。\n79. キャリア希望を聞く。\n80. 目標設定。\n\n## I. プレゼン\n\n81. 開始。\n82. Agenda。\n83. グラフ説明。\n84. 20%増。\n85. 10%減。\n86. 横ばい。\n87. 比較。\n88. 強調。\n89. Q&A。\n90. 結論。\n\n## J. 総合\n\n91. 納期延期メール。\n92. 障害報告。\n93. 会議後フォローアップ。\n94. 顧客への謝罪。\n95. 部下へのフィードバック。\n96. 上司へのリスク報告。\n97. 商談で課題ヒアリング。\n98. 価格交渉。\n99. プレゼン冒頭。\n100. 1分間のプロジェクト進捗報告。\n"
+      },
+      {
+        "id": "ch18",
+        "number": 18,
+        "title": "第18章 学習プログラム",
+        "shortTitle": "学習プログラム",
+        "summary": "基礎から経営コミュニケーションまでの段階別・30日学習計画",
+        "sections": [
+          {
+            "id": "ch18_sec_1",
+            "title": "Level 1：基礎"
+          },
+          {
+            "id": "ch18_sec_2",
+            "title": "Level 2：実務"
+          },
+          {
+            "id": "ch18_sec_3",
+            "title": "Level 3：高度なコミュニケーション"
+          },
+          {
+            "id": "ch18_sec_4",
+            "title": "Level 4：マネジメント"
+          },
+          {
+            "id": "ch18_sec_5",
+            "title": "Level 5：経営コミュニケーション"
+          },
+          {
+            "id": "ch18_sec_6",
+            "title": "30日トレーニング"
+          },
+          {
+            "id": "ch18_sec_7",
+            "title": "Week 1"
+          },
+          {
+            "id": "ch18_sec_8",
+            "title": "Week 2"
+          },
+          {
+            "id": "ch18_sec_9",
+            "title": "Week 3"
+          },
+          {
+            "id": "ch18_sec_10",
+            "title": "Week 4"
+          }
+        ],
+        "content": "\n# 第18章 学習プログラム\n\n## Level 1：基礎\n\n目標：\n\n- 英文を作れる\n- 基本依頼ができる\n- 確認できる\n\n重点：\n\nCould you...\n\nI'd like to...\n\nJust to confirm,...\n\nPlease let me know...\n\n## Level 2：実務\n\n目標：\n\n- メールを書ける\n- 会議に参加できる\n- 進捗を説明できる\n\n重点：\n\nPREP\n\nBLUF\n\nStatus Reporting\n\nAction Items\n\n## Level 3：高度なコミュニケーション\n\n目標：\n\n- 反対意見\n- 問題解決\n- 説得\n- 交渉\n\n重点：\n\n> I see your point, but...\n\n> My concern is...\n\n> What if we...?\n\n> We could consider...\n\n## Level 4：マネジメント\n\n目標：\n\n- 会議進行\n- フィードバック\n- 合意形成\n- 意思決定\n\n## Level 5：経営コミュニケーション\n\n目標：\n\n複雑な内容を、\n\n**短く・論理的に・意思決定可能な状態で**\n\n説明すること。\n\nSCQA\n\nPyramid Principle\n\nExecutive Summary\n\nRecommendation\n\nRisk\n\nTrade-off\n\nDecision\n\nを扱えるようにします。\n\n## 30日トレーニング\n\n## Week 1\n\n毎日10個：\n\n依頼・確認・質問\n\n## Week 2\n\n毎日：\n\n英文メール1本\n\n## Week 3\n\n毎日：\n\n1分間の進捗報告\n\nテーマ例：\n\n- 今日の仕事\n- プロジェクト状況\n- 問題\n- 提案\n\n## Week 4\n\nロールプレイ：\n\n- 会議\n- 商談\n- 交渉\n- 障害対応\n- フィードバック\n"
+      },
+      {
+        "id": "ch19",
+        "number": 19,
+        "title": "第19章 最終チェック",
+        "shortTitle": "最終チェック",
+        "summary": "実務メッセージの確認項目、重要原則、教材全体の到達目標",
+        "sections": [
+          {
+            "id": "ch19_sec_1",
+            "title": "Message"
+          },
+          {
+            "id": "ch19_sec_2",
+            "title": "Action"
+          },
+          {
+            "id": "ch19_sec_3",
+            "title": "Deadline"
+          },
+          {
+            "id": "ch19_sec_4",
+            "title": "Logic"
+          },
+          {
+            "id": "ch19_sec_5",
+            "title": "Risk"
+          },
+          {
+            "id": "ch19_sec_6",
+            "title": "Tone"
+          },
+          {
+            "id": "ch19_sec_7",
+            "title": "本書で最も重要な10原則"
+          },
+          {
+            "id": "ch19_sec_8",
+            "title": "1. Bottom Line Up Front"
+          },
+          {
+            "id": "ch19_sec_9",
+            "title": "2. Be Specific"
+          },
+          {
+            "id": "ch19_sec_10",
+            "title": "3. Make Ownership Clear"
+          },
+          {
+            "id": "ch19_sec_11",
+            "title": "4. Separate Facts from Assumptions"
+          },
+          {
+            "id": "ch19_sec_12",
+            "title": "5. Explain Impact"
+          },
+          {
+            "id": "ch19_sec_13",
+            "title": "6. Provide Next Steps"
+          },
+          {
+            "id": "ch19_sec_14",
+            "title": "7. Clarify Ambiguity"
+          },
+          {
+            "id": "ch19_sec_15",
+            "title": "8. Disagree Constructively"
+          },
+          {
+            "id": "ch19_sec_16",
+            "title": "9. Turn Problems into Decisions"
+          },
+          {
+            "id": "ch19_sec_17",
+            "title": "10. English Is a Tool for Execution"
+          },
+          {
+            "id": "ch19_sec_18",
+            "title": "到達目標"
+          }
+        ],
+        "content": "\n# 第19章 最終チェック\n\n英語を送信する前に確認してください。\n\n## Message\n\n□ 結論は明確か\n\n□ 最も重要な情報が最初にあるか\n\n## Action\n\n□ 相手に何をしてほしいか明確か\n\n□ 誰が担当するか明確か\n\n## Deadline\n\n□ 期限は具体的か\n\n## Logic\n\n□ 理由は説明されているか\n\n□ 事実と推測が分かれているか\n\n## Risk\n\n□ 問題だけでなく影響が書かれているか\n\n□ 対応策が書かれているか\n\n## Tone\n\n□ 強すぎないか\n\n□ 曖昧すぎないか\n\n□ 不必要に長くないか\n\n## 本書で最も重要な10原則\n\n## 1. Bottom Line Up Front\n\n結論を先に。\n\n## 2. Be Specific\n\n× soon\n\n○ by 3 p.m. Friday\n\n## 3. Make Ownership Clear\n\n× It will be reviewed.\n\n○ Sarah will review it.\n\n## 4. Separate Facts from Assumptions\n\nFact:\n\n> The API failed 12 times yesterday.\n\nAssumption:\n\n> We believe the failures may be related to increased traffic.\n\n## 5. Explain Impact\n\n> This may delay the release by two days.\n\n## 6. Provide Next Steps\n\n> We'll complete the investigation today and provide an update tomorrow morning.\n\n## 7. Clarify Ambiguity\n\n> When you say “urgent,” what deadline do you have in mind?\n\n## 8. Disagree Constructively\n\n> I agree with the goal, but I have some concerns about the proposed approach.\n\n## 9. Turn Problems into Decisions\n\n問題：\n\n> Development is late.\n\n意思決定：\n\n> Development is three days behind schedule. We have two options: reduce scope or delay the release.\n\n## 10. English Is a Tool for Execution\n\n最も重要なのは、難しい英語を使うことではありません。\n\n優れたビジネスコミュニケーションとは、\n\n> **The right information  \n> to the right person  \n> at the right time  \n> with a clear next action.**\n\nです。\n\n英語力の最終目標は、\n\n**「流暢に話すこと」ではなく、英語環境でも意思決定と業務遂行の質を落とさないこと**\n\nと考えると、本当に必要な能力が見えてきます。\n\n## 到達目標\n\n本書を繰り返し学習した後、次のことが英語で自然にできる状態を目指します。\n\n- 30秒で結論を説明する\n- 相手に具体的な依頼をする\n- 曖昧な指示を確認する\n- 会議で自分の意見を述べる\n- 丁寧に反対する\n- 問題・原因・影響・対応を報告する\n- 顧客に謝罪する\n- 納期を交渉する\n- 商談でニーズを深掘りする\n- プレゼンでデータを説明する\n- チームメンバーへフィードバックする\n- Action Itemを明確にする\n- 経営層向けにRecommendationを提示する\n- 英語で「仕事を前に進める」\n\nこれが、本書におけるビジネスコミュニケーション英語の最終到達点です。\n"
+      }
+    ],
+    "quizQuestions": [
+      {
+        "id": "q_ch01_1",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-1",
+        "question": "次の英文に不足している情報を指摘してください。／Please check the document.",
+        "answer": "対象、確認内容、期限、確認後の行動が不明。",
+        "explanation": "対象、確認内容、期限、確認後の行動が不明。"
+      },
+      {
+        "id": "q_ch01_2",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-2",
+        "question": "次のメッセージを仕事が進む形にしてください。／We have a problem.",
+        "answer": "We identified an issue with the payment system. Our engineering team is investigating it and will provide an update by 3 p.m.",
+        "explanation": "We identified an issue with the payment system. Our engineering team is investigating it and will provide an update by 3 p.m."
+      },
+      {
+        "id": "q_ch01_3",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-3",
+        "question": "以下を英訳してください。／「最新版の資料を金曜日までに確認し、問題があれば教えてください。」",
+        "answer": "Could you review the latest version of the document by Friday and let me know if you find any issues?",
+        "explanation": "Could you review the latest version of the document by Friday and let me know if you find any issues?"
+      },
+      {
+        "id": "q_ch01_4",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-4",
+        "question": "以下の英文の目的を分類してください。／Could you clarify what you mean by “high priority”?",
+        "answer": "Clarify",
+        "explanation": "Clarify"
+      },
+      {
+        "id": "q_ch01_5",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-5",
+        "question": "次の英文を改善してください。／Maybe there is some issue and perhaps we should check.",
+        "answer": "We may have an issue. I suggest checking the system logs first.",
+        "explanation": "We may have an issue. I suggest checking the system logs first."
+      },
+      {
+        "id": "q_ch01_6",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-6",
+        "question": "次のメッセージにAction Itemを追加してください。／The design is almost complete.",
+        "answer": "The design is almost complete. Could you review the latest version by tomorrow?",
+        "explanation": "The design is almost complete. Could you review the latest version by tomorrow?"
+      },
+      {
+        "id": "q_ch01_7",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-7",
+        "question": "「事実」と「推測」を分けて英文を書いてください。／事実：／昨日午後3時にサーバーが停止した。／推測：／原因はネットワーク設定の可能性がある。",
+        "answer": "The server stopped at 3 p.m. yesterday. We believe the issue may have been caused by a network configuration problem.",
+        "explanation": "The server stopped at 3 p.m. yesterday. We believe the issue may have been caused by a network configuration problem."
+      },
+      {
+        "id": "q_ch01_8",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-8",
+        "question": "以下をBLUF型に変更してください。／We have discussed several options, and there are still some technical concerns, and after considering the development schedule, we think that it might be better to postpone the launch.",
+        "answer": "We recommend postponing the launch because several technical issues remain unresolved.",
+        "explanation": "We recommend postponing the launch because several technical issues remain unresolved."
+      },
+      {
+        "id": "q_ch01_9",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-9",
+        "question": "次の英文が曖昧な理由を説明してください。／Please send it soon.",
+        "answer": "soonの具体的期限がない。",
+        "explanation": "soonの具体的期限がない。"
+      },
+      {
+        "id": "q_ch01_10",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 ビジネス英語とは何か",
+        "level": "実務基礎",
+        "qNumber": "章末-10",
+        "question": "以下の状況で2文の英文を書いてください。／「顧客に仕様書の確認を依頼する。締切は水曜日。」",
+        "answer": "Could you review the specification document? If possible, please send me your comments by Wednesday.",
+        "explanation": "Could you review the specification document? If possible, please send me your comments by Wednesday."
+      },
+      {
+        "id": "q_ch03_1",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-1",
+        "question": "Send it.",
+        "answer": "Could you send it to me?",
+        "explanation": "Could you send it to me?"
+      },
+      {
+        "id": "q_ch03_2",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-2",
+        "question": "You are wrong.",
+        "answer": "I see it a little differently.",
+        "explanation": "I see it a little differently."
+      },
+      {
+        "id": "q_ch03_3",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-3",
+        "question": "This plan is impossible.",
+        "answer": "I think the current plan may be difficult to execute within the proposed timeline.",
+        "explanation": "I think the current plan may be difficult to execute within the proposed timeline."
+      },
+      {
+        "id": "q_ch03_4",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-4",
+        "question": "Explain this.",
+        "answer": "Could you walk me through this?",
+        "explanation": "Could you walk me through this?"
+      },
+      {
+        "id": "q_ch03_5",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-5",
+        "question": "Do it again.",
+        "answer": "Could you revise this section?",
+        "explanation": "Could you revise this section?"
+      },
+      {
+        "id": "q_ch03_6",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-6",
+        "question": "I don't like this design.",
+        "answer": "I'm not sure this design fully supports our objective.",
+        "explanation": "I'm not sure this design fully supports our objective."
+      },
+      {
+        "id": "q_ch03_7",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-7",
+        "question": "You misunderstood.",
+        "answer": "I think there may have been a misunderstanding.",
+        "explanation": "I think there may have been a misunderstanding."
+      },
+      {
+        "id": "q_ch03_8",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-8",
+        "question": "You made a mistake.",
+        "answer": "It looks like there may be an error here.",
+        "explanation": "It looks like there may be an error here."
+      },
+      {
+        "id": "q_ch03_9",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-9",
+        "question": "This schedule is bad.",
+        "answer": "I'm concerned that the schedule may be too aggressive.",
+        "explanation": "I'm concerned that the schedule may be too aggressive."
+      },
+      {
+        "id": "q_ch03_10",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 英語における丁寧さ",
+        "level": "実務基礎",
+        "qNumber": "章末-10",
+        "question": "Change this immediately.",
+        "answer": "Could you prioritize this change?",
+        "explanation": "Could you prioritize this change?"
+      }
+    ]
+  },
   "chinese_language": {
     "config": {
       "features": {

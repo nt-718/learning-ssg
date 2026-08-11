@@ -36,3 +36,13 @@ test('legacy chapter IDs migrate to the last active course', () => {
   assert.deepEqual(Storage.getReadChapters('course-a'), []);
   assert.deepEqual(Storage.getReadChapters('course-b'), ['intro', 'ch01']);
 });
+
+test('quiz history and review questions are isolated by course', () => {
+  Storage.recordQuizAnswer('course-a', 'q_ch01_1', false, 'answer-a');
+  Storage.recordQuizAnswer('course-b', 'q_ch01_1', true, 'answer-b');
+
+  assert.deepEqual(Storage.getWrongQuestions('course-a'), ['q_ch01_1']);
+  assert.deepEqual(Storage.getWrongQuestions('course-b'), []);
+  assert.equal(Storage.getQuizHistory('course-a').q_ch01_1.userAns, 'answer-a');
+  assert.equal(Storage.getQuizHistory('course-b').q_ch01_1.userAns, 'answer-b');
+});

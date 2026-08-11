@@ -29,6 +29,7 @@ const state = {
 // Older versions stored only chapter IDs. Attribute those records to the last
 // active course before rendering so future progress is isolated per course.
 Storage.migrateLegacyReadChapters(state.activeCourseId);
+Storage.migrateLegacyQuizData(state.activeCourseId);
 
 // Initialize Theme
 Storage.setTheme(Storage.getTheme());
