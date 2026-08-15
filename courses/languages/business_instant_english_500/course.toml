@@ -1,0 +1,23 @@
+id = "business_instant_english_500"
+title = "ビジネス瞬間英作文500"
+subtitle = "500の基本文から、数千通りのビジネス表現を作る"
+description = "日本語を見て英語を瞬時に組み立てる、ビジネス特化型の反復教材"
+author = "AnS"
+version = "1.0.0"
+
+[features]
+quiz = true
+search = true
+
+[categories]
+intro = "ガイド"
+ch01 = "基本応答・仕事の基本動作"
+ch02 = "依頼・質問・確認"
+ch03 = "時間・期限・進捗"
+ch04 = "会議"
+ch05 = "意見・反対・提案"
+ch06 = "問題・障害・謝罪"
+ch07 = "メール・チャット"
+ch08 = "説明・プレゼンテーション"
+ch09 = "営業・交渉"
+ch10 = "マネジメント・戦略・意思決定"

@@ -3563,6 +3563,5217 @@ export const ALL_COURSES = {
       }
     ]
   },
+  "business_instant_english_500": {
+    "config": {
+      "features": {
+        "quiz": true,
+        "search": true
+      },
+      "categories": {
+        "intro": "ガイド",
+        "ch01": "基本応答・仕事の基本動作",
+        "ch02": "依頼・質問・確認",
+        "ch03": "時間・期限・進捗",
+        "ch04": "会議",
+        "ch05": "意見・反対・提案",
+        "ch06": "問題・障害・謝罪",
+        "ch07": "メール・チャット",
+        "ch08": "説明・プレゼンテーション",
+        "ch09": "営業・交渉",
+        "ch10": "マネジメント・戦略・意思決定"
+      },
+      "id": "business_instant_english_500",
+      "title": "ビジネス瞬間英作文500",
+      "subtitle": "500の基本文から、数千通りのビジネス表現を作る",
+      "description": "日本語を見て英語を瞬時に組み立てる、ビジネス特化型の反復教材",
+      "author": "AnS",
+      "version": "1.0.0",
+      "category": {
+        "id": "languages",
+        "title": "語学",
+        "order": 15,
+        "color": "#168c8c"
+      }
+    },
+    "chapters": [
+      {
+        "id": "intro",
+        "number": 0,
+        "title": "はじめに",
+        "shortTitle": "はじめに",
+        "summary": "500の基本文を反復し、ビジネス英語を瞬時に組み立てるための学習ガイド",
+        "sections": [
+          {
+            "id": "intro_sec_1",
+            "title": "本書の目的"
+          },
+          {
+            "id": "intro_sec_2",
+            "title": "学習方法"
+          }
+        ],
+        "content": "\n# はじめに\n\n## 本書の目的\n\n本書は、日本語を見て英語を瞬時に組み立てる「瞬間英作文」を、ビジネスコミュニケーションに特化させた教材です。\n\n1000文を大量に覚えるのではなく、500文まで厳選し、それぞれについて、\n\n- **基本表現**\n- **代替表現**\n- **ニュアンス・使い分け**\n\nを理解します。\n\n目標は500文の丸暗記ではありません。\n\nたとえば、\n\n> Could you send me the latest version?\n\nを覚えれば、\n\n> Could you review the latest version?  \n> Could you update the latest version?  \n> Could you share the latest version?  \n> Could you send it by Friday?  \n> Could you send it to the client?\n\nのように、要素を交換して大量の英文を生成できます。\n\nしたがって本書では、\n\n> **英文を500個覚える**\n>\n> ではなく\n>\n> **英語を作る500個の型を身につける**\n\nことを目指します。\n\n## 学習方法\n日本語だけを見て、3〜5秒以内に英語を発話してください。\n\nその後、\n\n1. 基本表現\n2. 代替表現\n3. 補足\n\nを確認します。\n\n模範解答と完全一致する必要はありません。\n"
+      },
+      {
+        "id": "ch01",
+        "number": 1,
+        "title": "第1章 基本応答・仕事の基本動作",
+        "shortTitle": "基本応答・仕事の基本動作",
+        "summary": "No.1〜50で基本応答・仕事の基本動作の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch01_sec_1",
+            "title": "No.1〜50"
+          }
+        ],
+        "content": "\n# 第1章 基本応答・仕事の基本動作\n\n## No.1〜50\n\n### 1\n了解しました。\n\n**基本**\n> Got it.\n\n**代替**\n> Understood.  \n> I understand.\n\n**補足**  \n`Got it.` は日常的な社内コミュニケーションで非常によく使います。`Understood.` は少し硬めです。\n\n### 2\nなるほど。\n\n> I see.\n\n**代替**\n> That makes sense.\n\n`I see.` は「理解した」、`That makes sense.` は「説明に納得した」。\n\n### 3\nいいですね。\n\n> Sounds good.\n\n**代替**\n> That works for me.\n\n後者は特に日程・提案への同意に便利です。\n\n### 4\n問題ありません。\n\n> No problem.\n\n**代替**\n> That's fine.  \n> That works for me.\n\n### 5\n同意します。\n\n> I agree.\n\n**代替**\n> I completely agree.  \n> I'm with you on that.\n\n### 6\nそれは良い指摘です。\n\n> That's a good point.\n\n**代替**\n> That's a fair point.\n\n`fair point` は「確かに一理あります」。\n\n### 7\n少し考えさせてください。\n\n> Let me think about that.\n\n**代替**\n> Let me give that some thought.\n\n後者の方が少し丁寧です。\n\n### 8\n確認します。\n\n> Let me check.\n\n**代替**\n> I'll check.\n\n### 9\n調べてみます。\n\n> I'll look into it.\n\n**代替**\n> I'll investigate.\n\n`look into` は非常に頻出。`investigate` は障害・原因調査などに向きます。\n\n### 10\n対応します。\n\n> I'll take care of it.\n\n**代替**\n> I'll handle it.\n\n### 11\n今対応しています。\n\n> I'm working on it.\n\n**代替**\n> I'm on it.\n\n`I'm on it.` は短く、Slackなどに適します。\n\n### 12\n完了しました。\n\n> It's done.\n\n**代替**\n> I've completed it.\n\n### 13\n更新しました。\n\n> I've updated it.\n\n**代替**\n> The update is complete.\n\n### 14\n修正しました。\n\n> I've fixed it.\n\n**代替**\n> I've corrected the issue.\n\n`fix` は技術的問題、`correct` は誤りにも使えます。\n\n### 15\n共有しました。\n\n> I've shared it.\n\n**代替**\n> I've sent it over.\n\n### 16\n確認済みです。\n\n> I've already checked it.\n\n**代替**\n> I've reviewed it.\n\n`review` は単なる確認より「内容を検討する」ニュアンス。\n\n### 17\nまだ確認していません。\n\n> I haven't checked it yet.\n\n**代替**\n> I haven't had a chance to review it yet.\n\n後者は「まだ時間が取れていない」と柔らかく伝えます。\n\n### 18\nあとで確認します。\n\n> I'll check it later.\n\n**代替**\n> I'll take a look later.\n\n### 19\n確認してご連絡します。\n\n> I'll check and get back to you.\n\n**代替**\n> Let me confirm and get back to you.\n\n非常に重要な定型文です。\n\n### 20\n後ほどお知らせします。\n\n> I'll let you know later.\n\n**代替**\n> I'll keep you posted.\n\n`keep you posted` は継続的な進捗共有。\n\n### 21\n明日改めて連絡します。\n\n> I'll follow up tomorrow.\n\n**代替**\n> I'll get back to you tomorrow.\n\n### 22\n何かあれば教えてください。\n\n> Let me know if anything comes up.\n\n**代替**\n> Please let me know if there are any issues.\n\n### 23\n質問があれば教えてください。\n\n> Please let me know if you have any questions.\n\n**代替**\n> Feel free to reach out if you have any questions.\n\n### 24\n必要なものがあれば教えてください。\n\n> Let me know if you need anything.\n\n**代替**\n> Let me know if there's anything I can help with.\n\n### 25\nありがとうございます。\n\n> Thank you.\n\n**代替**\n> Thanks.\n\n社内なら `Thanks.` が自然です。\n\n### 26\nご連絡ありがとうございます。\n\n> Thanks for letting me know.\n\n**代替**\n> Thank you for the update.\n\n### 27\n迅速な対応ありがとうございます。\n\n> Thanks for the quick response.\n\n**代替**\n> I appreciate your quick response.\n\n### 28\nご協力ありがとうございます。\n\n> Thank you for your cooperation.\n\n**代替**\n> I appreciate your help.\n\n### 29\nお待ちいただきありがとうございます。\n\n> Thank you for your patience.\n\n顧客対応で非常に便利です。\n\n### 30\n始めましょう。\n\n> Let's get started.\n\n**代替**\n> Shall we get started?\n\n後者の方が少し柔らかい。\n\n### 31\n次に進みましょう。\n\n> Let's move on.\n\n**代替**\n> Let's move on to the next topic.\n\n### 32\nあとで戻りましょう。\n\n> Let's come back to this later.\n\n**代替**\n> Let's circle back to this later.\n\n`circle back` はビジネス会話で頻出。\n\n### 33\nこれについて話しましょう。\n\n> Let's discuss this.\n\n**代替**\n> Let's talk this through.\n\n`talk through` は詳しく一緒に検討するニュアンス。\n\n### 34\nこの方向で進めましょう。\n\n> Let's move forward with this approach.\n\n**代替**\n> Let's proceed with this option.\n\n### 35\n一旦保留にしましょう。\n\n> Let's put this on hold for now.\n\n**代替**\n> Let's hold off for now.\n\n### 36\n問題なさそうです。\n\n> It looks good to me.\n\n**代替**\n> Everything looks fine.\n\n### 37\n準備できています。\n\n> I'm ready.\n\n**代替**\n> We're good to go.\n\n後者は「準備万端です」。\n\n### 38\nまだ準備できていません。\n\n> We're not ready yet.\n\n**代替**\n> We still have some work to do.\n\n### 39\nその件は私が担当します。\n\n> I'll handle that.\n\n**代替**\n> I'll take ownership of that.\n\n`ownership` は責任主体を強調。\n\n### 40\nそれは田中さんが担当します。\n\n> Tanaka will handle that.\n\n**代替**\n> Tanaka will take the lead on that.\n\n### 41\n私から共有します。\n\n> I'll share it with the team.\n\n**代替**\n> I'll pass it along.\n\n### 42\n私から確認しておきます。\n\n> I'll check on my end.\n\n**代替**\n> I'll confirm internally.\n\n### 43\nこちらでは問題ありません。\n\n> Everything is fine on our end.\n\n**代替**\n> No issues on our side.\n\n### 44\nこちらでも同じ問題が起きています。\n\n> We're seeing the same issue on our end.\n\n技術チーム間で頻出です。\n\n### 45\n分かりません。\n\n> I'm not sure.\n\n**代替**\n> I don't have that information yet.\n\n`I don't know.` よりビジネスでは柔らかい。\n\n### 46\n現時点では判断できません。\n\n> It's too early to say.\n\n**代替**\n> We don't have enough information to say yet.\n\n### 47\n確認してから判断します。\n\n> Let's decide after we have more information.\n\n**代替**\n> Let's wait until we have the full picture.\n\n### 48\n今のところ問題ありません。\n\n> So far, so good.\n\n**代替**\n> There are no issues so far.\n\n### 49\nそれで大丈夫です。\n\n> That works.\n\n**代替**\n> I'm fine with that.\n\n### 50\nではそれで進めましょう。\n\n> Then let's go with that.\n\n**代替**\n> In that case, let's move forward.\n"
+      },
+      {
+        "id": "ch02",
+        "number": 2,
+        "title": "第2章 依頼・質問・確認",
+        "shortTitle": "依頼・質問・確認",
+        "summary": "No.51〜100で依頼・質問・確認の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch02_sec_1",
+            "title": "No.51〜100"
+          }
+        ],
+        "content": "\n# 第2章 依頼・質問・確認\n\n## No.51〜100\n\n### 51\n資料を送っていただけますか。\n\n> Could you send me the document?\n\n**代替**\n> Could you share the document with me?\n\n### 52\n最新版を送っていただけますか。\n\n> Could you send me the latest version?\n\n`latest version` は最重要頻出表現の一つ。\n\n### 53\n確認していただけますか。\n\n> Could you review it?\n\n**代替**\n> Could you take a look?\n\n後者は軽い確認。\n\n### 54\n金曜日までに確認していただけますか。\n\n> Could you review it by Friday?\n\n`by` = その時点までに。\n\n### 55\nコメントをいただけますか。\n\n> Could you send me your comments?\n\n**代替**\n> Could you share your feedback?\n\n### 56\nこの部分を修正していただけますか。\n\n> Could you revise this section?\n\n**代替**\n> Could you update this section?\n\n### 57\n数字を更新していただけますか。\n\n> Could you update the numbers?\n\n### 58\nリンクを共有していただけますか。\n\n> Could you share the link?\n\n### 59\n会議を設定していただけますか。\n\n> Could you schedule a meeting?\n\n**代替**\n> Could you set up a meeting?\n\n### 60\n顧客に確認していただけますか。\n\n> Could you check with the client?\n\n`check with + 人` = 人に確認する。\n\n### 61\n法務に確認していただけますか。\n\n> Could you check with Legal?\n\n部署名は無冠詞で使われることがあります。\n\n### 62\nこれを優先していただけますか。\n\n> Could you prioritize this?\n\n**代替**\n> Could you treat this as a priority?\n\n### 63\n今日中に対応できますか。\n\n> Could you handle this by the end of today?\n\n### 64\n原因を調べていただけますか。\n\n> Could you investigate the cause?\n\n**代替**\n> Could you look into what caused this?\n\n### 65\n要点をまとめていただけますか。\n\n> Could you summarize the key points?\n\n### 66\nもう少し詳しく説明していただけますか。\n\n> Could you explain that in more detail?\n\n**代替**\n> Could you elaborate on that?\n\n### 67\n具体例を挙げていただけますか。\n\n> Could you give me an example?\n\n### 68\nもう少し具体的にしていただけますか。\n\n> Could you be more specific?\n\n### 69\nもう少し簡潔にできますか。\n\n> Could you make it more concise?\n\n`concise` = 簡潔だが必要情報は含む。\n\n### 70\n結論を先にしていただけますか。\n\n> Could you put the conclusion first?\n\n### 71\n締切は金曜日で合っていますか。\n\n> Just to confirm, the deadline is Friday, correct?\n\n**代替**\n> The deadline is Friday, right?\n\n前者の方がビジネス向き。\n\n### 72\n念のため確認です。\n\n> Just to confirm,...\n\n非常に汎用性の高い導入表現。\n\n### 73\n私の理解では来週開始します。\n\n> My understanding is that we'll start next week.\n\n### 74\n私の理解で合っていますか。\n\n> Is my understanding correct?\n\n**代替**\n> Have I understood that correctly?\n\n### 75\nつまり延期するということですか。\n\n> Do you mean we're going to postpone it?\n\n### 76\n「至急」とは今日中という意味ですか。\n\n> When you say “urgent,” do you mean by the end of today?\n\n`When you say X, do you mean Y?` は曖昧さ解消の万能型。\n\n### 77\n一つ確認したい点があります。\n\n> There's one point I'd like to clarify.\n\n### 78\nこの部分を明確にしていただけますか。\n\n> Could you clarify this point?\n\n### 79\n質問の意味を確認させてください。\n\n> Let me make sure I understand your question.\n\n### 80\nこれは必須ですか。\n\n> Is this mandatory?\n\n**代替**\n> Is this a must-have requirement?\n\n### 81\nこれは今回の範囲に含まれますか。\n\n> Is this included in the current scope?\n\n### 82\n誰が担当しますか。\n\n> Who is responsible for this?\n\n**代替**\n> Who owns this?\n\n`own` はビジネスで「責任を持つ」。\n\n### 83\n最終決定者は誰ですか。\n\n> Who is the final decision-maker?\n\n### 84\nいつまでに必要ですか。\n\n> When do you need this by?\n\n口語では文末の `by` が自然です。\n\n### 85\nどれくらい時間がかかりますか。\n\n> How long will this take?\n\n### 86\nどれくらい遅れていますか。\n\n> How far behind schedule are we?\n\n### 87\n顧客に影響しますか。\n\n> Will this affect customers?\n\n### 88\nリリースに影響しますか。\n\n> Will this affect the release?\n\n### 89\nほかにリスクはありますか。\n\n> Are there any other risks?\n\n### 90\nほかに選択肢はありますか。\n\n> Are there any other options?\n\n### 91\n何か見落としていませんか。\n\n> Are we missing anything?\n\n### 92\n全員同じ認識ですか。\n\n> Are we all on the same page?\n\n`on the same page` = 認識が一致。\n\n### 93\n顧客は承認済みですか。\n\n> Has the client approved this?\n\n### 94\n予算は承認済みですか。\n\n> Has the budget been approved?\n\n### 95\n仕様は確定していますか。\n\n> Have the requirements been finalized?\n\n### 96\nまだ変更される可能性がありますか。\n\n> Is this still subject to change?\n\n`subject to change` = 変更の可能性あり。\n\n### 97\nこれは確定情報ですか。\n\n> Is this confirmed?\n\n### 98\nこれは事実ですか、それとも推測ですか。\n\n> Is this a fact or an assumption?\n\n### 99\n次のステップを確認しましょう。\n\n> Let's confirm the next steps.\n\n### 100\n私が資料を作り、あなたが顧客に確認するということですね。\n\n> So I'll prepare the document, and you'll check with the client, correct?\n\n認識合わせには、担当者とActionをそのまま言い直すのが有効です。\n"
+      },
+      {
+        "id": "ch03",
+        "number": 3,
+        "title": "第3章 時間・期限・進捗",
+        "shortTitle": "時間・期限・進捗",
+        "summary": "No.101〜150で時間・期限・進捗の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch03_sec_1",
+            "title": "No.101〜150"
+          }
+        ],
+        "content": "\n# 第3章 時間・期限・進捗\n\n## No.101〜150\n\n### 101\n今日中に終わらせます。\n\n> I'll finish it by the end of today.\n\n### 102\n明日の朝までに送ります。\n\n> I'll send it by tomorrow morning.\n\n### 103\n金曜日までに完了する予定です。\n\n> We expect to complete it by Friday.\n\n`expect` は業務上の見込みに非常に便利。\n\n### 104\n来週開始予定です。\n\n> We're planning to start next week.\n\n### 105\n来月リリース予定です。\n\n> We're planning to release it next month.\n\n### 106\nその時間で大丈夫です。\n\n> That time works for me.\n\n### 107\nその時間は空いていません。\n\n> I'm not available at that time.\n\n### 108\n別の時間にできますか。\n\n> Could we find another time?\n\n### 109\n会議を金曜日に変更できますか。\n\n> Could we move the meeting to Friday?\n\n`move A to B` は日程変更で頻出。\n\n### 110\n会議を延期できますか。\n\n> Could we postpone the meeting?\n\n### 111\n予定通り進んでいます。\n\n> We're on schedule.\n\n**代替**\n> We're on track.\n\n`on track` の方がプロジェクト全般に使いやすい。\n\n### 112\n予定より進んでいます。\n\n> We're ahead of schedule.\n\n### 113\n予定より遅れています。\n\n> We're behind schedule.\n\n### 114\n2日遅れています。\n\n> We're two days behind schedule.\n\n### 115\n1週間遅れる可能性があります。\n\n> We may be delayed by one week.\n\n**代替**\n> We may be one week behind schedule.\n\n### 116\n期限に間に合いそうです。\n\n> We expect to meet the deadline.\n\n### 117\n期限に間に合わない可能性があります。\n\n> We may not be able to meet the deadline.\n\n### 118\n当初の期限には間に合いません。\n\n> We won't be able to meet the original deadline.\n\n`may not` と `won't` の確実性の違いに注意。\n\n### 119\n少なくともあと2日必要です。\n\n> We need at least two more days.\n\n### 120\n締切を延ばす必要があります。\n\n> We need to extend the deadline.\n\n### 121\nこれは明日まで待てます。\n\n> This can wait until tomorrow.\n\n### 122\nこれは今日中に対応する必要があります。\n\n> We need to address this today.\n\n### 123\nこれは急ぎではありません。\n\n> This isn't urgent.\n\n### 124\nこれを最優先にしてください。\n\n> Please make this your top priority.\n\n### 125\n明日の午後3時を目標にしましょう。\n\n> Let's aim for 3 p.m. tomorrow.\n\n### 126\nプロジェクトは順調です。\n\n> The project is on track.\n\n### 127\n開発は約70%完了しています。\n\n> Development is about 70% complete.\n\n### 128\n実装はほぼ完了しています。\n\n> Implementation is almost complete.\n\n### 129\nテストを開始しました。\n\n> We've started testing.\n\n### 130\n設計フェーズは完了しました。\n\n> We've completed the design phase.\n\n### 131\n残っているのはテストだけです。\n\n> Testing is the only remaining task.\n\n### 132\n現在レビュー中です。\n\n> It's currently under review.\n\n### 133\n現在顧客の承認待ちです。\n\n> We're currently waiting for client approval.\n\n### 134\n大きな問題はありません。\n\n> There are no major issues at the moment.\n\n### 135\n一つ懸念があります。\n\n> We have one concern.\n\n**代替**\n> There is one issue we need to watch.\n\n### 136\n最大のリスクはスケジュールです。\n\n> The main risk is the schedule.\n\n### 137\nAPI連携が少し遅れています。\n\n> The API integration is slightly behind schedule.\n\n### 138\n今のところリリースへの影響はありません。\n\n> So far, there is no impact on the release.\n\n### 139\nリリースが遅れる可能性があります。\n\n> The release may be delayed.\n\n### 140\n現在影響を評価しています。\n\n> We're currently assessing the impact.\n\n### 141\n原因を調査しています。\n\n> We're investigating the cause.\n\n### 142\n暫定対応を実施しました。\n\n> We've implemented a temporary workaround.\n\n`workaround` = 根本解決ではない回避策。\n\n### 143\n恒久対応を進めています。\n\n> We're working on a permanent solution.\n\n### 144\n明日までにテストを終える予定です。\n\n> We expect to complete testing by tomorrow.\n\n### 145\n現在2つの選択肢を検討しています。\n\n> We're currently considering two options.\n\n### 146\n今週中に決定する予定です。\n\n> We plan to make a decision this week.\n\n### 147\n追加のリソースが必要かもしれません。\n\n> We may need additional resources.\n\n### 148\n現在の体制で対応できます。\n\n> We can handle this with the current team.\n\n### 149\nこのままだと期限に間に合わない可能性があります。\n\n> At this rate, we may miss the deadline.\n\n`at this rate` = このペースなら。\n\n### 150\n明日改めて状況を共有します。\n\n> I'll provide another update tomorrow.\n"
+      },
+      {
+        "id": "ch04",
+        "number": 4,
+        "title": "第4章 会議",
+        "shortTitle": "会議",
+        "summary": "No.151〜200で会議の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch04_sec_1",
+            "title": "No.151〜200"
+          }
+        ],
+        "content": "\n# 第4章 会議\n\n## No.151〜200\n\n### 151\n始めましょう。\n\n> Let's get started.\n\n### 152\nご参加ありがとうございます。\n\n> Thanks everyone for joining.\n\n### 153\n今日の目的は方針を決めることです。\n\n> The purpose of today's meeting is to decide on our approach.\n\n### 154\n今日は3つの議題があります。\n\n> We have three items on the agenda today.\n\n### 155\nまず現状を確認しましょう。\n\n> Let's start by reviewing the current situation.\n\n### 156\n次に選択肢を検討します。\n\n> Next, we'll look at the options.\n\n### 157\n最後に次のステップを決めます。\n\n> Finally, we'll decide on the next steps.\n\n### 158\n30分以内に終わらせたいと思います。\n\n> I'd like to wrap this up within 30 minutes.\n\n`wrap up` = 終える・まとめる。\n\n### 159\n現在の状況を簡単に説明していただけますか。\n\n> Could you give us a quick overview of the current status?\n\n### 160\n少し補足してもいいですか。\n\n> Can I add something?\n\n### 161\n一つ付け加えたいです。\n\n> I'd like to add one point.\n\n### 162\nここで少し入ってもいいですか。\n\n> Can I jump in here?\n\n会議で自然な割り込み。\n\n### 163\nすみません、少しよろしいですか。\n\n> Sorry to interrupt, but may I add something?\n\nより丁寧。\n\n### 164\nその点について質問があります。\n\n> I have a question about that.\n\n### 165\n具体例はありますか。\n\n> Do you have a specific example?\n\n### 166\nもう少し詳しく説明していただけますか。\n\n> Could you elaborate on that?\n\n### 167\n本題に戻りましょう。\n\n> Let's get back to the main point.\n\n### 168\n少し話がそれています。\n\n> I think we're getting slightly off track.\n\n`slightly` を入れることで柔らかくします。\n\n### 169\nその話はあとで扱いましょう。\n\n> Let's come back to that later.\n\n### 170\n別の会議で扱いましょう。\n\n> Let's take that up in a separate meeting.\n\n### 171\n時間が限られています。\n\n> We're running short on time.\n\n### 172\nあと10分です。\n\n> We have about ten minutes left.\n\n### 173\nこの議論をまとめましょう。\n\n> Let's wrap up this discussion.\n\n### 174\n今日決める必要がありますか。\n\n> Do we need to make a decision today?\n\n### 175\nこの場で決められますか。\n\n> Can we make a decision on this today?\n\n### 176\nもう少し情報が必要です。\n\n> We need more information before making a decision.\n\n### 177\n今日は決定を見送りましょう。\n\n> Let's hold off on making a decision today.\n\n### 178\n全員この案でよいですか。\n\n> Is everyone comfortable with this option?\n\n`comfortable with` は合意確認に使いやすい。\n\n### 179\nこの方向で合意できますか。\n\n> Can we agree to move forward with this approach?\n\n### 180\n異論はありますか。\n\n> Does anyone have any objections?\n\n### 181\nではこの案で進めましょう。\n\n> Then let's move forward with this option.\n\n### 182\n決定事項を確認しましょう。\n\n> Let's confirm what we've decided.\n\n### 183\n次のステップを確認しましょう。\n\n> Let's confirm the next steps.\n\n### 184\n担当者を決めましょう。\n\n> Let's assign owners.\n\n### 185\n期限も決めましょう。\n\n> Let's agree on the deadlines as well.\n\n### 186\n私が資料を更新します。\n\n> I'll update the document.\n\n### 187\n田中さんが顧客に確認します。\n\n> Tanaka will check with the client.\n\n### 188\n来週もう一度話しましょう。\n\n> Let's revisit this next week.\n\n### 189\n要点をまとめます。\n\n> Let me summarize the key points.\n\n### 190\n今日は3つ決まりました。\n\n> We made three decisions today.\n\n### 191\nまずリリースを延期します。\n\n> First, we'll postpone the release.\n\n### 192\n次にスコープを縮小します。\n\n> Second, we'll reduce the scope.\n\n### 193\n最後に来週再確認します。\n\n> Finally, we'll review the situation again next week.\n\n### 194\n議事録を共有します。\n\n> I'll share the meeting notes.\n\n### 195\nご参加ありがとうございました。\n\n> Thanks everyone for your time.\n\n### 196\nこれで会議を終わります。\n\n> That concludes today's meeting.\n\n少しフォーマル。\n\n### 197\n今日の最重要ポイントは何ですか。\n\n> What's the key takeaway from today's discussion?\n\n`takeaway` = 持ち帰るべき要点。\n\n### 198\n今日何を決める必要がありますか。\n\n> What exactly do we need to decide today?\n\n### 199\n誰が何をいつまでに行いますか。\n\n> Who will do what by when?\n\nAction Itemの本質。\n\n### 200\nこれで全員同じ認識ですね。\n\n> It sounds like we're all aligned.\n"
+      },
+      {
+        "id": "ch05",
+        "number": 5,
+        "title": "第5章 意見・反対・提案",
+        "shortTitle": "意見・反対・提案",
+        "summary": "No.201〜250で意見・反対・提案の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch05_sec_1",
+            "title": "No.201〜250"
+          }
+        ],
+        "content": "\n# 第5章 意見・反対・提案\n\n## No.201〜250\n\n### 201\n私はこの案が良いと思います。\n\n> I think this is a good option.\n\n### 202\n私はこの方向に賛成です。\n\n> I agree with this direction.\n\n### 203\n全体的には賛成です。\n\n> I agree with the overall direction.\n\n### 204\n基本的には賛成ですが、一つ懸念があります。\n\n> I generally agree, but I have one concern.\n\n### 205\n目的には賛成ですが、方法には懸念があります。\n\n> I agree with the goal, but I have concerns about the approach.\n\n非常に便利な「部分賛成」型。\n\n### 206\n少し違う見方をしています。\n\n> I see it a little differently.\n\n直接 `I disagree.` と言わず反対できます。\n\n### 207\n完全には同意できません。\n\n> I'm not sure I completely agree.\n\n### 208\n別の選択肢も検討すべきです。\n\n> I think we should consider another option.\n\n### 209\nこの案にはリスクがあります。\n\n> I think this option carries some risk.\n\n### 210\nスケジュールが少し厳しいと思います。\n\n> I think the schedule is a little aggressive.\n\n`aggressive schedule` = 攻めた、厳しい日程。\n\n### 211\nこの方法は長期的には難しいと思います。\n\n> I don't think this approach is sustainable in the long term.\n\n### 212\n短期的には有効だと思います。\n\n> I think this could work in the short term.\n\n### 213\n長期的な影響も考える必要があります。\n\n> We also need to consider the long-term impact.\n\n### 214\nメリットよりリスクが大きいと思います。\n\n> I think the risks outweigh the benefits.\n\n`outweigh` = 上回る。\n\n### 215\nコストの観点では賛成です。\n\n> From a cost perspective, I agree.\n\n### 216\n技術的な観点では懸念があります。\n\n> From a technical perspective, I have some concerns.\n\n`From a ... perspective` は応用範囲が広い。\n\n### 217\n顧客の観点から考える必要があります。\n\n> We need to look at this from the customer's perspective.\n\n### 218\n私はAよりBを選びます。\n\n> I would choose B over A.\n\n### 219\n理由は2つあります。\n\n> There are two reasons for this.\n\n### 220\n最も重要なのは顧客への影響です。\n\n> The most important factor is the impact on customers.\n\n### 221\n私の最大の懸念はセキュリティです。\n\n> My main concern is security.\n\n### 222\nこの案には大きな利点があります。\n\n> This option has a major advantage.\n\n### 223\n一方で欠点もあります。\n\n> On the other hand, it also has some drawbacks.\n\n### 224\n費用対効果が高いと思います。\n\n> I think this is cost-effective.\n\n### 225\nその結論にはまだ早いと思います。\n\n> I think it's too early to draw that conclusion.\n\n`draw a conclusion` = 結論を出す。\n\n### 226\nもう少しデータを見るべきです。\n\n> We should look at more data.\n\n### 227\n仮説としては納得できます。\n\n> The hypothesis makes sense.\n\n### 228\nただし証拠が十分ではありません。\n\n> However, we don't have enough evidence yet.\n\n### 229\nこの提案を支持します。\n\n> I support this proposal.\n\n### 230\n今の情報だけでは判断できません。\n\n> I can't make a decision based on the information we have.\n\n### 231\n別の方法を試してみましょう。\n\n> Let's try a different approach.\n\n### 232\nまず原因を特定しましょう。\n\n> Let's identify the root cause first.\n\n### 233\nその後で解決策を考えましょう。\n\n> Then let's look at possible solutions.\n\n### 234\n選択肢を3つ考えましょう。\n\n> Let's come up with three options.\n\n### 235\n一番簡単な方法から試しましょう。\n\n> Let's try the simplest option first.\n\n### 236\nリリースを1週間延期することを提案します。\n\n> I suggest postponing the release by one week.\n\n**代替**\n> I recommend delaying the release by one week.\n\n`recommend` の方がやや強い。\n\n### 237\nまず小規模に試すのはどうでしょう。\n\n> How about starting with a small pilot?\n\n### 238\n段階的にリリースするのはどうでしょう。\n\n> What about rolling it out in phases?\n\n`roll out` = 導入・展開する。\n\n### 239\n一部ユーザーだけに公開するのはどうでしょう。\n\n> What if we release it to a limited group of users first?\n\n`What if we...` は提案に便利。\n\n### 240\n既存機能を使えないでしょうか。\n\n> Could we use the existing functionality instead?\n\n### 241\nPoCから始めましょう。\n\n> Let's start with a proof of concept.\n\n### 242\nまずデータを集めましょう。\n\n> Let's collect some data first.\n\n### 243\n顧客にヒアリングしましょう。\n\n> Let's talk to some customers first.\n\n### 244\n優先順位を付け直しましょう。\n\n> Let's reprioritize the tasks.\n\n### 245\n重要でない機能を外しましょう。\n\n> Let's remove the non-essential features.\n\n### 246\n問題を分解して考えましょう。\n\n> Let's break the problem down.\n\n### 247\nまず影響の大きい部分から対応しましょう。\n\n> Let's address the highest-impact area first.\n\n### 248\nAとBを組み合わせる方法があります。\n\n> We could combine Options A and B.\n\n### 249\n妥協案を考えましょう。\n\n> Let's look for a compromise.\n\n### 250\nこの方法で進めることを推奨します。\n\n> I recommend moving forward with this approach.\n"
+      },
+      {
+        "id": "ch06",
+        "number": 6,
+        "title": "第6章 問題・障害・謝罪",
+        "shortTitle": "問題・障害・謝罪",
+        "summary": "No.251〜300で問題・障害・謝罪の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch06_sec_1",
+            "title": "No.251〜300"
+          }
+        ],
+        "content": "\n# 第6章 問題・障害・謝罪\n\n## No.251〜300\n\n### 251\n問題が発生しています。\n\n> We're experiencing an issue.\n\n`We have a problem.` より顧客向けに自然。\n\n### 252\n一部ユーザーに影響しています。\n\n> The issue is affecting some users.\n\n### 253\nログインできない状態です。\n\n> Users are currently unable to log in.\n\n### 254\n約5%のリクエストが失敗しています。\n\n> Approximately 5% of requests are failing.\n\n障害報告では数字を入れると明確。\n\n### 255\n午前10時ごろから発生しています。\n\n> The issue started at around 10 a.m.\n\n### 256\n原因はまだ分かっていません。\n\n> We haven't identified the cause yet.\n\n### 257\n現在原因を調査しています。\n\n> We're currently investigating the root cause.\n\n### 258\n原因を特定しました。\n\n> We've identified the root cause.\n\n### 259\nネットワーク設定が原因でした。\n\n> The issue was caused by a network configuration problem.\n\n### 260\n今朝のデプロイが原因でした。\n\n> The issue was caused by this morning's deployment.\n\n### 261\n顧客データへの影響はありません。\n\n> No customer data has been affected.\n\n### 262\nデータ損失は確認されていません。\n\n> We have found no evidence of data loss.\n\n「ない」と断定せず、確認結果として表現できます。\n\n### 263\n影響範囲を確認しています。\n\n> We're assessing the scope of the impact.\n\n### 264\n暫定対応を行いました。\n\n> We've applied a temporary fix.\n\n### 265\nサービスは復旧しました。\n\n> The service has been restored.\n\n### 266\n現在正常に動作しています。\n\n> The system is now operating normally.\n\n### 267\n引き続き監視しています。\n\n> We're continuing to monitor the system.\n\n### 268\n恒久対応を進めています。\n\n> We're working on a permanent fix.\n\n### 269\n再発防止策を検討しています。\n\n> We're reviewing measures to prevent recurrence.\n\n### 270\n問題を再現できました。\n\n> We were able to reproduce the issue.\n\n### 271\nまだ再現できていません。\n\n> We haven't been able to reproduce the issue yet.\n\n### 272\n特定条件でのみ発生します。\n\n> The issue occurs only under certain conditions.\n\n### 273\n回避策があります。\n\n> There is a workaround.\n\n### 274\n現在回避策はありません。\n\n> There is currently no workaround.\n\n### 275\n影響は限定的です。\n\n> The impact is limited.\n\n### 276\n影響は重大です。\n\n> The impact is significant.\n\n### 277\nこれは重大な問題です。\n\n> This is a critical issue.\n\n### 278\n最優先で対応しています。\n\n> We're treating this as our top priority.\n\n### 279\n1時間以内の復旧を見込んでいます。\n\n> We expect the service to recover within an hour.\n\n### 280\n現時点では復旧時刻をお伝えできません。\n\n> We can't provide an estimated recovery time at this point.\n\n不確実なETAを無理に約束しない表現。\n\n### 281\n新しい情報が入り次第お知らせします。\n\n> We'll provide an update as soon as we have more information.\n\n### 282\nご迷惑をおかけして申し訳ありません。\n\n> We apologize for the inconvenience.\n\n### 283\n一度ロールバックします。\n\n> We'll roll back the change.\n\n### 284\n以前のバージョンに戻しました。\n\n> We've rolled back to the previous version.\n\n### 285\n問題は完全に解決しました。\n\n> The issue has now been fully resolved.\n\n### 286\n根本原因分析を行います。\n\n> We'll conduct a root cause analysis.\n\n### 287\n詳細な報告書を後ほど共有します。\n\n> We'll share a detailed incident report later.\n\n### 288\n再発防止策も報告します。\n\n> The report will also include preventive measures.\n\n### 289\n返信が遅くなり申し訳ありません。\n\n> I apologize for the delayed response.\n\n### 290\n混乱を招いて申し訳ありません。\n\n> I apologize for the confusion.\n\n### 291\nこちらのミスです。\n\n> This was our mistake.\n\n**代替**\n> The error was on our side.\n\n### 292\nこちらの確認不足でした。\n\n> We should have checked this more carefully.\n\n責任を認めつつ自然。\n\n### 293\n問題は修正済みです。\n\n> We've corrected the issue.\n\n### 294\n再発防止策も実施します。\n\n> We'll take steps to prevent this from happening again.\n\n### 295\n残念ながらその依頼には対応できません。\n\n> Unfortunately, we won't be able to accommodate that request.\n\n### 296\n金曜日までの対応は難しいです。\n\n> Unfortunately, we won't be able to complete it by Friday.\n\n曖昧な `It may be difficult.` より明確。\n\n### 297\n月曜日なら対応できます。\n\n> However, we can complete it by Monday.\n\n断り＋代替案が基本。\n\n### 298\nその条件では対応できません。\n\n> We won't be able to proceed under those conditions.\n\n### 299\n代わりに別の方法をご提案できます。\n\n> However, we can suggest an alternative.\n\n### 300\n期待に沿えず申し訳ありません。\n\n> I'm sorry we can't meet your expectations this time.\n"
+      },
+      {
+        "id": "ch07",
+        "number": 7,
+        "title": "第7章 メール・チャット",
+        "shortTitle": "メール・チャット",
+        "summary": "No.301〜350でメール・チャットの瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch07_sec_1",
+            "title": "No.301〜350"
+          }
+        ],
+        "content": "\n# 第7章 メール・チャット\n\n## No.301〜350\n\n### 301\nご連絡ありがとうございます。\n\n> Thank you for your email.\n\n### 302\n返信ありがとうございます。\n\n> Thank you for getting back to me.\n\n### 303\n添付資料をご確認ください。\n\n> Please see the attached document.\n\n**代替**\n> I've attached the document for your review.\n\n後者の方が自然な場合が多い。\n\n### 304\n最新版を添付しています。\n\n> I've attached the latest version.\n\n### 305\n以下をご確認ください。\n\n> Please see below.\n\n### 306\n参考までに共有します。\n\n> I'm sharing this for your reference.\n\n**代替**\n> FYI,...\n\n`FYI` は社内チャット向き。\n\n### 307\n前回のメールについてフォローアップです。\n\n> I'm following up on my previous email.\n\n### 308\n確認する時間はありましたか。\n\n> Have you had a chance to review it?\n\n催促として非常に柔らかい。\n\n### 309\n進捗はありますか。\n\n> Do you have any updates?\n\n### 310\n現在の状況を教えていただけますか。\n\n> Could you let me know where things stand?\n\n`where things stand` = 現在どの段階か。\n\n### 311\n明日までにご返信いただけると助かります。\n\n> I'd appreciate your response by tomorrow.\n\n### 312\n金曜日までに承認が必要です。\n\n> We need your approval by Friday.\n\n### 313\n承認いただければ進めます。\n\n> We'll proceed once we have your approval.\n\n### 314\n問題がなければこの内容で進めます。\n\n> If there are no objections, we'll proceed with this version.\n\n### 315\n変更があれば教えてください。\n\n> Please let me know if you'd like any changes.\n\n### 316\nご不明点があればご連絡ください。\n\n> Please let me know if you have any questions.\n\n### 317\n必要であれば詳しく説明します。\n\n> I'm happy to explain further if needed.\n\n### 318\n会議を設定したいです。\n\n> I'd like to schedule a meeting.\n\n### 319\n木曜か金曜はいかがでしょうか。\n\n> Would Thursday or Friday work for you?\n\n### 320\n都合の良い時間を教えてください。\n\n> Please let me know what time works best for you.\n\n### 321\n会議の日程を変更したいです。\n\n> I'd like to reschedule the meeting.\n\n### 322\n急な変更で申し訳ありません。\n\n> I apologize for the short notice.\n\n### 323\n確認後、改めてご連絡します。\n\n> I'll get back to you after reviewing it.\n\n### 324\n社内で確認します。\n\n> I'll check internally.\n\n### 325\n社内で確認して明日ご連絡します。\n\n> I'll check internally and get back to you tomorrow.\n\n### 326\n顧客に確認してご連絡します。\n\n> I'll check with the client and get back to you.\n\n### 327\n田中さんにも共有しておきます。\n\n> I'll share this with Tanaka as well.\n\n### 328\n関係者もCCに入れます。\n\n> I'll copy the relevant stakeholders.\n\n`CC` を動詞的に `copy` と表現できます。\n\n### 329\n対応済みです。\n\n> This has been taken care of.\n\n### 330\n承認済みです。\n\n> This has been approved.\n\n### 331\n対応中です。\n\n> This is in progress.\n\n### 332\n保留中です。\n\n> This is currently on hold.\n\n### 333\n顧客回答待ちです。\n\n> This is pending the client's response.\n\n`pending` = 〜待ち。\n\n### 334\nこちらでの対応は不要です。\n\n> No action is required on our side.\n\n### 335\n参考までに、会議は金曜日に変更されました。\n\n> FYI, the meeting has been moved to Friday.\n\n### 336\n今対応します。\n\n> On it.\n\nSlack向けの極めて短い表現。\n\n### 337\n対応します。\n\n> Will do.\n\n「依頼を受けて、やっておきます」。\n\n### 338\n私はそれで大丈夫です。\n\n> Works for me.\n\n### 339\n納得です。\n\n> Makes sense.\n\n### 340\nあとで確認します。\n\n> I'll take a look later.\n\n### 341\n何か進捗ありますか。\n\n> Any updates on this?\n\nチャット向け。\n\n### 342\n今どのあたりですか。\n\n> Where are we on this?\n\n### 343\n完了予定はありますか。\n\n> Do we have an ETA?\n\nETA = Estimated Time of Arrival。業務では完了見込みにも使う。\n\n### 344\n今日終わりそうですか。\n\n> Do you think you'll be able to finish this today?\n\n### 345\n最新版を共有してもらえますか。\n\n> Could you share the latest version?\n\n### 346\n念のため田中さんにも共有します。\n\n> I'll loop Tanaka in as well.\n\n`loop someone in` = 関係者として入れる。\n\n### 347\nこれについてあとで話しましょう。\n\n> Let's sync on this later.\n\n`sync` = 短く認識合わせする。IT企業で多い。\n\n### 348\n5分だけ話せますか。\n\n> Do you have five minutes to chat?\n\n### 349\nすぐ確認できますか。\n\n> Could you take a quick look?\n\n### 350\n問題があればスレッドで教えてください。\n\n> Let me know in the thread if you run into any issues.\n"
+      },
+      {
+        "id": "ch08",
+        "number": 8,
+        "title": "第8章 説明・プレゼンテーション",
+        "shortTitle": "説明・プレゼンテーション",
+        "summary": "No.351〜400で説明・プレゼンテーションの瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch08_sec_1",
+            "title": "No.351〜400"
+          }
+        ],
+        "content": "\n# 第8章 説明・プレゼンテーション\n\n## No.351〜400\n\n### 351\n結論から申し上げます。\n\n> Let me start with the conclusion.\n\n**代替**\n> The bottom line is...\n\n後者は非常に直接的。\n\n### 352\nこの案を推奨します。\n\n> I recommend this option.\n\n### 353\n理由は3つあります。\n\n> There are three reasons for this.\n\n### 354\n第一の理由はコストです。\n\n> The first reason is cost.\n\n### 355\n具体例を挙げます。\n\n> Let me give you an example.\n\n### 356\nつまり、今の方法では拡張できません。\n\n> In other words, the current approach doesn't scale.\n\n`scale` = 規模拡大に耐える。\n\n### 357\n要するに変更が必要です。\n\n> In short, we need to make a change.\n\n### 358\n最も重要なポイントはこれです。\n\n> This is the key point.\n\n**代替**\n> The key takeaway is...\n\n### 359\n背景から説明します。\n\n> Let me start with the background.\n\n### 360\n現在の状況は次のとおりです。\n\n> Here's where we are today.\n\n自然な口頭表現。\n\n### 361\n問題は問い合わせが増えていることです。\n\n> The problem is that inquiries are increasing.\n\n### 362\nそこで自動化を提案します。\n\n> That's why I'm proposing automation.\n\n### 363\nこれにより工数を削減できます。\n\n> This would allow us to reduce the workload.\n\n### 364\n同時に品質も維持できます。\n\n> At the same time, we can maintain quality.\n\n### 365\nこの数字を見てください。\n\n> Let's look at this number.\n\n### 366\n売上は前年比20%増えました。\n\n> Sales increased by 20% year over year.\n\n### 367\n売上は1億円まで増えました。\n\n> Sales increased to 100 million yen.\n\n`by 20%` と `to 100 million` の違いを意識。\n\n### 368\nコストは10%減りました。\n\n> Costs decreased by 10%.\n\n### 369\n利益率はほぼ横ばいです。\n\n> Profit margins remained roughly flat.\n\n### 370\n顧客数は2倍になりました。\n\n> The number of customers doubled.\n\n### 371\n一方、解約率は上昇しています。\n\n> However, the churn rate is increasing.\n\n### 372\nデータから二つのことが分かります。\n\n> The data tells us two things.\n\n### 373\n第一に需要は強いです。\n\n> First, demand is strong.\n\n### 374\n第二に維持率に課題があります。\n\n> Second, retention is a challenge.\n\n### 375\nしたがってリテンションに投資すべきです。\n\n> Therefore, we should invest in retention.\n\n### 376\nこの提案には3つのメリットがあります。\n\n> This proposal has three main benefits.\n\n### 377\nこの方法ならコストを削減できます。\n\n> This approach would reduce costs.\n\n### 378\nこの方法なら処理時間を短縮できます。\n\n> This approach would reduce processing time.\n\n### 379\n顧客体験も改善できます。\n\n> It would also improve the customer experience.\n\n### 380\nただしリスクもあります。\n\n> However, there are also some risks.\n\n### 381\n最大のリスクは導入コストです。\n\n> The biggest risk is the implementation cost.\n\n### 382\n段階導入でリスクを軽減できます。\n\n> We can mitigate this risk through a phased rollout.\n\n`mitigate risk` は重要なコロケーション。\n\n### 383\n以上を踏まえると、この案が最適です。\n\n> Given these factors, I believe this is the best option.\n\n### 384\n私たちには3つの選択肢があります。\n\n> We have three options.\n\n### 385\nAは安いですが時間がかかります。\n\n> Option A is cheaper but takes longer.\n\n### 386\nBは速いですが高価です。\n\n> Option B is faster but more expensive.\n\n### 387\nCが最もバランスが良いです。\n\n> Option C offers the best balance.\n\n### 388\n今日決めていただきたいのはこの点です。\n\n> This is the decision we need to make today.\n\n### 389\n今日は来年度の戦略について説明します。\n\n> Today I'd like to talk about our strategy for next year.\n\n### 390\n3つの点について説明します。\n\n> I'll cover three main points.\n\n### 391\nまずこのグラフをご覧ください。\n\n> Let's start with this chart.\n\n### 392\nこのグラフは過去12か月の売上を示しています。\n\n> This chart shows sales over the past twelve months.\n\n### 393\nご覧のとおり売上は増加しています。\n\n> As you can see, sales have increased.\n\n### 394\nここに注目してください。\n\n> I'd like to draw your attention to this point.\n\n### 395\n次のスライドに移ります。\n\n> Let's move on to the next slide.\n\n### 396\n次に原因を見てみましょう。\n\n> Next, let's look at what's driving this.\n\n`what's driving this` = 何がこの結果を引き起こしているか。\n\n### 397\n最後にまとめます。\n\n> Let me wrap up.\n\n### 398\nご質問をお受けします。\n\n> I'm happy to take any questions.\n\n### 399\n正確な数字は手元にありません。\n\n> I don't have the exact number with me.\n\n### 400\n確認して後ほどご連絡します。\n\n> I'll check and follow up after the meeting.\n"
+      },
+      {
+        "id": "ch09",
+        "number": 9,
+        "title": "第9章 営業・交渉",
+        "shortTitle": "営業・交渉",
+        "summary": "No.401〜450で営業・交渉の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch09_sec_1",
+            "title": "No.401〜450"
+          }
+        ],
+        "content": "\n# 第9章 営業・交渉\n\n## No.401〜450\n\n### 401\n現在どのような方法で対応していますか。\n\n> How are you currently handling this?\n\n### 402\n現在のプロセスを教えてください。\n\n> Could you walk me through your current process?\n\n`walk me through` = 順を追って説明する。\n\n### 403\n最大の課題は何ですか。\n\n> What's your biggest challenge?\n\n### 404\n今年の優先事項は何ですか。\n\n> What are your main priorities this year?\n\n### 405\nどの部分を改善したいですか。\n\n> What are you looking to improve?\n\n### 406\nどれくらい頻繁に起きますか。\n\n> How often does this happen?\n\n### 407\nどれくらい時間がかかっていますか。\n\n> How much time does this currently take?\n\n### 408\n誰が最も影響を受けていますか。\n\n> Who is most affected by this issue?\n\n### 409\nこの問題は事業にどんな影響がありますか。\n\n> What impact does this have on the business?\n\n### 410\n解決しなければどうなりますか。\n\n> What happens if this problem isn't solved?\n\n営業ヒアリングでは「放置コスト」を聞く。\n\n### 411\n現在いくらかかっていますか。\n\n> How much does this currently cost?\n\n### 412\nほかの製品を試しましたか。\n\n> Have you tried any other solutions?\n\n### 413\nなぜうまくいかなかったのでしょうか。\n\n> Why didn't those solutions work?\n\n### 414\n理想的な状態はどのようなものですか。\n\n> What would an ideal solution look like?\n\n### 415\n成功をどのように測りますか。\n\n> How would you measure success?\n\n### 416\n最も重要な要件は何ですか。\n\n> What are the most important requirements?\n\n### 417\n予算は決まっていますか。\n\n> Do you have a budget in mind?\n\n### 418\n導入時期はいつ頃ですか。\n\n> When are you looking to implement this?\n\n### 419\n意思決定には誰が関わりますか。\n\n> Who is involved in the decision-making process?\n\n### 420\n最終承認者は誰ですか。\n\n> Who gives final approval?\n\n### 421\nその作業は自動化できる可能性があります。\n\n> We may be able to automate that process.\n\n### 422\n弊社のシステムならその部分を自動化できます。\n\n> Our system can automate that part of the process.\n\n### 423\nこれにより手作業を削減できます。\n\n> This can reduce the amount of manual work.\n\n### 424\n担当者は重要な業務に集中できます。\n\n> This allows your team to focus on higher-value work.\n\n### 425\n御社にはこの機能が合いそうです。\n\n> I think this feature could be a good fit for your use case.\n\n### 426\nデモをご覧になりますか。\n\n> Would you like to see a demo?\n\n### 427\nまず小規模に試すこともできます。\n\n> We can also start with a small pilot.\n\n### 428\nPoCから始めることをおすすめします。\n\n> I'd recommend starting with a proof of concept.\n\n### 429\nまず効果を測定できます。\n\n> This would allow us to measure the impact first.\n\n### 430\n次回の打ち合わせを設定できますか。\n\n> Could we schedule a follow-up meeting?\n\n### 431\n価格について相談したいです。\n\n> I'd like to discuss the pricing.\n\n### 432\n現在の価格は予算を超えています。\n\n> The current price is above our budget.\n\n### 433\n価格に少し柔軟性はありますか。\n\n> Is there any flexibility on the price?\n\n### 434\n10%値引きは可能ですか。\n\n> Would a 10% discount be possible?\n\n### 435\n年間8万ドル以内に抑える必要があります。\n\n> We need to keep the annual cost below $80,000.\n\n### 436\nその価格では難しいです。\n\n> I'm afraid that price won't work for us.\n\n### 437\n別の条件を検討できますか。\n\n> Could we consider different terms?\n\n### 438\n2年契約なら10%値引きできます。\n\n> We can offer a 10% discount if you sign a two-year contract.\n\n`If you..., we can...` は交渉の基本構文。\n\n### 439\n価格以外の条件も検討しましょう。\n\n> Let's look at terms other than price as well.\n\n### 440\n支払条件について相談できますか。\n\n> Could we discuss the payment terms?\n\n### 441\nその条件なら検討できます。\n\n> We could consider that under those terms.\n\n### 442\nここは譲れません。\n\n> This point is non-negotiable for us.\n\n### 443\nそれ以外は柔軟に対応できます。\n\n> We're flexible on the other points.\n\n### 444\n何を最優先されていますか。\n\n> What's your top priority?\n\n### 445\n代替案があります。\n\n> I have an alternative proposal.\n\n### 446\nもう少し中間地点を探しましょう。\n\n> Let's see if we can meet somewhere in the middle.\n\n### 447\nそれができれば合意できます。\n\n> If you can do that, we have a deal.\n\n### 448\n条件を確認させてください。\n\n> Let me confirm the terms.\n\n### 449\nこれ以上の値引きは難しいです。\n\n> We won't be able to offer a further discount.\n\n### 450\n良い妥協点だと思います。\n\n> I think that's a good compromise.\n"
+      },
+      {
+        "id": "ch10",
+        "number": 10,
+        "title": "第10章 マネジメント・戦略・意思決定",
+        "shortTitle": "マネジメント・戦略・意思決定",
+        "summary": "No.451〜500でマネジメント・戦略・意思決定の瞬間英作文を練習する",
+        "sections": [
+          {
+            "id": "ch10_sec_1",
+            "title": "No.451〜500"
+          },
+          {
+            "id": "ch10_sec_2",
+            "title": "Stage 1　理解"
+          },
+          {
+            "id": "ch10_sec_3",
+            "title": "Stage 2　5秒英作文"
+          },
+          {
+            "id": "ch10_sec_4",
+            "title": "Stage 3　3秒英作文"
+          },
+          {
+            "id": "ch10_sec_5",
+            "title": "Stage 4　代替表現"
+          }
+        ],
+        "content": "\n# 第10章 マネジメント・戦略・意思決定\n\n## No.451〜500\n\n### 451\nこの仕事をお願いしたいです。\n\n> I'd like you to take this on.\n\n`take on` = タスク・責任を引き受ける。\n\n### 452\n金曜日までに初稿を作ってください。\n\n> Could you prepare the first draft by Friday?\n\n### 453\nまず背景を説明します。\n\n> Let me give you some context first.\n\nマネジメントではタスクだけでなくContextを渡すことが重要。\n\n### 454\n来週の経営会議で使います。\n\n> We need this for next week's management meeting.\n\n### 455\n最優先でお願いします。\n\n> Please make this your top priority.\n\n### 456\nまず80%の完成度で大丈夫です。\n\n> An 80% version is fine for the first draft.\n\n### 457\n完璧にする必要はありません。\n\n> It doesn't need to be perfect.\n\n### 458\n途中で一度見せてください。\n\n> Please show me a draft along the way.\n\n### 459\n期限に間に合わなそうなら早めに教えてください。\n\n> Let me know early if you think you might miss the deadline.\n\n### 460\n何か支援が必要ですか。\n\n> Do you need any support?\n\n### 461\n今抱えているタスクを教えてください。\n\n> Could you walk me through your current workload?\n\n### 462\n何に一番時間がかかっていますか。\n\n> What's taking up most of your time?\n\n### 463\n何かブロッカーはありますか。\n\n> Are there any blockers?\n\n`blocker` = 作業を止めている障害。\n\n### 464\nどこで困っていますか。\n\n> Where are you getting stuck?\n\n### 465\nあなたはこのプロジェクトに集中してください。\n\n> Please focus on this project.\n\n### 466\n昨日のプレゼンは良かったです。\n\n> You did a good job on yesterday's presentation.\n\n### 467\n特に説明が分かりやすかったです。\n\n> Your explanation was particularly clear.\n\n具体的に褒める方が有効。\n\n### 468\n一つ改善できる点があります。\n\n> There's one area I think you could improve.\n\n### 469\n少し詳細が多すぎました。\n\n> There was a little too much detail.\n\n### 470\n次回は要点を絞ってみてください。\n\n> Next time, try focusing on the key points.\n\n### 471\nデータを追加すると説得力が増すと思います。\n\n> I think adding more data would strengthen the argument.\n\n### 472\n結論をもう少し早く出すとよいです。\n\n> I suggest getting to the conclusion a little earlier.\n\n### 473\n全体としては良い仕事でした。\n\n> Overall, you did a good job.\n\n### 474\n最近どうですか。\n\n> How have things been going lately?\n\n### 475\n仕事量はどうですか。\n\n> How is your workload?\n\n### 476\n何か気になっていることはありますか。\n\n> Is there anything on your mind?\n\n### 477\n今後伸ばしたいスキルはありますか。\n\n> Are there any skills you'd like to develop?\n\n### 478\n半年後どうなっていたいですか。\n\n> Where would you like to be six months from now?\n\n### 479\n今期の最優先事項は成長です。\n\n> Our top priority this year is growth.\n\n### 480\nただし収益性も改善する必要があります。\n\n> However, we also need to improve profitability.\n\n### 481\n売上は伸びていますが、利益は伸びていません。\n\n> Revenue is growing, but profit isn't.\n\n### 482\nこのモデルは長期的には持続可能ではありません。\n\n> This model isn't sustainable in the long term.\n\n### 483\n戦略を見直す必要があります。\n\n> We need to rethink our strategy.\n\n### 484\nリテンションへの投資を増やすことを提案します。\n\n> I recommend increasing our investment in retention.\n\n### 485\nすべての市場を狙うことはできません。\n\n> We can't target every market.\n\n### 486\n優先順位を明確にする必要があります。\n\n> We need to make clear choices.\n\n### 487\n最大のリスクは実行力です。\n\n> The biggest risk is execution.\n\n### 488\n明確な責任者が必要です。\n\n> We need clear ownership.\n\n### 489\nKPIを設定する必要があります。\n\n> We need to define clear KPIs.\n\n### 490\n結果を見ながら調整します。\n\n> We'll adjust the plan based on the results.\n\n### 491\nまず意思決定基準を明確にしましょう。\n\n> Let's clarify the decision criteria first.\n\n### 492\n何を最適化したいのでしょうか。\n\n> What exactly are we trying to optimize for?\n\n### 493\nすべてを最大化することはできません。\n\n> We can't maximize everything at the same time.\n\n### 494\nどの選択にもトレードオフがあります。\n\n> Every choice involves a trade-off.\n\n極めて重要な意思決定表現。\n\n### 495\n何もしないことにもリスクがあります。\n\n> Doing nothing also carries risk.\n\n### 496\n今ある情報で最善の判断をする必要があります。\n\n> We need to make the best decision with the information we have.\n\n### 497\nこの判断は後から変更できますか。\n\n> Is this decision reversible?\n\n`reversible / irreversible` は意思決定論で重要。\n\n### 498\n成功条件を事前に決めましょう。\n\n> Let's define the success criteria upfront.\n\n### 499\n90日後に継続、拡大、中止を判断します。\n\n> After 90 days, we'll decide whether to continue, expand, or stop the initiative.\n\n### 500\n本日お願いしたいのは、この施策を開始する承認です。\n\n> What I'm asking for today is approval to start this initiative.\n\n経営会議で非常に有効な、\n\n> **What I'm asking for today is...**\n\nという型です。\n\n# 500文から表現を増殖させる方法\n\n500文を一つずつ独立して暗記するのではなく、「型」に分解します。\n\nたとえば、\n\n> Could you review the document by Friday?\n\nを、\n\n**Could you + 動詞 + 目的語 + by 期限**\n\nとして覚えます。\n\nすると、\n\n> Could you update the document by Friday?\n\n> Could you send the proposal by Thursday?\n\n> Could you confirm the numbers by tomorrow?\n\n> Could you prepare the draft by noon?\n\nと無限に展開できます。\n\n# 最重要50パターン\n\n500問の中でも、特に次の構文は「型」として覚えてください。\n\n### 依頼\n\n> Could you...?\n\n### 丁寧な提案\n\n> Would it be possible to...?\n\n### 確認\n\n> Just to confirm,...\n\n### 曖昧さ解消\n\n> When you say X, do you mean Y?\n\n### 認識\n\n> My understanding is that...\n\n### 意見\n\n> I think...\n\n### 懸念\n\n> My concern is...\n\n### 部分賛成\n\n> I agree with X, but...\n\n### 観点\n\n> From a ... perspective,...\n\n### 理由\n\n> There are two reasons for this.\n\n### 結論\n\n> The bottom line is...\n\n### 推奨\n\n> I recommend...\n\n### 提案\n\n> How about...?\n\n### 仮説的提案\n\n> What if we...?\n\n### 選択肢\n\n> We have three options.\n\n### 条件\n\n> If you..., we can...\n\n### 可能性\n\n> We may need to...\n\n### 見込み\n\n> We expect to...\n\n### 現状\n\n> At this point,...\n\n### 進捗\n\n> We're on track.\n\n### 遅延\n\n> We're behind schedule.\n\n### リスク\n\n> The main risk is...\n\n### 影響\n\n> This may affect...\n\n### 調査\n\n> We're investigating...\n\n### 原因\n\n> The issue was caused by...\n\n### 対応\n\n> We've implemented...\n\n### 次の行動\n\n> The next step is...\n\n### Owner\n\n> X will handle...\n\n### 期限\n\n> by Friday\n\n### 継続共有\n\n> I'll keep you posted.\n\n### 再連絡\n\n> I'll get back to you.\n\n### 後追い\n\n> I'll follow up.\n\n### 詳細説明\n\n> Let me walk you through...\n\n### 要約\n\n> Let me summarize...\n\n### 言い換え\n\n> In other words,...\n\n### 強調\n\n> The key point is...\n\n### 比較\n\n> Compared with...\n\n### 結果\n\n> As a result,...\n\n### 逆接\n\n> However,...\n\n### 長期\n\n> In the long term,...\n\n### 短期\n\n> In the short term,...\n\n### トレードオフ\n\n> The trade-off is...\n\n### 判断基準\n\n> The decision criteria are...\n\n### 前提\n\n> Our assumption is...\n\n### 検証\n\n> We need to validate...\n\n### 成功条件\n\n> Success would mean...\n\n### 合意\n\n> Can we agree to...?\n\n### Action Item\n\n> Who will do what by when?\n\n### 意思決定\n\n> What exactly are we deciding today?\n\n### 承認依頼\n\n> What I'm asking for today is...\n\n# 5段階トレーニング\n\n## Stage 1　理解\n\n日本語と英語を照合します。\n\n## Stage 2　5秒英作文\n\n日本語\n↓\n5秒以内に英語\n\n## Stage 3　3秒英作文\n\n考える時間を短くします。\n\n## Stage 4　代替表現\n\n例えば、\n\n「確認します。」\n\nに対して、\n\n> I'll check.\n\nだけではなく、\n\n> Let me check.  \n> I'll confirm.  \n> I'll look into it.\n\nの中から状況に応じて選びます。\n\n# Stage 5　Situation → English\n\n最終段階では、日本語の文章すら使いません。\n\n例えば、\n\n**Situation**\n\n顧客が金曜日のリリースを希望している。  \nしかしセキュリティテストが終わっていない。\n\nこれに対して即興で、\n\n> I understand that Friday is important. However, we haven't completed security testing yet.\n\n> Releasing the feature now would create unnecessary risk.\n\n> I recommend postponing the release by one week.\n\n> If that works for you, we'll send you an updated schedule today.\n\nと話します。\n\nここまで来ると、\n\n**日本語 → 英語**\n\nではなく、\n\n**状況 → 意図 → 英語**\n\nになっています。\n\n# 最終目標\n\nこの500文を学習した結果、\n\n> 「500個の英文を言える」\n\n状態を目指すのではありません。\n\n目標は、\n\n> **500の型を組み合わせて、その場で必要な英語を生成できる**\n\n状態です。\n\nたとえば、\n\n> I agree with the goal, but I have some concerns about the timeline.\n\nという一文を習得すれば、\n\n> I agree with the idea, but I have some concerns about the cost.\n\n> I agree with the strategy, but I have some concerns about execution.\n\n> I agree with the overall direction, but I have some concerns about the scope.\n\nと展開できます。\n\nこのように、\n\n**固定英文 → パターン → 組み換え → 即興発話**\n\nへ進むことが、本書の狙いです。\n\n最終的には、\n\n> Think clearly  \n> Structure clearly  \n> Speak clearly\n\nすなわち、\n\n**考える → 構造化する → 英語で伝える**\n\nまでを一続きの動作として自動化します。\n"
+      }
+    ],
+    "quizQuestions": [
+      {
+        "id": "q_ch01_1",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.1 了解しました。",
+        "answer": "Got it.",
+        "explanation": "Got it."
+      },
+      {
+        "id": "q_ch01_2",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.2 なるほど。",
+        "answer": "I see.",
+        "explanation": "I see."
+      },
+      {
+        "id": "q_ch01_3",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.3 いいですね。",
+        "answer": "Sounds good.",
+        "explanation": "Sounds good."
+      },
+      {
+        "id": "q_ch01_4",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.4 問題ありません。",
+        "answer": "No problem.",
+        "explanation": "No problem."
+      },
+      {
+        "id": "q_ch01_5",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.5 同意します。",
+        "answer": "I agree.",
+        "explanation": "I agree."
+      },
+      {
+        "id": "q_ch01_6",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.6 それは良い指摘です。",
+        "answer": "That's a good point.",
+        "explanation": "That's a good point."
+      },
+      {
+        "id": "q_ch01_7",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.7 少し考えさせてください。",
+        "answer": "Let me think about that.",
+        "explanation": "Let me think about that."
+      },
+      {
+        "id": "q_ch01_8",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.8 確認します。",
+        "answer": "Let me check.",
+        "explanation": "Let me check."
+      },
+      {
+        "id": "q_ch01_9",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.9 調べてみます。",
+        "answer": "I'll look into it.",
+        "explanation": "I'll look into it."
+      },
+      {
+        "id": "q_ch01_10",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.10 対応します。",
+        "answer": "I'll take care of it.",
+        "explanation": "I'll take care of it."
+      },
+      {
+        "id": "q_ch01_11",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.11 今対応しています。",
+        "answer": "I'm working on it.",
+        "explanation": "I'm working on it."
+      },
+      {
+        "id": "q_ch01_12",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.12 完了しました。",
+        "answer": "It's done.",
+        "explanation": "It's done."
+      },
+      {
+        "id": "q_ch01_13",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.13 更新しました。",
+        "answer": "I've updated it.",
+        "explanation": "I've updated it."
+      },
+      {
+        "id": "q_ch01_14",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.14 修正しました。",
+        "answer": "I've fixed it.",
+        "explanation": "I've fixed it."
+      },
+      {
+        "id": "q_ch01_15",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.15 共有しました。",
+        "answer": "I've shared it.",
+        "explanation": "I've shared it."
+      },
+      {
+        "id": "q_ch01_16",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.16 確認済みです。",
+        "answer": "I've already checked it.",
+        "explanation": "I've already checked it."
+      },
+      {
+        "id": "q_ch01_17",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.17 まだ確認していません。",
+        "answer": "I haven't checked it yet.",
+        "explanation": "I haven't checked it yet."
+      },
+      {
+        "id": "q_ch01_18",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.18 あとで確認します。",
+        "answer": "I'll check it later.",
+        "explanation": "I'll check it later."
+      },
+      {
+        "id": "q_ch01_19",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.19 確認してご連絡します。",
+        "answer": "I'll check and get back to you.",
+        "explanation": "I'll check and get back to you."
+      },
+      {
+        "id": "q_ch01_20",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.20 後ほどお知らせします。",
+        "answer": "I'll let you know later.",
+        "explanation": "I'll let you know later."
+      },
+      {
+        "id": "q_ch01_21",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.21 明日改めて連絡します。",
+        "answer": "I'll follow up tomorrow.",
+        "explanation": "I'll follow up tomorrow."
+      },
+      {
+        "id": "q_ch01_22",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.22 何かあれば教えてください。",
+        "answer": "Let me know if anything comes up.",
+        "explanation": "Let me know if anything comes up."
+      },
+      {
+        "id": "q_ch01_23",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.23 質問があれば教えてください。",
+        "answer": "Please let me know if you have any questions.",
+        "explanation": "Please let me know if you have any questions."
+      },
+      {
+        "id": "q_ch01_24",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.24 必要なものがあれば教えてください。",
+        "answer": "Let me know if you need anything.",
+        "explanation": "Let me know if you need anything."
+      },
+      {
+        "id": "q_ch01_25",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.25 ありがとうございます。",
+        "answer": "Thank you.",
+        "explanation": "Thank you."
+      },
+      {
+        "id": "q_ch01_26",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.26 ご連絡ありがとうございます。",
+        "answer": "Thanks for letting me know.",
+        "explanation": "Thanks for letting me know."
+      },
+      {
+        "id": "q_ch01_27",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.27 迅速な対応ありがとうございます。",
+        "answer": "Thanks for the quick response.",
+        "explanation": "Thanks for the quick response."
+      },
+      {
+        "id": "q_ch01_28",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.28 ご協力ありがとうございます。",
+        "answer": "Thank you for your cooperation.",
+        "explanation": "Thank you for your cooperation."
+      },
+      {
+        "id": "q_ch01_29",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.29 お待ちいただきありがとうございます。",
+        "answer": "Thank you for your patience.",
+        "explanation": "Thank you for your patience."
+      },
+      {
+        "id": "q_ch01_30",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.30 始めましょう。",
+        "answer": "Let's get started.",
+        "explanation": "Let's get started."
+      },
+      {
+        "id": "q_ch01_31",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.31 次に進みましょう。",
+        "answer": "Let's move on.",
+        "explanation": "Let's move on."
+      },
+      {
+        "id": "q_ch01_32",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.32 あとで戻りましょう。",
+        "answer": "Let's come back to this later.",
+        "explanation": "Let's come back to this later."
+      },
+      {
+        "id": "q_ch01_33",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.33 これについて話しましょう。",
+        "answer": "Let's discuss this.",
+        "explanation": "Let's discuss this."
+      },
+      {
+        "id": "q_ch01_34",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.34 この方向で進めましょう。",
+        "answer": "Let's move forward with this approach.",
+        "explanation": "Let's move forward with this approach."
+      },
+      {
+        "id": "q_ch01_35",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.35 一旦保留にしましょう。",
+        "answer": "Let's put this on hold for now.",
+        "explanation": "Let's put this on hold for now."
+      },
+      {
+        "id": "q_ch01_36",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.36 問題なさそうです。",
+        "answer": "It looks good to me.",
+        "explanation": "It looks good to me."
+      },
+      {
+        "id": "q_ch01_37",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.37 準備できています。",
+        "answer": "I'm ready.",
+        "explanation": "I'm ready."
+      },
+      {
+        "id": "q_ch01_38",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.38 まだ準備できていません。",
+        "answer": "We're not ready yet.",
+        "explanation": "We're not ready yet."
+      },
+      {
+        "id": "q_ch01_39",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.39 その件は私が担当します。",
+        "answer": "I'll handle that.",
+        "explanation": "I'll handle that."
+      },
+      {
+        "id": "q_ch01_40",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.40 それは田中さんが担当します。",
+        "answer": "Tanaka will handle that.",
+        "explanation": "Tanaka will handle that."
+      },
+      {
+        "id": "q_ch01_41",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.41 私から共有します。",
+        "answer": "I'll share it with the team.",
+        "explanation": "I'll share it with the team."
+      },
+      {
+        "id": "q_ch01_42",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.42 私から確認しておきます。",
+        "answer": "I'll check on my end.",
+        "explanation": "I'll check on my end."
+      },
+      {
+        "id": "q_ch01_43",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.43 こちらでは問題ありません。",
+        "answer": "Everything is fine on our end.",
+        "explanation": "Everything is fine on our end."
+      },
+      {
+        "id": "q_ch01_44",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.44 こちらでも同じ問題が起きています。",
+        "answer": "We're seeing the same issue on our end.",
+        "explanation": "We're seeing the same issue on our end."
+      },
+      {
+        "id": "q_ch01_45",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.45 分かりません。",
+        "answer": "I'm not sure.",
+        "explanation": "I'm not sure."
+      },
+      {
+        "id": "q_ch01_46",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.46 現時点では判断できません。",
+        "answer": "It's too early to say.",
+        "explanation": "It's too early to say."
+      },
+      {
+        "id": "q_ch01_47",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.47 確認してから判断します。",
+        "answer": "Let's decide after we have more information.",
+        "explanation": "Let's decide after we have more information."
+      },
+      {
+        "id": "q_ch01_48",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.48 今のところ問題ありません。",
+        "answer": "So far, so good.",
+        "explanation": "So far, so good."
+      },
+      {
+        "id": "q_ch01_49",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.49 それで大丈夫です。",
+        "answer": "That works.",
+        "explanation": "That works."
+      },
+      {
+        "id": "q_ch01_50",
+        "chapterId": "ch01",
+        "chapterTitle": "第1章 基本応答・仕事の基本動作",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.50 ではそれで進めましょう。",
+        "answer": "Then let's go with that.",
+        "explanation": "Then let's go with that."
+      },
+      {
+        "id": "q_ch02_1",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.51 資料を送っていただけますか。",
+        "answer": "Could you send me the document?",
+        "explanation": "Could you send me the document?"
+      },
+      {
+        "id": "q_ch02_2",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.52 最新版を送っていただけますか。",
+        "answer": "Could you send me the latest version?",
+        "explanation": "Could you send me the latest version?"
+      },
+      {
+        "id": "q_ch02_3",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.53 確認していただけますか。",
+        "answer": "Could you review it?",
+        "explanation": "Could you review it?"
+      },
+      {
+        "id": "q_ch02_4",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.54 金曜日までに確認していただけますか。",
+        "answer": "Could you review it by Friday?",
+        "explanation": "Could you review it by Friday?"
+      },
+      {
+        "id": "q_ch02_5",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.55 コメントをいただけますか。",
+        "answer": "Could you send me your comments?",
+        "explanation": "Could you send me your comments?"
+      },
+      {
+        "id": "q_ch02_6",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.56 この部分を修正していただけますか。",
+        "answer": "Could you revise this section?",
+        "explanation": "Could you revise this section?"
+      },
+      {
+        "id": "q_ch02_7",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.57 数字を更新していただけますか。",
+        "answer": "Could you update the numbers?",
+        "explanation": "Could you update the numbers?"
+      },
+      {
+        "id": "q_ch02_8",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.58 リンクを共有していただけますか。",
+        "answer": "Could you share the link?",
+        "explanation": "Could you share the link?"
+      },
+      {
+        "id": "q_ch02_9",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.59 会議を設定していただけますか。",
+        "answer": "Could you schedule a meeting?",
+        "explanation": "Could you schedule a meeting?"
+      },
+      {
+        "id": "q_ch02_10",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.60 顧客に確認していただけますか。",
+        "answer": "Could you check with the client?",
+        "explanation": "Could you check with the client?"
+      },
+      {
+        "id": "q_ch02_11",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.61 法務に確認していただけますか。",
+        "answer": "Could you check with Legal?",
+        "explanation": "Could you check with Legal?"
+      },
+      {
+        "id": "q_ch02_12",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.62 これを優先していただけますか。",
+        "answer": "Could you prioritize this?",
+        "explanation": "Could you prioritize this?"
+      },
+      {
+        "id": "q_ch02_13",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.63 今日中に対応できますか。",
+        "answer": "Could you handle this by the end of today?",
+        "explanation": "Could you handle this by the end of today?"
+      },
+      {
+        "id": "q_ch02_14",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.64 原因を調べていただけますか。",
+        "answer": "Could you investigate the cause?",
+        "explanation": "Could you investigate the cause?"
+      },
+      {
+        "id": "q_ch02_15",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.65 要点をまとめていただけますか。",
+        "answer": "Could you summarize the key points?",
+        "explanation": "Could you summarize the key points?"
+      },
+      {
+        "id": "q_ch02_16",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.66 もう少し詳しく説明していただけますか。",
+        "answer": "Could you explain that in more detail?",
+        "explanation": "Could you explain that in more detail?"
+      },
+      {
+        "id": "q_ch02_17",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.67 具体例を挙げていただけますか。",
+        "answer": "Could you give me an example?",
+        "explanation": "Could you give me an example?"
+      },
+      {
+        "id": "q_ch02_18",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.68 もう少し具体的にしていただけますか。",
+        "answer": "Could you be more specific?",
+        "explanation": "Could you be more specific?"
+      },
+      {
+        "id": "q_ch02_19",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.69 もう少し簡潔にできますか。",
+        "answer": "Could you make it more concise?",
+        "explanation": "Could you make it more concise?"
+      },
+      {
+        "id": "q_ch02_20",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.70 結論を先にしていただけますか。",
+        "answer": "Could you put the conclusion first?",
+        "explanation": "Could you put the conclusion first?"
+      },
+      {
+        "id": "q_ch02_21",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.71 締切は金曜日で合っていますか。",
+        "answer": "Just to confirm, the deadline is Friday, correct?",
+        "explanation": "Just to confirm, the deadline is Friday, correct?"
+      },
+      {
+        "id": "q_ch02_22",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.72 念のため確認です。",
+        "answer": "Just to confirm,...",
+        "explanation": "Just to confirm,..."
+      },
+      {
+        "id": "q_ch02_23",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.73 私の理解では来週開始します。",
+        "answer": "My understanding is that we'll start next week.",
+        "explanation": "My understanding is that we'll start next week."
+      },
+      {
+        "id": "q_ch02_24",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.74 私の理解で合っていますか。",
+        "answer": "Is my understanding correct?",
+        "explanation": "Is my understanding correct?"
+      },
+      {
+        "id": "q_ch02_25",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.75 つまり延期するということですか。",
+        "answer": "Do you mean we're going to postpone it?",
+        "explanation": "Do you mean we're going to postpone it?"
+      },
+      {
+        "id": "q_ch02_26",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.76 「至急」とは今日中という意味ですか。",
+        "answer": "When you say “urgent,” do you mean by the end of today?",
+        "explanation": "When you say “urgent,” do you mean by the end of today?"
+      },
+      {
+        "id": "q_ch02_27",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.77 一つ確認したい点があります。",
+        "answer": "There's one point I'd like to clarify.",
+        "explanation": "There's one point I'd like to clarify."
+      },
+      {
+        "id": "q_ch02_28",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.78 この部分を明確にしていただけますか。",
+        "answer": "Could you clarify this point?",
+        "explanation": "Could you clarify this point?"
+      },
+      {
+        "id": "q_ch02_29",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.79 質問の意味を確認させてください。",
+        "answer": "Let me make sure I understand your question.",
+        "explanation": "Let me make sure I understand your question."
+      },
+      {
+        "id": "q_ch02_30",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.80 これは必須ですか。",
+        "answer": "Is this mandatory?",
+        "explanation": "Is this mandatory?"
+      },
+      {
+        "id": "q_ch02_31",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.81 これは今回の範囲に含まれますか。",
+        "answer": "Is this included in the current scope?",
+        "explanation": "Is this included in the current scope?"
+      },
+      {
+        "id": "q_ch02_32",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.82 誰が担当しますか。",
+        "answer": "Who is responsible for this?",
+        "explanation": "Who is responsible for this?"
+      },
+      {
+        "id": "q_ch02_33",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.83 最終決定者は誰ですか。",
+        "answer": "Who is the final decision-maker?",
+        "explanation": "Who is the final decision-maker?"
+      },
+      {
+        "id": "q_ch02_34",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.84 いつまでに必要ですか。",
+        "answer": "When do you need this by?",
+        "explanation": "When do you need this by?"
+      },
+      {
+        "id": "q_ch02_35",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.85 どれくらい時間がかかりますか。",
+        "answer": "How long will this take?",
+        "explanation": "How long will this take?"
+      },
+      {
+        "id": "q_ch02_36",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.86 どれくらい遅れていますか。",
+        "answer": "How far behind schedule are we?",
+        "explanation": "How far behind schedule are we?"
+      },
+      {
+        "id": "q_ch02_37",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.87 顧客に影響しますか。",
+        "answer": "Will this affect customers?",
+        "explanation": "Will this affect customers?"
+      },
+      {
+        "id": "q_ch02_38",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.88 リリースに影響しますか。",
+        "answer": "Will this affect the release?",
+        "explanation": "Will this affect the release?"
+      },
+      {
+        "id": "q_ch02_39",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.89 ほかにリスクはありますか。",
+        "answer": "Are there any other risks?",
+        "explanation": "Are there any other risks?"
+      },
+      {
+        "id": "q_ch02_40",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.90 ほかに選択肢はありますか。",
+        "answer": "Are there any other options?",
+        "explanation": "Are there any other options?"
+      },
+      {
+        "id": "q_ch02_41",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.91 何か見落としていませんか。",
+        "answer": "Are we missing anything?",
+        "explanation": "Are we missing anything?"
+      },
+      {
+        "id": "q_ch02_42",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.92 全員同じ認識ですか。",
+        "answer": "Are we all on the same page?",
+        "explanation": "Are we all on the same page?"
+      },
+      {
+        "id": "q_ch02_43",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.93 顧客は承認済みですか。",
+        "answer": "Has the client approved this?",
+        "explanation": "Has the client approved this?"
+      },
+      {
+        "id": "q_ch02_44",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.94 予算は承認済みですか。",
+        "answer": "Has the budget been approved?",
+        "explanation": "Has the budget been approved?"
+      },
+      {
+        "id": "q_ch02_45",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.95 仕様は確定していますか。",
+        "answer": "Have the requirements been finalized?",
+        "explanation": "Have the requirements been finalized?"
+      },
+      {
+        "id": "q_ch02_46",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.96 まだ変更される可能性がありますか。",
+        "answer": "Is this still subject to change?",
+        "explanation": "Is this still subject to change?"
+      },
+      {
+        "id": "q_ch02_47",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.97 これは確定情報ですか。",
+        "answer": "Is this confirmed?",
+        "explanation": "Is this confirmed?"
+      },
+      {
+        "id": "q_ch02_48",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.98 これは事実ですか、それとも推測ですか。",
+        "answer": "Is this a fact or an assumption?",
+        "explanation": "Is this a fact or an assumption?"
+      },
+      {
+        "id": "q_ch02_49",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.99 次のステップを確認しましょう。",
+        "answer": "Let's confirm the next steps.",
+        "explanation": "Let's confirm the next steps."
+      },
+      {
+        "id": "q_ch02_50",
+        "chapterId": "ch02",
+        "chapterTitle": "第2章 依頼・質問・確認",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.100 私が資料を作り、あなたが顧客に確認するということですね。",
+        "answer": "So I'll prepare the document, and you'll check with the client, correct?",
+        "explanation": "So I'll prepare the document, and you'll check with the client, correct?"
+      },
+      {
+        "id": "q_ch03_1",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.101 今日中に終わらせます。",
+        "answer": "I'll finish it by the end of today.",
+        "explanation": "I'll finish it by the end of today."
+      },
+      {
+        "id": "q_ch03_2",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.102 明日の朝までに送ります。",
+        "answer": "I'll send it by tomorrow morning.",
+        "explanation": "I'll send it by tomorrow morning."
+      },
+      {
+        "id": "q_ch03_3",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.103 金曜日までに完了する予定です。",
+        "answer": "We expect to complete it by Friday.",
+        "explanation": "We expect to complete it by Friday."
+      },
+      {
+        "id": "q_ch03_4",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.104 来週開始予定です。",
+        "answer": "We're planning to start next week.",
+        "explanation": "We're planning to start next week."
+      },
+      {
+        "id": "q_ch03_5",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.105 来月リリース予定です。",
+        "answer": "We're planning to release it next month.",
+        "explanation": "We're planning to release it next month."
+      },
+      {
+        "id": "q_ch03_6",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.106 その時間で大丈夫です。",
+        "answer": "That time works for me.",
+        "explanation": "That time works for me."
+      },
+      {
+        "id": "q_ch03_7",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.107 その時間は空いていません。",
+        "answer": "I'm not available at that time.",
+        "explanation": "I'm not available at that time."
+      },
+      {
+        "id": "q_ch03_8",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.108 別の時間にできますか。",
+        "answer": "Could we find another time?",
+        "explanation": "Could we find another time?"
+      },
+      {
+        "id": "q_ch03_9",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.109 会議を金曜日に変更できますか。",
+        "answer": "Could we move the meeting to Friday?",
+        "explanation": "Could we move the meeting to Friday?"
+      },
+      {
+        "id": "q_ch03_10",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.110 会議を延期できますか。",
+        "answer": "Could we postpone the meeting?",
+        "explanation": "Could we postpone the meeting?"
+      },
+      {
+        "id": "q_ch03_11",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.111 予定通り進んでいます。",
+        "answer": "We're on schedule.",
+        "explanation": "We're on schedule."
+      },
+      {
+        "id": "q_ch03_12",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.112 予定より進んでいます。",
+        "answer": "We're ahead of schedule.",
+        "explanation": "We're ahead of schedule."
+      },
+      {
+        "id": "q_ch03_13",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.113 予定より遅れています。",
+        "answer": "We're behind schedule.",
+        "explanation": "We're behind schedule."
+      },
+      {
+        "id": "q_ch03_14",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.114 2日遅れています。",
+        "answer": "We're two days behind schedule.",
+        "explanation": "We're two days behind schedule."
+      },
+      {
+        "id": "q_ch03_15",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.115 1週間遅れる可能性があります。",
+        "answer": "We may be delayed by one week.",
+        "explanation": "We may be delayed by one week."
+      },
+      {
+        "id": "q_ch03_16",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.116 期限に間に合いそうです。",
+        "answer": "We expect to meet the deadline.",
+        "explanation": "We expect to meet the deadline."
+      },
+      {
+        "id": "q_ch03_17",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.117 期限に間に合わない可能性があります。",
+        "answer": "We may not be able to meet the deadline.",
+        "explanation": "We may not be able to meet the deadline."
+      },
+      {
+        "id": "q_ch03_18",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.118 当初の期限には間に合いません。",
+        "answer": "We won't be able to meet the original deadline.",
+        "explanation": "We won't be able to meet the original deadline."
+      },
+      {
+        "id": "q_ch03_19",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.119 少なくともあと2日必要です。",
+        "answer": "We need at least two more days.",
+        "explanation": "We need at least two more days."
+      },
+      {
+        "id": "q_ch03_20",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.120 締切を延ばす必要があります。",
+        "answer": "We need to extend the deadline.",
+        "explanation": "We need to extend the deadline."
+      },
+      {
+        "id": "q_ch03_21",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.121 これは明日まで待てます。",
+        "answer": "This can wait until tomorrow.",
+        "explanation": "This can wait until tomorrow."
+      },
+      {
+        "id": "q_ch03_22",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.122 これは今日中に対応する必要があります。",
+        "answer": "We need to address this today.",
+        "explanation": "We need to address this today."
+      },
+      {
+        "id": "q_ch03_23",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.123 これは急ぎではありません。",
+        "answer": "This isn't urgent.",
+        "explanation": "This isn't urgent."
+      },
+      {
+        "id": "q_ch03_24",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.124 これを最優先にしてください。",
+        "answer": "Please make this your top priority.",
+        "explanation": "Please make this your top priority."
+      },
+      {
+        "id": "q_ch03_25",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.125 明日の午後3時を目標にしましょう。",
+        "answer": "Let's aim for 3 p.m. tomorrow.",
+        "explanation": "Let's aim for 3 p.m. tomorrow."
+      },
+      {
+        "id": "q_ch03_26",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.126 プロジェクトは順調です。",
+        "answer": "The project is on track.",
+        "explanation": "The project is on track."
+      },
+      {
+        "id": "q_ch03_27",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.127 開発は約70%完了しています。",
+        "answer": "Development is about 70% complete.",
+        "explanation": "Development is about 70% complete."
+      },
+      {
+        "id": "q_ch03_28",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.128 実装はほぼ完了しています。",
+        "answer": "Implementation is almost complete.",
+        "explanation": "Implementation is almost complete."
+      },
+      {
+        "id": "q_ch03_29",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.129 テストを開始しました。",
+        "answer": "We've started testing.",
+        "explanation": "We've started testing."
+      },
+      {
+        "id": "q_ch03_30",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.130 設計フェーズは完了しました。",
+        "answer": "We've completed the design phase.",
+        "explanation": "We've completed the design phase."
+      },
+      {
+        "id": "q_ch03_31",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.131 残っているのはテストだけです。",
+        "answer": "Testing is the only remaining task.",
+        "explanation": "Testing is the only remaining task."
+      },
+      {
+        "id": "q_ch03_32",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.132 現在レビュー中です。",
+        "answer": "It's currently under review.",
+        "explanation": "It's currently under review."
+      },
+      {
+        "id": "q_ch03_33",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.133 現在顧客の承認待ちです。",
+        "answer": "We're currently waiting for client approval.",
+        "explanation": "We're currently waiting for client approval."
+      },
+      {
+        "id": "q_ch03_34",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.134 大きな問題はありません。",
+        "answer": "There are no major issues at the moment.",
+        "explanation": "There are no major issues at the moment."
+      },
+      {
+        "id": "q_ch03_35",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.135 一つ懸念があります。",
+        "answer": "We have one concern.",
+        "explanation": "We have one concern."
+      },
+      {
+        "id": "q_ch03_36",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.136 最大のリスクはスケジュールです。",
+        "answer": "The main risk is the schedule.",
+        "explanation": "The main risk is the schedule."
+      },
+      {
+        "id": "q_ch03_37",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.137 API連携が少し遅れています。",
+        "answer": "The API integration is slightly behind schedule.",
+        "explanation": "The API integration is slightly behind schedule."
+      },
+      {
+        "id": "q_ch03_38",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.138 今のところリリースへの影響はありません。",
+        "answer": "So far, there is no impact on the release.",
+        "explanation": "So far, there is no impact on the release."
+      },
+      {
+        "id": "q_ch03_39",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.139 リリースが遅れる可能性があります。",
+        "answer": "The release may be delayed.",
+        "explanation": "The release may be delayed."
+      },
+      {
+        "id": "q_ch03_40",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.140 現在影響を評価しています。",
+        "answer": "We're currently assessing the impact.",
+        "explanation": "We're currently assessing the impact."
+      },
+      {
+        "id": "q_ch03_41",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.141 原因を調査しています。",
+        "answer": "We're investigating the cause.",
+        "explanation": "We're investigating the cause."
+      },
+      {
+        "id": "q_ch03_42",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.142 暫定対応を実施しました。",
+        "answer": "We've implemented a temporary workaround.",
+        "explanation": "We've implemented a temporary workaround."
+      },
+      {
+        "id": "q_ch03_43",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.143 恒久対応を進めています。",
+        "answer": "We're working on a permanent solution.",
+        "explanation": "We're working on a permanent solution."
+      },
+      {
+        "id": "q_ch03_44",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.144 明日までにテストを終える予定です。",
+        "answer": "We expect to complete testing by tomorrow.",
+        "explanation": "We expect to complete testing by tomorrow."
+      },
+      {
+        "id": "q_ch03_45",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.145 現在2つの選択肢を検討しています。",
+        "answer": "We're currently considering two options.",
+        "explanation": "We're currently considering two options."
+      },
+      {
+        "id": "q_ch03_46",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.146 今週中に決定する予定です。",
+        "answer": "We plan to make a decision this week.",
+        "explanation": "We plan to make a decision this week."
+      },
+      {
+        "id": "q_ch03_47",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.147 追加のリソースが必要かもしれません。",
+        "answer": "We may need additional resources.",
+        "explanation": "We may need additional resources."
+      },
+      {
+        "id": "q_ch03_48",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.148 現在の体制で対応できます。",
+        "answer": "We can handle this with the current team.",
+        "explanation": "We can handle this with the current team."
+      },
+      {
+        "id": "q_ch03_49",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.149 このままだと期限に間に合わない可能性があります。",
+        "answer": "At this rate, we may miss the deadline.",
+        "explanation": "At this rate, we may miss the deadline."
+      },
+      {
+        "id": "q_ch03_50",
+        "chapterId": "ch03",
+        "chapterTitle": "第3章 時間・期限・進捗",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.150 明日改めて状況を共有します。",
+        "answer": "I'll provide another update tomorrow.",
+        "explanation": "I'll provide another update tomorrow."
+      },
+      {
+        "id": "q_ch04_1",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.151 始めましょう。",
+        "answer": "Let's get started.",
+        "explanation": "Let's get started."
+      },
+      {
+        "id": "q_ch04_2",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.152 ご参加ありがとうございます。",
+        "answer": "Thanks everyone for joining.",
+        "explanation": "Thanks everyone for joining."
+      },
+      {
+        "id": "q_ch04_3",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.153 今日の目的は方針を決めることです。",
+        "answer": "The purpose of today's meeting is to decide on our approach.",
+        "explanation": "The purpose of today's meeting is to decide on our approach."
+      },
+      {
+        "id": "q_ch04_4",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.154 今日は3つの議題があります。",
+        "answer": "We have three items on the agenda today.",
+        "explanation": "We have three items on the agenda today."
+      },
+      {
+        "id": "q_ch04_5",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.155 まず現状を確認しましょう。",
+        "answer": "Let's start by reviewing the current situation.",
+        "explanation": "Let's start by reviewing the current situation."
+      },
+      {
+        "id": "q_ch04_6",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.156 次に選択肢を検討します。",
+        "answer": "Next, we'll look at the options.",
+        "explanation": "Next, we'll look at the options."
+      },
+      {
+        "id": "q_ch04_7",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.157 最後に次のステップを決めます。",
+        "answer": "Finally, we'll decide on the next steps.",
+        "explanation": "Finally, we'll decide on the next steps."
+      },
+      {
+        "id": "q_ch04_8",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.158 30分以内に終わらせたいと思います。",
+        "answer": "I'd like to wrap this up within 30 minutes.",
+        "explanation": "I'd like to wrap this up within 30 minutes."
+      },
+      {
+        "id": "q_ch04_9",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.159 現在の状況を簡単に説明していただけますか。",
+        "answer": "Could you give us a quick overview of the current status?",
+        "explanation": "Could you give us a quick overview of the current status?"
+      },
+      {
+        "id": "q_ch04_10",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.160 少し補足してもいいですか。",
+        "answer": "Can I add something?",
+        "explanation": "Can I add something?"
+      },
+      {
+        "id": "q_ch04_11",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.161 一つ付け加えたいです。",
+        "answer": "I'd like to add one point.",
+        "explanation": "I'd like to add one point."
+      },
+      {
+        "id": "q_ch04_12",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.162 ここで少し入ってもいいですか。",
+        "answer": "Can I jump in here?",
+        "explanation": "Can I jump in here?"
+      },
+      {
+        "id": "q_ch04_13",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.163 すみません、少しよろしいですか。",
+        "answer": "Sorry to interrupt, but may I add something?",
+        "explanation": "Sorry to interrupt, but may I add something?"
+      },
+      {
+        "id": "q_ch04_14",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.164 その点について質問があります。",
+        "answer": "I have a question about that.",
+        "explanation": "I have a question about that."
+      },
+      {
+        "id": "q_ch04_15",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.165 具体例はありますか。",
+        "answer": "Do you have a specific example?",
+        "explanation": "Do you have a specific example?"
+      },
+      {
+        "id": "q_ch04_16",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.166 もう少し詳しく説明していただけますか。",
+        "answer": "Could you elaborate on that?",
+        "explanation": "Could you elaborate on that?"
+      },
+      {
+        "id": "q_ch04_17",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.167 本題に戻りましょう。",
+        "answer": "Let's get back to the main point.",
+        "explanation": "Let's get back to the main point."
+      },
+      {
+        "id": "q_ch04_18",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.168 少し話がそれています。",
+        "answer": "I think we're getting slightly off track.",
+        "explanation": "I think we're getting slightly off track."
+      },
+      {
+        "id": "q_ch04_19",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.169 その話はあとで扱いましょう。",
+        "answer": "Let's come back to that later.",
+        "explanation": "Let's come back to that later."
+      },
+      {
+        "id": "q_ch04_20",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.170 別の会議で扱いましょう。",
+        "answer": "Let's take that up in a separate meeting.",
+        "explanation": "Let's take that up in a separate meeting."
+      },
+      {
+        "id": "q_ch04_21",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.171 時間が限られています。",
+        "answer": "We're running short on time.",
+        "explanation": "We're running short on time."
+      },
+      {
+        "id": "q_ch04_22",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.172 あと10分です。",
+        "answer": "We have about ten minutes left.",
+        "explanation": "We have about ten minutes left."
+      },
+      {
+        "id": "q_ch04_23",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.173 この議論をまとめましょう。",
+        "answer": "Let's wrap up this discussion.",
+        "explanation": "Let's wrap up this discussion."
+      },
+      {
+        "id": "q_ch04_24",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.174 今日決める必要がありますか。",
+        "answer": "Do we need to make a decision today?",
+        "explanation": "Do we need to make a decision today?"
+      },
+      {
+        "id": "q_ch04_25",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.175 この場で決められますか。",
+        "answer": "Can we make a decision on this today?",
+        "explanation": "Can we make a decision on this today?"
+      },
+      {
+        "id": "q_ch04_26",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.176 もう少し情報が必要です。",
+        "answer": "We need more information before making a decision.",
+        "explanation": "We need more information before making a decision."
+      },
+      {
+        "id": "q_ch04_27",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.177 今日は決定を見送りましょう。",
+        "answer": "Let's hold off on making a decision today.",
+        "explanation": "Let's hold off on making a decision today."
+      },
+      {
+        "id": "q_ch04_28",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.178 全員この案でよいですか。",
+        "answer": "Is everyone comfortable with this option?",
+        "explanation": "Is everyone comfortable with this option?"
+      },
+      {
+        "id": "q_ch04_29",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.179 この方向で合意できますか。",
+        "answer": "Can we agree to move forward with this approach?",
+        "explanation": "Can we agree to move forward with this approach?"
+      },
+      {
+        "id": "q_ch04_30",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.180 異論はありますか。",
+        "answer": "Does anyone have any objections?",
+        "explanation": "Does anyone have any objections?"
+      },
+      {
+        "id": "q_ch04_31",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.181 ではこの案で進めましょう。",
+        "answer": "Then let's move forward with this option.",
+        "explanation": "Then let's move forward with this option."
+      },
+      {
+        "id": "q_ch04_32",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.182 決定事項を確認しましょう。",
+        "answer": "Let's confirm what we've decided.",
+        "explanation": "Let's confirm what we've decided."
+      },
+      {
+        "id": "q_ch04_33",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.183 次のステップを確認しましょう。",
+        "answer": "Let's confirm the next steps.",
+        "explanation": "Let's confirm the next steps."
+      },
+      {
+        "id": "q_ch04_34",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.184 担当者を決めましょう。",
+        "answer": "Let's assign owners.",
+        "explanation": "Let's assign owners."
+      },
+      {
+        "id": "q_ch04_35",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.185 期限も決めましょう。",
+        "answer": "Let's agree on the deadlines as well.",
+        "explanation": "Let's agree on the deadlines as well."
+      },
+      {
+        "id": "q_ch04_36",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.186 私が資料を更新します。",
+        "answer": "I'll update the document.",
+        "explanation": "I'll update the document."
+      },
+      {
+        "id": "q_ch04_37",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.187 田中さんが顧客に確認します。",
+        "answer": "Tanaka will check with the client.",
+        "explanation": "Tanaka will check with the client."
+      },
+      {
+        "id": "q_ch04_38",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.188 来週もう一度話しましょう。",
+        "answer": "Let's revisit this next week.",
+        "explanation": "Let's revisit this next week."
+      },
+      {
+        "id": "q_ch04_39",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.189 要点をまとめます。",
+        "answer": "Let me summarize the key points.",
+        "explanation": "Let me summarize the key points."
+      },
+      {
+        "id": "q_ch04_40",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.190 今日は3つ決まりました。",
+        "answer": "We made three decisions today.",
+        "explanation": "We made three decisions today."
+      },
+      {
+        "id": "q_ch04_41",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.191 まずリリースを延期します。",
+        "answer": "First, we'll postpone the release.",
+        "explanation": "First, we'll postpone the release."
+      },
+      {
+        "id": "q_ch04_42",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.192 次にスコープを縮小します。",
+        "answer": "Second, we'll reduce the scope.",
+        "explanation": "Second, we'll reduce the scope."
+      },
+      {
+        "id": "q_ch04_43",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.193 最後に来週再確認します。",
+        "answer": "Finally, we'll review the situation again next week.",
+        "explanation": "Finally, we'll review the situation again next week."
+      },
+      {
+        "id": "q_ch04_44",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.194 議事録を共有します。",
+        "answer": "I'll share the meeting notes.",
+        "explanation": "I'll share the meeting notes."
+      },
+      {
+        "id": "q_ch04_45",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.195 ご参加ありがとうございました。",
+        "answer": "Thanks everyone for your time.",
+        "explanation": "Thanks everyone for your time."
+      },
+      {
+        "id": "q_ch04_46",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.196 これで会議を終わります。",
+        "answer": "That concludes today's meeting.",
+        "explanation": "That concludes today's meeting."
+      },
+      {
+        "id": "q_ch04_47",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.197 今日の最重要ポイントは何ですか。",
+        "answer": "What's the key takeaway from today's discussion?",
+        "explanation": "What's the key takeaway from today's discussion?"
+      },
+      {
+        "id": "q_ch04_48",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.198 今日何を決める必要がありますか。",
+        "answer": "What exactly do we need to decide today?",
+        "explanation": "What exactly do we need to decide today?"
+      },
+      {
+        "id": "q_ch04_49",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.199 誰が何をいつまでに行いますか。",
+        "answer": "Who will do what by when?",
+        "explanation": "Who will do what by when?"
+      },
+      {
+        "id": "q_ch04_50",
+        "chapterId": "ch04",
+        "chapterTitle": "第4章 会議",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.200 これで全員同じ認識ですね。",
+        "answer": "It sounds like we're all aligned.",
+        "explanation": "It sounds like we're all aligned."
+      },
+      {
+        "id": "q_ch05_1",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.201 私はこの案が良いと思います。",
+        "answer": "I think this is a good option.",
+        "explanation": "I think this is a good option."
+      },
+      {
+        "id": "q_ch05_2",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.202 私はこの方向に賛成です。",
+        "answer": "I agree with this direction.",
+        "explanation": "I agree with this direction."
+      },
+      {
+        "id": "q_ch05_3",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.203 全体的には賛成です。",
+        "answer": "I agree with the overall direction.",
+        "explanation": "I agree with the overall direction."
+      },
+      {
+        "id": "q_ch05_4",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.204 基本的には賛成ですが、一つ懸念があります。",
+        "answer": "I generally agree, but I have one concern.",
+        "explanation": "I generally agree, but I have one concern."
+      },
+      {
+        "id": "q_ch05_5",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.205 目的には賛成ですが、方法には懸念があります。",
+        "answer": "I agree with the goal, but I have concerns about the approach.",
+        "explanation": "I agree with the goal, but I have concerns about the approach."
+      },
+      {
+        "id": "q_ch05_6",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.206 少し違う見方をしています。",
+        "answer": "I see it a little differently.",
+        "explanation": "I see it a little differently."
+      },
+      {
+        "id": "q_ch05_7",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.207 完全には同意できません。",
+        "answer": "I'm not sure I completely agree.",
+        "explanation": "I'm not sure I completely agree."
+      },
+      {
+        "id": "q_ch05_8",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.208 別の選択肢も検討すべきです。",
+        "answer": "I think we should consider another option.",
+        "explanation": "I think we should consider another option."
+      },
+      {
+        "id": "q_ch05_9",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.209 この案にはリスクがあります。",
+        "answer": "I think this option carries some risk.",
+        "explanation": "I think this option carries some risk."
+      },
+      {
+        "id": "q_ch05_10",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.210 スケジュールが少し厳しいと思います。",
+        "answer": "I think the schedule is a little aggressive.",
+        "explanation": "I think the schedule is a little aggressive."
+      },
+      {
+        "id": "q_ch05_11",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.211 この方法は長期的には難しいと思います。",
+        "answer": "I don't think this approach is sustainable in the long term.",
+        "explanation": "I don't think this approach is sustainable in the long term."
+      },
+      {
+        "id": "q_ch05_12",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.212 短期的には有効だと思います。",
+        "answer": "I think this could work in the short term.",
+        "explanation": "I think this could work in the short term."
+      },
+      {
+        "id": "q_ch05_13",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.213 長期的な影響も考える必要があります。",
+        "answer": "We also need to consider the long-term impact.",
+        "explanation": "We also need to consider the long-term impact."
+      },
+      {
+        "id": "q_ch05_14",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.214 メリットよりリスクが大きいと思います。",
+        "answer": "I think the risks outweigh the benefits.",
+        "explanation": "I think the risks outweigh the benefits."
+      },
+      {
+        "id": "q_ch05_15",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.215 コストの観点では賛成です。",
+        "answer": "From a cost perspective, I agree.",
+        "explanation": "From a cost perspective, I agree."
+      },
+      {
+        "id": "q_ch05_16",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.216 技術的な観点では懸念があります。",
+        "answer": "From a technical perspective, I have some concerns.",
+        "explanation": "From a technical perspective, I have some concerns."
+      },
+      {
+        "id": "q_ch05_17",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.217 顧客の観点から考える必要があります。",
+        "answer": "We need to look at this from the customer's perspective.",
+        "explanation": "We need to look at this from the customer's perspective."
+      },
+      {
+        "id": "q_ch05_18",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.218 私はAよりBを選びます。",
+        "answer": "I would choose B over A.",
+        "explanation": "I would choose B over A."
+      },
+      {
+        "id": "q_ch05_19",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.219 理由は2つあります。",
+        "answer": "There are two reasons for this.",
+        "explanation": "There are two reasons for this."
+      },
+      {
+        "id": "q_ch05_20",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.220 最も重要なのは顧客への影響です。",
+        "answer": "The most important factor is the impact on customers.",
+        "explanation": "The most important factor is the impact on customers."
+      },
+      {
+        "id": "q_ch05_21",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.221 私の最大の懸念はセキュリティです。",
+        "answer": "My main concern is security.",
+        "explanation": "My main concern is security."
+      },
+      {
+        "id": "q_ch05_22",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.222 この案には大きな利点があります。",
+        "answer": "This option has a major advantage.",
+        "explanation": "This option has a major advantage."
+      },
+      {
+        "id": "q_ch05_23",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.223 一方で欠点もあります。",
+        "answer": "On the other hand, it also has some drawbacks.",
+        "explanation": "On the other hand, it also has some drawbacks."
+      },
+      {
+        "id": "q_ch05_24",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.224 費用対効果が高いと思います。",
+        "answer": "I think this is cost-effective.",
+        "explanation": "I think this is cost-effective."
+      },
+      {
+        "id": "q_ch05_25",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.225 その結論にはまだ早いと思います。",
+        "answer": "I think it's too early to draw that conclusion.",
+        "explanation": "I think it's too early to draw that conclusion."
+      },
+      {
+        "id": "q_ch05_26",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.226 もう少しデータを見るべきです。",
+        "answer": "We should look at more data.",
+        "explanation": "We should look at more data."
+      },
+      {
+        "id": "q_ch05_27",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.227 仮説としては納得できます。",
+        "answer": "The hypothesis makes sense.",
+        "explanation": "The hypothesis makes sense."
+      },
+      {
+        "id": "q_ch05_28",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.228 ただし証拠が十分ではありません。",
+        "answer": "However, we don't have enough evidence yet.",
+        "explanation": "However, we don't have enough evidence yet."
+      },
+      {
+        "id": "q_ch05_29",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.229 この提案を支持します。",
+        "answer": "I support this proposal.",
+        "explanation": "I support this proposal."
+      },
+      {
+        "id": "q_ch05_30",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.230 今の情報だけでは判断できません。",
+        "answer": "I can't make a decision based on the information we have.",
+        "explanation": "I can't make a decision based on the information we have."
+      },
+      {
+        "id": "q_ch05_31",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.231 別の方法を試してみましょう。",
+        "answer": "Let's try a different approach.",
+        "explanation": "Let's try a different approach."
+      },
+      {
+        "id": "q_ch05_32",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.232 まず原因を特定しましょう。",
+        "answer": "Let's identify the root cause first.",
+        "explanation": "Let's identify the root cause first."
+      },
+      {
+        "id": "q_ch05_33",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.233 その後で解決策を考えましょう。",
+        "answer": "Then let's look at possible solutions.",
+        "explanation": "Then let's look at possible solutions."
+      },
+      {
+        "id": "q_ch05_34",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.234 選択肢を3つ考えましょう。",
+        "answer": "Let's come up with three options.",
+        "explanation": "Let's come up with three options."
+      },
+      {
+        "id": "q_ch05_35",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.235 一番簡単な方法から試しましょう。",
+        "answer": "Let's try the simplest option first.",
+        "explanation": "Let's try the simplest option first."
+      },
+      {
+        "id": "q_ch05_36",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.236 リリースを1週間延期することを提案します。",
+        "answer": "I suggest postponing the release by one week.",
+        "explanation": "I suggest postponing the release by one week."
+      },
+      {
+        "id": "q_ch05_37",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.237 まず小規模に試すのはどうでしょう。",
+        "answer": "How about starting with a small pilot?",
+        "explanation": "How about starting with a small pilot?"
+      },
+      {
+        "id": "q_ch05_38",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.238 段階的にリリースするのはどうでしょう。",
+        "answer": "What about rolling it out in phases?",
+        "explanation": "What about rolling it out in phases?"
+      },
+      {
+        "id": "q_ch05_39",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.239 一部ユーザーだけに公開するのはどうでしょう。",
+        "answer": "What if we release it to a limited group of users first?",
+        "explanation": "What if we release it to a limited group of users first?"
+      },
+      {
+        "id": "q_ch05_40",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.240 既存機能を使えないでしょうか。",
+        "answer": "Could we use the existing functionality instead?",
+        "explanation": "Could we use the existing functionality instead?"
+      },
+      {
+        "id": "q_ch05_41",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.241 PoCから始めましょう。",
+        "answer": "Let's start with a proof of concept.",
+        "explanation": "Let's start with a proof of concept."
+      },
+      {
+        "id": "q_ch05_42",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.242 まずデータを集めましょう。",
+        "answer": "Let's collect some data first.",
+        "explanation": "Let's collect some data first."
+      },
+      {
+        "id": "q_ch05_43",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.243 顧客にヒアリングしましょう。",
+        "answer": "Let's talk to some customers first.",
+        "explanation": "Let's talk to some customers first."
+      },
+      {
+        "id": "q_ch05_44",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.244 優先順位を付け直しましょう。",
+        "answer": "Let's reprioritize the tasks.",
+        "explanation": "Let's reprioritize the tasks."
+      },
+      {
+        "id": "q_ch05_45",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.245 重要でない機能を外しましょう。",
+        "answer": "Let's remove the non-essential features.",
+        "explanation": "Let's remove the non-essential features."
+      },
+      {
+        "id": "q_ch05_46",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.246 問題を分解して考えましょう。",
+        "answer": "Let's break the problem down.",
+        "explanation": "Let's break the problem down."
+      },
+      {
+        "id": "q_ch05_47",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.247 まず影響の大きい部分から対応しましょう。",
+        "answer": "Let's address the highest-impact area first.",
+        "explanation": "Let's address the highest-impact area first."
+      },
+      {
+        "id": "q_ch05_48",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.248 AとBを組み合わせる方法があります。",
+        "answer": "We could combine Options A and B.",
+        "explanation": "We could combine Options A and B."
+      },
+      {
+        "id": "q_ch05_49",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.249 妥協案を考えましょう。",
+        "answer": "Let's look for a compromise.",
+        "explanation": "Let's look for a compromise."
+      },
+      {
+        "id": "q_ch05_50",
+        "chapterId": "ch05",
+        "chapterTitle": "第5章 意見・反対・提案",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.250 この方法で進めることを推奨します。",
+        "answer": "I recommend moving forward with this approach.",
+        "explanation": "I recommend moving forward with this approach."
+      },
+      {
+        "id": "q_ch06_1",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.251 問題が発生しています。",
+        "answer": "We're experiencing an issue.",
+        "explanation": "We're experiencing an issue."
+      },
+      {
+        "id": "q_ch06_2",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.252 一部ユーザーに影響しています。",
+        "answer": "The issue is affecting some users.",
+        "explanation": "The issue is affecting some users."
+      },
+      {
+        "id": "q_ch06_3",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.253 ログインできない状態です。",
+        "answer": "Users are currently unable to log in.",
+        "explanation": "Users are currently unable to log in."
+      },
+      {
+        "id": "q_ch06_4",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.254 約5%のリクエストが失敗しています。",
+        "answer": "Approximately 5% of requests are failing.",
+        "explanation": "Approximately 5% of requests are failing."
+      },
+      {
+        "id": "q_ch06_5",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.255 午前10時ごろから発生しています。",
+        "answer": "The issue started at around 10 a.m.",
+        "explanation": "The issue started at around 10 a.m."
+      },
+      {
+        "id": "q_ch06_6",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.256 原因はまだ分かっていません。",
+        "answer": "We haven't identified the cause yet.",
+        "explanation": "We haven't identified the cause yet."
+      },
+      {
+        "id": "q_ch06_7",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.257 現在原因を調査しています。",
+        "answer": "We're currently investigating the root cause.",
+        "explanation": "We're currently investigating the root cause."
+      },
+      {
+        "id": "q_ch06_8",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.258 原因を特定しました。",
+        "answer": "We've identified the root cause.",
+        "explanation": "We've identified the root cause."
+      },
+      {
+        "id": "q_ch06_9",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.259 ネットワーク設定が原因でした。",
+        "answer": "The issue was caused by a network configuration problem.",
+        "explanation": "The issue was caused by a network configuration problem."
+      },
+      {
+        "id": "q_ch06_10",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.260 今朝のデプロイが原因でした。",
+        "answer": "The issue was caused by this morning's deployment.",
+        "explanation": "The issue was caused by this morning's deployment."
+      },
+      {
+        "id": "q_ch06_11",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.261 顧客データへの影響はありません。",
+        "answer": "No customer data has been affected.",
+        "explanation": "No customer data has been affected."
+      },
+      {
+        "id": "q_ch06_12",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.262 データ損失は確認されていません。",
+        "answer": "We have found no evidence of data loss.",
+        "explanation": "We have found no evidence of data loss."
+      },
+      {
+        "id": "q_ch06_13",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.263 影響範囲を確認しています。",
+        "answer": "We're assessing the scope of the impact.",
+        "explanation": "We're assessing the scope of the impact."
+      },
+      {
+        "id": "q_ch06_14",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.264 暫定対応を行いました。",
+        "answer": "We've applied a temporary fix.",
+        "explanation": "We've applied a temporary fix."
+      },
+      {
+        "id": "q_ch06_15",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.265 サービスは復旧しました。",
+        "answer": "The service has been restored.",
+        "explanation": "The service has been restored."
+      },
+      {
+        "id": "q_ch06_16",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.266 現在正常に動作しています。",
+        "answer": "The system is now operating normally.",
+        "explanation": "The system is now operating normally."
+      },
+      {
+        "id": "q_ch06_17",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.267 引き続き監視しています。",
+        "answer": "We're continuing to monitor the system.",
+        "explanation": "We're continuing to monitor the system."
+      },
+      {
+        "id": "q_ch06_18",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.268 恒久対応を進めています。",
+        "answer": "We're working on a permanent fix.",
+        "explanation": "We're working on a permanent fix."
+      },
+      {
+        "id": "q_ch06_19",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.269 再発防止策を検討しています。",
+        "answer": "We're reviewing measures to prevent recurrence.",
+        "explanation": "We're reviewing measures to prevent recurrence."
+      },
+      {
+        "id": "q_ch06_20",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.270 問題を再現できました。",
+        "answer": "We were able to reproduce the issue.",
+        "explanation": "We were able to reproduce the issue."
+      },
+      {
+        "id": "q_ch06_21",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.271 まだ再現できていません。",
+        "answer": "We haven't been able to reproduce the issue yet.",
+        "explanation": "We haven't been able to reproduce the issue yet."
+      },
+      {
+        "id": "q_ch06_22",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.272 特定条件でのみ発生します。",
+        "answer": "The issue occurs only under certain conditions.",
+        "explanation": "The issue occurs only under certain conditions."
+      },
+      {
+        "id": "q_ch06_23",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.273 回避策があります。",
+        "answer": "There is a workaround.",
+        "explanation": "There is a workaround."
+      },
+      {
+        "id": "q_ch06_24",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.274 現在回避策はありません。",
+        "answer": "There is currently no workaround.",
+        "explanation": "There is currently no workaround."
+      },
+      {
+        "id": "q_ch06_25",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.275 影響は限定的です。",
+        "answer": "The impact is limited.",
+        "explanation": "The impact is limited."
+      },
+      {
+        "id": "q_ch06_26",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.276 影響は重大です。",
+        "answer": "The impact is significant.",
+        "explanation": "The impact is significant."
+      },
+      {
+        "id": "q_ch06_27",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.277 これは重大な問題です。",
+        "answer": "This is a critical issue.",
+        "explanation": "This is a critical issue."
+      },
+      {
+        "id": "q_ch06_28",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.278 最優先で対応しています。",
+        "answer": "We're treating this as our top priority.",
+        "explanation": "We're treating this as our top priority."
+      },
+      {
+        "id": "q_ch06_29",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.279 1時間以内の復旧を見込んでいます。",
+        "answer": "We expect the service to recover within an hour.",
+        "explanation": "We expect the service to recover within an hour."
+      },
+      {
+        "id": "q_ch06_30",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.280 現時点では復旧時刻をお伝えできません。",
+        "answer": "We can't provide an estimated recovery time at this point.",
+        "explanation": "We can't provide an estimated recovery time at this point."
+      },
+      {
+        "id": "q_ch06_31",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.281 新しい情報が入り次第お知らせします。",
+        "answer": "We'll provide an update as soon as we have more information.",
+        "explanation": "We'll provide an update as soon as we have more information."
+      },
+      {
+        "id": "q_ch06_32",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.282 ご迷惑をおかけして申し訳ありません。",
+        "answer": "We apologize for the inconvenience.",
+        "explanation": "We apologize for the inconvenience."
+      },
+      {
+        "id": "q_ch06_33",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.283 一度ロールバックします。",
+        "answer": "We'll roll back the change.",
+        "explanation": "We'll roll back the change."
+      },
+      {
+        "id": "q_ch06_34",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.284 以前のバージョンに戻しました。",
+        "answer": "We've rolled back to the previous version.",
+        "explanation": "We've rolled back to the previous version."
+      },
+      {
+        "id": "q_ch06_35",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.285 問題は完全に解決しました。",
+        "answer": "The issue has now been fully resolved.",
+        "explanation": "The issue has now been fully resolved."
+      },
+      {
+        "id": "q_ch06_36",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.286 根本原因分析を行います。",
+        "answer": "We'll conduct a root cause analysis.",
+        "explanation": "We'll conduct a root cause analysis."
+      },
+      {
+        "id": "q_ch06_37",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.287 詳細な報告書を後ほど共有します。",
+        "answer": "We'll share a detailed incident report later.",
+        "explanation": "We'll share a detailed incident report later."
+      },
+      {
+        "id": "q_ch06_38",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.288 再発防止策も報告します。",
+        "answer": "The report will also include preventive measures.",
+        "explanation": "The report will also include preventive measures."
+      },
+      {
+        "id": "q_ch06_39",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.289 返信が遅くなり申し訳ありません。",
+        "answer": "I apologize for the delayed response.",
+        "explanation": "I apologize for the delayed response."
+      },
+      {
+        "id": "q_ch06_40",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.290 混乱を招いて申し訳ありません。",
+        "answer": "I apologize for the confusion.",
+        "explanation": "I apologize for the confusion."
+      },
+      {
+        "id": "q_ch06_41",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.291 こちらのミスです。",
+        "answer": "This was our mistake.",
+        "explanation": "This was our mistake."
+      },
+      {
+        "id": "q_ch06_42",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.292 こちらの確認不足でした。",
+        "answer": "We should have checked this more carefully.",
+        "explanation": "We should have checked this more carefully."
+      },
+      {
+        "id": "q_ch06_43",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.293 問題は修正済みです。",
+        "answer": "We've corrected the issue.",
+        "explanation": "We've corrected the issue."
+      },
+      {
+        "id": "q_ch06_44",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.294 再発防止策も実施します。",
+        "answer": "We'll take steps to prevent this from happening again.",
+        "explanation": "We'll take steps to prevent this from happening again."
+      },
+      {
+        "id": "q_ch06_45",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.295 残念ながらその依頼には対応できません。",
+        "answer": "Unfortunately, we won't be able to accommodate that request.",
+        "explanation": "Unfortunately, we won't be able to accommodate that request."
+      },
+      {
+        "id": "q_ch06_46",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.296 金曜日までの対応は難しいです。",
+        "answer": "Unfortunately, we won't be able to complete it by Friday.",
+        "explanation": "Unfortunately, we won't be able to complete it by Friday."
+      },
+      {
+        "id": "q_ch06_47",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.297 月曜日なら対応できます。",
+        "answer": "However, we can complete it by Monday.",
+        "explanation": "However, we can complete it by Monday."
+      },
+      {
+        "id": "q_ch06_48",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.298 その条件では対応できません。",
+        "answer": "We won't be able to proceed under those conditions.",
+        "explanation": "We won't be able to proceed under those conditions."
+      },
+      {
+        "id": "q_ch06_49",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.299 代わりに別の方法をご提案できます。",
+        "answer": "However, we can suggest an alternative.",
+        "explanation": "However, we can suggest an alternative."
+      },
+      {
+        "id": "q_ch06_50",
+        "chapterId": "ch06",
+        "chapterTitle": "第6章 問題・障害・謝罪",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.300 期待に沿えず申し訳ありません。",
+        "answer": "I'm sorry we can't meet your expectations this time.",
+        "explanation": "I'm sorry we can't meet your expectations this time."
+      },
+      {
+        "id": "q_ch07_1",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.301 ご連絡ありがとうございます。",
+        "answer": "Thank you for your email.",
+        "explanation": "Thank you for your email."
+      },
+      {
+        "id": "q_ch07_2",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.302 返信ありがとうございます。",
+        "answer": "Thank you for getting back to me.",
+        "explanation": "Thank you for getting back to me."
+      },
+      {
+        "id": "q_ch07_3",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.303 添付資料をご確認ください。",
+        "answer": "Please see the attached document.",
+        "explanation": "Please see the attached document."
+      },
+      {
+        "id": "q_ch07_4",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.304 最新版を添付しています。",
+        "answer": "I've attached the latest version.",
+        "explanation": "I've attached the latest version."
+      },
+      {
+        "id": "q_ch07_5",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.305 以下をご確認ください。",
+        "answer": "Please see below.",
+        "explanation": "Please see below."
+      },
+      {
+        "id": "q_ch07_6",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.306 参考までに共有します。",
+        "answer": "I'm sharing this for your reference.",
+        "explanation": "I'm sharing this for your reference."
+      },
+      {
+        "id": "q_ch07_7",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.307 前回のメールについてフォローアップです。",
+        "answer": "I'm following up on my previous email.",
+        "explanation": "I'm following up on my previous email."
+      },
+      {
+        "id": "q_ch07_8",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.308 確認する時間はありましたか。",
+        "answer": "Have you had a chance to review it?",
+        "explanation": "Have you had a chance to review it?"
+      },
+      {
+        "id": "q_ch07_9",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.309 進捗はありますか。",
+        "answer": "Do you have any updates?",
+        "explanation": "Do you have any updates?"
+      },
+      {
+        "id": "q_ch07_10",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.310 現在の状況を教えていただけますか。",
+        "answer": "Could you let me know where things stand?",
+        "explanation": "Could you let me know where things stand?"
+      },
+      {
+        "id": "q_ch07_11",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.311 明日までにご返信いただけると助かります。",
+        "answer": "I'd appreciate your response by tomorrow.",
+        "explanation": "I'd appreciate your response by tomorrow."
+      },
+      {
+        "id": "q_ch07_12",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.312 金曜日までに承認が必要です。",
+        "answer": "We need your approval by Friday.",
+        "explanation": "We need your approval by Friday."
+      },
+      {
+        "id": "q_ch07_13",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.313 承認いただければ進めます。",
+        "answer": "We'll proceed once we have your approval.",
+        "explanation": "We'll proceed once we have your approval."
+      },
+      {
+        "id": "q_ch07_14",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.314 問題がなければこの内容で進めます。",
+        "answer": "If there are no objections, we'll proceed with this version.",
+        "explanation": "If there are no objections, we'll proceed with this version."
+      },
+      {
+        "id": "q_ch07_15",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.315 変更があれば教えてください。",
+        "answer": "Please let me know if you'd like any changes.",
+        "explanation": "Please let me know if you'd like any changes."
+      },
+      {
+        "id": "q_ch07_16",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.316 ご不明点があればご連絡ください。",
+        "answer": "Please let me know if you have any questions.",
+        "explanation": "Please let me know if you have any questions."
+      },
+      {
+        "id": "q_ch07_17",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.317 必要であれば詳しく説明します。",
+        "answer": "I'm happy to explain further if needed.",
+        "explanation": "I'm happy to explain further if needed."
+      },
+      {
+        "id": "q_ch07_18",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.318 会議を設定したいです。",
+        "answer": "I'd like to schedule a meeting.",
+        "explanation": "I'd like to schedule a meeting."
+      },
+      {
+        "id": "q_ch07_19",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.319 木曜か金曜はいかがでしょうか。",
+        "answer": "Would Thursday or Friday work for you?",
+        "explanation": "Would Thursday or Friday work for you?"
+      },
+      {
+        "id": "q_ch07_20",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.320 都合の良い時間を教えてください。",
+        "answer": "Please let me know what time works best for you.",
+        "explanation": "Please let me know what time works best for you."
+      },
+      {
+        "id": "q_ch07_21",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.321 会議の日程を変更したいです。",
+        "answer": "I'd like to reschedule the meeting.",
+        "explanation": "I'd like to reschedule the meeting."
+      },
+      {
+        "id": "q_ch07_22",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.322 急な変更で申し訳ありません。",
+        "answer": "I apologize for the short notice.",
+        "explanation": "I apologize for the short notice."
+      },
+      {
+        "id": "q_ch07_23",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.323 確認後、改めてご連絡します。",
+        "answer": "I'll get back to you after reviewing it.",
+        "explanation": "I'll get back to you after reviewing it."
+      },
+      {
+        "id": "q_ch07_24",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.324 社内で確認します。",
+        "answer": "I'll check internally.",
+        "explanation": "I'll check internally."
+      },
+      {
+        "id": "q_ch07_25",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.325 社内で確認して明日ご連絡します。",
+        "answer": "I'll check internally and get back to you tomorrow.",
+        "explanation": "I'll check internally and get back to you tomorrow."
+      },
+      {
+        "id": "q_ch07_26",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.326 顧客に確認してご連絡します。",
+        "answer": "I'll check with the client and get back to you.",
+        "explanation": "I'll check with the client and get back to you."
+      },
+      {
+        "id": "q_ch07_27",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.327 田中さんにも共有しておきます。",
+        "answer": "I'll share this with Tanaka as well.",
+        "explanation": "I'll share this with Tanaka as well."
+      },
+      {
+        "id": "q_ch07_28",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.328 関係者もCCに入れます。",
+        "answer": "I'll copy the relevant stakeholders.",
+        "explanation": "I'll copy the relevant stakeholders."
+      },
+      {
+        "id": "q_ch07_29",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.329 対応済みです。",
+        "answer": "This has been taken care of.",
+        "explanation": "This has been taken care of."
+      },
+      {
+        "id": "q_ch07_30",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.330 承認済みです。",
+        "answer": "This has been approved.",
+        "explanation": "This has been approved."
+      },
+      {
+        "id": "q_ch07_31",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.331 対応中です。",
+        "answer": "This is in progress.",
+        "explanation": "This is in progress."
+      },
+      {
+        "id": "q_ch07_32",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.332 保留中です。",
+        "answer": "This is currently on hold.",
+        "explanation": "This is currently on hold."
+      },
+      {
+        "id": "q_ch07_33",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.333 顧客回答待ちです。",
+        "answer": "This is pending the client's response.",
+        "explanation": "This is pending the client's response."
+      },
+      {
+        "id": "q_ch07_34",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.334 こちらでの対応は不要です。",
+        "answer": "No action is required on our side.",
+        "explanation": "No action is required on our side."
+      },
+      {
+        "id": "q_ch07_35",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.335 参考までに、会議は金曜日に変更されました。",
+        "answer": "FYI, the meeting has been moved to Friday.",
+        "explanation": "FYI, the meeting has been moved to Friday."
+      },
+      {
+        "id": "q_ch07_36",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.336 今対応します。",
+        "answer": "On it.",
+        "explanation": "On it."
+      },
+      {
+        "id": "q_ch07_37",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.337 対応します。",
+        "answer": "Will do.",
+        "explanation": "Will do."
+      },
+      {
+        "id": "q_ch07_38",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.338 私はそれで大丈夫です。",
+        "answer": "Works for me.",
+        "explanation": "Works for me."
+      },
+      {
+        "id": "q_ch07_39",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.339 納得です。",
+        "answer": "Makes sense.",
+        "explanation": "Makes sense."
+      },
+      {
+        "id": "q_ch07_40",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.340 あとで確認します。",
+        "answer": "I'll take a look later.",
+        "explanation": "I'll take a look later."
+      },
+      {
+        "id": "q_ch07_41",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.341 何か進捗ありますか。",
+        "answer": "Any updates on this?",
+        "explanation": "Any updates on this?"
+      },
+      {
+        "id": "q_ch07_42",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.342 今どのあたりですか。",
+        "answer": "Where are we on this?",
+        "explanation": "Where are we on this?"
+      },
+      {
+        "id": "q_ch07_43",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.343 完了予定はありますか。",
+        "answer": "Do we have an ETA?",
+        "explanation": "Do we have an ETA?"
+      },
+      {
+        "id": "q_ch07_44",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.344 今日終わりそうですか。",
+        "answer": "Do you think you'll be able to finish this today?",
+        "explanation": "Do you think you'll be able to finish this today?"
+      },
+      {
+        "id": "q_ch07_45",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.345 最新版を共有してもらえますか。",
+        "answer": "Could you share the latest version?",
+        "explanation": "Could you share the latest version?"
+      },
+      {
+        "id": "q_ch07_46",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.346 念のため田中さんにも共有します。",
+        "answer": "I'll loop Tanaka in as well.",
+        "explanation": "I'll loop Tanaka in as well."
+      },
+      {
+        "id": "q_ch07_47",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.347 これについてあとで話しましょう。",
+        "answer": "Let's sync on this later.",
+        "explanation": "Let's sync on this later."
+      },
+      {
+        "id": "q_ch07_48",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.348 5分だけ話せますか。",
+        "answer": "Do you have five minutes to chat?",
+        "explanation": "Do you have five minutes to chat?"
+      },
+      {
+        "id": "q_ch07_49",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.349 すぐ確認できますか。",
+        "answer": "Could you take a quick look?",
+        "explanation": "Could you take a quick look?"
+      },
+      {
+        "id": "q_ch07_50",
+        "chapterId": "ch07",
+        "chapterTitle": "第7章 メール・チャット",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.350 問題があればスレッドで教えてください。",
+        "answer": "Let me know in the thread if you run into any issues.",
+        "explanation": "Let me know in the thread if you run into any issues."
+      },
+      {
+        "id": "q_ch08_1",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.351 結論から申し上げます。",
+        "answer": "Let me start with the conclusion.",
+        "explanation": "Let me start with the conclusion."
+      },
+      {
+        "id": "q_ch08_2",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.352 この案を推奨します。",
+        "answer": "I recommend this option.",
+        "explanation": "I recommend this option."
+      },
+      {
+        "id": "q_ch08_3",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.353 理由は3つあります。",
+        "answer": "There are three reasons for this.",
+        "explanation": "There are three reasons for this."
+      },
+      {
+        "id": "q_ch08_4",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.354 第一の理由はコストです。",
+        "answer": "The first reason is cost.",
+        "explanation": "The first reason is cost."
+      },
+      {
+        "id": "q_ch08_5",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.355 具体例を挙げます。",
+        "answer": "Let me give you an example.",
+        "explanation": "Let me give you an example."
+      },
+      {
+        "id": "q_ch08_6",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.356 つまり、今の方法では拡張できません。",
+        "answer": "In other words, the current approach doesn't scale.",
+        "explanation": "In other words, the current approach doesn't scale."
+      },
+      {
+        "id": "q_ch08_7",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.357 要するに変更が必要です。",
+        "answer": "In short, we need to make a change.",
+        "explanation": "In short, we need to make a change."
+      },
+      {
+        "id": "q_ch08_8",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.358 最も重要なポイントはこれです。",
+        "answer": "This is the key point.",
+        "explanation": "This is the key point."
+      },
+      {
+        "id": "q_ch08_9",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.359 背景から説明します。",
+        "answer": "Let me start with the background.",
+        "explanation": "Let me start with the background."
+      },
+      {
+        "id": "q_ch08_10",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.360 現在の状況は次のとおりです。",
+        "answer": "Here's where we are today.",
+        "explanation": "Here's where we are today."
+      },
+      {
+        "id": "q_ch08_11",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.361 問題は問い合わせが増えていることです。",
+        "answer": "The problem is that inquiries are increasing.",
+        "explanation": "The problem is that inquiries are increasing."
+      },
+      {
+        "id": "q_ch08_12",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.362 そこで自動化を提案します。",
+        "answer": "That's why I'm proposing automation.",
+        "explanation": "That's why I'm proposing automation."
+      },
+      {
+        "id": "q_ch08_13",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.363 これにより工数を削減できます。",
+        "answer": "This would allow us to reduce the workload.",
+        "explanation": "This would allow us to reduce the workload."
+      },
+      {
+        "id": "q_ch08_14",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.364 同時に品質も維持できます。",
+        "answer": "At the same time, we can maintain quality.",
+        "explanation": "At the same time, we can maintain quality."
+      },
+      {
+        "id": "q_ch08_15",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.365 この数字を見てください。",
+        "answer": "Let's look at this number.",
+        "explanation": "Let's look at this number."
+      },
+      {
+        "id": "q_ch08_16",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.366 売上は前年比20%増えました。",
+        "answer": "Sales increased by 20% year over year.",
+        "explanation": "Sales increased by 20% year over year."
+      },
+      {
+        "id": "q_ch08_17",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.367 売上は1億円まで増えました。",
+        "answer": "Sales increased to 100 million yen.",
+        "explanation": "Sales increased to 100 million yen."
+      },
+      {
+        "id": "q_ch08_18",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.368 コストは10%減りました。",
+        "answer": "Costs decreased by 10%.",
+        "explanation": "Costs decreased by 10%."
+      },
+      {
+        "id": "q_ch08_19",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.369 利益率はほぼ横ばいです。",
+        "answer": "Profit margins remained roughly flat.",
+        "explanation": "Profit margins remained roughly flat."
+      },
+      {
+        "id": "q_ch08_20",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.370 顧客数は2倍になりました。",
+        "answer": "The number of customers doubled.",
+        "explanation": "The number of customers doubled."
+      },
+      {
+        "id": "q_ch08_21",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.371 一方、解約率は上昇しています。",
+        "answer": "However, the churn rate is increasing.",
+        "explanation": "However, the churn rate is increasing."
+      },
+      {
+        "id": "q_ch08_22",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.372 データから二つのことが分かります。",
+        "answer": "The data tells us two things.",
+        "explanation": "The data tells us two things."
+      },
+      {
+        "id": "q_ch08_23",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.373 第一に需要は強いです。",
+        "answer": "First, demand is strong.",
+        "explanation": "First, demand is strong."
+      },
+      {
+        "id": "q_ch08_24",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.374 第二に維持率に課題があります。",
+        "answer": "Second, retention is a challenge.",
+        "explanation": "Second, retention is a challenge."
+      },
+      {
+        "id": "q_ch08_25",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.375 したがってリテンションに投資すべきです。",
+        "answer": "Therefore, we should invest in retention.",
+        "explanation": "Therefore, we should invest in retention."
+      },
+      {
+        "id": "q_ch08_26",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.376 この提案には3つのメリットがあります。",
+        "answer": "This proposal has three main benefits.",
+        "explanation": "This proposal has three main benefits."
+      },
+      {
+        "id": "q_ch08_27",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.377 この方法ならコストを削減できます。",
+        "answer": "This approach would reduce costs.",
+        "explanation": "This approach would reduce costs."
+      },
+      {
+        "id": "q_ch08_28",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.378 この方法なら処理時間を短縮できます。",
+        "answer": "This approach would reduce processing time.",
+        "explanation": "This approach would reduce processing time."
+      },
+      {
+        "id": "q_ch08_29",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.379 顧客体験も改善できます。",
+        "answer": "It would also improve the customer experience.",
+        "explanation": "It would also improve the customer experience."
+      },
+      {
+        "id": "q_ch08_30",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.380 ただしリスクもあります。",
+        "answer": "However, there are also some risks.",
+        "explanation": "However, there are also some risks."
+      },
+      {
+        "id": "q_ch08_31",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.381 最大のリスクは導入コストです。",
+        "answer": "The biggest risk is the implementation cost.",
+        "explanation": "The biggest risk is the implementation cost."
+      },
+      {
+        "id": "q_ch08_32",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.382 段階導入でリスクを軽減できます。",
+        "answer": "We can mitigate this risk through a phased rollout.",
+        "explanation": "We can mitigate this risk through a phased rollout."
+      },
+      {
+        "id": "q_ch08_33",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.383 以上を踏まえると、この案が最適です。",
+        "answer": "Given these factors, I believe this is the best option.",
+        "explanation": "Given these factors, I believe this is the best option."
+      },
+      {
+        "id": "q_ch08_34",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.384 私たちには3つの選択肢があります。",
+        "answer": "We have three options.",
+        "explanation": "We have three options."
+      },
+      {
+        "id": "q_ch08_35",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.385 Aは安いですが時間がかかります。",
+        "answer": "Option A is cheaper but takes longer.",
+        "explanation": "Option A is cheaper but takes longer."
+      },
+      {
+        "id": "q_ch08_36",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.386 Bは速いですが高価です。",
+        "answer": "Option B is faster but more expensive.",
+        "explanation": "Option B is faster but more expensive."
+      },
+      {
+        "id": "q_ch08_37",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.387 Cが最もバランスが良いです。",
+        "answer": "Option C offers the best balance.",
+        "explanation": "Option C offers the best balance."
+      },
+      {
+        "id": "q_ch08_38",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.388 今日決めていただきたいのはこの点です。",
+        "answer": "This is the decision we need to make today.",
+        "explanation": "This is the decision we need to make today."
+      },
+      {
+        "id": "q_ch08_39",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.389 今日は来年度の戦略について説明します。",
+        "answer": "Today I'd like to talk about our strategy for next year.",
+        "explanation": "Today I'd like to talk about our strategy for next year."
+      },
+      {
+        "id": "q_ch08_40",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.390 3つの点について説明します。",
+        "answer": "I'll cover three main points.",
+        "explanation": "I'll cover three main points."
+      },
+      {
+        "id": "q_ch08_41",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.391 まずこのグラフをご覧ください。",
+        "answer": "Let's start with this chart.",
+        "explanation": "Let's start with this chart."
+      },
+      {
+        "id": "q_ch08_42",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.392 このグラフは過去12か月の売上を示しています。",
+        "answer": "This chart shows sales over the past twelve months.",
+        "explanation": "This chart shows sales over the past twelve months."
+      },
+      {
+        "id": "q_ch08_43",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.393 ご覧のとおり売上は増加しています。",
+        "answer": "As you can see, sales have increased.",
+        "explanation": "As you can see, sales have increased."
+      },
+      {
+        "id": "q_ch08_44",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.394 ここに注目してください。",
+        "answer": "I'd like to draw your attention to this point.",
+        "explanation": "I'd like to draw your attention to this point."
+      },
+      {
+        "id": "q_ch08_45",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.395 次のスライドに移ります。",
+        "answer": "Let's move on to the next slide.",
+        "explanation": "Let's move on to the next slide."
+      },
+      {
+        "id": "q_ch08_46",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.396 次に原因を見てみましょう。",
+        "answer": "Next, let's look at what's driving this.",
+        "explanation": "Next, let's look at what's driving this."
+      },
+      {
+        "id": "q_ch08_47",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.397 最後にまとめます。",
+        "answer": "Let me wrap up.",
+        "explanation": "Let me wrap up."
+      },
+      {
+        "id": "q_ch08_48",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.398 ご質問をお受けします。",
+        "answer": "I'm happy to take any questions.",
+        "explanation": "I'm happy to take any questions."
+      },
+      {
+        "id": "q_ch08_49",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.399 正確な数字は手元にありません。",
+        "answer": "I don't have the exact number with me.",
+        "explanation": "I don't have the exact number with me."
+      },
+      {
+        "id": "q_ch08_50",
+        "chapterId": "ch08",
+        "chapterTitle": "第8章 説明・プレゼンテーション",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.400 確認して後ほどご連絡します。",
+        "answer": "I'll check and follow up after the meeting.",
+        "explanation": "I'll check and follow up after the meeting."
+      },
+      {
+        "id": "q_ch09_1",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.401 現在どのような方法で対応していますか。",
+        "answer": "How are you currently handling this?",
+        "explanation": "How are you currently handling this?"
+      },
+      {
+        "id": "q_ch09_2",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.402 現在のプロセスを教えてください。",
+        "answer": "Could you walk me through your current process?",
+        "explanation": "Could you walk me through your current process?"
+      },
+      {
+        "id": "q_ch09_3",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.403 最大の課題は何ですか。",
+        "answer": "What's your biggest challenge?",
+        "explanation": "What's your biggest challenge?"
+      },
+      {
+        "id": "q_ch09_4",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.404 今年の優先事項は何ですか。",
+        "answer": "What are your main priorities this year?",
+        "explanation": "What are your main priorities this year?"
+      },
+      {
+        "id": "q_ch09_5",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.405 どの部分を改善したいですか。",
+        "answer": "What are you looking to improve?",
+        "explanation": "What are you looking to improve?"
+      },
+      {
+        "id": "q_ch09_6",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.406 どれくらい頻繁に起きますか。",
+        "answer": "How often does this happen?",
+        "explanation": "How often does this happen?"
+      },
+      {
+        "id": "q_ch09_7",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.407 どれくらい時間がかかっていますか。",
+        "answer": "How much time does this currently take?",
+        "explanation": "How much time does this currently take?"
+      },
+      {
+        "id": "q_ch09_8",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.408 誰が最も影響を受けていますか。",
+        "answer": "Who is most affected by this issue?",
+        "explanation": "Who is most affected by this issue?"
+      },
+      {
+        "id": "q_ch09_9",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.409 この問題は事業にどんな影響がありますか。",
+        "answer": "What impact does this have on the business?",
+        "explanation": "What impact does this have on the business?"
+      },
+      {
+        "id": "q_ch09_10",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.410 解決しなければどうなりますか。",
+        "answer": "What happens if this problem isn't solved?",
+        "explanation": "What happens if this problem isn't solved?"
+      },
+      {
+        "id": "q_ch09_11",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.411 現在いくらかかっていますか。",
+        "answer": "How much does this currently cost?",
+        "explanation": "How much does this currently cost?"
+      },
+      {
+        "id": "q_ch09_12",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.412 ほかの製品を試しましたか。",
+        "answer": "Have you tried any other solutions?",
+        "explanation": "Have you tried any other solutions?"
+      },
+      {
+        "id": "q_ch09_13",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.413 なぜうまくいかなかったのでしょうか。",
+        "answer": "Why didn't those solutions work?",
+        "explanation": "Why didn't those solutions work?"
+      },
+      {
+        "id": "q_ch09_14",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.414 理想的な状態はどのようなものですか。",
+        "answer": "What would an ideal solution look like?",
+        "explanation": "What would an ideal solution look like?"
+      },
+      {
+        "id": "q_ch09_15",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.415 成功をどのように測りますか。",
+        "answer": "How would you measure success?",
+        "explanation": "How would you measure success?"
+      },
+      {
+        "id": "q_ch09_16",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.416 最も重要な要件は何ですか。",
+        "answer": "What are the most important requirements?",
+        "explanation": "What are the most important requirements?"
+      },
+      {
+        "id": "q_ch09_17",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.417 予算は決まっていますか。",
+        "answer": "Do you have a budget in mind?",
+        "explanation": "Do you have a budget in mind?"
+      },
+      {
+        "id": "q_ch09_18",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.418 導入時期はいつ頃ですか。",
+        "answer": "When are you looking to implement this?",
+        "explanation": "When are you looking to implement this?"
+      },
+      {
+        "id": "q_ch09_19",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.419 意思決定には誰が関わりますか。",
+        "answer": "Who is involved in the decision-making process?",
+        "explanation": "Who is involved in the decision-making process?"
+      },
+      {
+        "id": "q_ch09_20",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.420 最終承認者は誰ですか。",
+        "answer": "Who gives final approval?",
+        "explanation": "Who gives final approval?"
+      },
+      {
+        "id": "q_ch09_21",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.421 その作業は自動化できる可能性があります。",
+        "answer": "We may be able to automate that process.",
+        "explanation": "We may be able to automate that process."
+      },
+      {
+        "id": "q_ch09_22",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.422 弊社のシステムならその部分を自動化できます。",
+        "answer": "Our system can automate that part of the process.",
+        "explanation": "Our system can automate that part of the process."
+      },
+      {
+        "id": "q_ch09_23",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.423 これにより手作業を削減できます。",
+        "answer": "This can reduce the amount of manual work.",
+        "explanation": "This can reduce the amount of manual work."
+      },
+      {
+        "id": "q_ch09_24",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.424 担当者は重要な業務に集中できます。",
+        "answer": "This allows your team to focus on higher-value work.",
+        "explanation": "This allows your team to focus on higher-value work."
+      },
+      {
+        "id": "q_ch09_25",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.425 御社にはこの機能が合いそうです。",
+        "answer": "I think this feature could be a good fit for your use case.",
+        "explanation": "I think this feature could be a good fit for your use case."
+      },
+      {
+        "id": "q_ch09_26",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.426 デモをご覧になりますか。",
+        "answer": "Would you like to see a demo?",
+        "explanation": "Would you like to see a demo?"
+      },
+      {
+        "id": "q_ch09_27",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.427 まず小規模に試すこともできます。",
+        "answer": "We can also start with a small pilot.",
+        "explanation": "We can also start with a small pilot."
+      },
+      {
+        "id": "q_ch09_28",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.428 PoCから始めることをおすすめします。",
+        "answer": "I'd recommend starting with a proof of concept.",
+        "explanation": "I'd recommend starting with a proof of concept."
+      },
+      {
+        "id": "q_ch09_29",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.429 まず効果を測定できます。",
+        "answer": "This would allow us to measure the impact first.",
+        "explanation": "This would allow us to measure the impact first."
+      },
+      {
+        "id": "q_ch09_30",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.430 次回の打ち合わせを設定できますか。",
+        "answer": "Could we schedule a follow-up meeting?",
+        "explanation": "Could we schedule a follow-up meeting?"
+      },
+      {
+        "id": "q_ch09_31",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.431 価格について相談したいです。",
+        "answer": "I'd like to discuss the pricing.",
+        "explanation": "I'd like to discuss the pricing."
+      },
+      {
+        "id": "q_ch09_32",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.432 現在の価格は予算を超えています。",
+        "answer": "The current price is above our budget.",
+        "explanation": "The current price is above our budget."
+      },
+      {
+        "id": "q_ch09_33",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.433 価格に少し柔軟性はありますか。",
+        "answer": "Is there any flexibility on the price?",
+        "explanation": "Is there any flexibility on the price?"
+      },
+      {
+        "id": "q_ch09_34",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.434 10%値引きは可能ですか。",
+        "answer": "Would a 10% discount be possible?",
+        "explanation": "Would a 10% discount be possible?"
+      },
+      {
+        "id": "q_ch09_35",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.435 年間8万ドル以内に抑える必要があります。",
+        "answer": "We need to keep the annual cost below $80,000.",
+        "explanation": "We need to keep the annual cost below $80,000."
+      },
+      {
+        "id": "q_ch09_36",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.436 その価格では難しいです。",
+        "answer": "I'm afraid that price won't work for us.",
+        "explanation": "I'm afraid that price won't work for us."
+      },
+      {
+        "id": "q_ch09_37",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.437 別の条件を検討できますか。",
+        "answer": "Could we consider different terms?",
+        "explanation": "Could we consider different terms?"
+      },
+      {
+        "id": "q_ch09_38",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.438 2年契約なら10%値引きできます。",
+        "answer": "We can offer a 10% discount if you sign a two-year contract.",
+        "explanation": "We can offer a 10% discount if you sign a two-year contract."
+      },
+      {
+        "id": "q_ch09_39",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.439 価格以外の条件も検討しましょう。",
+        "answer": "Let's look at terms other than price as well.",
+        "explanation": "Let's look at terms other than price as well."
+      },
+      {
+        "id": "q_ch09_40",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.440 支払条件について相談できますか。",
+        "answer": "Could we discuss the payment terms?",
+        "explanation": "Could we discuss the payment terms?"
+      },
+      {
+        "id": "q_ch09_41",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.441 その条件なら検討できます。",
+        "answer": "We could consider that under those terms.",
+        "explanation": "We could consider that under those terms."
+      },
+      {
+        "id": "q_ch09_42",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.442 ここは譲れません。",
+        "answer": "This point is non-negotiable for us.",
+        "explanation": "This point is non-negotiable for us."
+      },
+      {
+        "id": "q_ch09_43",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.443 それ以外は柔軟に対応できます。",
+        "answer": "We're flexible on the other points.",
+        "explanation": "We're flexible on the other points."
+      },
+      {
+        "id": "q_ch09_44",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.444 何を最優先されていますか。",
+        "answer": "What's your top priority?",
+        "explanation": "What's your top priority?"
+      },
+      {
+        "id": "q_ch09_45",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.445 代替案があります。",
+        "answer": "I have an alternative proposal.",
+        "explanation": "I have an alternative proposal."
+      },
+      {
+        "id": "q_ch09_46",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.446 もう少し中間地点を探しましょう。",
+        "answer": "Let's see if we can meet somewhere in the middle.",
+        "explanation": "Let's see if we can meet somewhere in the middle."
+      },
+      {
+        "id": "q_ch09_47",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.447 それができれば合意できます。",
+        "answer": "If you can do that, we have a deal.",
+        "explanation": "If you can do that, we have a deal."
+      },
+      {
+        "id": "q_ch09_48",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.448 条件を確認させてください。",
+        "answer": "Let me confirm the terms.",
+        "explanation": "Let me confirm the terms."
+      },
+      {
+        "id": "q_ch09_49",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.449 これ以上の値引きは難しいです。",
+        "answer": "We won't be able to offer a further discount.",
+        "explanation": "We won't be able to offer a further discount."
+      },
+      {
+        "id": "q_ch09_50",
+        "chapterId": "ch09",
+        "chapterTitle": "第9章 営業・交渉",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.450 良い妥協点だと思います。",
+        "answer": "I think that's a good compromise.",
+        "explanation": "I think that's a good compromise."
+      },
+      {
+        "id": "q_ch10_1",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-1",
+        "question": "No.451 この仕事をお願いしたいです。",
+        "answer": "I'd like you to take this on.",
+        "explanation": "I'd like you to take this on."
+      },
+      {
+        "id": "q_ch10_2",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-2",
+        "question": "No.452 金曜日までに初稿を作ってください。",
+        "answer": "Could you prepare the first draft by Friday?",
+        "explanation": "Could you prepare the first draft by Friday?"
+      },
+      {
+        "id": "q_ch10_3",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-3",
+        "question": "No.453 まず背景を説明します。",
+        "answer": "Let me give you some context first.",
+        "explanation": "Let me give you some context first."
+      },
+      {
+        "id": "q_ch10_4",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-4",
+        "question": "No.454 来週の経営会議で使います。",
+        "answer": "We need this for next week's management meeting.",
+        "explanation": "We need this for next week's management meeting."
+      },
+      {
+        "id": "q_ch10_5",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-5",
+        "question": "No.455 最優先でお願いします。",
+        "answer": "Please make this your top priority.",
+        "explanation": "Please make this your top priority."
+      },
+      {
+        "id": "q_ch10_6",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-6",
+        "question": "No.456 まず80%の完成度で大丈夫です。",
+        "answer": "An 80% version is fine for the first draft.",
+        "explanation": "An 80% version is fine for the first draft."
+      },
+      {
+        "id": "q_ch10_7",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-7",
+        "question": "No.457 完璧にする必要はありません。",
+        "answer": "It doesn't need to be perfect.",
+        "explanation": "It doesn't need to be perfect."
+      },
+      {
+        "id": "q_ch10_8",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-8",
+        "question": "No.458 途中で一度見せてください。",
+        "answer": "Please show me a draft along the way.",
+        "explanation": "Please show me a draft along the way."
+      },
+      {
+        "id": "q_ch10_9",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-9",
+        "question": "No.459 期限に間に合わなそうなら早めに教えてください。",
+        "answer": "Let me know early if you think you might miss the deadline.",
+        "explanation": "Let me know early if you think you might miss the deadline."
+      },
+      {
+        "id": "q_ch10_10",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-10",
+        "question": "No.460 何か支援が必要ですか。",
+        "answer": "Do you need any support?",
+        "explanation": "Do you need any support?"
+      },
+      {
+        "id": "q_ch10_11",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-11",
+        "question": "No.461 今抱えているタスクを教えてください。",
+        "answer": "Could you walk me through your current workload?",
+        "explanation": "Could you walk me through your current workload?"
+      },
+      {
+        "id": "q_ch10_12",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-12",
+        "question": "No.462 何に一番時間がかかっていますか。",
+        "answer": "What's taking up most of your time?",
+        "explanation": "What's taking up most of your time?"
+      },
+      {
+        "id": "q_ch10_13",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-13",
+        "question": "No.463 何かブロッカーはありますか。",
+        "answer": "Are there any blockers?",
+        "explanation": "Are there any blockers?"
+      },
+      {
+        "id": "q_ch10_14",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-14",
+        "question": "No.464 どこで困っていますか。",
+        "answer": "Where are you getting stuck?",
+        "explanation": "Where are you getting stuck?"
+      },
+      {
+        "id": "q_ch10_15",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-15",
+        "question": "No.465 あなたはこのプロジェクトに集中してください。",
+        "answer": "Please focus on this project.",
+        "explanation": "Please focus on this project."
+      },
+      {
+        "id": "q_ch10_16",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-16",
+        "question": "No.466 昨日のプレゼンは良かったです。",
+        "answer": "You did a good job on yesterday's presentation.",
+        "explanation": "You did a good job on yesterday's presentation."
+      },
+      {
+        "id": "q_ch10_17",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-17",
+        "question": "No.467 特に説明が分かりやすかったです。",
+        "answer": "Your explanation was particularly clear.",
+        "explanation": "Your explanation was particularly clear."
+      },
+      {
+        "id": "q_ch10_18",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-18",
+        "question": "No.468 一つ改善できる点があります。",
+        "answer": "There's one area I think you could improve.",
+        "explanation": "There's one area I think you could improve."
+      },
+      {
+        "id": "q_ch10_19",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-19",
+        "question": "No.469 少し詳細が多すぎました。",
+        "answer": "There was a little too much detail.",
+        "explanation": "There was a little too much detail."
+      },
+      {
+        "id": "q_ch10_20",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-20",
+        "question": "No.470 次回は要点を絞ってみてください。",
+        "answer": "Next time, try focusing on the key points.",
+        "explanation": "Next time, try focusing on the key points."
+      },
+      {
+        "id": "q_ch10_21",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-21",
+        "question": "No.471 データを追加すると説得力が増すと思います。",
+        "answer": "I think adding more data would strengthen the argument.",
+        "explanation": "I think adding more data would strengthen the argument."
+      },
+      {
+        "id": "q_ch10_22",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-22",
+        "question": "No.472 結論をもう少し早く出すとよいです。",
+        "answer": "I suggest getting to the conclusion a little earlier.",
+        "explanation": "I suggest getting to the conclusion a little earlier."
+      },
+      {
+        "id": "q_ch10_23",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-23",
+        "question": "No.473 全体としては良い仕事でした。",
+        "answer": "Overall, you did a good job.",
+        "explanation": "Overall, you did a good job."
+      },
+      {
+        "id": "q_ch10_24",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-24",
+        "question": "No.474 最近どうですか。",
+        "answer": "How have things been going lately?",
+        "explanation": "How have things been going lately?"
+      },
+      {
+        "id": "q_ch10_25",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-25",
+        "question": "No.475 仕事量はどうですか。",
+        "answer": "How is your workload?",
+        "explanation": "How is your workload?"
+      },
+      {
+        "id": "q_ch10_26",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-26",
+        "question": "No.476 何か気になっていることはありますか。",
+        "answer": "Is there anything on your mind?",
+        "explanation": "Is there anything on your mind?"
+      },
+      {
+        "id": "q_ch10_27",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-27",
+        "question": "No.477 今後伸ばしたいスキルはありますか。",
+        "answer": "Are there any skills you'd like to develop?",
+        "explanation": "Are there any skills you'd like to develop?"
+      },
+      {
+        "id": "q_ch10_28",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-28",
+        "question": "No.478 半年後どうなっていたいですか。",
+        "answer": "Where would you like to be six months from now?",
+        "explanation": "Where would you like to be six months from now?"
+      },
+      {
+        "id": "q_ch10_29",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-29",
+        "question": "No.479 今期の最優先事項は成長です。",
+        "answer": "Our top priority this year is growth.",
+        "explanation": "Our top priority this year is growth."
+      },
+      {
+        "id": "q_ch10_30",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-30",
+        "question": "No.480 ただし収益性も改善する必要があります。",
+        "answer": "However, we also need to improve profitability.",
+        "explanation": "However, we also need to improve profitability."
+      },
+      {
+        "id": "q_ch10_31",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-31",
+        "question": "No.481 売上は伸びていますが、利益は伸びていません。",
+        "answer": "Revenue is growing, but profit isn't.",
+        "explanation": "Revenue is growing, but profit isn't."
+      },
+      {
+        "id": "q_ch10_32",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-32",
+        "question": "No.482 このモデルは長期的には持続可能ではありません。",
+        "answer": "This model isn't sustainable in the long term.",
+        "explanation": "This model isn't sustainable in the long term."
+      },
+      {
+        "id": "q_ch10_33",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-33",
+        "question": "No.483 戦略を見直す必要があります。",
+        "answer": "We need to rethink our strategy.",
+        "explanation": "We need to rethink our strategy."
+      },
+      {
+        "id": "q_ch10_34",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-34",
+        "question": "No.484 リテンションへの投資を増やすことを提案します。",
+        "answer": "I recommend increasing our investment in retention.",
+        "explanation": "I recommend increasing our investment in retention."
+      },
+      {
+        "id": "q_ch10_35",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-35",
+        "question": "No.485 すべての市場を狙うことはできません。",
+        "answer": "We can't target every market.",
+        "explanation": "We can't target every market."
+      },
+      {
+        "id": "q_ch10_36",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-36",
+        "question": "No.486 優先順位を明確にする必要があります。",
+        "answer": "We need to make clear choices.",
+        "explanation": "We need to make clear choices."
+      },
+      {
+        "id": "q_ch10_37",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-37",
+        "question": "No.487 最大のリスクは実行力です。",
+        "answer": "The biggest risk is execution.",
+        "explanation": "The biggest risk is execution."
+      },
+      {
+        "id": "q_ch10_38",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-38",
+        "question": "No.488 明確な責任者が必要です。",
+        "answer": "We need clear ownership.",
+        "explanation": "We need clear ownership."
+      },
+      {
+        "id": "q_ch10_39",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-39",
+        "question": "No.489 KPIを設定する必要があります。",
+        "answer": "We need to define clear KPIs.",
+        "explanation": "We need to define clear KPIs."
+      },
+      {
+        "id": "q_ch10_40",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-40",
+        "question": "No.490 結果を見ながら調整します。",
+        "answer": "We'll adjust the plan based on the results.",
+        "explanation": "We'll adjust the plan based on the results."
+      },
+      {
+        "id": "q_ch10_41",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-41",
+        "question": "No.491 まず意思決定基準を明確にしましょう。",
+        "answer": "Let's clarify the decision criteria first.",
+        "explanation": "Let's clarify the decision criteria first."
+      },
+      {
+        "id": "q_ch10_42",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-42",
+        "question": "No.492 何を最適化したいのでしょうか。",
+        "answer": "What exactly are we trying to optimize for?",
+        "explanation": "What exactly are we trying to optimize for?"
+      },
+      {
+        "id": "q_ch10_43",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-43",
+        "question": "No.493 すべてを最大化することはできません。",
+        "answer": "We can't maximize everything at the same time.",
+        "explanation": "We can't maximize everything at the same time."
+      },
+      {
+        "id": "q_ch10_44",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-44",
+        "question": "No.494 どの選択にもトレードオフがあります。",
+        "answer": "Every choice involves a trade-off.",
+        "explanation": "Every choice involves a trade-off."
+      },
+      {
+        "id": "q_ch10_45",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-45",
+        "question": "No.495 何もしないことにもリスクがあります。",
+        "answer": "Doing nothing also carries risk.",
+        "explanation": "Doing nothing also carries risk."
+      },
+      {
+        "id": "q_ch10_46",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-46",
+        "question": "No.496 今ある情報で最善の判断をする必要があります。",
+        "answer": "We need to make the best decision with the information we have.",
+        "explanation": "We need to make the best decision with the information we have."
+      },
+      {
+        "id": "q_ch10_47",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-47",
+        "question": "No.497 この判断は後から変更できますか。",
+        "answer": "Is this decision reversible?",
+        "explanation": "Is this decision reversible?"
+      },
+      {
+        "id": "q_ch10_48",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-48",
+        "question": "No.498 成功条件を事前に決めましょう。",
+        "answer": "Let's define the success criteria upfront.",
+        "explanation": "Let's define the success criteria upfront."
+      },
+      {
+        "id": "q_ch10_49",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-49",
+        "question": "No.499 90日後に継続、拡大、中止を判断します。",
+        "answer": "After 90 days, we'll decide whether to continue, expand, or stop the initiative.",
+        "explanation": "After 90 days, we'll decide whether to continue, expand, or stop the initiative."
+      },
+      {
+        "id": "q_ch10_50",
+        "chapterId": "ch10",
+        "chapterTitle": "第10章 マネジメント・戦略・意思決定",
+        "level": "瞬間英作文",
+        "qNumber": "章末-50",
+        "question": "No.500 本日お願いしたいのは、この施策を開始する承認です。",
+        "answer": "What I'm asking for today is approval to start this initiative.",
+        "explanation": "What I'm asking for today is approval to start this initiative."
+      }
+    ]
+  },
   "chinese_language": {
     "config": {
       "features": {
@@ -7652,6 +12863,1367 @@ export const ALL_COURSES = {
         "explanation": "採点基準：内容・30・主張・理由・例・結論がある／構成・20・段落と接続が明確／文法・20・語順・アスペクト・補語が適切／語彙・15・内容に合う語を使い、同語反復が少ない／指定文型・15・三つの指定文型を正しく使用"
       }
     ]
+  },
+  "python_design_patterns": {
+    "config": {
+      "features": {
+        "quiz": false,
+        "search": true
+      },
+      "categories": {
+        "intro": "ガイド",
+        "ch01": "設計の基礎",
+        "ch02": "設計の基礎",
+        "ch03": "設計の基礎",
+        "ch04": "設計の基礎",
+        "ch05": "設計の基礎",
+        "ch06": "設計の基礎",
+        "ch07": "生成パターン",
+        "ch08": "生成パターン",
+        "ch09": "生成パターン",
+        "ch10": "生成パターン",
+        "ch11": "生成パターン",
+        "ch12": "構造パターン",
+        "ch13": "構造パターン",
+        "ch14": "構造パターン",
+        "ch15": "構造パターン",
+        "ch16": "構造パターン",
+        "ch17": "構造パターン",
+        "ch18": "構造パターン",
+        "ch19": "振る舞いパターン",
+        "ch20": "振る舞いパターン",
+        "ch21": "振る舞いパターン",
+        "ch22": "振る舞いパターン",
+        "ch23": "振る舞いパターン",
+        "ch24": "振る舞いパターン",
+        "ch25": "振る舞いパターン",
+        "ch26": "振る舞いパターン",
+        "ch27": "振る舞いパターン",
+        "ch28": "振る舞いパターン",
+        "ch29": "振る舞いパターン",
+        "ch30": "Pythonic設計",
+        "ch31": "Pythonic設計",
+        "ch32": "Pythonic設計",
+        "ch33": "Pythonic設計",
+        "ch34": "Pythonic設計",
+        "ch35": "Pythonic設計",
+        "ch36": "Pythonic設計",
+        "ch37": "Pythonic設計",
+        "ch38": "Pythonic設計",
+        "ch39": "Pythonic設計",
+        "ch40": "Pythonic設計",
+        "ch41": "Pythonic設計",
+        "ch42": "アプリケーション設計",
+        "ch43": "アプリケーション設計",
+        "ch44": "アプリケーション設計",
+        "ch45": "アプリケーション設計",
+        "ch46": "アプリケーション設計",
+        "ch47": "アプリケーション設計",
+        "ch48": "アプリケーション設計",
+        "ch49": "アプリケーション設計",
+        "ch50": "アプリケーション設計",
+        "ch51": "アーキテクチャ",
+        "ch52": "アーキテクチャ",
+        "ch53": "アーキテクチャ",
+        "ch54": "アーキテクチャ",
+        "ch55": "アーキテクチャ",
+        "ch56": "アーキテクチャ",
+        "ch57": "アーキテクチャ",
+        "ch58": "アーキテクチャ",
+        "ch59": "設計力を鍛える",
+        "ch60": "設計力を鍛える",
+        "ch61": "設計力を鍛える",
+        "ch62": "設計力を鍛える",
+        "ch63": "設計力を鍛える",
+        "ch64": "設計力を鍛える",
+        "supplement01": "演習・資料",
+        "supplement02": "演習・資料",
+        "supplement03": "演習・資料",
+        "supplement04": "演習・資料",
+        "supplement05": "演習・資料",
+        "supplement06": "演習・資料",
+        "supplement07": "演習・資料",
+        "supplement08": "演習・資料",
+        "supplement09": "演習・資料",
+        "supplement10": "演習・資料",
+        "supplement11": "演習・資料"
+      },
+      "id": "python_design_patterns",
+      "title": "Pythonで学ぶデザインパターン",
+      "subtitle": "設計原則からGoF・Pythonic設計・アーキテクチャまで",
+      "description": "設計上の問題と変化を軸に、64の章と演習でPythonの設計を体系的に学ぶ教材",
+      "author": "AnS",
+      "version": "1.0.0",
+      "category": {
+        "id": "programming",
+        "title": "プログラミング",
+        "order": 18,
+        "color": "#3776ab"
+      }
+    },
+    "chapters": [
+      {
+        "id": "intro",
+        "number": 0,
+        "title": "はじめに",
+        "shortTitle": "はじめに",
+        "summary": "設計上の問題、責務の分割、変化の局所化を軸にデザインパターンを学ぶ",
+        "sections": [
+          {
+            "id": "intro_sec_1",
+            "title": "本書の目的"
+          },
+          {
+            "id": "intro_sec_2",
+            "title": "本書の構成"
+          }
+        ],
+        "content": "\n# はじめに\n\n## 本書の目的\n\nデザインパターンを学ぶとき、最も避けたいのは、\n\n> 「このコードはFactory Methodです」\n>\n> 「これはObserverです」\n\nと名前だけを覚えることです。\n\nデザインパターンの本質は、クラス図の形ではありません。\n\n本質は、\n\n> **繰り返し現れる設計上の問題に対して、どのように責務を分割し、どこに変化を閉じ込めるか**\n\nという問題解決の知識です。\n\nたとえば、次のコードを考えてください。\n\n```python\ndef calculate_price(customer_type, price):\n    if customer_type == \"normal\":\n        return price\n    elif customer_type == \"premium\":\n        return price * 0.9\n    elif customer_type == \"vip\":\n        return price * 0.8\n```\n\nプログラムとしては問題なく動きます。\n\nしかし今後、\n\n- 学生割引\n- 法人割引\n- キャンペーン割引\n- 会員ランク別割引\n- 地域別割引\n\nが増え続けたらどうでしょうか。\n\n`if` が増え続け、価格計算という一つの関数が、多数のルールを知ることになります。\n\nそこで「割引アルゴリズムそのものを交換可能にする」という発想が生まれます。\n\n```python\nfrom typing import Protocol\n\nclass Discount(Protocol):\n    def apply(self, price: float) -> float:\n        ...\n\nclass NormalDiscount:\n    def apply(self, price: float) -> float:\n        return price\n\nclass PremiumDiscount:\n    def apply(self, price: float) -> float:\n        return price * 0.9\n\nclass VipDiscount:\n    def apply(self, price: float) -> float:\n        return price * 0.8\n\ndef calculate_price(price: float, discount: Discount) -> float:\n    return discount.apply(price)\n```\n\nこれはStrategyパターンと呼ばれる考え方です。\n\nしかし重要なのは、\n\n> 「Strategyというクラス構造を覚えること」\n\nではありません。\n\n重要なのは、\n\n> **変化するアルゴリズムを、利用側から分離する**\n\nという設計思想です。\n\n本書では、このように\n\n1. 何が問題なのか\n2. 素朴な実装では何が起こるか\n3. どの責務を分離すればよいか\n4. デザインパターンではどう表現するか\n5. Pythonならもっと簡潔に書けないか\n6. いつ使うべきか\n7. いつ使わないべきか\n\nという順序で学習します。\n\n## 本書の構成\n#\n"
+      },
+      {
+        "id": "ch01",
+        "number": 1,
+        "title": "第1章 デザインパターンとは何か",
+        "shortTitle": "デザインパターンとは何か",
+        "summary": "デザインパターンとは、",
+        "sections": [
+          {
+            "id": "ch01_sec_1",
+            "title": "1.1 パターンとは「コード」ではない"
+          }
+        ],
+        "content": "\n# 第1章 デザインパターンとは何か\n\n## 1.1 パターンとは「コード」ではない\n\nデザインパターンとは、\n\n> ソフトウェア設計で繰り返し発生する問題に対する、再利用可能な設計上の考え方\n\nです。\n\n重要なのは「設計」であって、特定のコードではありません。\n\n同じObserverパターンでも、\n\n```python\nclass Observer:\n    ...\n```\n\nとクラスとして実装することもあれば、\n\n```python\ncallbacks = []\n\ndef subscribe(callback):\n    callbacks.append(callback)\n```\n\nのように関数だけで実装することもあります。\n\nPythonでは後者のほうが自然な場合も珍しくありません。\n"
+      },
+      {
+        "id": "ch02",
+        "number": 2,
+        "title": "第2章 良い設計とは何か",
+        "shortTitle": "良い設計とは何か",
+        "summary": "「良いコード」を考えるとき、短さだけでは評価できません。",
+        "sections": [
+          {
+            "id": "ch02_sec_1",
+            "title": "2.1 設計で考えるべき4つの変化"
+          }
+        ],
+        "content": "\n# 第2章 良い設計とは何か\n\n「良いコード」を考えるとき、短さだけでは評価できません。\n\n```python\ndef f(x):\n    return x.a.b.c() if x.a and x.a.b else None\n```\n\n短くても保守しにくいことがあります。\n\n反対に多少コード量が増えても、\n\n- 責務が明確\n- 変更箇所が限定される\n- テストしやすい\n- 名前から意図が分かる\n\nなら、長期的には良い設計です。\n\n## 2.1 設計で考えるべき4つの変化\n\n特に次を意識します。\n\n### ① データの変化\n\n```text\nUser\n↓\n属性が増える\n↓\nDB構造が変わる\n```\n\n### ② ルールの変化\n\n```text\n価格計算\n認可\n税率\nランキング\n```\n\n### ③ 外部システムの変化\n\n```text\nStripe → 別決済API\nMySQL → PostgreSQL\nAWS → GCP\n```\n\n### ④ フローの変化\n\n```text\n注文\n↓\n決済\n↓\n在庫確保\n↓\n通知\n```\n\nどの種類の変化からシステムを守りたいのかによって、適切なパターンは変わります。\n"
+      },
+      {
+        "id": "ch03",
+        "number": 3,
+        "title": "第3章 SOLID原則",
+        "shortTitle": "SOLID原則",
+        "summary": "デザインパターンを理解するうえで重要なのがSOLIDです。",
+        "sections": [
+          {
+            "id": "ch03_sec_1",
+            "title": "3.1 SRP — Single Responsibility Principle"
+          },
+          {
+            "id": "ch03_sec_2",
+            "title": "3.2 OCP — Open/Closed Principle"
+          },
+          {
+            "id": "ch03_sec_3",
+            "title": "3.3 LSP — Liskov Substitution Principle"
+          },
+          {
+            "id": "ch03_sec_4",
+            "title": "3.4 ISP — Interface Segregation Principle"
+          },
+          {
+            "id": "ch03_sec_5",
+            "title": "3.5 DIP — Dependency Inversion Principle"
+          }
+        ],
+        "content": "\n# 第3章 SOLID原則\n\nデザインパターンを理解するうえで重要なのがSOLIDです。\n\n## 3.1 SRP — Single Responsibility Principle\n\n単一責任原則。\n\n> クラスが変更される理由は、一つであるべきである。\n\n悪い例：\n\n```python\nclass UserService:\n    def create_user(self, data):\n        ...\n\n    def send_email(self, user):\n        ...\n\n    def save_database(self, user):\n        ...\n\n    def generate_pdf(self, user):\n        ...\n```\n\n一つのクラスが、\n\n- ユーザー生成\n- メール\n- DB\n- PDF\n\nまで担当しています。\n\n分割すると、\n\n```python\nclass UserService:\n    def create_user(self, data):\n        ...\n\nclass UserRepository:\n    def save(self, user):\n        ...\n\nclass Mailer:\n    def send(self, user):\n        ...\n\nclass PdfGenerator:\n    def generate(self, user):\n        ...\n```\n\nとなります。\n\n## 3.2 OCP — Open/Closed Principle\n\n> 拡張に対して開き、変更に対して閉じる。\n\nたとえば、\n\n```python\ndef pay(method, amount):\n    if method == \"credit\":\n        ...\n    elif method == \"bank\":\n        ...\n```\n\nでは決済方法追加のたびに`pay()`を変更します。\n\nStrategyを使えば、\n\n```python\nclass PaymentMethod(Protocol):\n    def pay(self, amount: int) -> None:\n        ...\n```\n\n新しい決済方法を追加するだけで済みます。\n\n## 3.3 LSP — Liskov Substitution Principle\n\n> 基底型を、その派生型へ置き換えてもプログラムが成立するべき。\n\n典型例がRectangle/Square問題です。\n\n```python\nclass Rectangle:\n    def set_width(self, width):\n        self.width = width\n\n    def set_height(self, height):\n        self.height = height\n```\n\nSquareをRectangleとして扱おうとすると、\n\n```python\nsquare.set_width(10)\n```\n\nで高さまで変更する必要が生じます。\n\n「正方形は数学的には長方形」という関係と、\n\n「ソフトウェアで継承可能」\n\nは同じではありません。\n\n## 3.4 ISP — Interface Segregation Principle\n\n> 利用しない機能への依存を強制しない。\n\n悪い例：\n\n```python\nclass Worker(Protocol):\n    def work(self):\n        ...\n\n    def eat(self):\n        ...\n```\n\nロボットには`eat()`がありません。\n\nそこで、\n\n```python\nclass Workable(Protocol):\n    def work(self):\n        ...\n\nclass Eatable(Protocol):\n    def eat(self):\n        ...\n```\n\nと分割します。\n\n## 3.5 DIP — Dependency Inversion Principle\n\n非常に重要です。\n\n> 上位レベルのモジュールが、下位レベルの具体実装へ直接依存しない。\n\n悪い例：\n\n```python\nclass OrderService:\n    def __init__(self):\n        self.repository = MySQLOrderRepository()\n```\n\n改善：\n\n```python\nclass OrderRepository(Protocol):\n    def save(self, order):\n        ...\n\nclass OrderService:\n    def __init__(self, repository: OrderRepository):\n        self.repository = repository\n```\n\n依存関係が、\n\n```text\nOrderService\n    ↓\nMySQL\n```\n\nではなく、\n\n```text\nOrderService\n    ↓\nRepository interface\n    ↑\nMySQL\n```\n\nとなります。\n\nこれはClean ArchitectureやHexagonal Architectureの基礎になります。\n"
+      },
+      {
+        "id": "ch04",
+        "number": 4,
+        "title": "第4章 凝集度と結合度",
+        "shortTitle": "凝集度と結合度",
+        "summary": "設計を評価するときの基本原則です。",
+        "sections": [
+          {
+            "id": "ch04_sec_1",
+            "title": "凝集度"
+          },
+          {
+            "id": "ch04_sec_2",
+            "title": "結合度"
+          }
+        ],
+        "content": "\n# 第4章 凝集度と結合度\n\n設計を評価するときの基本原則です。\n\n## 凝集度\n\n> 一つのモジュール内部の要素が、どれだけ同じ目的に集中しているか。\n\n高いほうが望ましい。\n\n## 結合度\n\n> モジュール同士が、どれだけ互いの詳細に依存しているか。\n\n低いほうが望ましい。\n\n理想：\n\n```text\n高凝集\n低結合\n```\n\nです。\n"
+      },
+      {
+        "id": "ch05",
+        "number": 5,
+        "title": "第5章 継承よりコンポジション",
+        "shortTitle": "継承よりコンポジション",
+        "summary": "GoFで非常に重要な原則があります。",
+        "sections": [
+          {
+            "id": "ch05_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第5章 継承よりコンポジション\n\n## 概要\n\nGoFで非常に重要な原則があります。\n\n> Favor object composition over class inheritance.\n\nすなわち、\n\n> クラス継承よりオブジェクト合成を優先する。\n\nたとえば、\n\n```python\nclass FlyingBird(Bird):\n    ...\n```\n\nのように継承で能力を表現すると、\n\n```text\nBird\n├─ FlyingBird\n├─ SwimmingBird\n├─ FlyingSwimmingBird\n...\n```\n\nと増殖しやすくなります。\n\nそこで、\n\n```python\nclass Bird:\n    def __init__(self, fly_behavior):\n        self.fly_behavior = fly_behavior\n```\n\nと振る舞いを注入します。\n\nこれはStrategyにもつながります。\n"
+      },
+      {
+        "id": "ch06",
+        "number": 6,
+        "title": "第6章 Pythonにおける抽象化",
+        "shortTitle": "Pythonにおける抽象化",
+        "summary": "PythonではJavaのように、必ずinterfaceを定義する必要はありません。",
+        "sections": [
+          {
+            "id": "ch06_sec_1",
+            "title": "Duck Typing"
+          },
+          {
+            "id": "ch06_sec_2",
+            "title": "Protocol"
+          }
+        ],
+        "content": "\n# 第6章 Pythonにおける抽象化\n\nPythonではJavaのように、必ずinterfaceを定義する必要はありません。\n\n## Duck Typing\n\nPythonでは、\n\n> 同じ操作ができれば同じものとして扱う\n\nという考え方が一般的です。\n\n```python\ndef save(repository, user):\n    repository.save(user)\n```\n\n`repository`が何クラスなのかは問いません。\n\n`save()`があれば動きます。\n\n## Protocol\n\n静的型チェックも利用したいなら、\n\n```python\nfrom typing import Protocol\n\nclass Repository(Protocol):\n    def save(self, obj) -> None:\n        ...\n```\n\nと書けます。\n\nPythonのデザインパターンでは非常に重要な道具です。\n"
+      },
+      {
+        "id": "ch07",
+        "number": 7,
+        "title": "第7章 Factory Method",
+        "shortTitle": "Factory Method",
+        "summary": "生成するオブジェクトを条件分岐で決めているとします。",
+        "sections": [
+          {
+            "id": "ch07_sec_1",
+            "title": "問題"
+          },
+          {
+            "id": "ch07_sec_2",
+            "title": "基本思想"
+          },
+          {
+            "id": "ch07_sec_3",
+            "title": "Pythonic Factory"
+          }
+        ],
+        "content": "\n# 第7章 Factory Method\n\n## 問題\n\n生成するオブジェクトを条件分岐で決めているとします。\n\n```python\ndef create_notification(kind):\n    if kind == \"email\":\n        return EmailNotification()\n    if kind == \"sms\":\n        return SmsNotification()\n```\n\n種類が増えるほど変更箇所が増えます。\n\n## 基本思想\n\n> オブジェクト生成の決定を分離する。\n\n```python\nclass NotificationFactory:\n    @staticmethod\n    def create(kind):\n        if kind == \"email\":\n            return EmailNotification()\n\n        if kind == \"sms\":\n            return SmsNotification()\n\n        raise ValueError(kind)\n```\n\n利用側：\n\n```python\nnotification = NotificationFactory.create(\"email\")\nnotification.send()\n```\n\n## Pythonic Factory\n\nPythonでは辞書を使う方法も非常に有効です。\n\n```python\nFACTORIES = {\n    \"email\": EmailNotification,\n    \"sms\": SmsNotification,\n}\n\ndef create_notification(kind):\n    try:\n        return FACTORIES[kind]()\n    except KeyError:\n        raise ValueError(f\"Unknown notification: {kind}\")\n```\n\nここからRegistryパターンにも発展します。\n"
+      },
+      {
+        "id": "ch08",
+        "number": 8,
+        "title": "第8章 Abstract Factory",
+        "shortTitle": "Abstract Factory",
+        "summary": "Factory Methodが一種類の生成を扱うのに対して、Abstract Factoryは、",
+        "sections": [
+          {
+            "id": "ch08_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第8章 Abstract Factory\n\n## 概要\n\nFactory Methodが一種類の生成を扱うのに対して、Abstract Factoryは、\n\n> 関連するオブジェクト群をまとめて生成する\n\nために使います。\n\n例：\n\n```text\nUIFactory\n├─ WindowsFactory\n│   ├─ WindowsButton\n│   └─ WindowsDialog\n│\n└─ MacFactory\n    ├─ MacButton\n    └─ MacDialog\n```\n\nPython：\n\n```python\nclass WindowsFactory:\n    def create_button(self):\n        return WindowsButton()\n\n    def create_dialog(self):\n        return WindowsDialog()\n```\n\n利用側：\n\n```python\ndef render(factory):\n    button = factory.create_button()\n    dialog = factory.create_dialog()\n```\n\n利用側はWindowsかMacか知る必要がありません。\n"
+      },
+      {
+        "id": "ch09",
+        "number": 9,
+        "title": "第9章 Builder",
+        "shortTitle": "Builder",
+        "summary": "大量の引数があるオブジェクトを考えます。",
+        "sections": [
+          {
+            "id": "ch09_sec_1",
+            "title": "ただしPythonでは？"
+          }
+        ],
+        "content": "\n# 第9章 Builder\n\n大量の引数があるオブジェクトを考えます。\n\n```python\nUser(\n    name=\"Alice\",\n    age=30,\n    country=\"Japan\",\n    language=\"ja\",\n    newsletter=True,\n    admin=False,\n    ...\n)\n```\n\nBuilderでは段階的に構築します。\n\n```python\nbuilder = UserBuilder()\n\nuser = (\n    builder\n    .name(\"Alice\")\n    .age(30)\n    .newsletter(True)\n    .build()\n)\n```\n\n## ただしPythonでは？\n\nPythonには、\n\n- keyword arguments\n- dataclass\n- default value\n\nがあります。\n\n```python\n@dataclass\nclass User:\n    name: str\n    age: int | None = None\n    newsletter: bool = False\n```\n\nこのためJavaほどBuilderが必要ではありません。\n\nBuilderが有効なのは、\n\n> 「生成手順そのものが複雑」\n\nな場合です。\n\nたとえばSQL構築、\n\n```python\nquery = (\n    QueryBuilder()\n    .select(\"name\", \"age\")\n    .from_(\"users\")\n    .where(\"age > 20\")\n    .order_by(\"name\")\n    .build()\n)\n```\n\nなどです。\n"
+      },
+      {
+        "id": "ch10",
+        "number": 10,
+        "title": "第10章 Prototype",
+        "shortTitle": "Prototype",
+        "summary": "既存オブジェクトを複製して新しいオブジェクトを生成します。",
+        "sections": [
+          {
+            "id": "ch10_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第10章 Prototype\n\n## 概要\n\n既存オブジェクトを複製して新しいオブジェクトを生成します。\n\nPythonでは標準ライブラリがあります。\n\n```python\nimport copy\n\nnew_obj = copy.copy(obj)\n```\n\n深いコピー：\n\n```python\nnew_obj = copy.deepcopy(obj)\n```\n\nPythonではPrototype専用クラスを作るより、\n\n```python\ncopy.copy()\ncopy.deepcopy()\n```\n\nが自然です。\n"
+      },
+      {
+        "id": "ch11",
+        "number": 11,
+        "title": "第11章 Singleton",
+        "shortTitle": "Singleton",
+        "summary": "インスタンスを一つだけにします。",
+        "sections": [
+          {
+            "id": "ch11_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第11章 Singleton\n\n## 概要\n\nインスタンスを一つだけにします。\n\n```python\nclass Singleton:\n    _instance = None\n\n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n        return cls._instance\n```\n\nしかしPythonではSingletonを多用すべきではありません。\n\nなぜなら、\n\n```text\nSingleton\n≈ Global State\n```\n\nになりやすいからです。\n\nテストが難しくなります。\n\nPythonでは、\n\n```python\n# config.py\n\nsettings = Settings()\n```\n\nのようにmodule自体の一回ロードを利用するだけで十分なことも多いです。\n"
+      },
+      {
+        "id": "ch12",
+        "number": 12,
+        "title": "第12章 Adapter",
+        "shortTitle": "Adapter",
+        "summary": "自分のコードは、",
+        "sections": [
+          {
+            "id": "ch12_sec_1",
+            "title": "問題"
+          },
+          {
+            "id": "ch12_sec_2",
+            "title": "Adapterの意味"
+          }
+        ],
+        "content": "\n# 第12章 Adapter\n\n## 問題\n\n自分のコードは、\n\n```python\nmailer.send(message)\n```\n\nを期待している。\n\nしかし外部ライブラリは、\n\n```python\nthird_party.send_email(body)\n```\n\nというAPIだったとします。\n\nAdapterを作ります。\n\n```python\nclass MailAdapter:\n    def __init__(self, third_party):\n        self.third_party = third_party\n\n    def send(self, message):\n        self.third_party.send_email(message)\n```\n\n利用側から見ると、\n\n```python\nmailer.send(message)\n```\n\nで統一できます。\n\n## Adapterの意味\n\nAdapterとは、\n\n> インターフェースの翻訳者\n\nです。\n\n外部APIへの依存を内部へ漏らさないために非常に重要です。\n"
+      },
+      {
+        "id": "ch13",
+        "number": 13,
+        "title": "第13章 Bridge",
+        "shortTitle": "Bridge",
+        "summary": "Bridgeでは、",
+        "sections": [
+          {
+            "id": "ch13_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第13章 Bridge\n\n## 概要\n\nBridgeでは、\n\n> 抽象と実装を別々に変化させる\n\nことを目指します。\n\n例：\n\n```text\nNotification\n├─ Alert\n└─ Reminder\n\nSender\n├─ Email\n├─ SMS\n└─ Slack\n```\n\n継承だけなら、\n\n```text\nEmailAlert\nSmsAlert\nSlackAlert\nEmailReminder\nSmsReminder\nSlackReminder\n```\n\nとなります。\n\n組み合わせ爆発です。\n\nBridgeなら、\n\n```python\nclass Alert:\n    def __init__(self, sender):\n        self.sender = sender\n\n    def send(self, message):\n        self.sender.send(message)\n```\n\nとして独立させます。\n"
+      },
+      {
+        "id": "ch14",
+        "number": 14,
+        "title": "第14章 Composite",
+        "shortTitle": "Composite",
+        "summary": "木構造を、単体と集合で同じように扱います。",
+        "sections": [
+          {
+            "id": "ch14_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第14章 Composite\n\n## 概要\n\n木構造を、単体と集合で同じように扱います。\n\n典型例：\n\n```text\nFolder\n├─ File\n├─ File\n└─ Folder\n   ├─ File\n   └─ File\n```\n\n```python\nclass File:\n    def size(self):\n        return self._size\n\nclass Directory:\n    def __init__(self, children):\n        self.children = children\n\n    def size(self):\n        return sum(child.size() for child in self.children)\n```\n\n利用者は、\n\n```python\nnode.size()\n```\n\nだけ使えばよく、\n\n```text\nFileなのか\nDirectoryなのか\n```\n\nを意識しません。\n"
+      },
+      {
+        "id": "ch15",
+        "number": 15,
+        "title": "第15章 Decorator",
+        "shortTitle": "Decorator",
+        "summary": "Decoratorは、",
+        "sections": [
+          {
+            "id": "ch15_sec_1",
+            "title": "Pythonの@decoratorとの違い"
+          }
+        ],
+        "content": "\n# 第15章 Decorator\n\nDecoratorは、\n\n> 元のオブジェクトを変更せず、機能を重ねる\n\nパターンです。\n\n```python\nclass LoggingRepository:\n    def __init__(self, repository):\n        self.repository = repository\n\n    def save(self, obj):\n        print(\"saving\", obj)\n        return self.repository.save(obj)\n```\n\nさらに、\n\n```python\nrepository = LoggingRepository(\n    CacheRepository(\n        DatabaseRepository()\n    )\n)\n```\n\nのように積み重ねられます。\n\n## Pythonの@decoratorとの違い\n\nPythonの、\n\n```python\n@cache\ndef get_user():\n    ...\n```\n\nも根本思想は似ています。\n\nただしGoF Decoratorは、\n\n> オブジェクトを包む\n\nことが中心です。\n\nPython decoratorは、\n\n> callableを包む\n\n場合が多いです。\n"
+      },
+      {
+        "id": "ch16",
+        "number": 16,
+        "title": "第16章 Facade",
+        "shortTitle": "Facade",
+        "summary": "複雑なサブシステムを簡単なAPIで包みます。",
+        "sections": [
+          {
+            "id": "ch16_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第16章 Facade\n\n## 概要\n\n複雑なサブシステムを簡単なAPIで包みます。\n\n```python\nclass OrderFacade:\n\n    def place_order(self, user, product):\n        inventory.reserve(product)\n        payment.charge(user)\n        shipping.schedule(product)\n        mail.send_confirmation(user)\n```\n\n利用側：\n\n```python\norder.place_order(user, product)\n```\n\nで済みます。\n\nFacadeの目的は、\n\n> 内部の複雑性を外へ漏らさないこと\n\nです。\n"
+      },
+      {
+        "id": "ch17",
+        "number": 17,
+        "title": "第17章 Flyweight",
+        "shortTitle": "Flyweight",
+        "summary": "大量のオブジェクトが同じ情報を共有するとき、その情報を共有します。",
+        "sections": [
+          {
+            "id": "ch17_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第17章 Flyweight\n\n## 概要\n\n大量のオブジェクトが同じ情報を共有するとき、その情報を共有します。\n\nたとえばゲームに100万本の木がある場合、\n\n```text\n木の種類\nテクスチャ\nモデル\n```\n\nを各木が持つ必要はありません。\n\n共有：\n\n```python\nclass TreeType:\n    def __init__(self, texture):\n        self.texture = texture\n```\n\n個別：\n\n```python\nclass Tree:\n    def __init__(self, x, y, tree_type):\n        self.x = x\n        self.y = y\n        self.tree_type = tree_type\n```\n\nとなります。\n"
+      },
+      {
+        "id": "ch18",
+        "number": 18,
+        "title": "第18章 Proxy",
+        "shortTitle": "Proxy",
+        "summary": "本物のオブジェクトの代理を置きます。",
+        "sections": [
+          {
+            "id": "ch18_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第18章 Proxy\n\n## 概要\n\n本物のオブジェクトの代理を置きます。\n\n```python\nclass ImageProxy:\n    def __init__(self, path):\n        self.path = path\n        self._image = None\n\n    def display(self):\n        if self._image is None:\n            self._image = load_image(self.path)\n\n        self._image.display()\n```\n\nこれはLazy Loadingです。\n\nProxyには、\n\n- Remote Proxy\n- Virtual Proxy\n- Protection Proxy\n- Cache Proxy\n\nなどがあります。\n"
+      },
+      {
+        "id": "ch19",
+        "number": 19,
+        "title": "第19章 Chain of Responsibility",
+        "shortTitle": "Chain of Responsibility",
+        "summary": "複数の処理候補を順番に試します。",
+        "sections": [
+          {
+            "id": "ch19_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第19章 Chain of Responsibility\n\n## 概要\n\n複数の処理候補を順番に試します。\n\n```python\nclass Handler:\n    def __init__(self, next_handler=None):\n        self.next = next_handler\n\n    def handle(self, request):\n        if self.can_handle(request):\n            return self.process(request)\n\n        if self.next:\n            return self.next.handle(request)\n```\n\n例：\n\n```text\nRequest\n ↓\nAuthentication\n ↓\nAuthorization\n ↓\nValidation\n ↓\nBusiness Logic\n```\n\nWeb Frameworkのmiddlewareは、この思想に近いものです。\n"
+      },
+      {
+        "id": "ch20",
+        "number": 20,
+        "title": "第20章 Command",
+        "shortTitle": "Command",
+        "summary": "処理をオブジェクトとして表現します。",
+        "sections": [
+          {
+            "id": "ch20_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第20章 Command\n\n## 概要\n\n処理をオブジェクトとして表現します。\n\n```python\nclass DeleteUserCommand:\n    def __init__(self, service, user_id):\n        self.service = service\n        self.user_id = user_id\n\n    def execute(self):\n        self.service.delete(self.user_id)\n```\n\nメリット：\n\n- キューへ入れられる\n- ログへ保存できる\n- Undoできる\n- リトライできる\n\nつまり、\n\n> 「処理」をデータのように扱える\n\nことが重要です。\n"
+      },
+      {
+        "id": "ch21",
+        "number": 21,
+        "title": "第21章 Interpreter",
+        "shortTitle": "Interpreter",
+        "summary": "小さな言語や式をオブジェクト構造として表現します。",
+        "sections": [
+          {
+            "id": "ch21_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第21章 Interpreter\n\n## 概要\n\n小さな言語や式をオブジェクト構造として表現します。\n\nたとえば、\n\n```text\nage > 20 AND country == \"Japan\"\n```\n\nという検索条件。\n\n```python\nclass And:\n    def __init__(self, left, right):\n        self.left = left\n        self.right = right\n\n    def evaluate(self, obj):\n        return (\n            self.left.evaluate(obj)\n            and self.right.evaluate(obj)\n        )\n```\n\nただし本格的な言語処理では、\n\n- Parser\n- Lexer\n- AST\n\nを利用するほうが一般的です。\n"
+      },
+      {
+        "id": "ch22",
+        "number": 22,
+        "title": "第22章 Iterator",
+        "shortTitle": "Iterator",
+        "summary": "PythonではIteratorが言語レベルに統合されています。",
+        "sections": [
+          {
+            "id": "ch22_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第22章 Iterator\n\n## 概要\n\nPythonではIteratorが言語レベルに統合されています。\n\n```python\nfor user in users:\n    ...\n```\n\n内部では、\n\n```python\niter(users)\nnext(iterator)\n```\n\nが利用されています。\n\n自作：\n\n```python\nclass Countdown:\n    def __init__(self, start):\n        self.current = start\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.current <= 0:\n            raise StopIteration\n\n        value = self.current\n        self.current -= 1\n        return value\n```\n\nしかしPythonなら、\n\n```python\ndef countdown(start):\n    while start > 0:\n        yield start\n        start -= 1\n```\n\nのほうが自然です。\n\nここに、\n\n> GoFパターンが言語機能に吸収される\n\n典型例があります。\n"
+      },
+      {
+        "id": "ch23",
+        "number": 23,
+        "title": "第23章 Mediator",
+        "shortTitle": "Mediator",
+        "summary": "オブジェクト同士が直接通信すると、",
+        "sections": [
+          {
+            "id": "ch23_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第23章 Mediator\n\n## 概要\n\nオブジェクト同士が直接通信すると、\n\n```text\nA ↔ B\nA ↔ C\nA ↔ D\nB ↔ C\nB ↔ D\n...\n```\n\nと依存関係が爆発します。\n\nMediatorを置いて、\n\n```text\n     Mediator\n    ↗   ↑   ↖\n   A    B    C\n```\n\nとします。\n\n```python\nclass ChatRoom:\n    def send(self, sender, message):\n        for user in self.users:\n            if user != sender:\n                user.receive(message)\n```\n\n各Userは他Userを知る必要がありません。\n"
+      },
+      {
+        "id": "ch24",
+        "number": 24,
+        "title": "第24章 Memento",
+        "shortTitle": "Memento",
+        "summary": "オブジェクトの過去状態を保存します。",
+        "sections": [
+          {
+            "id": "ch24_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第24章 Memento\n\n## 概要\n\nオブジェクトの過去状態を保存します。\n\n```python\nhistory = []\n\nhistory.append(copy.deepcopy(document))\n```\n\nUndo機能などで利用します。\n\n典型例：\n\n```text\nState 1\n ↓\nState 2\n ↓\nState 3\n ↓ Undo\nState 2\n```\n"
+      },
+      {
+        "id": "ch25",
+        "number": 25,
+        "title": "第25章 Observer",
+        "shortTitle": "Observer",
+        "summary": "非常に重要なパターンです。",
+        "sections": [
+          {
+            "id": "ch25_sec_1",
+            "title": "重要な発展"
+          }
+        ],
+        "content": "\n# 第25章 Observer\n\n非常に重要なパターンです。\n\n> あるオブジェクトの変化を複数の購読者へ通知する。\n\n```python\nclass EventBus:\n    def __init__(self):\n        self.listeners = {}\n\n    def subscribe(self, event, callback):\n        self.listeners.setdefault(event, []).append(callback)\n\n    def publish(self, event, data):\n        for callback in self.listeners.get(event, []):\n            callback(data)\n```\n\n登録：\n\n```python\nbus.subscribe(\"user_created\", send_welcome_mail)\nbus.subscribe(\"user_created\", create_profile)\n```\n\n発火：\n\n```python\nbus.publish(\"user_created\", user)\n```\n\n## 重要な発展\n\nObserver\n\n↓\n\nPublish/Subscribe\n\n↓\n\nDomain Events\n\n↓\n\nEvent-Driven Architecture\n\nへ発展します。\n"
+      },
+      {
+        "id": "ch26",
+        "number": 26,
+        "title": "第26章 State",
+        "shortTitle": "State",
+        "summary": "状態ごとのifが増殖する問題を解決します。",
+        "sections": [
+          {
+            "id": "ch26_sec_1",
+            "title": "State Machineとして考える"
+          }
+        ],
+        "content": "\n# 第26章 State\n\n状態ごとの`if`が増殖する問題を解決します。\n\n悪い例：\n\n```python\nif order.status == \"new\":\n    ...\nelif order.status == \"paid\":\n    ...\nelif order.status == \"shipped\":\n    ...\n```\n\nState：\n\n```python\nclass PaidState:\n    def ship(self, order):\n        order.state = ShippedState()\n```\n\n状態自身に振る舞いを持たせます。\n\n## State Machineとして考える\n\n```text\nCreated\n  ↓ pay\nPaid\n  ↓ ship\nShipped\n  ↓ deliver\nDelivered\n```\n\n状態遷移が重要なドメイン、\n\n- 採用選考\n- 注文\n- ワークフロー\n- チケット管理\n- 承認フロー\n\nなどで有効です。\n"
+      },
+      {
+        "id": "ch27",
+        "number": 27,
+        "title": "第27章 Strategy",
+        "shortTitle": "Strategy",
+        "summary": "最重要パターンの一つです。",
+        "sections": [
+          {
+            "id": "ch27_sec_1",
+            "title": "Pythonic Strategy"
+          }
+        ],
+        "content": "\n# 第27章 Strategy\n\n最重要パターンの一つです。\n\n> アルゴリズムを交換可能にする。\n\n```python\nclass PricingStrategy(Protocol):\n    def calculate(self, price):\n        ...\n```\n\n```python\nclass NormalPricing:\n    def calculate(self, price):\n        return price\n\nclass PremiumPricing:\n    def calculate(self, price):\n        return price * 0.9\n```\n\nContext：\n\n```python\nclass PriceCalculator:\n    def __init__(self, strategy):\n        self.strategy = strategy\n\n    def calculate(self, price):\n        return self.strategy.calculate(price)\n```\n\n## Pythonic Strategy\n\nクラスすら不要な場合があります。\n\n```python\ndef normal(price):\n    return price\n\ndef premium(price):\n    return price * 0.9\n```\n\nそして、\n\n```python\ndef calculate(price, strategy):\n    return strategy(price)\n```\n\nPythonでは関数がfirst-class objectなので、こちらのほうが簡潔です。\n"
+      },
+      {
+        "id": "ch28",
+        "number": 28,
+        "title": "第28章 Template Method",
+        "shortTitle": "Template Method",
+        "summary": "アルゴリズムの骨格を基底クラスで決めます。",
+        "sections": [
+          {
+            "id": "ch28_sec_1",
+            "title": "Strategyとの比較"
+          }
+        ],
+        "content": "\n# 第28章 Template Method\n\nアルゴリズムの骨格を基底クラスで決めます。\n\n```python\nclass Importer:\n\n    def import_data(self):\n        raw = self.read()\n        data = self.parse(raw)\n        self.save(data)\n\n    def read(self):\n        raise NotImplementedError\n\n    def parse(self, raw):\n        raise NotImplementedError\n\n    def save(self, data):\n        ...\n```\n\nCSV：\n\n```python\nclass CsvImporter(Importer):\n\n    def read(self):\n        ...\n\n    def parse(self, raw):\n        ...\n```\n\n## Strategyとの比較\n\nTemplate Method：\n\n```text\n継承\n```\n\nStrategy：\n\n```text\nコンポジション\n```\n\n現代的な設計ではStrategyのほうが柔軟な場合が多いです。\n"
+      },
+      {
+        "id": "ch29",
+        "number": 29,
+        "title": "第29章 Visitor",
+        "shortTitle": "Visitor",
+        "summary": "Visitorは複雑ですが重要です。",
+        "sections": [
+          {
+            "id": "ch29_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第29章 Visitor\n\n## 概要\n\nVisitorは複雑ですが重要です。\n\nオブジェクト構造を変えずに、新しい操作を追加します。\n\nたとえばAST：\n\n```text\nAdd\n├─ Number\n└─ Multiply\n   ├─ Number\n   └─ Number\n```\n\nここに、\n\n- 評価\n- 表示\n- 型検査\n- 最適化\n\nなどの操作を追加したい。\n\nVisitor：\n\n```python\nclass Evaluator:\n\n    def visit_number(self, node):\n        return node.value\n\n    def visit_add(self, node):\n        return (\n            node.left.accept(self)\n            + node.right.accept(self)\n        )\n```\n\nCompilerやAST処理で重要になります。\n"
+      },
+      {
+        "id": "ch30",
+        "number": 30,
+        "title": "第30章 First-Class Function",
+        "shortTitle": "First-Class Function",
+        "summary": "Pythonでは関数自体が値です。",
+        "sections": [
+          {
+            "id": "ch30_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第30章 First-Class Function\n\n## 概要\n\nPythonでは関数自体が値です。\n\n```python\ndef greet():\n    print(\"hello\")\n\nx = greet\nx()\n```\n\nリストにも入れられます。\n\n```python\nhandlers = [\n    validate,\n    normalize,\n    save,\n]\n```\n\nこれにより、\n\n- Strategy\n- Command\n- Observer\n\nなどをクラスなしで実装できます。\n"
+      },
+      {
+        "id": "ch31",
+        "number": 31,
+        "title": "第31章 Callable Object",
+        "shortTitle": "Callable Object",
+        "summary": "__call__を実装するとオブジェクトを関数のように扱えます。",
+        "sections": [
+          {
+            "id": "ch31_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第31章 Callable Object\n\n## 概要\n\n`__call__`を実装するとオブジェクトを関数のように扱えます。\n\n```python\nclass Retry:\n    def __init__(self, times):\n        self.times = times\n\n    def __call__(self, func):\n        ...\n```\n\n「状態を持つ関数」が欲しいとき便利です。\n"
+      },
+      {
+        "id": "ch32",
+        "number": 32,
+        "title": "第32章 Python Decorator",
+        "shortTitle": "Python Decorator",
+        "summary": "def log(func):",
+        "sections": [
+          {
+            "id": "ch32_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第32章 Python Decorator\n\n## 概要\n\n```python\ndef log(func):\n\n    def wrapper(*args, **kwargs):\n        print(\"start\")\n        result = func(*args, **kwargs)\n        print(\"end\")\n        return result\n\n    return wrapper\n```\n\n利用：\n\n```python\n@log\ndef calculate():\n    ...\n```\n\n用途：\n\n- logging\n- caching\n- authorization\n- retry\n- metrics\n- transaction\n"
+      },
+      {
+        "id": "ch33",
+        "number": 33,
+        "title": "第33章 Context Manager",
+        "shortTitle": "Context Manager",
+        "summary": "with open(\\\"file.txt\\\") as f:",
+        "sections": [
+          {
+            "id": "ch33_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第33章 Context Manager\n\n## 概要\n\n```python\nwith open(\"file.txt\") as f:\n    ...\n```\n\nこれは、\n\n> リソース取得と解放を安全にペアにする\n\nパターンです。\n\n自作：\n\n```python\nclass Transaction:\n\n    def __enter__(self):\n        self.begin()\n        return self\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        if exc_type:\n            self.rollback()\n        else:\n            self.commit()\n```\n"
+      },
+      {
+        "id": "ch34",
+        "number": 34,
+        "title": "第34章 Generator",
+        "shortTitle": "Generator",
+        "summary": "Generatorは、",
+        "sections": [
+          {
+            "id": "ch34_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第34章 Generator\n\n## 概要\n\nGeneratorは、\n\n> 全データを一度に作らず、必要になったときだけ生成する\n\n仕組みです。\n\n```python\ndef users():\n    for row in database:\n        yield User(row)\n```\n\n大量データ処理では重要です。\n\n```text\nList\n→ 全件メモリ\n\nGenerator\n→ 一件ずつ\n```\n"
+      },
+      {
+        "id": "ch35",
+        "number": 35,
+        "title": "第35章 Descriptor",
+        "shortTitle": "Descriptor",
+        "summary": "Pythonの高度な機構です。",
+        "sections": [
+          {
+            "id": "ch35_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第35章 Descriptor\n\n## 概要\n\nPythonの高度な機構です。\n\n```python\nclass Positive:\n\n    def __set_name__(self, owner, name):\n        self.name = name\n\n    def __get__(self, instance, owner):\n        return instance.__dict__[self.name]\n\n    def __set__(self, instance, value):\n        if value <= 0:\n            raise ValueError()\n\n        instance.__dict__[self.name] = value\n```\n\n利用：\n\n```python\nclass Product:\n    price = Positive()\n```\n\n`property`やORMのFieldなどの理解にもつながります。\n"
+      },
+      {
+        "id": "ch36",
+        "number": 36,
+        "title": "第36章 ProtocolとDuck Typing",
+        "shortTitle": "ProtocolとDuck Typing",
+        "summary": "Pythonにおいて非常に重要な設計思想です。",
+        "sections": [
+          {
+            "id": "ch36_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第36章 ProtocolとDuck Typing\n\n## 概要\n\nPythonにおいて非常に重要な設計思想です。\n\nJava的には、\n\n```text\ninterface Repository\n```\n\nを明示します。\n\nPythonでは、\n\n```python\nclass Repository(Protocol):\n    def save(self, obj) -> None:\n        ...\n```\n\nとできます。\n\n利用：\n\n```python\ndef register(\n    repository: Repository,\n):\n    ...\n```\n\nしかし実装側は、\n\n```python\nclass MySQLRepository:\n    def save(self, obj):\n        ...\n```\n\nだけでよく、Repositoryを継承する必要さえありません。\n\nこれをstructural typingと呼びます。\n"
+      },
+      {
+        "id": "ch37",
+        "number": 37,
+        "title": "第37章 Dependency Injection",
+        "shortTitle": "Dependency Injection",
+        "summary": "依存オブジェクトを内部生成しないで、外部から渡します。",
+        "sections": [
+          {
+            "id": "ch37_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第37章 Dependency Injection\n\n## 概要\n\n依存オブジェクトを内部生成しないで、外部から渡します。\n\n悪い：\n\n```python\nclass UserService:\n\n    def __init__(self):\n        self.repo = MySQLRepository()\n```\n\n良い：\n\n```python\nclass UserService:\n\n    def __init__(self, repo):\n        self.repo = repo\n```\n\nテスト：\n\n```python\nservice = UserService(\n    FakeRepository()\n)\n```\n\n非常にテストしやすくなります。\n"
+      },
+      {
+        "id": "ch38",
+        "number": 38,
+        "title": "第38章 Registry",
+        "shortTitle": "Registry",
+        "summary": "種類と実装の対応表を登録します。",
+        "sections": [
+          {
+            "id": "ch38_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第38章 Registry\n\n## 概要\n\n種類と実装の対応表を登録します。\n\n```python\nregistry = {}\n\ndef register(name):\n    def decorator(cls):\n        registry[name] = cls\n        return cls\n\n    return decorator\n```\n\n利用：\n\n```python\n@register(\"csv\")\nclass CsvImporter:\n    ...\n```\n\n取得：\n\n```python\nimporter = registry[\"csv\"]()\n```\n\nPlugin Architectureの基礎として重要です。\n"
+      },
+      {
+        "id": "ch39",
+        "number": 39,
+        "title": "第39章 Null Object",
+        "shortTitle": "Null Object",
+        "summary": "Noneチェックを繰り返す代わりに何もしないオブジェクトを使います。",
+        "sections": [
+          {
+            "id": "ch39_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第39章 Null Object\n\n## 概要\n\n`None`チェックを繰り返す代わりに何もしないオブジェクトを使います。\n\n悪い：\n\n```python\nif logger is not None:\n    logger.log(message)\n```\n\nNull Object：\n\n```python\nclass NullLogger:\n    def log(self, message):\n        pass\n```\n\nすると、\n\n```python\nlogger.log(message)\n```\n\nだけで済みます。\n"
+      },
+      {
+        "id": "ch40",
+        "number": 40,
+        "title": "第40章 Sentinel",
+        "shortTitle": "Sentinel",
+        "summary": "None自体が有効値の場合に特殊値を作ります。",
+        "sections": [
+          {
+            "id": "ch40_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第40章 Sentinel\n\n## 概要\n\n`None`自体が有効値の場合に特殊値を作ります。\n\n```python\nMISSING = object()\n```\n\n```python\ndef update(value=MISSING):\n\n    if value is MISSING:\n        ...\n```\n\nPythonライブラリ設計で非常に便利です。\n"
+      },
+      {
+        "id": "ch41",
+        "number": 41,
+        "title": "第41章 Lazy Evaluation",
+        "shortTitle": "Lazy Evaluation",
+        "summary": "必要になるまで計算しません。",
+        "sections": [
+          {
+            "id": "ch41_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第41章 Lazy Evaluation\n\n## 概要\n\n必要になるまで計算しません。\n\n```python\nclass User:\n\n    @cached_property\n    def profile(self):\n        return expensive_load()\n```\n\nProxy、Generator、Cacheとも密接に関係します。\n"
+      },
+      {
+        "id": "ch42",
+        "number": 42,
+        "title": "第42章 Repository",
+        "shortTitle": "Repository",
+        "summary": "Domain ModelからDB操作を切り離します。",
+        "sections": [
+          {
+            "id": "ch42_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第42章 Repository\n\n## 概要\n\nDomain ModelからDB操作を切り離します。\n\n```python\nclass UserRepository(Protocol):\n\n    def get(self, user_id: int) -> User:\n        ...\n\n    def save(self, user: User) -> None:\n        ...\n```\n\nMySQL：\n\n```python\nclass MySQLUserRepository:\n\n    def get(self, user_id):\n        ...\n\n    def save(self, user):\n        ...\n```\n\nService：\n\n```python\nclass UserService:\n\n    def __init__(self, repository):\n        self.repository = repository\n```\n"
+      },
+      {
+        "id": "ch43",
+        "number": 43,
+        "title": "第43章 Service Layer",
+        "shortTitle": "Service Layer",
+        "summary": "ビジネスユースケースをまとめるレイヤーです。",
+        "sections": [
+          {
+            "id": "ch43_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第43章 Service Layer\n\n## 概要\n\nビジネスユースケースをまとめるレイヤーです。\n\n```python\nclass TransferService:\n\n    def transfer(\n        self,\n        sender_id,\n        receiver_id,\n        amount,\n    ):\n        sender = self.accounts.get(sender_id)\n        receiver = self.accounts.get(receiver_id)\n\n        sender.withdraw(amount)\n        receiver.deposit(amount)\n\n        self.accounts.save(sender)\n        self.accounts.save(receiver)\n```\n\nControllerにビジネスロジックを書かないことが重要です。\n"
+      },
+      {
+        "id": "ch44",
+        "number": 44,
+        "title": "第44章 Unit of Work",
+        "shortTitle": "Unit of Work",
+        "summary": "複数Repositoryを一つのtransactionとしてまとめます。",
+        "sections": [
+          {
+            "id": "ch44_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第44章 Unit of Work\n\n## 概要\n\n複数Repositoryを一つのtransactionとしてまとめます。\n\n```python\nwith uow:\n\n    user = uow.users.get(user_id)\n\n    order = Order(user)\n\n    uow.orders.add(order)\n\n    uow.commit()\n```\n\n失敗すればrollbackします。\n"
+      },
+      {
+        "id": "ch45",
+        "number": 45,
+        "title": "第45章 Specification",
+        "shortTitle": "Specification",
+        "summary": "条件をオブジェクトとして表します。",
+        "sections": [
+          {
+            "id": "ch45_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第45章 Specification\n\n## 概要\n\n条件をオブジェクトとして表します。\n\n```python\nclass Adult:\n\n    def is_satisfied_by(self, user):\n        return user.age >= 18\n```\n\n組み合わせ：\n\n```python\nadult & japanese & active\n```\n\nなどへ発展できます。\n\n複雑な業務条件の再利用に有効です。\n"
+      },
+      {
+        "id": "ch46",
+        "number": 46,
+        "title": "第46章 DTO",
+        "shortTitle": "DTO",
+        "summary": "Data Transfer Object。",
+        "sections": [
+          {
+            "id": "ch46_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第46章 DTO\n\n## 概要\n\nData Transfer Object。\n\n層をまたいでデータを運ぶためのオブジェクトです。\n\n```python\n@dataclass\nclass UserDTO:\n    id: int\n    name: str\n    email: str\n```\n\nDomain Objectを直接APIへ露出させないために使います。\n"
+      },
+      {
+        "id": "ch47",
+        "number": 47,
+        "title": "第47章 Mapper",
+        "shortTitle": "Mapper",
+        "summary": "異なるモデル間を変換します。",
+        "sections": [
+          {
+            "id": "ch47_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第47章 Mapper\n\n## 概要\n\n異なるモデル間を変換します。\n\n```text\nDatabase Row\n     ↓\nDomain Model\n     ↓\nDTO\n     ↓\nJSON\n```\n\n例：\n\n```python\ndef row_to_user(row):\n    return User(\n        id=row[\"id\"],\n        name=row[\"name\"],\n    )\n```\n"
+      },
+      {
+        "id": "ch48",
+        "number": 48,
+        "title": "第48章 Domain Model",
+        "shortTitle": "Domain Model",
+        "summary": "データとビジネスルールを一緒にします。",
+        "sections": [
+          {
+            "id": "ch48_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第48章 Domain Model\n\n## 概要\n\nデータとビジネスルールを一緒にします。\n\n悪い例：\n\n```python\nclass User:\n    name: str\n    age: int\n```\n\nただのデータ袋です。\n\nRich Domain Model：\n\n```python\nclass Account:\n\n    def withdraw(self, amount):\n        if amount <= 0:\n            raise InvalidAmount()\n\n        if self.balance < amount:\n            raise InsufficientFunds()\n\n        self.balance -= amount\n```\n\nルールがDomain Model内部にあります。\n"
+      },
+      {
+        "id": "ch49",
+        "number": 49,
+        "title": "第49章 Dependency Inversion",
+        "shortTitle": "Dependency Inversion",
+        "summary": "アプリケーション中心の依存関係を作ります。",
+        "sections": [
+          {
+            "id": "ch49_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第49章 Dependency Inversion\n\n## 概要\n\nアプリケーション中心の依存関係を作ります。\n\n悪い構造：\n\n```text\nDomain\n ↓\nSQLAlchemy\n ↓\nPostgreSQL\n```\n\n良い構造：\n\n```text\nInfrastructure\n      ↓\nApplication\n      ↓\nDomain\n```\n\n重要なのは、\n\n> 外部技術が内側へ依存する\n\nことです。\n\nDomainは、\n\n- FastAPI\n- Django\n- SQLAlchemy\n- PostgreSQL\n- AWS\n\nなどを知る必要がありません。\n"
+      },
+      {
+        "id": "ch50",
+        "number": 50,
+        "title": "第50章 Domain Events",
+        "shortTitle": "Domain Events",
+        "summary": "たとえば注文が完了したとします。",
+        "sections": [
+          {
+            "id": "ch50_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第50章 Domain Events\n\n## 概要\n\nたとえば注文が完了したとします。\n\n直接、\n\n```python\nsend_email()\nupdate_points()\nnotify_warehouse()\nsend_analytics()\n```\n\nするとOrderServiceが巨大化します。\n\n代わりに、\n\n```python\nOrderCompleted(order_id)\n```\n\nというイベントを発行します。\n\n購読者：\n\n```text\nOrderCompleted\n ├─ SendEmail\n ├─ AddPoints\n ├─ NotifyWarehouse\n └─ Analytics\n```\n\nとなります。\n"
+      },
+      {
+        "id": "ch51",
+        "number": 51,
+        "title": "第51章 MVC",
+        "shortTitle": "MVC",
+        "summary": "Model",
+        "sections": [
+          {
+            "id": "ch51_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第51章 MVC\n\n## 概要\n\n```text\nModel\nView\nController\n```\n\nController：\n\n```text\nHTTP Request\n     ↓\nController\n     ↓\nModel\n     ↓\nView\n```\n\nWeb Frameworkで広く使われる思想です。\n"
+      },
+      {
+        "id": "ch52",
+        "number": 52,
+        "title": "第52章 MVP",
+        "shortTitle": "MVP",
+        "summary": "Model",
+        "sections": [
+          {
+            "id": "ch52_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第52章 MVP\n\n## 概要\n\n```text\nModel\nView\nPresenter\n```\n\nViewをより受動的にします。\n\nGUIアプリケーションなどで利用されます。\n"
+      },
+      {
+        "id": "ch53",
+        "number": 53,
+        "title": "第53章 MVVM",
+        "shortTitle": "MVVM",
+        "summary": "Model",
+        "sections": [
+          {
+            "id": "ch53_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第53章 MVVM\n\n## 概要\n\n```text\nModel\nView\nViewModel\n```\n\nデータバインディングとの相性がよい構造です。\n"
+      },
+      {
+        "id": "ch54",
+        "number": 54,
+        "title": "第54章 Layered Architecture",
+        "shortTitle": "Layered Architecture",
+        "summary": "典型：",
+        "sections": [
+          {
+            "id": "ch54_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第54章 Layered Architecture\n\n## 概要\n\n典型：\n\n```text\nPresentation\n     ↓\nApplication\n     ↓\nDomain\n     ↓\nInfrastructure\n```\n\n初心者にも理解しやすいアーキテクチャです。\n\nただしInfrastructureへの依存方向には注意が必要です。\n"
+      },
+      {
+        "id": "ch55",
+        "number": 55,
+        "title": "第55章 Hexagonal Architecture",
+        "shortTitle": "Hexagonal Architecture",
+        "summary": "別名Ports and Adapters。",
+        "sections": [
+          {
+            "id": "ch55_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第55章 Hexagonal Architecture\n\n## 概要\n\n別名Ports and Adapters。\n\n中心：\n\n```text\n         Web\n          ↓\n       Adapter\n          ↓\nDatabase → Port ← External API\n          ↓\n       Domain\n```\n\n正確には、\n\n```text\nExternal\n   ↓\nAdapter\n   ↓\nPort\n   ↓\nApplication\n```\n\nという形で外界との境界を明確にします。\n\nRepository interfaceなどがPortです。\n"
+      },
+      {
+        "id": "ch56",
+        "number": 56,
+        "title": "第56章 Clean Architecture",
+        "shortTitle": "Clean Architecture",
+        "summary": "中心にビジネスルールを置きます。",
+        "sections": [
+          {
+            "id": "ch56_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第56章 Clean Architecture\n\n## 概要\n\n中心にビジネスルールを置きます。\n\n```text\n┌───────────────────────────┐\n│ Framework / Infrastructure│\n│  ┌─────────────────────┐  │\n│  │ Interface Adapter   │  │\n│  │  ┌───────────────┐  │  │\n│  │  │ Application   │  │  │\n│  │  │  ┌─────────┐  │  │  │\n│  │  │  │ Domain  │  │  │  │\n│  │  │  └─────────┘  │  │  │\n│  │  └───────────────┘  │  │\n│  └─────────────────────┘  │\n└───────────────────────────┘\n```\n\n依存方向は、\n\n```text\n外 → 内\n```\n\nです。\n\n中心ほど、\n\n- 安定\n- 技術非依存\n- ビジネス価値が高い\n\nコードになります。\n"
+      },
+      {
+        "id": "ch57",
+        "number": 57,
+        "title": "第57章 CQRS",
+        "shortTitle": "CQRS",
+        "summary": "Command Query Responsibility Segregation。",
+        "sections": [
+          {
+            "id": "ch57_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第57章 CQRS\n\n## 概要\n\nCommand Query Responsibility Segregation。\n\n更新と参照を分けます。\n\n従来：\n\n```python\nrepository.save()\nrepository.find()\n```\n\nCQRS：\n\n```text\nCommand Side\n  ↓\nWrite Model\n\nQuery Side\n  ↓\nRead Model\n```\n\n複雑なシステムでは、\n\n```text\nWrite DB\nRead DB\n```\n\nまで分離することがあります。\n"
+      },
+      {
+        "id": "ch58",
+        "number": 58,
+        "title": "第58章 Event Sourcing",
+        "shortTitle": "Event Sourcing",
+        "summary": "現在状態ではなく、",
+        "sections": [
+          {
+            "id": "ch58_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第58章 Event Sourcing\n\n## 概要\n\n現在状態ではなく、\n\n> 状態を作ったイベント履歴\n\nを保存します。\n\n通常：\n\n```text\nbalance = 1200\n```\n\nEvent Sourcing：\n\n```text\nAccountCreated\nDeposit 1000\nWithdraw 300\nDeposit 500\n```\n\n再生すると、\n\n```text\n0\n+1000\n-300\n+500\n=1200\n```\n\nになります。\n\n監査履歴が重要なシステムで強力ですが、非常に複雑になるため安易に採用してはいけません。\n"
+      },
+      {
+        "id": "ch59",
+        "number": 59,
+        "title": "第59章 パターンは組み合わせる",
+        "shortTitle": "パターンは組み合わせる",
+        "summary": "実際のコードでは一つだけ使うことは少ないです。",
+        "sections": [
+          {
+            "id": "ch59_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第59章 パターンは組み合わせる\n\n## 概要\n\n実際のコードでは一つだけ使うことは少ないです。\n\nたとえば通知システム。\n\n```text\nFactory\n ↓\nNotification生成\n\nStrategy\n ↓\n送信方法\n\nDecorator\n ↓\nRetry / Logging\n\nObserver\n ↓\nイベント通知\n\nAdapter\n ↓\n外部API接続\n```\n\nこのように複数のパターンが協調します。\n"
+      },
+      {
+        "id": "ch60",
+        "number": 60,
+        "title": "第60章 リファクタリングからパターンを発見する",
+        "shortTitle": "リファクタリングからパターンを発見する",
+        "summary": "最初からパターンを入れる必要はありません。",
+        "sections": [
+          {
+            "id": "ch60_sec_1",
+            "title": "例"
+          }
+        ],
+        "content": "\n# 第60章 リファクタリングからパターンを発見する\n\n最初からパターンを入れる必要はありません。\n\nむしろ、\n\n```text\n素朴な実装\n    ↓\n問題発生\n    ↓\n重複・条件分岐増加\n    ↓\n責務を分析\n    ↓\nリファクタリング\n    ↓\n結果としてパターンになる\n```\n\nという順番が理想です。\n\n## 例\n\n最初：\n\n```python\nif payment == \"card\":\n    ...\nelif payment == \"bank\":\n    ...\n```\n\n3種類程度なら問題ありません。\n\n10種類になった。\n\nさらに各方式で処理が20行ある。\n\nそこで、\n\n```python\nPaymentStrategy\n```\n\nへ分離する。\n\nこれが自然なStrategy導入です。\n"
+      },
+      {
+        "id": "ch61",
+        "number": 61,
+        "title": "第61章 アンチパターン",
+        "shortTitle": "アンチパターン",
+        "summary": "何でも担当する巨大クラス。",
+        "sections": [
+          {
+            "id": "ch61_sec_1",
+            "title": "God Object"
+          },
+          {
+            "id": "ch61_sec_2",
+            "title": "Spaghetti Code"
+          },
+          {
+            "id": "ch61_sec_3",
+            "title": "Shotgun Surgery"
+          },
+          {
+            "id": "ch61_sec_4",
+            "title": "Lava Flow"
+          },
+          {
+            "id": "ch61_sec_5",
+            "title": "Golden Hammer"
+          }
+        ],
+        "content": "\n# 第61章 アンチパターン\n\n## God Object\n\n何でも担当する巨大クラス。\n\n```python\nclass ApplicationManager:\n    ...\n```\n\nが、\n\n- DB\n- Email\n- Auth\n- Payment\n- Logging\n- Validation\n- Analytics\n\nすべてを担当する状態です。\n\n## Spaghetti Code\n\n依存関係が複雑化して、\n\n```text\nA → B\n↑ ↘ ↓\nD ← C\n```\n\n変更影響を予測できない状態です。\n\n## Shotgun Surgery\n\n一つの機能変更のために、\n\n```text\n20ファイル変更\n```\n\nが必要になる状態。\n\n責務の分散を疑います。\n\n## Lava Flow\n\n昔必要だったコードが、\n\n> 「何に使われているか分からないから消せない」\n\n状態です。\n\nAIコーディングでも特に注意すべき問題です。\n\n## Golden Hammer\n\n覚えたパターンを何にでも使います。\n\nStrategyを覚えた直後、\n\n```text\n全部Strategy\n```\n\nにしてしまうような状態です。\n"
+      },
+      {
+        "id": "ch62",
+        "number": 62,
+        "title": "第62章 Pythonにおける過剰設計",
+        "shortTitle": "Pythonにおける過剰設計",
+        "summary": "Pythonでは特に、",
+        "sections": [
+          {
+            "id": "ch62_sec_1",
+            "title": "Java的Factory"
+          },
+          {
+            "id": "ch62_sec_2",
+            "title": "Interfaceの乱造"
+          },
+          {
+            "id": "ch62_sec_3",
+            "title": "重要原則"
+          }
+        ],
+        "content": "\n# 第62章 Pythonにおける過剰設計\n\nPythonでは特に、\n\n> Java的なデザインパターンをそのまま持ち込まない\n\nことが重要です。\n\n## Java的Factory\n\n```python\nclass UserFactory:\n\n    @staticmethod\n    def create():\n        return User()\n```\n\nしかし、\n\n```python\nUser()\n```\n\nでよいならFactoryは不要です。\n\n## Interfaceの乱造\n\n```python\nclass IUserService(ABC):\n    ...\n```\n\n```python\nclass UserService(IUserService):\n    ...\n```\n\n実装が一つしかなく、差し替え予定もないなら無意味なことがあります。\n\nPythonではProtocolやDuck Typingで十分なケースも多いです。\n\n## 重要原則\n\n> Abstraction is not free.\n\n抽象化にはコストがあります。\n\n- ファイルが増える\n- 名前が増える\n- 間接層が増える\n- 追跡が難しくなる\n\nしたがって、\n\n> 未来の変化を想像して抽象化するのではなく、実際の変化軸が見えてから抽象化する\n\nことが重要です。\n"
+      },
+      {
+        "id": "ch63",
+        "number": 63,
+        "title": "第63章 ケーススタディ",
+        "shortTitle": "ケーススタディ",
+        "summary": "次のシステムを考えます。",
+        "sections": [
+          {
+            "id": "ch63_sec_1",
+            "title": "ECサイトを設計する"
+          },
+          {
+            "id": "ch63_sec_2",
+            "title": "Step 1 Domain Model"
+          },
+          {
+            "id": "ch63_sec_3",
+            "title": "Step 2 Repository"
+          },
+          {
+            "id": "ch63_sec_4",
+            "title": "Step 3 Payment Strategy"
+          },
+          {
+            "id": "ch63_sec_5",
+            "title": "Step 4 External API Adapter"
+          },
+          {
+            "id": "ch63_sec_6",
+            "title": "Step 5 Service Layer"
+          },
+          {
+            "id": "ch63_sec_7",
+            "title": "Step 6 Observer"
+          }
+        ],
+        "content": "\n# 第63章 ケーススタディ\n\n## ECサイトを設計する\n\n次のシステムを考えます。\n\n```text\nECサイト\n\nUser\nProduct\nCart\nOrder\nPayment\nShipping\nNotification\n```\n\n## Step 1 Domain Model\n\n```python\nclass Order:\n\n    def __init__(self, user, items):\n        self.user = user\n        self.items = items\n        self.status = \"created\"\n\n    def total(self):\n        return sum(\n            item.price * item.quantity\n            for item in self.items\n        )\n```\n\n## Step 2 Repository\n\n```python\nclass OrderRepository(Protocol):\n\n    def save(self, order):\n        ...\n\n    def get(self, order_id):\n        ...\n```\n\n## Step 3 Payment Strategy\n\n```python\nclass PaymentMethod(Protocol):\n\n    def pay(self, amount):\n        ...\n```\n\n```python\nclass CreditCardPayment:\n\n    def pay(self, amount):\n        ...\n```\n\n## Step 4 External API Adapter\n\n```python\nclass StripePaymentAdapter:\n\n    def __init__(self, stripe_client):\n        self.client = stripe_client\n\n    def pay(self, amount):\n        self.client.create_charge(amount)\n```\n\n## Step 5 Service Layer\n\n```python\nclass OrderService:\n\n    def __init__(\n        self,\n        orders,\n        payment,\n        event_bus,\n    ):\n        self.orders = orders\n        self.payment = payment\n        self.event_bus = event_bus\n\n    def place_order(self, order):\n\n        amount = order.total()\n\n        self.payment.pay(amount)\n\n        order.mark_paid()\n\n        self.orders.save(order)\n\n        self.event_bus.publish(\n            \"order_paid\",\n            order,\n        )\n```\n\n## Step 6 Observer\n\n```python\nevent_bus.subscribe(\n    \"order_paid\",\n    send_confirmation_email,\n)\n\nevent_bus.subscribe(\n    \"order_paid\",\n    reserve_inventory,\n)\n\nevent_bus.subscribe(\n    \"order_paid\",\n    notify_shipping,\n)\n```\n\n最終構造：\n\n```text\n                  Controller\n                      │\n                      ▼\n                OrderService\n                /     |      \\\n               /      |       \\\n              ▼       ▼        ▼\n        Repository  Payment   EventBus\n             ▲        ▲\n             │        │\n          Adapter   Adapter\n             │        │\n             ▼        ▼\n             DB     Stripe\n```\n\nここには、\n\n- Strategy\n- Adapter\n- Repository\n- Observer\n- Dependency Injection\n- Service Layer\n- Dependency Inversion\n\nが組み合わされています。\n"
+      },
+      {
+        "id": "ch64",
+        "number": 64,
+        "title": "第64章 パターン選択ガイド",
+        "shortTitle": "パターン選択ガイド",
+        "summary": "設計上の問題から逆引きします。",
+        "sections": [
+          {
+            "id": "ch64_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 第64章 パターン選択ガイド\n\n## 概要\n\n設計上の問題から逆引きします。\n\n| 問題 | 候補パターン |\n|---|---|\n| アルゴリズムを切り替えたい | Strategy |\n| 状態によって処理が変わる | State |\n| オブジェクト生成が複雑 | Factory / Builder |\n| 外部APIを隠したい | Adapter |\n| 複雑なシステムを簡単に使いたい | Facade |\n| 機能を動的に追加したい | Decorator |\n| イベントを複数箇所へ伝えたい | Observer |\n| 処理をデータ化したい | Command |\n| 木構造を統一的に扱いたい | Composite |\n| アクセスを制御したい | Proxy |\n| 相互依存を整理したい | Mediator |\n| 状態を復元したい | Memento |\n| DBからDomainを分離したい | Repository |\n| Transactionをまとめたい | Unit of Work |\n| 条件を再利用したい | Specification |\n"
+      },
+      {
+        "id": "supplement01",
+        "number": 65,
+        "title": "パターン比較",
+        "shortTitle": "パターン比較",
+        "summary": "似ているパターンの意図と使い分け",
+        "sections": [
+          {
+            "id": "supplement01_sec_1",
+            "title": "Strategy vs State"
+          },
+          {
+            "id": "supplement01_sec_2",
+            "title": "Factory vs Builder"
+          },
+          {
+            "id": "supplement01_sec_3",
+            "title": "Adapter vs Facade"
+          },
+          {
+            "id": "supplement01_sec_4",
+            "title": "Decorator vs Proxy"
+          },
+          {
+            "id": "supplement01_sec_5",
+            "title": "Observer vs Mediator"
+          },
+          {
+            "id": "supplement01_sec_6",
+            "title": "Command vs Strategy"
+          }
+        ],
+        "content": "\n# パターン比較\n\n## Strategy vs State\n\n構造は非常に似ています。\n\n### Strategy\n\n利用側が、\n\n> どのアルゴリズムを使うか\n\n決めます。\n\n```python\ncalculator.strategy = PremiumPricing()\n```\n\n### State\n\nオブジェクト自身が、\n\n> 現在の状態\n\nによって振る舞いを変えます。\n\n```python\norder.pay()\n# state automatically changes\n```\n\n## Factory vs Builder\n\nFactory：\n\n> どのオブジェクトを作るか\n\nBuilder：\n\n> どのような手順で作るか\n\n## Adapter vs Facade\n\nAdapter：\n\n> インターフェースを変換する。\n\nFacade：\n\n> 複雑なインターフェースを簡単にする。\n\n## Decorator vs Proxy\n\nどちらもラップします。\n\nDecorator：\n\n> 機能追加\n\nProxy：\n\n> アクセス制御\n\nが主目的です。\n\n## Observer vs Mediator\n\nObserver：\n\n```text\n1 → N\n```\n\n変更通知。\n\nMediator：\n\n```text\nN → 1 → N\n```\n\n相互通信の整理。\n\n## Command vs Strategy\n\nStrategy：\n\n> 「どう処理するか」\n\nCommand：\n\n> 「何を実行するか」\n\nCommandは、\n\n```text\nQueue\nUndo\nRetry\nLogging\n```\n\nなどと相性がよいのが特徴です。\n"
+      },
+      {
+        "id": "supplement02",
+        "number": 66,
+        "title": "パターン読解テンプレート",
+        "shortTitle": "パターン読解テンプレート",
+        "summary": "Problem・Forces・Intent・Structure・Consequencesでパターンを読む",
+        "sections": [
+          {
+            "id": "supplement02_sec_1",
+            "title": "1. Problem"
+          },
+          {
+            "id": "supplement02_sec_2",
+            "title": "2. Forces"
+          },
+          {
+            "id": "supplement02_sec_3",
+            "title": "3. Intent"
+          },
+          {
+            "id": "supplement02_sec_4",
+            "title": "4. Structure"
+          },
+          {
+            "id": "supplement02_sec_5",
+            "title": "5. Consequences"
+          },
+          {
+            "id": "supplement02_sec_6",
+            "title": "6. Alternatives"
+          },
+          {
+            "id": "supplement02_sec_7",
+            "title": "7. Pythonic Alternative"
+          }
+        ],
+        "content": "\n# パターン読解テンプレート\n\n今後、新しいパターンに出会ったら次の7項目で分析してください。\n\n## 1. Problem\n\n何が問題なのか。\n\n## 2. Forces\n\nどの要求が衝突しているか。\n\n## 3. Intent\n\n何を達成したいのか。\n\n## 4. Structure\n\nどのような責務分割か。\n\n## 5. Consequences\n\nメリットとデメリット。\n\n## 6. Alternatives\n\n他の方法はないか。\n\n## 7. Pythonic Alternative\n\nPythonならもっと簡単にできないか。\n\nこの最後の視点が非常に重要です。\n"
+      },
+      {
+        "id": "supplement03",
+        "number": 67,
+        "title": "パターンを使う判断基準",
+        "shortTitle": "パターンを使う判断基準",
+        "summary": "変化、複雑性、テスト容易性から導入を判断する",
+        "sections": [
+          {
+            "id": "supplement03_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# パターンを使う判断基準\n\n## 概要\n\nパターンを知ることと、使うことは別です。\n\n次の順番で考えてください。\n\n```text\n① 本当に問題があるか\n      ↓\n② 何が変化しているか\n      ↓\n③ どの責務が混ざっているか\n      ↓\n④ 最も単純な分離方法は何か\n      ↓\n⑤ 既知のパターンに一致するか\n```\n\n逆に、\n\n```text\nStrategyを使いたい\n      ↓\nStrategyを入れられる場所を探す\n```\n\nという考え方は危険です。\n"
+      },
+      {
+        "id": "supplement04",
+        "number": 68,
+        "title": "Strategyを選ぶ前に",
+        "shortTitle": "Strategyを選ぶ前に",
+        "summary": "条件分岐と交換可能なアルゴリズムの違いを見極める",
+        "sections": [
+          {
+            "id": "supplement04_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# Strategyを選ぶ前に\n\n## 概要\n\nたとえば、\n\n```python\nif age >= 18:\n    return \"adult\"\n\nreturn \"child\"\n```\n\nこの程度の分岐を、\n\n```python\nclass AdultStrategy:\n    ...\n```\n\nへ分割する必要はありません。\n\n重要なのはコード量ではなく、\n\n> **独立して変化する理由が存在するか**\n\nです。\n"
+      },
+      {
+        "id": "supplement05",
+        "number": 69,
+        "title": "パターンとリファクタリング",
+        "shortTitle": "パターンとリファクタリング",
+        "summary": "コードの兆候から適切な設計改善を考える",
+        "sections": [
+          {
+            "id": "supplement05_sec_1",
+            "title": "Long Method"
+          },
+          {
+            "id": "supplement05_sec_2",
+            "title": "Large Class"
+          },
+          {
+            "id": "supplement05_sec_3",
+            "title": "Switch Statements"
+          },
+          {
+            "id": "supplement05_sec_4",
+            "title": "Feature Envy"
+          },
+          {
+            "id": "supplement05_sec_5",
+            "title": "Primitive Obsession"
+          },
+          {
+            "id": "supplement05_sec_6",
+            "title": "Duplicate Code"
+          }
+        ],
+        "content": "\n# パターンとリファクタリング\n\n代表的な兆候を覚えておきましょう。\n\n## Long Method\n\n↓\n\nExtract Method\n\n## Large Class\n\n↓\n\nExtract Class\n\n## Switch Statements\n\n↓\n\nStrategy / State / Polymorphism\n\n## Feature Envy\n\n↓\n\nMove Method\n\n## Primitive Obsession\n\n↓\n\nValue Object\n\n## Duplicate Code\n\n↓\n\nTemplate Method / Function Extraction\n\nただし、この対応も機械的に適用してはいけません。\n"
+      },
+      {
+        "id": "supplement06",
+        "number": 70,
+        "title": "デザインパターンとテスト",
+        "shortTitle": "デザインパターンとテスト",
+        "summary": "依存の分離とテスト容易性の関係を理解する",
+        "sections": [
+          {
+            "id": "supplement06_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# デザインパターンとテスト\n\n## 概要\n\n良い設計はテストしやすいことが多いです。\n\n例：\n\n```python\nclass UserService:\n\n    def __init__(self, repository):\n        self.repository = repository\n```\n\nテスト：\n\n```python\nclass FakeRepository:\n\n    def __init__(self):\n        self.users = []\n\n    def save(self, user):\n        self.users.append(user)\n```\n\n```python\nrepo = FakeRepository()\n\nservice = UserService(repo)\n\nservice.register(\"Alice\")\n\nassert len(repo.users) == 1\n```\n\nDependency InjectionとRepositoryによってDB不要でテストできます。\n"
+      },
+      {
+        "id": "supplement07",
+        "number": 71,
+        "title": "Pythonでの設計優先順位",
+        "shortTitle": "Pythonでの設計優先順位",
+        "summary": "可読性、単純さ、標準機能を優先して設計する",
+        "sections": [
+          {
+            "id": "supplement07_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# Pythonでの設計優先順位\n\n## 概要\n\nPythonで設計するときは、概ね次の順番を検討します。\n\n```text\n単純なコード\n    ↓\n関数\n    ↓\n辞書\n    ↓\n高階関数\n    ↓\ndataclass\n    ↓\nProtocol\n    ↓\nコンポジション\n    ↓\n継承\n    ↓\n複雑なパターン\n```\n\n最初からクラス階層を構築する必要はありません。\n"
+      },
+      {
+        "id": "supplement08",
+        "number": 72,
+        "title": "演習問題と解答",
+        "shortTitle": "演習問題と解答",
+        "summary": "設計上の問題を分析し、適切なパターンを選ぶ",
+        "sections": [
+          {
+            "id": "supplement08_sec_1",
+            "title": "問題1"
+          },
+          {
+            "id": "supplement08_sec_2",
+            "title": "問題2"
+          },
+          {
+            "id": "supplement08_sec_3",
+            "title": "問題3"
+          },
+          {
+            "id": "supplement08_sec_4",
+            "title": "問題4"
+          },
+          {
+            "id": "supplement08_sec_5",
+            "title": "問題5"
+          },
+          {
+            "id": "supplement08_sec_6",
+            "title": "解答・解説"
+          },
+          {
+            "id": "supplement08_sec_7",
+            "title": "問題1"
+          },
+          {
+            "id": "supplement08_sec_8",
+            "title": "問題2"
+          },
+          {
+            "id": "supplement08_sec_9",
+            "title": "問題3"
+          },
+          {
+            "id": "supplement08_sec_10",
+            "title": "問題4"
+          },
+          {
+            "id": "supplement08_sec_11",
+            "title": "問題5"
+          }
+        ],
+        "content": "\n# 演習問題と解答\n\n## 問題1\n\n次のコードにはどのような問題があるでしょうか。\n\n```python\ndef export(data, format):\n\n    if format == \"csv\":\n        ...\n\n    elif format == \"json\":\n        ...\n\n    elif format == \"xml\":\n        ...\n```\n\n今後形式が20種類まで増える予定です。\n\nどのパターンが候補になりますか。\n\n## 問題2\n\n次のシステムを設計してください。\n\n```text\nNotification\n\nEmail\nSMS\nSlack\nLINE\n```\n\nさらに、\n\n```text\n通常通知\n緊急通知\n定期通知\n```\n\nがあります。\n\n継承だけを使った場合の問題を説明し、適切な設計を考えてください。\n\n## 問題3\n\n外部決済APIに、\n\n```python\nstripe.charge(amount)\n```\n\nがあります。\n\n自分のシステムでは、\n\n```python\npayment.pay(amount)\n```\n\nというインターフェースへ統一したい。\n\nどのパターンを使いますか。\n\n## 問題4\n\n注文確定後、\n\n- メール送信\n- 在庫更新\n- ポイント付与\n- Analytics送信\n- 倉庫通知\n\nを実行します。\n\nOrderServiceからこれらを分離する方法を考えてください。\n\n## 問題5\n\n注文状態に、\n\n```text\nCREATED\nPAID\nSHIPPED\nDELIVERED\nCANCELLED\n```\n\nがあります。\n\n現在コード中に、\n\n```python\nif status == ...\n```\n\nが60箇所あります。\n\nどのパターンが候補でしょうか。\n\n## 解答・解説\n\n## 問題1\n\nStrategyまたはFactory + Strategyが候補です。\n\n重要なのは、\n\n```text\nformatごとのexport処理\n```\n\nが独立した変化軸になっている点です。\n\n```python\nclass Exporter(Protocol):\n\n    def export(self, data):\n        ...\n```\n\nとして、\n\n```python\nCsvExporter\nJsonExporter\nXmlExporter\n```\n\nへ分離できます。\n\n## 問題2\n\nBridgeまたはStrategyによるコンポジションが有効です。\n\n継承すると、\n\n```text\nEmailNormal\nEmailEmergency\nEmailScheduled\n\nSmsNormal\nSmsEmergency\nSmsScheduled\n\nSlackNormal\n...\n```\n\nと組み合わせ爆発します。\n\n代わりに、\n\n```text\nNotificationType\n      +\nDeliveryChannel\n```\n\nという二軸に分離します。\n\n## 問題3\n\nAdapterです。\n\n```python\nclass StripeAdapter:\n\n    def pay(self, amount):\n        stripe.charge(amount)\n```\n\n外部ライブラリへの依存を境界に閉じ込めます。\n\n## 問題4\n\nObserverまたはDomain Eventです。\n\n```python\npublish(OrderCompleted(...))\n```\n\nに対して、\n\n```text\nMailHandler\nInventoryHandler\nPointHandler\nAnalyticsHandler\nWarehouseHandler\n```\n\nを登録します。\n\n## 問題5\n\nStateパターンが候補です。\n\nただし単純なenum分岐で十分なら、まずロジックを一箇所へ集約するだけでも改善できます。\n\n重要なのは、\n\n```text\n60個のif\n↓\n5個のStateクラス\n```\n\nと機械的に変換することではありません。\n\nまず状態遷移を、\n\n```text\nCreated\n  ↓\nPaid\n  ↓\nShipped\n  ↓\nDelivered\n```\n\nという状態機械としてモデル化します。\n"
+      },
+      {
+        "id": "supplement09",
+        "number": 73,
+        "title": "総合演習",
+        "shortTitle": "総合演習",
+        "summary": "注文処理システムの要件から設計を組み立てる",
+        "sections": [
+          {
+            "id": "supplement09_sec_1",
+            "title": "要件"
+          },
+          {
+            "id": "supplement09_sec_2",
+            "title": "設計候補"
+          }
+        ],
+        "content": "\n# 総合演習\n\n次の採用管理システムを設計してください。\n\n## 要件\n\n候補者には状態があります。\n\n```text\nApplied\nScreening\nInterview\nOffer\nHired\nRejected\n```\n\n通知方法：\n\n```text\nEmail\nLINE\nSMS\n```\n\n候補者状態が変わると、\n\n```text\n通知\nAnalytics\nSlack通知\n履歴記録\n```\n\nを実行します。\n\n候補者情報は、\n\n```text\nMySQL\n```\n\nへ保存します。\n\n将来的に、\n\n```text\nPostgreSQL\n```\n\nへ変更する可能性があります。\n\n外部メールサービスも、\n\n```text\nSendGrid\n↓\nAWS SES\n```\n\nへ変更する可能性があります。\n\n## 設計候補\n\n状態：\n\n```text\nState\n```\n\n通知チャネル：\n\n```text\nStrategy\n```\n\n外部メールAPI：\n\n```text\nAdapter\n```\n\n状態変更イベント：\n\n```text\nObserver / Domain Event\n```\n\nDB：\n\n```text\nRepository\n```\n\n依存関係：\n\n```text\nDependency Injection\n```\n\nユースケース：\n\n```text\nService Layer\n```\n\n全体：\n\n```text\nHexagonal Architecture\n```\n\nと整理できます。\n"
+      },
+      {
+        "id": "supplement10",
+        "number": 74,
+        "title": "最終章 デザインパターンの本当の目的",
+        "shortTitle": "最終章 デザインパターンの本当の目的",
+        "summary": "変化を局所化し、理解しやすいコードを作るための総括",
+        "sections": [
+          {
+            "id": "supplement10_sec_1",
+            "title": "デザインパターンの本当の目的"
+          }
+        ],
+        "content": "\n# 最終章 デザインパターンの本当の目的\n\n## デザインパターンの本当の目的\n\nデザインパターンを学習すると、\n\n```text\nFactory\nStrategy\nObserver\nAdapter\nDecorator\n...\n```\n\nという単語が増えていきます。\n\nしかし最終的には、パターン名を意識しなくなることが理想です。\n\nコードを見て、\n\n> この部分はアルゴリズムの変化だ。\n\n> この部分は外部API依存だ。\n\n> この部分は状態遷移だ。\n\n> この部分は生成責務だ。\n\n> この部分は横断的関心事だ。\n\nと考えられるようになる。\n\nすると自然に、\n\n```text\nアルゴリズムを分離する\n→ Strategy\n\n外部APIを包む\n→ Adapter\n\n生成を分離する\n→ Factory\n\n通知を疎結合にする\n→ Observer\n\n状態をオブジェクト化する\n→ State\n```\n\nという設計へたどり着きます。\n\nつまり、デザインパターンの本質は、\n\n> **パターンをコードに適用することではなく、ソフトウェアの「変化の構造」を見抜くこと**\n\nです。\n"
+      },
+      {
+        "id": "supplement11",
+        "number": 75,
+        "title": "学習ロードマップ",
+        "shortTitle": "学習ロードマップ",
+        "summary": "基礎からアーキテクチャまで段階的に復習する",
+        "sections": [
+          {
+            "id": "supplement11_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 学習ロードマップ\n\n## 概要\n\n最初に優先して習得するなら、次の順番を推奨します。\n\n```text\n1. SOLID\n2. Dependency Injection\n3. Strategy\n4. Factory\n5. Adapter\n6. Decorator\n7. Observer\n8. State\n9. Command\n10. Repository\n11. Service Layer\n12. Domain Events\n13. Hexagonal Architecture\n14. Clean Architecture\n```\n\nその後、\n\n```text\nComposite\nBridge\nProxy\nMediator\nVisitor\nUnit of Work\nSpecification\nCQRS\nEvent Sourcing\n```\n\nへ進みます。\n\n特にPythonでは、\n\n```text\nデザインパターン\n        ×\nPython言語機能\n        ×\nリファクタリング\n        ×\nアーキテクチャ\n```\n\nを一体として理解することが重要です。\n\nこれによって、\n\n> 「GoFの23パターンを知っている」\n\nという段階から、\n\n> **コードを見て、変化・責務・依存関係を分析し、適切な構造へ設計し直せる**\n\nという実践的な設計能力へ進むことができます。\n"
+      }
+    ],
+    "quizQuestions": []
   },
   "mintzberg_organization": {
     "config": {

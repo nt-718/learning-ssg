@@ -16,6 +16,8 @@
     "import:varian-microeconomics": "node scripts/import-varian-microeconomics.js",
     "import:chinese-language": "node scripts/import-chinese-language.js",
     "import:business-communication-english": "node scripts/import-business-communication-english.js",
+    "import:business-instant-english-500": "node scripts/import-business-instant-english-500.js",
+    "import:python-design-patterns": "node scripts/import-python-design-patterns.js",
     "import:saito-macroeconomics": "node scripts/import-saito-macroeconomics.js",
     "import:mintzberg-organization": "node scripts/import-mintzberg-organization.js",
     "dev": "vite"
