@@ -1,6 +1,7 @@
 import { marked } from 'marked';
 import markedKatex from 'marked-katex-extension';
 import 'katex/dist/katex.min.css';
+import { normalizeMathDelimiters } from './mathDelimiters.js';
 
 marked.setOptions({
   gfm: true,
@@ -12,4 +13,10 @@ marked.use(markedKatex({
   nonStandard: true
 }));
 
-export { marked };
+export function renderMarkdown(value = '') {
+  return marked.parse(normalizeMathDelimiters(value));
+}
+
+export function renderMarkdownInline(value = '') {
+  return marked.parseInline(normalizeMathDelimiters(value));
+}

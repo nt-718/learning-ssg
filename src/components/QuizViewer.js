@@ -1,6 +1,6 @@
 // Quiz & Flashcard practice component
 
-import { marked } from '../utils/markdown.js';
+import { renderMarkdownInline } from '../utils/markdown.js';
 import { Storage } from '../utils/storage.js';
 
 const icons = {
@@ -12,7 +12,7 @@ const icons = {
 };
 
 function renderInlineMarkdown(value) {
-  return marked.parseInline(value || '');
+  return renderMarkdownInline(value || '');
 }
 
 export function renderQuizViewer(container, filterType = 'all', quizQuestions = [], courseConfig = {}) {

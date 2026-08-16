@@ -1,6 +1,6 @@
 // Chapter viewer component for Markdown text and images
 
-import { marked } from '../utils/markdown.js';
+import { renderMarkdown } from '../utils/markdown.js';
 import { Storage } from '../utils/storage.js';
 import { updateHeaderProgress } from './Header.js';
 
@@ -14,7 +14,7 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
   const categoryColor = courseConfig.category?.color;
   const categoryStyle = categoryColor ? ` style="--chapter-accent:${categoryColor}"` : '';
 
-  let rawHtml = marked.parse(chapter.content || '');
+  let rawHtml = renderMarkdown(chapter.content || '');
 
   // Replace image markdown tags with stylized image containers
   rawHtml = rawHtml.replace(/<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/?>/g, (match, src, alt) => {
