@@ -27,6 +27,22 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
     (a.order ?? 999) - (b.order ?? 999) || a.title.localeCompare(b.title, 'ja')
   );
 
+  const getResumeTarget = courseId => {
+    const chapters = allCourses[courseId]?.chapters || [];
+    const saved = Storage.getReadingPosition(courseId);
+    if (saved && chapters.some(chapter => chapter.id === saved.chapterId)) return saved;
+    const read = Storage.getReadChapters(courseId);
+    return { chapterId: chapters.find(chapter => !read.includes(chapter.id))?.id || chapters[0]?.id, scrollTop: 0 };
+  };
+
+  const bookmarkedChapters = courseIds.flatMap(courseId => {
+    const course = allCourses[courseId];
+    const bookmarkedIds = Storage.getBookmarks(courseId);
+    return (course?.chapters || [])
+      .filter(chapter => bookmarkedIds.includes(chapter.id))
+      .map(chapter => ({ courseId, chapter, courseTitle: course.config?.title || courseId }));
+  });
+
   const renderCourseCard = (courseId) => {
     const course = allCourses[courseId];
     const config = course?.config || {};
@@ -38,6 +54,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
     const chapterIds = chapters.map(ch => ch.id);
     const readCount = readList.filter(id => chapterIds.includes(id)).length;
     const progressPct = chapters.length > 0 ? Math.min(100, Math.round((readCount / chapters.length) * 100)) : 0;
+    const hasStarted = Boolean(Storage.getReadingPosition(courseId)) || progressPct > 0;
 
     return `
       <article class="course-card ${isCurrent ? 'is-current' : ''}" data-course-id="${courseId}">
@@ -68,7 +85,7 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
             <div class="course-progress-track" aria-hidden="true"><div style="width:${progressPct}%"></div></div>
           </div>
           <button class="btn-start-course">
-            <span>${progressPct > 0 ? '続きから学ぶ' : 'この教材をはじめる'}</span>
+            <span>${hasStarted ? '続きから学ぶ' : 'この教材をはじめる'}</span>
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>
         </div>
@@ -89,6 +106,24 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
           <span>章 読了</span>
         </div>
       </section>
+
+      ${bookmarkedChapters.length ? `
+        <section class="bookmark-shelf" aria-labelledby="bookmark-shelf-title">
+          <div class="course-list-heading">
+            <h3 id="bookmark-shelf-title">ブックマーク</h3>
+            <span>${bookmarkedChapters.length}件</span>
+          </div>
+          <div class="bookmark-shelf-list">
+            ${bookmarkedChapters.map(({ courseId, chapter, courseTitle }) => `
+              <button class="bookmark-shelf-item" data-bookmark-course="${courseId}" data-bookmark-chapter="${chapter.id}">
+                <span aria-hidden="true">★</span>
+                <span><strong>${chapter.shortTitle || chapter.title}</strong><small>${courseTitle}</small></span>
+                <b aria-hidden="true">›</b>
+              </button>
+            `).join('')}
+          </div>
+        </section>
+      ` : ''}
 
       <section aria-labelledby="course-list-title">
         <div class="course-list-heading">
@@ -113,6 +148,14 @@ export function renderCourseSelectViewer(container, { allCourses = {}, activeCou
   `;
 
   container.querySelectorAll('[data-course-id]').forEach(card => {
-    card.addEventListener('click', () => onSelectCourse?.(card.dataset.courseId));
+    card.addEventListener('click', () => {
+      const target = getResumeTarget(card.dataset.courseId);
+      onSelectCourse?.(card.dataset.courseId, target.chapterId, target.scrollTop || 0);
+    });
+  });
+  container.querySelectorAll('[data-bookmark-course]').forEach(button => {
+    button.addEventListener('click', () => {
+      onSelectCourse?.(button.dataset.bookmarkCourse, button.dataset.bookmarkChapter, 0);
+    });
   });
 }

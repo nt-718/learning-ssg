@@ -46,3 +46,65 @@ test('quiz history and review questions are isolated by course', () => {
   assert.equal(Storage.getQuizHistory('course-a').q_ch01_1.userAns, 'answer-a');
   assert.equal(Storage.getQuizHistory('course-b').q_ch01_1.userAns, 'answer-b');
 });
+
+test('reading positions and bookmarks are isolated by course', () => {
+  Storage.setReadingPosition('course-a', 'ch02', 420);
+  Storage.setReadingPosition('course-b', 'ch03', 90);
+  Storage.toggleBookmark('course-a', 'ch02');
+  Storage.toggleBookmark('course-b', 'ch02');
+
+  assert.equal(Storage.getReadingPosition('course-a').chapterId, 'ch02');
+  assert.equal(Storage.getReadingPosition('course-a').scrollTop, 420);
+  assert.deepEqual(Storage.getBookmarks('course-a'), ['ch02']);
+  assert.deepEqual(Storage.getBookmarks('course-b'), ['ch02']);
+});
+
+test('quiz answers can be restored after undo', () => {
+  const before = Storage.getQuizAnswerSnapshot('course-c', 'q1');
+  Storage.recordQuizAnswer('course-c', 'q1', false);
+  Storage.restoreQuizAnswer('course-c', 'q1', before);
+
+  assert.equal(Storage.getQuizHistory('course-c').q1, undefined);
+  assert.deepEqual(Storage.getWrongQuestions('course-c'), []);
+});
+
+test('course data resets affect only the selected course and data type', () => {
+  Storage.toggleReadChapter('reset-a', 'ch01');
+  Storage.toggleReadChapter('reset-b', 'ch01');
+  Storage.setReadingPosition('reset-a', 'ch01', 300);
+  Storage.recordQuizAnswer('reset-a', 'q1', false);
+  Storage.recordQuizAnswer('reset-b', 'q1', false);
+  Storage.toggleBookmark('reset-a', 'ch01');
+  Storage.toggleBookmark('reset-b', 'ch01');
+
+  assert.equal(Storage.resetCourseProgress('reset-a'), 1);
+  assert.deepEqual(Storage.getReadChapters('reset-a'), []);
+  assert.equal(Storage.getReadingPosition('reset-a'), null);
+  assert.deepEqual(Storage.getReadChapters('reset-b'), ['ch01']);
+  assert.deepEqual(Storage.getWrongQuestions('reset-a'), ['q1']);
+
+  assert.equal(Storage.resetWrongQuestions('reset-a'), 1);
+  assert.deepEqual(Storage.getWrongQuestions('reset-a'), []);
+  assert.deepEqual(Storage.getWrongQuestions('reset-b'), ['q1']);
+
+  assert.equal(Storage.clearBookmarks('reset-a'), 1);
+  assert.deepEqual(Storage.getBookmarks('reset-a'), []);
+  assert.deepEqual(Storage.getBookmarks('reset-b'), ['ch01']);
+});
+
+test('learning activity is aggregated globally and separated by course', () => {
+  const globalBefore = Object.values(Storage.getLearningActivity()).reduce((sum, entry) => sum + (entry.total || 0), 0);
+  Storage.recordActivity('read', 'activity-a');
+  Storage.recordActivity('quiz', 'activity-a');
+  Storage.recordActivity('quiz', 'activity-b');
+
+  const courseA = Object.values(Storage.getLearningActivity('activity-a'));
+  const courseB = Object.values(Storage.getLearningActivity('activity-b'));
+  const globalAfter = Object.values(Storage.getLearningActivity()).reduce((sum, entry) => sum + (entry.total || 0), 0);
+
+  assert.equal(courseA.reduce((sum, entry) => sum + entry.total, 0), 2);
+  assert.equal(courseA.reduce((sum, entry) => sum + entry.read, 0), 1);
+  assert.equal(courseA.reduce((sum, entry) => sum + entry.quiz, 0), 1);
+  assert.equal(courseB.reduce((sum, entry) => sum + entry.total, 0), 1);
+  assert.equal(globalAfter - globalBefore, 3);
+});

@@ -13,7 +13,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen flex flex-col bg-bg-color text-foreground font-sans antialiased pb-16 md:pb-0">
+<body class="min-h-screen flex flex-col bg-bg-color text-foreground font-sans antialiased pb-16 lg:pb-0">
 
   <!-- Mobile Top Header -->
   <div id="app-header"></div>
@@ -22,19 +22,19 @@
   <div class="flex-1 flex overflow-hidden relative">
     
     <!-- Desktop table of contents -->
-    <div id="app-sidebar-wrapper" class="fixed md:static inset-0 z-40 hidden md:block">
-      <div id="app-sidebar" class="h-full relative z-10 w-72 md:w-64"></div>
+    <div id="app-sidebar-wrapper" class="fixed lg:static inset-0 z-40 hidden lg:block">
+      <div id="app-sidebar" class="h-full relative z-10 w-72 lg:w-64"></div>
     </div>
 
     <!-- Content Screen Area -->
-    <main id="app-main" class="flex-1 overflow-y-auto min-h-[calc(100vh-56px)] pb-12 md:pb-6">
+    <main id="app-main" class="flex-1 overflow-y-auto min-h-[calc(100vh-56px)] pb-12 lg:pb-6">
       <!-- Dynamic views -->
     </main>
 
   </div>
 
   <!-- Mobile Bottom Navigation Bar (Fixed for Mobile-First ergonomics) -->
-  <div id="app-bottom-nav" class="md:hidden fixed bottom-0 left-0 right-0 z-30"></div>
+  <div id="app-bottom-nav" class="lg:hidden fixed bottom-0 left-0 right-0 z-30"></div>
 
   <!-- Search Modal -->
   <div id="app-modal"></div>

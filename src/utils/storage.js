@@ -6,6 +6,8 @@ const KEYS = {
   APP_STATE: 'fp_app_state',
   READ_CHAPTERS: 'fp_app_read_chapters',
   BOOKMARKS: 'fp_app_bookmarks',
+  READING_POSITIONS: 'fp_app_reading_positions',
+  READING_PREFERENCES: 'fp_app_reading_preferences',
   QUIZ_HISTORY: 'fp_app_quiz_history',
   WRONG_QUESTIONS: 'fp_app_wrong_questions',
   LEARNING_ACTIVITY: 'fp_app_learning_activity'
@@ -97,29 +99,97 @@ export const Storage = {
       list.splice(idx, 1);
     } else {
       list.push(key);
-      this.recordActivity('read');
+      this.recordActivity('read', courseId);
     }
     localStorage.setItem(KEYS.READ_CHAPTERS, JSON.stringify(list));
     return list;
   },
+  resetCourseProgress(courseId) {
+    if (!courseId) return 0;
+    let list = [];
+    try { list = JSON.parse(localStorage.getItem(KEYS.READ_CHAPTERS)) || []; } catch { /* noop */ }
+    const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+    const removedCount = list.filter(key => typeof key === 'string' && key.startsWith(prefix)).length;
+    localStorage.setItem(KEYS.READ_CHAPTERS, JSON.stringify(list.filter(key => typeof key !== 'string' || !key.startsWith(prefix))));
 
-  getBookmarks() {
+    let positions = {};
+    try { positions = JSON.parse(localStorage.getItem(KEYS.READING_POSITIONS)) || {}; } catch { /* noop */ }
+    delete positions[courseId];
+    localStorage.setItem(KEYS.READING_POSITIONS, JSON.stringify(positions));
+    return removedCount;
+  },
+
+  getBookmarks(courseId) {
     try {
-      return JSON.parse(localStorage.getItem(KEYS.BOOKMARKS)) || [];
+      const list = JSON.parse(localStorage.getItem(KEYS.BOOKMARKS)) || [];
+      if (!courseId) return list;
+      const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+      return list
+        .filter(key => typeof key === 'string' && key.startsWith(prefix))
+        .map(key => key.slice(prefix.length));
     } catch {
       return [];
     }
   },
-  toggleBookmark(itemId) {
+  toggleBookmark(courseId, itemId) {
     const list = this.getBookmarks();
-    const idx = list.indexOf(itemId);
+    const key = getReadChapterKey(courseId, itemId);
+    const idx = list.indexOf(key);
     if (idx >= 0) {
       list.splice(idx, 1);
     } else {
-      list.push(itemId);
+      list.push(key);
     }
     localStorage.setItem(KEYS.BOOKMARKS, JSON.stringify(list));
     return list;
+  },
+  clearBookmarks(courseId) {
+    const list = this.getBookmarks();
+    if (!courseId) {
+      localStorage.setItem(KEYS.BOOKMARKS, '[]');
+      return list.length;
+    }
+    const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+    const removedCount = list.filter(key => typeof key === 'string' && key.startsWith(prefix)).length;
+    localStorage.setItem(KEYS.BOOKMARKS, JSON.stringify(list.filter(key => typeof key !== 'string' || !key.startsWith(prefix))));
+    return removedCount;
+  },
+
+  getReadingPosition(courseId) {
+    try {
+      const positions = JSON.parse(localStorage.getItem(KEYS.READING_POSITIONS)) || {};
+      return positions[courseId] || null;
+    } catch {
+      return null;
+    }
+  },
+  setReadingPosition(courseId, chapterId, scrollTop = 0) {
+    if (!courseId || !chapterId) return;
+    let positions;
+    try {
+      positions = JSON.parse(localStorage.getItem(KEYS.READING_POSITIONS)) || {};
+    } catch {
+      positions = {};
+    }
+    positions[courseId] = { chapterId, scrollTop: Math.max(0, Math.round(scrollTop)), updatedAt: Date.now() };
+    localStorage.setItem(KEYS.READING_POSITIONS, JSON.stringify(positions));
+  },
+
+  getReadingPreferences() {
+    try {
+      return {
+        fontSize: 15,
+        lineHeight: 1.95,
+        ...JSON.parse(localStorage.getItem(KEYS.READING_PREFERENCES))
+      };
+    } catch {
+      return { fontSize: 15, lineHeight: 1.95 };
+    }
+  },
+  setReadingPreferences(preferences) {
+    const next = { ...this.getReadingPreferences(), ...preferences };
+    localStorage.setItem(KEYS.READING_PREFERENCES, JSON.stringify(next));
+    return next;
   },
 
   getQuizHistory(courseId) {
@@ -187,7 +257,29 @@ export const Storage = {
       wrong.splice(wIdx, 1);
     }
     localStorage.setItem(KEYS.WRONG_QUESTIONS, JSON.stringify(wrong));
-    this.recordActivity('quiz');
+    this.recordActivity('quiz', courseId);
+  },
+
+  getQuizAnswerSnapshot(courseId, questionId) {
+    let history = {};
+    let wrong = [];
+    try { history = JSON.parse(localStorage.getItem(KEYS.QUIZ_HISTORY)) || {}; } catch { /* noop */ }
+    try { wrong = JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || []; } catch { /* noop */ }
+    const key = getQuizQuestionKey(courseId, questionId);
+    return { answer: history[key] || null, wasWrong: wrong.includes(key) };
+  },
+  restoreQuizAnswer(courseId, questionId, snapshot) {
+    let history = {};
+    let wrong = [];
+    try { history = JSON.parse(localStorage.getItem(KEYS.QUIZ_HISTORY)) || {}; } catch { /* noop */ }
+    try { wrong = JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || []; } catch { /* noop */ }
+    const key = getQuizQuestionKey(courseId, questionId);
+    if (snapshot?.answer) history[key] = snapshot.answer;
+    else delete history[key];
+    wrong = wrong.filter(id => id !== key);
+    if (snapshot?.wasWrong) wrong.push(key);
+    localStorage.setItem(KEYS.QUIZ_HISTORY, JSON.stringify(history));
+    localStorage.setItem(KEYS.WRONG_QUESTIONS, JSON.stringify(wrong));
   },
 
   getWrongQuestions(courseId) {
@@ -202,21 +294,43 @@ export const Storage = {
       return [];
     }
   },
+  resetWrongQuestions(courseId) {
+    if (!courseId) return 0;
+    let list = [];
+    try { list = JSON.parse(localStorage.getItem(KEYS.WRONG_QUESTIONS)) || []; } catch { /* noop */ }
+    const prefix = `${courseId}${READ_CHAPTER_SEPARATOR}`;
+    const removedCount = list.filter(key => typeof key === 'string' && key.startsWith(prefix)).length;
+    localStorage.setItem(KEYS.WRONG_QUESTIONS, JSON.stringify(list.filter(key => typeof key !== 'string' || !key.startsWith(prefix))));
+    return removedCount;
+  },
 
-  getLearningActivity() {
+  getLearningActivity(courseId) {
     try {
-      return JSON.parse(localStorage.getItem(KEYS.LEARNING_ACTIVITY)) || {};
+      const activity = JSON.parse(localStorage.getItem(KEYS.LEARNING_ACTIVITY)) || {};
+      if (!courseId) return activity;
+      return Object.fromEntries(
+        Object.entries(activity)
+          .filter(([, entry]) => entry?.courses?.[courseId])
+          .map(([date, entry]) => [date, entry.courses[courseId]])
+      );
     } catch {
       return {};
     }
   },
 
-  recordActivity(type) {
+  recordActivity(type, courseId) {
     const activity = this.getLearningActivity();
     const dateKey = getLocalDateKey();
     const current = activity[dateKey] || { total: 0, read: 0, quiz: 0 };
     current.total = (current.total || 0) + 1;
     current[type] = (current[type] || 0) + 1;
+    if (courseId) {
+      current.courses = current.courses || {};
+      const courseActivity = current.courses[courseId] || { total: 0, read: 0, quiz: 0 };
+      courseActivity.total = (courseActivity.total || 0) + 1;
+      courseActivity[type] = (courseActivity[type] || 0) + 1;
+      current.courses[courseId] = courseActivity;
+    }
     activity[dateKey] = current;
     localStorage.setItem(KEYS.LEARNING_ACTIVITY, JSON.stringify(activity));
     return activity;

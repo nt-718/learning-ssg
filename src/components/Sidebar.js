@@ -84,7 +84,7 @@ export function renderSidebar(container, { chapters = [], quizQuestions = [], co
         </nav>
       </section>
 
-      <section class="sidebar-section sidebar-practice" aria-labelledby="sidebar-practice-title">
+      ${quizQuestions.length ? `<section class="sidebar-section sidebar-practice" aria-labelledby="sidebar-practice-title">
         <div class="sidebar-section-heading">
           <h3 id="sidebar-practice-title">問題演習</h3>
         </div>
@@ -101,7 +101,7 @@ export function renderSidebar(container, { chapters = [], quizQuestions = [], co
             <span>要復習</span><span>${wrongCount > 0 ? wrongCount : '›'}</span>
           </button>
         </nav>
-      </section>
+      </section>` : ''}
     </aside>
   `;
 

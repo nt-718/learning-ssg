@@ -1,10 +1,9 @@
 import { Storage } from '../utils/storage.js';
 
-export function renderHeader(container, { activeView, activeCourseId, allCourses, onSelectCourse, onOpenSearch, onSelectView, totalChaptersCount = 11 }) {
+export function renderHeader(container, { activeView, activeCourseId, allCourses, onSelectCourse, onOpenSearch, onOpenSettings, onSelectView, totalChaptersCount = 11 }) {
   const readList = Storage.getReadChapters(activeCourseId);
   const totalCh = totalChaptersCount || 1;
   const progressPct = Math.min(100, Math.round((readList.length / totalCh) * 100));
-  const currentTheme = Storage.getTheme();
   const isPortal = activeView === 'course_select';
   const isGlobalView = isPortal || activeView === 'activity';
   const currentCourse = (allCourses && allCourses[activeCourseId]) ? allCourses[activeCourseId] : null;
@@ -35,9 +34,9 @@ export function renderHeader(container, { activeView, activeCourseId, allCourses
         <button id="btn-trigger-search-mobile" class="header-icon-button" title="検索" aria-label="検索">
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
         </button>
-        <button id="btn-theme-toggle" class="header-icon-button" title="テーマ切り替え" aria-label="テーマ切り替え">
+        <button id="btn-open-settings" class="header-icon-button" title="設定" aria-label="設定">
           <svg viewBox="0 0 24 24">
-            <path d="${currentTheme === 'dark' ? 'M12 3v2m0 14v2m9-9h-2M5 12H3m15.4 6.4-1.5-1.5M7.1 7.1 5.6 5.6m12.8 0-1.5 1.5M7.1 16.9l-1.5 1.5M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z' : 'M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z'}"/>
+            <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.6v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/>
           </svg>
         </button>
       </div>
@@ -45,12 +44,9 @@ export function renderHeader(container, { activeView, activeCourseId, allCourses
   `;
 
   container.querySelector('#btn-trigger-search-mobile').addEventListener('click', onOpenSearch);
+  container.querySelector('#btn-open-settings').addEventListener('click', onOpenSettings);
   container.querySelector('#course-select-dropdown')?.addEventListener('change', (event) => onSelectCourse?.(event.target.value));
   container.querySelector('#header-brand').addEventListener('click', () => onSelectView('course_select'));
-  container.querySelector('#btn-theme-toggle').addEventListener('click', () => {
-    Storage.setTheme(Storage.getTheme() === 'dark' ? 'light' : 'dark');
-    renderHeader(container, { activeView, activeCourseId, allCourses, onSelectCourse, onOpenSearch, onSelectView, totalChaptersCount });
-  });
 }
 
 export function updateHeaderProgress(courseId, totalChaptersCount = 11) {

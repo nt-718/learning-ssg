@@ -6,9 +6,10 @@ const courseItems = [
   { id: 'toc', label: '目次', icon: '<path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/>' }
 ];
 
-export function renderBottomNav(container, { activeView, onSelectNav }) {
+export function renderBottomNav(container, { activeView, hasQuiz = true, onSelectNav }) {
   const isGlobalView = activeView === 'course_select' || activeView === 'activity';
-  const navItems = isGlobalView ? [homeItem, activityItem] : [homeItem, ...courseItems, activityItem];
+  const availableCourseItems = hasQuiz ? courseItems : courseItems.filter(item => item.id !== 'quiz');
+  const navItems = isGlobalView ? [homeItem, activityItem] : [homeItem, ...availableCourseItems, activityItem];
   container.innerHTML = `
     <nav class="mobile-bottom-nav ${isGlobalView ? 'is-global' : 'is-course'}" style="--nav-count:${navItems.length}" aria-label="メインナビゲーション">
       ${navItems.map(item => `

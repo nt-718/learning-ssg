@@ -11,6 +11,7 @@ import { renderActivityViewer } from './components/ActivityViewer.js';
 import { renderChapterViewer } from './components/ChapterViewer.js';
 import { renderQuizViewer } from './components/QuizViewer.js';
 import { renderSearchModal } from './components/SearchModal.js';
+import { renderSettingsModal } from './components/SettingsModal.js';
 
 // Restore saved state from LocalStorage
 const savedState = Storage.getAppState() || {};
@@ -23,8 +24,14 @@ const state = {
   activeCourseId: ALL_COURSES[initialCourseId] ? initialCourseId : DEFAULT_COURSE_ID,
   activeView: initialView,
   activeChapterId: savedState.activeChapterId || 'intro',
-  activeQuizFilter: savedState.activeQuizFilter || 'all'
+  activeQuizFilter: savedState.activeQuizFilter || 'all',
+  pendingScrollTop: null
 };
+
+const initialReadingPosition = Storage.getReadingPosition(state.activeCourseId);
+if (state.activeView === 'chapter' && initialReadingPosition?.chapterId === state.activeChapterId) {
+  state.pendingScrollTop = initialReadingPosition.scrollTop || 0;
+}
 
 // Older versions stored only chapter IDs. Attribute those records to the last
 // active course before rendering so future progress is isolated per course.
@@ -41,6 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainContainer = document.querySelector('#app-main');
   const bottomNavContainer = document.querySelector('#app-bottom-nav');
   const modalContainer = document.querySelector('#app-modal');
+  const scrollMainToTop = () => mainContainer.scrollTo({ top: 0, behavior: 'auto' });
+  const saveCurrentReadingPosition = () => {
+    if (state.activeView === 'chapter') {
+      Storage.setReadingPosition(state.activeCourseId, state.activeChapterId, mainContainer.scrollTop);
+    }
+  };
+  let scrollSaveFrame = null;
+  mainContainer.addEventListener('scroll', () => {
+    if (state.activeView !== 'chapter') return;
+    cancelAnimationFrame(scrollSaveFrame);
+    scrollSaveFrame = requestAnimationFrame(saveCurrentReadingPosition);
+  }, { passive: true });
 
   const updateUI = () => {
     // Get current active course data
@@ -48,13 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const chapters = currentCourse.chapters || [];
     const quizQuestions = currentCourse.quizQuestions || [];
     const courseConfig = currentCourse.config || {};
+    if (state.activeView === 'quiz' && quizQuestions.length === 0) state.activeView = 'chapter';
     const isGlobalView = state.activeView === 'course_select' || state.activeView === 'activity';
 
     if (isGlobalView) {
-      sidebarWrapper.classList.remove('md:block');
+      sidebarWrapper.classList.remove('lg:block');
       sidebarWrapper.classList.add('hidden');
     } else {
-      sidebarWrapper.classList.add('hidden', 'md:block');
+      sidebarWrapper.classList.add('hidden', 'lg:block');
     }
 
     // Validate activeChapterId exists in current course, fallback to first chapter
@@ -79,9 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
       totalChaptersCount: chapters.length,
       onSelectCourse: (newCourseId) => {
         if (ALL_COURSES[newCourseId]) {
+          saveCurrentReadingPosition();
           state.activeCourseId = newCourseId;
           const newCourseChapters = ALL_COURSES[newCourseId].chapters || [];
-          state.activeChapterId = newCourseChapters[0]?.id || 'intro';
+          const resume = Storage.getReadingPosition(newCourseId);
+          state.activeChapterId = newCourseChapters.some(chapter => chapter.id === resume?.chapterId)
+            ? resume.chapterId
+            : newCourseChapters[0]?.id || 'intro';
+          state.pendingScrollTop = resume?.scrollTop || 0;
           updateUI();
         }
       },
@@ -102,7 +127,21 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       },
+      onOpenSettings: () => {
+        renderSettingsModal(modalContainer, {
+          activeCourseId: state.activeCourseId,
+          courseTitle: courseConfig.title || '現在の教材',
+          onDataChange: type => {
+            if (type === 'progress') {
+              state.activeChapterId = chapters[0]?.id || 'intro';
+              state.pendingScrollTop = 0;
+            }
+            updateUI();
+          }
+        });
+      },
       onSelectView: (view, id) => {
+        saveCurrentReadingPosition();
         state.activeView = view;
         if (view === 'chapter') state.activeChapterId = id || chapters[0]?.id || 'intro';
         if (view === 'quiz') state.activeQuizFilter = id || 'all';
@@ -119,11 +158,12 @@ document.addEventListener('DOMContentLoaded', () => {
       activeChapterId: state.activeChapterId,
       activeQuizFilter: state.activeQuizFilter,
       onSelectView: (view, id) => {
+        saveCurrentReadingPosition();
         state.activeView = view;
         if (view === 'chapter') state.activeChapterId = id;
         if (view === 'quiz') state.activeQuizFilter = id;
         
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollMainToTop();
         updateUI();
       }
     });
@@ -132,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bottomNavContainer) {
       renderBottomNav(bottomNavContainer, {
         activeView: state.activeView,
+        hasQuiz: quizQuestions.length > 0,
         onSelectNav: (navKey) => {
           if (navKey === 'search') {
             renderSearchModal(modalContainer, {
@@ -150,8 +191,9 @@ document.addEventListener('DOMContentLoaded', () => {
               }
             });
           } else {
+            saveCurrentReadingPosition();
             state.activeView = navKey;
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollMainToTop();
             updateUI();
           }
         }
@@ -165,30 +207,34 @@ document.addEventListener('DOMContentLoaded', () => {
       renderCourseSelectViewer(mainContainer, {
         allCourses: ALL_COURSES,
         activeCourseId: state.activeCourseId,
-        onSelectCourse: (selectedCourseId) => {
+        onSelectCourse: (selectedCourseId, chapterId, scrollTop = 0) => {
+          saveCurrentReadingPosition();
           state.activeCourseId = selectedCourseId;
           state.activeView = 'chapter';
           const selChapters = ALL_COURSES[selectedCourseId]?.chapters || [];
-          state.activeChapterId = selChapters[0]?.id || 'intro';
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          state.activeChapterId = selChapters.some(chapter => chapter.id === chapterId) ? chapterId : selChapters[0]?.id || 'intro';
+          state.pendingScrollTop = scrollTop;
           updateUI();
         }
       });
     } else if (state.activeView === 'activity') {
-      renderActivityViewer(mainContainer);
+      renderActivityViewer(mainContainer, { allCourses: ALL_COURSES });
     } else if (state.activeView === 'chapter') {
       renderChapterViewer(mainContainer, state.activeChapterId, {
         chapters: chapters,
+        quizQuestions: quizQuestions,
         courseConfig: courseConfig,
         onNavigateChapter: (nextId) => {
+          saveCurrentReadingPosition();
           state.activeChapterId = nextId;
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          scrollMainToTop();
           updateUI();
         },
         onSelectView: (view, filter) => {
+          saveCurrentReadingPosition();
           state.activeView = view;
           if (view === 'quiz') state.activeQuizFilter = filter;
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          scrollMainToTop();
           updateUI();
         }
       });
@@ -202,10 +248,11 @@ document.addEventListener('DOMContentLoaded', () => {
         activeQuizFilter: state.activeQuizFilter,
         mode: 'page',
         onSelectView: (view, id) => {
+          saveCurrentReadingPosition();
           state.activeView = view;
           if (view === 'chapter') state.activeChapterId = id;
           if (view === 'quiz') state.activeQuizFilter = id;
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          scrollMainToTop();
           updateUI();
         }
       });
@@ -214,6 +261,13 @@ document.addEventListener('DOMContentLoaded', () => {
       quizWrapper.className = 'animate-fade-in';
       mainContainer.appendChild(quizWrapper);
       renderQuizViewer(quizWrapper, state.activeQuizFilter, quizQuestions, courseConfig);
+    }
+
+    if (state.activeView === 'chapter') {
+      const targetScrollTop = state.pendingScrollTop;
+      state.pendingScrollTop = null;
+      if (targetScrollTop !== null) requestAnimationFrame(() => mainContainer.scrollTo({ top: targetScrollTop, behavior: 'auto' }));
+      else Storage.setReadingPosition(state.activeCourseId, state.activeChapterId, mainContainer.scrollTop);
     }
   };
 

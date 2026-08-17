@@ -3,13 +3,17 @@
 import { renderMarkdown } from '../utils/markdown.js';
 import { Storage } from '../utils/storage.js';
 import { updateHeaderProgress } from './Header.js';
+import { showToast } from '../utils/toast.js';
 
-export function renderChapterViewer(container, chapterId, { chapters = [], courseConfig = {}, onNavigateChapter, onSelectView }) {
+export function renderChapterViewer(container, chapterId, { chapters = [], quizQuestions = [], courseConfig = {}, onNavigateChapter, onSelectView }) {
   const currentChapters = chapters.length > 0 ? chapters : [];
   const chapter = currentChapters.find(c => c.id === chapterId) || currentChapters[0] || { title: '', content: '' };
   const courseId = courseConfig.id;
   const readList = Storage.getReadChapters(courseId);
   const isRead = readList.includes(chapter.id);
+  const isBookmarked = Storage.getBookmarks(courseId).includes(chapter.id);
+  const readingPreferences = Storage.getReadingPreferences();
+  const hasChapterQuiz = quizQuestions.some(question => question.chapterId === chapter.id);
   const isDark = Storage.getTheme() === 'dark';
   const categoryColor = courseConfig.category?.color;
   const categoryStyle = categoryColor ? ` style="--chapter-accent:${categoryColor}"` : '';
@@ -79,8 +83,14 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
         </div>
       </div>
 
+      <div class="reader-tools" aria-label="読書ツール">
+        <button id="btn-toggle-bookmark" class="reader-tool-button ${isBookmarked ? 'is-active' : ''}" aria-pressed="${isBookmarked}">
+          <span aria-hidden="true">${isBookmarked ? '★' : '☆'}</span><span>${isBookmarked ? '保存済み' : '保存する'}</span>
+        </button>
+      </div>
+
       <!-- Main Chapter Body HTML -->
-      <article class="chapter-body prose ${isDark ? 'prose-invert' : 'prose-slate'} max-w-none">
+      <article class="chapter-body prose ${isDark ? 'prose-invert' : 'prose-slate'} max-w-none" style="--reader-font-size:${readingPreferences.fontSize}px;--reader-line-height:${readingPreferences.lineHeight}">
         ${rawHtml}
       </article>
 
@@ -92,9 +102,11 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
           </button>
         ` : '<div></div>'}
 
-        <button id="btn-footer-quiz" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg transition">
-          この章の演習問題を解く
-        </button>
+        ${hasChapterQuiz ? `
+          <button id="btn-footer-quiz" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg transition">
+            この章の演習問題を解く
+          </button>
+        ` : '<span class="chapter-no-quiz">この章には演習問題はありません</span>'}
 
         ${nextCh ? `
           <button id="btn-next-ch" class="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-surface hover:bg-surface/80 border border-glass text-xs font-semibold text-muted hover:text-foreground transition flex items-center justify-center gap-2">
@@ -112,9 +124,31 @@ export function renderChapterViewer(container, chapterId, { chapters = [], cours
     readBtn.addEventListener('click', () => {
       Storage.toggleReadChapter(courseId, chapter.id);
       updateHeaderProgress(courseId, currentChapters.length);
-      renderChapterViewer(container, chapterId, { chapters, courseConfig, onNavigateChapter, onSelectView });
+      const nowRead = !isRead;
+      showToast(nowRead ? 'この章を読了にしました' : '読了を取り消しました', {
+        actionLabel: '元に戻す',
+        onAction: () => {
+          Storage.toggleReadChapter(courseId, chapter.id);
+          updateHeaderProgress(courseId, currentChapters.length);
+          renderChapterViewer(container, chapterId, { chapters, quizQuestions, courseConfig, onNavigateChapter, onSelectView });
+        }
+      });
+      renderChapterViewer(container, chapterId, { chapters, quizQuestions, courseConfig, onNavigateChapter, onSelectView });
     });
   }
+
+  container.querySelector('#btn-toggle-bookmark')?.addEventListener('click', () => {
+    Storage.toggleBookmark(courseId, chapter.id);
+    const nowBookmarked = !isBookmarked;
+    showToast(nowBookmarked ? 'ブックマークに保存しました' : 'ブックマークを外しました', {
+      actionLabel: '元に戻す',
+      onAction: () => {
+        Storage.toggleBookmark(courseId, chapter.id);
+        renderChapterViewer(container, chapterId, { chapters, quizQuestions, courseConfig, onNavigateChapter, onSelectView });
+      }
+    });
+    renderChapterViewer(container, chapterId, { chapters, quizQuestions, courseConfig, onNavigateChapter, onSelectView });
+  });
 
   const prevBtn = container.querySelector('#btn-prev-ch');
   if (prevBtn && prevCh) prevBtn.addEventListener('click', () => onNavigateChapter(prevCh.id));
