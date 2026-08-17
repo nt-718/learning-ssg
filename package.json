@@ -17,6 +17,7 @@
     "import:chinese-language": "node scripts/import-chinese-language.js",
     "import:business-communication-english": "node scripts/import-business-communication-english.js",
     "import:business-instant-english-500": "node scripts/import-business-instant-english-500.js",
+    "import:category-theory-for-programmers": "node scripts/import-category-theory-for-programmers.js",
     "import:python-design-patterns": "node scripts/import-python-design-patterns.js",
     "import:statistics-twenty-six-views": "node scripts/import-statistics-twenty-six-views.js",
     "import:saito-macroeconomics": "node scripts/import-saito-macroeconomics.js",

@@ -12864,6 +12864,1847 @@ export const ALL_COURSES = {
       }
     ]
   },
+  "category_theory_for_programmers": {
+    "config": {
+      "features": {
+        "quiz": false,
+        "search": true
+      },
+      "categories": {
+        "intro": "ガイド",
+        "ch01": "圏論の基礎言語",
+        "ch02": "圏論の基礎言語",
+        "ch03": "圏論の基礎言語",
+        "ch04": "圏論の基礎言語",
+        "ch05": "圏論の基礎言語",
+        "ch06": "圏論の基礎言語",
+        "ch07": "関手と自然変換",
+        "ch08": "関手と自然変換",
+        "ch09": "関手と自然変換",
+        "ch10": "関手と自然変換",
+        "ch11": "普遍性・表現・米田",
+        "ch12": "普遍性・表現・米田",
+        "ch13": "普遍性・表現・米田",
+        "ch14": "普遍性・表現・米田",
+        "ch15": "普遍性・表現・米田",
+        "ch16": "普遍性・表現・米田",
+        "ch17": "随伴・モナド",
+        "ch18": "随伴・モナド",
+        "ch19": "随伴・モナド",
+        "ch20": "随伴・モナド",
+        "ch21": "随伴・モナド",
+        "ch22": "随伴・モナド",
+        "ch23": "随伴・モナド",
+        "ch24": "再帰・高度な普遍構成",
+        "ch25": "再帰・高度な普遍構成",
+        "ch26": "再帰・高度な普遍構成",
+        "ch27": "再帰・高度な普遍構成",
+        "ch28": "再帰・高度な普遍構成",
+        "ch29": "再帰・高度な普遍構成",
+        "ch30": "再帰・高度な普遍構成",
+        "ch31": "再帰・高度な普遍構成",
+        "supplement01": "演習・資料",
+        "supplement02": "演習・資料",
+        "supplement03": "演習・資料",
+        "supplement04": "演習・資料",
+        "supplement05": "演習・資料",
+        "supplement06": "演習・資料",
+        "supplement07": "演習・資料",
+        "supplement08": "演習・資料",
+        "supplement09": "演習・資料",
+        "supplement10": "演習・資料",
+        "supplement11": "演習・資料",
+        "supplement12": "演習・資料"
+      },
+      "id": "category_theory_for_programmers",
+      "title": "プログラマーのための圏論 完全副読本・改訂版",
+      "subtitle": "合成・型・関手・米田・随伴・モナドを一本につなぐ",
+      "description": "圏論の基礎から米田、随伴、モナド、高度な普遍構成までをプログラミングと結びつけて学ぶ副読本",
+      "author": "AnS",
+      "version": "1.0.0",
+      "category": {
+        "id": "programming",
+        "title": "プログラミング",
+        "order": 18,
+        "color": "#3776ab"
+      }
+    },
+    "chapters": [
+      {
+        "id": "intro",
+        "number": 0,
+        "title": "はじめに",
+        "shortTitle": "はじめに",
+        "summary": "副読本の使い方、全31章の学習地図、最低限の数学記法を確認する",
+        "sections": [
+          {
+            "id": "intro_sec_1",
+            "title": "0. この副読本の使い方"
+          },
+          {
+            "id": "intro_sec_2",
+            "title": "1. 全31章の学習地図"
+          },
+          {
+            "id": "intro_sec_3",
+            "title": "Level 1　圏論の言語を身につける"
+          },
+          {
+            "id": "intro_sec_4",
+            "title": "Level 2　構造を移す"
+          },
+          {
+            "id": "intro_sec_5",
+            "title": "Level 3　普遍性と表現"
+          },
+          {
+            "id": "intro_sec_6",
+            "title": "Level 4　随伴とモナド"
+          },
+          {
+            "id": "intro_sec_7",
+            "title": "Level 5　再帰と高度な普遍構成"
+          },
+          {
+            "id": "intro_sec_8",
+            "title": "2. 最低限の数学記法"
+          },
+          {
+            "id": "intro_sec_9",
+            "title": "2.1 射"
+          },
+          {
+            "id": "intro_sec_10",
+            "title": "2.2 合成"
+          },
+          {
+            "id": "intro_sec_11",
+            "title": "2.3 同型"
+          },
+          {
+            "id": "intro_sec_12",
+            "title": "2.4 自然同型"
+          }
+        ],
+        "content": "\n# はじめに\n\n## 0. この副読本の使い方\n\nこの副読本の目的は、圏論の用語を覚えることではない。\n\n最終目標は、\n\n> **「なぜその概念が必要になったのか」を説明できる状態**\n\nになることである。\n\n圏論では、定義だけを暗記すると非常に苦しくなる。\n\nたとえば、\n\n- 圏\n- 関手\n- 自然変換\n- 表現可能関手\n- 米田の補題\n- 随伴\n- モナド\n- F-代数\n- カン拡張\n\nを別々の概念として覚えようとすると、ほぼ確実に途中で混乱する。\n\nしかし実際には、\n\n\\[\n\\text{合成}\n\\rightarrow\n\\text{圏}\n\\rightarrow\n\\text{構造を保つ写像}\n\\rightarrow\n\\text{関手}\n\\rightarrow\n\\text{関手間の写像}\n\\rightarrow\n\\text{自然変換}\n\\]\n\nという流れがある。\n\nさらに、\n\n\\[\n\\text{普遍性}\n\\rightarrow\n\\text{極限}\n\\rightarrow\n\\text{表現可能性}\n\\rightarrow\n\\text{米田}\n\\rightarrow\n\\text{随伴}\n\\rightarrow\n\\text{モナド}\n\\]\n\nという別の流れが合流する。\n\n本書を読む際には、毎章次の5問を自分に投げる。\n\n1. **この章では何を対象としているか。**\n2. **射は何か。**\n3. **何と何を合成しようとしているか。**\n4. **どの構造を保存しているか。**\n5. **この概念は次のどの概念の準備なのか。**\n\n## 1. 全31章の学習地図\n\n## Level 1　圏論の言語を身につける\n\n対象章：\n\n1〜6章\n\n学ぶこと：\n\n- 圏\n- 対象\n- 射\n- 合成\n- 恒等射\n- 型\n- 積\n- 余積\n- 代数的データ型\n\nゴール：\n\n> 「型と関数の世界を圏として眺める」感覚を作る。\n\n## Level 2　構造を移す\n\n対象章：\n\n7〜10章\n\n学ぶこと：\n\n- 関手\n- 共変・反変\n- 双関手\n- 関数型\n- 自然変換\n\nゴール：\n\n> 「対象や関数そのもの」ではなく、構造全体を変換する視点を得る。\n\n## Level 3　普遍性と表現\n\n対象章：\n\n11〜16章\n\n学ぶこと：\n\n- 宣言的定義\n- 極限\n- 余極限\n- 自由構成\n- Hom\n- 表現可能関手\n- 米田の補題\n- 米田埋め込み\n\nゴール：\n\n> 対象の内部を見るのではなく、他の対象との関係から特徴付ける。\n\n## Level 4　随伴とモナド\n\n対象章：\n\n17〜23章\n\n学ぶこと：\n\n- Hom集合\n- 随伴\n- unit / counit\n- 自由・忘却随伴\n- Kleisli圏\n- モナド\n- 計算効果\n- コモナド\n\nゴール：\n\n> モナドを「便利なプログラミングパターン」ではなく、随伴から生まれる圏論的構造として理解する。\n\n## Level 5　再帰と高度な普遍構成\n\n対象章：\n\n24〜31章\n\n学ぶこと：\n\n- F-代数\n- catamorphism\n- モナド代数\n- end / coend\n- Kan extension\n- enriched category\n- topos\n- Lawvere theory\n\nゴール：\n\n> それまで個別に見えていた構成を、さらに高い抽象度で統一する。\n\n## 2. 最低限の数学記法\n\n圏論を読むために高度な微積分や線形代数は必要ない。\n\n必要なのは、記号への慣れである。\n\n## 2.1 射\n\n\\[\nf:A\\to B\n\\]\n\nは、\n\n> f は A から B への射\n\nと読む。\n\nプログラミングなら、\n\n```haskell\nf :: A -> B\n```\n\nに近い。\n\n## 2.2 合成\n\n\\[\ng\\circ f\n\\]\n\nは、\n\n> f を実行して、その結果に g を適用する\n\nという意味。\n\n順序に注意する。\n\n\\[\nA\\xrightarrow{f}B\\xrightarrow{g}C\n\\]\n\nなら、\n\n\\[\ng\\circ f:A\\to C\n\\]\n\nである。\n\nHaskellでは、\n\n```haskell\ng . f\n```\n\n## 2.3 同型\n\n\\[\nA\\cong B\n\\]\n\nは、\n\n> A と B は構造的に同じ\n\nという意味。\n\n単なる値の等号\n\n\\[\nA=B\n\\]\n\nとは違う。\n\n## 2.4 自然同型\n\n\\[\nF\\cong G\n\\]\n\nと関手について書く場合、\n\n単なる各対象ごとの同型ではなく、\n\n> 関手の作用と整合する同型\n\nであることが重要。\n"
+      },
+      {
+        "id": "ch01",
+        "number": 1,
+        "title": "第1章 圏：合成の本質",
+        "shortTitle": "圏：合成の本質",
+        "summary": "圏論全体の出発点は、",
+        "sections": [
+          {
+            "id": "ch01_sec_1",
+            "title": "1. この章を学ぶ理由"
+          },
+          {
+            "id": "ch01_sec_2",
+            "title": "2. 正式定義"
+          },
+          {
+            "id": "ch01_sec_3",
+            "title": "結合律"
+          },
+          {
+            "id": "ch01_sec_4",
+            "title": "恒等射"
+          },
+          {
+            "id": "ch01_sec_5",
+            "title": "3. プログラミングで考える"
+          },
+          {
+            "id": "ch01_sec_6",
+            "title": "4. 圏論的な重要ポイント"
+          },
+          {
+            "id": "ch01_sec_7",
+            "title": "5. よくある誤解"
+          },
+          {
+            "id": "ch01_sec_8",
+            "title": "6. 演習"
+          },
+          {
+            "id": "ch01_sec_9",
+            "title": "7. 1分復習"
+          }
+        ],
+        "content": "\n# 第1章 圏：合成の本質\n\n## 1. この章を学ぶ理由\n\n圏論全体の出発点は、\n\n> **「何を持っているか」ではなく「どう合成できるか」**\n\nである。\n\nプログラムも巨大な処理を直接書くより、\n\n```text\nA → B → C → D\n```\n\nという小さな処理の合成として構築する。\n\n圏は、この「合成」という概念だけを抜き出した数学的構造である。\n\n## 2. 正式定義\n\n圏 \\(\\mathcal C\\) は、\n\n- 対象 \\(A,B,C,\\dots\\)\n- 対象間の射\n- 射の合成\n- 各対象の恒等射\n\nからなる。\n\n射\n\n\\[\nf:A\\to B\n\\]\n\nと\n\n\\[\ng:B\\to C\n\\]\n\nがあれば、\n\n\\[\ng\\circ f:A\\to C\n\\]\n\nが存在する。\n\n## 結合律\n\n\\[\nh\\circ(g\\circ f)\n=\n(h\\circ g)\\circ f\n\\]\n\n## 恒等射\n\n各対象 \\(A\\) に、\n\n\\[\nid_A:A\\to A\n\\]\n\nが存在する。\n\nそして、\n\n\\[\nf\\circ id_A=f\n\\]\n\n\\[\nid_B\\circ f=f\n\\]\n\n## 3. プログラミングで考える\n\n```haskell\nparse :: String -> Int\nvalidate :: Int -> Bool\n```\n\nなら、\n\n```haskell\nvalidate . parse\n```\n\nは、\n\n```haskell\nString -> Bool\n```\n\nになる。\n\nつまり型が、\n\n```text\nString → Int → Bool\n```\n\nと接続可能だから合成できる。\n\n## 4. 圏論的な重要ポイント\n\n圏論は対象内部の構造について何も要求しない。\n\n対象が、\n\n- 型\n- 集合\n- ベクトル空間\n- データベース\n- 状態\n- 論理命題\n\nのどれであってもよい。\n\n必要なのは、\n\n> 射があり、合成できること。\n\n## 5. よくある誤解\n\n### 誤解\n\n「射＝関数」\n\n### 修正\n\n関数は射の重要な例だが、すべてではない。\n\n圏によって射は、\n\n- 関数\n- 順序関係\n- 線形写像\n- 論理的含意\n- プログラム\n\nなどになる。\n\n## 6. 演習\n\n### 問1\n\n次の関数を合成せよ。\n\n```haskell\nf :: String -> Int\ng :: Int -> Double\nh :: Double -> Bool\n```\n\n### 解答\n\n```haskell\nh . g . f :: String -> Bool\n```\n\n### 問2\n\nなぜ\n\n```haskell\nf :: A -> B\ng :: C -> D\n```\n\nは一般に合成できないか。\n\n### 解答\n\nf の出力型 B と g の入力型 C が一致していないから。\n\n## 7. 1分復習\n\n圏とは、\n\n> **対象と、合成可能な射からなる世界**\n\nである。\n\nそして圏論の第一テーマは、\n\n> **合成**\n\nである。\n"
+      },
+      {
+        "id": "ch02",
+        "number": 2,
+        "title": "第2章 型と関数",
+        "shortTitle": "型と関数",
+        "summary": "圏論をプログラミングへ接続するため、",
+        "sections": [
+          {
+            "id": "ch02_sec_1",
+            "title": "1. この章の狙い"
+          },
+          {
+            "id": "ch02_sec_2",
+            "title": "2. 型を集合として近似する"
+          },
+          {
+            "id": "ch02_sec_3",
+            "title": "3. Unit"
+          },
+          {
+            "id": "ch02_sec_4",
+            "title": "4. Void"
+          },
+          {
+            "id": "ch02_sec_5",
+            "title": "5. 純粋関数"
+          },
+          {
+            "id": "ch02_sec_6",
+            "title": "6. なぜ純粋性が重要か"
+          },
+          {
+            "id": "ch02_sec_7",
+            "title": "7. 型の別の見方"
+          }
+        ],
+        "content": "\n# 第2章 型と関数\n\n## 1. この章の狙い\n\n圏論をプログラミングへ接続するため、\n\n> 型を対象、関数を射として見る\n\nという視点を導入する。\n\n## 2. 型を集合として近似する\n\nたとえば、\n\n```haskell\nBool\n```\n\nには、\n\n```text\nTrue\nFalse\n```\n\nという2値がある。\n\nしたがって有限集合として、\n\n\\[\n|Bool|=2\n\\]\n\nと考えられる。\n\n## 3. Unit\n\n```haskell\n()\n```\n\nは値が1つしかない。\n\n\\[\n|()|=1\n\\]\n\nこれは後の終対象につながる。\n\n## 4. Void\n\n値が存在しない型。\n\n\\[\n|Void|=0\n\\]\n\nこれは始対象につながる。\n\n## 5. 純粋関数\n\n数学的関数では、\n\n同じ入力に対して必ず同じ出力が得られる。\n\n```haskell\nsquare x = x * x\n```\n\nは純粋。\n\n一方、\n\n```cpp\nint randomValue() {\n    return rand();\n}\n```\n\nは外部状態に依存する。\n\n## 6. なぜ純粋性が重要か\n\n純粋関数には参照透過性がある。\n\nたとえば、\n\n```haskell\nsquare 3\n```\n\nは常に9なので、\n\nプログラム中の\n\n```haskell\nsquare 3\n```\n\nを\n\n```text\n9\n```\n\nへ置き換えても意味が変わらない。\n\nこれにより関数合成が数学的に扱いやすくなる。\n\n## 7. 型の別の見方\n\n型を、\n\n> 値の集合\n\nと考えるだけでなく、\n\n> どの計算とどの計算を接続できるかを指定するインターフェース\n\nと考える。\n\nこの見方は非常に重要。\n"
+      },
+      {
+        "id": "ch03",
+        "number": 3,
+        "title": "第3章 圏のさまざま",
+        "shortTitle": "圏のさまざま",
+        "summary": "圏の定義が極端に一般的であることを確認する。",
+        "sections": [
+          {
+            "id": "ch03_sec_1",
+            "title": "1. Set"
+          },
+          {
+            "id": "ch03_sec_2",
+            "title": "2. 型の圏"
+          },
+          {
+            "id": "ch03_sec_3",
+            "title": "3. 半順序集合"
+          },
+          {
+            "id": "ch03_sec_4",
+            "title": "合成"
+          },
+          {
+            "id": "ch03_sec_5",
+            "title": "恒等射"
+          },
+          {
+            "id": "ch03_sec_6",
+            "title": "4. モノイド"
+          },
+          {
+            "id": "ch03_sec_7",
+            "title": "圏としてのモノイド"
+          },
+          {
+            "id": "ch03_sec_8",
+            "title": "5. なぜ重要なのか"
+          }
+        ],
+        "content": "\n# 第3章 圏のさまざま\n\n圏の定義が極端に一般的であることを確認する。\n\n## 1. Set\n\n対象：\n\n集合。\n\n射：\n\n関数。\n\n最も基本的な圏。\n\n## 2. 型の圏\n\n対象：\n\n型。\n\n射：\n\n純粋関数。\n\n関数型プログラミングで最も重要。\n\n## 3. 半順序集合\n\n順序関係\n\n\\[\na\\le b\n\\]\n\nが成立するとき、\n\n\\[\na\\to b\n\\]\n\nという射があると考える。\n\n## 合成\n\n\\[\na\\le b,\\quad b\\le c\n\\]\n\nなら、\n\n\\[\na\\le c\n\\]\n\nこれは推移律。\n\nつまり合成。\n\n## 恒等射\n\n\\[\na\\le a\n\\]\n\n反射律。\n\n## 4. モノイド\n\nモノイドは、\n\n- 二項演算\n- 単位元\n- 結合律\n\nを持つ。\n\nたとえば、\n\n\\[\n(\\mathbb Z,+,0)\n\\]\n\n## 圏としてのモノイド\n\n対象を1つだけにする。\n\n```text\n     *\n   ↺ ↻ ↺\n```\n\n各モノイド要素を、\n\n\\[\n*\\to *\n\\]\n\nという射と考える。\n\n射の合成がモノイド演算になる。\n\n## 5. なぜ重要なのか\n\n後に、\n\n> モナドは自己関手の圏におけるモノイド\n\nという表現が出てくる。\n\nしたがって、\n\n> 「モノイド＝リストのappendみたいなもの」\n\nで終わらせず、\n\n> **結合的な合成と単位元を持つ構造**\n\nとして理解する。\n"
+      },
+      {
+        "id": "ch04",
+        "number": 4,
+        "title": "第4章 クライスリ圏",
+        "shortTitle": "クライスリ圏",
+        "summary": "普通の関数なら、",
+        "sections": [
+          {
+            "id": "ch04_sec_1",
+            "title": "1. 問題設定"
+          },
+          {
+            "id": "ch04_sec_2",
+            "title": "2. 解決策"
+          },
+          {
+            "id": "ch04_sec_3",
+            "title": "実装例"
+          },
+          {
+            "id": "ch04_sec_4",
+            "title": "3. Kleisli arrow"
+          },
+          {
+            "id": "ch04_sec_5",
+            "title": "4. 重要な伏線"
+          }
+        ],
+        "content": "\n# 第4章 クライスリ圏\n\n## 1. 問題設定\n\n普通の関数なら、\n\n```haskell\nf :: A -> B\ng :: B -> C\n```\n\nを合成できる。\n\nしかし、\n\n```haskell\nf :: A -> Maybe B\ng :: B -> Maybe C\n```\n\nはどうか。\n\n普通の関数合成\n\n```haskell\ng . f\n```\n\nはできない。\n\nなぜなら、\n\n```text\nf : A → Maybe B\n\ng : B → Maybe C\n```\n\nであり、\n\n```text\nMaybe B ≠ B\n```\n\nだから。\n\n## 2. 解決策\n\n特別な合成演算を作る。\n\n概念的に、\n\n```haskell\ncomposeK\n  :: (A -> Maybe B)\n  -> (B -> Maybe C)\n  -> A\n  -> Maybe C\n```\n\n## 実装例\n\n```haskell\ncomposeK f g x =\n    case f x of\n        Nothing -> Nothing\n        Just y  -> g y\n```\n\n## 3. Kleisli arrow\n\n通常の射を、\n\n\\[\nA\\to B\n\\]\n\nとする代わりに、\n\n\\[\nA\\to M(B)\n\\]\n\nを射と考える。\n\n## 4. 重要な伏線\n\nこの章はモナドの予告編である。\n\nモナドの最重要な意義は、\n\n> **通常は合成できない効果付き計算を合成可能にする**\n\nことにある。\n"
+      },
+      {
+        "id": "ch05",
+        "number": 5,
+        "title": "第5章 積と余積",
+        "shortTitle": "積と余積",
+        "summary": "本書前半の最重要章の一つである。",
+        "sections": [
+          {
+            "id": "ch05_sec_1",
+            "title": "1. 終対象"
+          },
+          {
+            "id": "ch05_sec_2",
+            "title": "型の圏"
+          },
+          {
+            "id": "ch05_sec_3",
+            "title": "2. 始対象"
+          },
+          {
+            "id": "ch05_sec_4",
+            "title": "3. 積"
+          },
+          {
+            "id": "ch05_sec_5",
+            "title": "図"
+          },
+          {
+            "id": "ch05_sec_6",
+            "title": "4. プログラムで見る"
+          },
+          {
+            "id": "ch05_sec_7",
+            "title": "5. 余積"
+          },
+          {
+            "id": "ch05_sec_8",
+            "title": "Haskell"
+          },
+          {
+            "id": "ch05_sec_9",
+            "title": "6. 積と余積の双対"
+          },
+          {
+            "id": "ch05_sec_10",
+            "title": "7. 最大のポイント"
+          }
+        ],
+        "content": "\n# 第5章 積と余積\n\n本書前半の最重要章の一つである。\n\nここから、\n\n> **普遍性**\n\nという圏論の核心が現れる。\n\n## 1. 終対象\n\n圏 \\(\\mathcal C\\) で対象 \\(1\\) が終対象であるとは、\n\n任意の対象 \\(X\\) から、\n\n\\[\nX\\to1\n\\]\n\nという射がただ一つ存在すること。\n\n## 型の圏\n\nUnit 型\n\n```haskell\n()\n```\n\nが終対象。\n\n任意の型 `a` から、\n\n```haskell\ntoUnit :: a -> ()\ntoUnit _ = ()\n```\n\nという関数がただ一つ存在する。\n\n## 2. 始対象\n\n対象 \\(0\\) が始対象とは、\n\n任意の \\(X\\) に、\n\n\\[\n0\\to X\n\\]\n\nが一意に存在すること。\n\nVoid が対応する。\n\n## 3. 積\n\n集合論なら、\n\n\\[\nA\\times B\n\\]\n\nはペアの集合。\n\nしかし圏論では内部構造ではなく射で定義する。\n\n積 \\(A\\times B\\) は、\n\n\\[\n\\pi_1:A\\times B\\to A\n\\]\n\n\\[\n\\pi_2:A\\times B\\to B\n\\]\n\nを持ち、\n\n任意の\n\n\\[\nf:X\\to A\n\\]\n\n\\[\ng:X\\to B\n\\]\n\nについて唯一の\n\n\\[\nh:X\\to A\\times B\n\\]\n\nが存在して、\n\n\\[\n\\pi_1\\circ h=f\n\\]\n\n\\[\n\\pi_2\\circ h=g\n\\]\n\nを満たす。\n\n## 図\n\n```text\n            X\n          /   \\\n         f     g\n        /       \\\n       v         v\n       A         B\n        ^       ^\n         \\     /\n        π1\\   /π2\n           A×B\n```\n\nより正確には、\n\n```text\n          X\n          |\n          | h\n          v\n        A × B\n       /     \\\n     π1       π2\n     v         v\n     A         B\n```\n\n## 4. プログラムで見る\n\n```haskell\nf :: X -> A\ng :: X -> B\n```\n\nなら、\n\n```haskell\npair :: X -> (A, B)\npair x = (f x, g x)\n```\n\nこの `pair` が一意である。\n\n## 5. 余積\n\nすべての射を逆向きにすると余積。\n\n\\[\nA+B\n\\]\n\nには、\n\n\\[\ni_A:A\\to A+B\n\\]\n\n\\[\ni_B:B\\to A+B\n\\]\n\nがある。\n\n任意の\n\n\\[\nf:A\\to X\n\\]\n\n\\[\ng:B\\to X\n\\]\n\nから唯一の\n\n\\[\nh:A+B\\to X\n\\]\n\nを作れる。\n\n## Haskell\n\n```haskell\nEither A B\n```\n\nに対応する。\n\n```haskell\nLeft  :: A -> Either A B\nRight :: B -> Either A B\n```\n\n## 6. 積と余積の双対\n\n| 積 | 余積 |\n|---|---|\n| product | coproduct |\n| pair | Either |\n| projection | injection |\n| \\(X\\to A,B\\) | \\(A,B\\to X\\) |\n| 情報をまとめる | 場合分けする |\n\n## 7. 最大のポイント\n\n積を、\n\n> 「2つの値のペア」\n\nだけで覚えない。\n\n圏論的本質は、\n\n> **二つの射をまとめる普遍的な方法**\n\nである。\n"
+      },
+      {
+        "id": "ch06",
+        "number": 6,
+        "title": "第6章 シンプルな代数的データ型",
+        "shortTitle": "シンプルな代数的データ型",
+        "summary": "有限型について、",
+        "sections": [
+          {
+            "id": "ch06_sec_1",
+            "title": "1. 型を代数として読む"
+          },
+          {
+            "id": "ch06_sec_2",
+            "title": "Void"
+          },
+          {
+            "id": "ch06_sec_3",
+            "title": "Unit"
+          },
+          {
+            "id": "ch06_sec_4",
+            "title": "Bool"
+          },
+          {
+            "id": "ch06_sec_5",
+            "title": "2. Product type"
+          },
+          {
+            "id": "ch06_sec_6",
+            "title": "3. Sum type"
+          },
+          {
+            "id": "ch06_sec_7",
+            "title": "4. Maybe"
+          },
+          {
+            "id": "ch06_sec_8",
+            "title": "5. リスト"
+          },
+          {
+            "id": "ch06_sec_9",
+            "title": "6. なぜこの考え方が重要か"
+          }
+        ],
+        "content": "\n# 第6章 シンプルな代数的データ型\n\n## 1. 型を代数として読む\n\n有限型について、\n\n型に含まれる値の数を考える。\n\n## Void\n\n\\[\n0\n\\]\n\n## Unit\n\n\\[\n1\n\\]\n\n## Bool\n\n\\[\n1+1=2\n\\]\n\nしたがって、\n\n\\[\nBool\\cong1+1\n\\]\n\n## 2. Product type\n\n```haskell\n(A, B)\n```\n\n値の数は、\n\n\\[\n|A|\\times|B|\n\\]\n\nしたがって積。\n\n## 3. Sum type\n\n```haskell\nEither A B\n```\n\n値の数は、\n\n\\[\n|A|+|B|\n\\]\n\n## 4. Maybe\n\n```haskell\ndata Maybe a\n    = Nothing\n    | Just a\n```\n\nしたがって、\n\n\\[\nMaybe(A)=1+A\n\\]\n\n## 5. リスト\n\n```haskell\ndata List a\n    = Nil\n    | Cons a (List a)\n```\n\n形式的には、\n\n\\[\nL=1+A\\times L\n\\]\n\n展開すると、\n\n\\[\nL\n=\n1+A+A^2+A^3+\\cdots\n\\]\n\n## 6. なぜこの考え方が重要か\n\n後半のF-代数では、\n\n\\[\nL\\cong1+A\\times L\n\\]\n\nという「型方程式」を本格的に扱う。\n\nここでは、\n\n> データ型が代数式のように扱える\n\nという感覚を持てればよい。\n"
+      },
+      {
+        "id": "ch07",
+        "number": 7,
+        "title": "第7章 関手",
+        "shortTitle": "関手",
+        "summary": "ここから圏論の核心へ入る。",
+        "sections": [
+          {
+            "id": "ch07_sec_1",
+            "title": "1. 関手とは"
+          },
+          {
+            "id": "ch07_sec_2",
+            "title": "2. しかし単なる写像ではない"
+          },
+          {
+            "id": "ch07_sec_3",
+            "title": "恒等射保存"
+          },
+          {
+            "id": "ch07_sec_4",
+            "title": "合成保存"
+          },
+          {
+            "id": "ch07_sec_5",
+            "title": "3. Functor = 構造保存"
+          },
+          {
+            "id": "ch07_sec_6",
+            "title": "4. Maybe"
+          },
+          {
+            "id": "ch07_sec_7",
+            "title": "5. Functor law"
+          },
+          {
+            "id": "ch07_sec_8",
+            "title": "6. 図"
+          },
+          {
+            "id": "ch07_sec_9",
+            "title": "7. 「コンテナ」は本質ではない"
+          }
+        ],
+        "content": "\n# 第7章 関手\n\nここから圏論の核心へ入る。\n\n## 1. 関手とは\n\n関手\n\n\\[\nF:\\mathcal C\\to\\mathcal D\n\\]\n\nは、\n\n対象 \\(A\\) を、\n\n\\[\nF(A)\n\\]\n\nへ写し、\n\n射\n\n\\[\nf:A\\to B\n\\]\n\nを、\n\n\\[\nF(f):F(A)\\to F(B)\n\\]\n\nへ写す。\n\n## 2. しかし単なる写像ではない\n\n次の2法則を守る。\n\n## 恒等射保存\n\n\\[\nF(id_A)=id_{F(A)}\n\\]\n\n## 合成保存\n\n\\[\nF(g\\circ f)\n=\nF(g)\\circ F(f)\n\\]\n\n## 3. Functor = 構造保存\n\n一番重要な理解は、\n\n> **Functor は圏の合成構造を壊さない変換**\n\nである。\n\n## 4. Maybe\n\n```haskell\nfmap :: (a -> b) -> Maybe a -> Maybe b\n```\n\n実装：\n\n```haskell\nfmap f Nothing  = Nothing\nfmap f (Just x) = Just (f x)\n```\n\n## 5. Functor law\n\n```haskell\nfmap id = id\n```\n\nおよび、\n\n```haskell\nfmap (g . f)\n=\nfmap g . fmap f\n```\n\n## 6. 図\n\n```text\nA -------f------> B\n|                 |\nF                 F\n|                 |\nv                 v\nF(A) ----F(f)---> F(B)\n```\n\n## 7. 「コンテナ」は本質ではない\n\nMaybeやListを見ると、\n\n> Functor = コンテナ\n\nと理解しやすい。\n\nしかし、\n\n```haskell\ntype Reader r a = r -> a\n```\n\nもFunctorになる。\n\nしたがって本質は、\n\n> **A→B という射を F(A)→F(B) に持ち上げられる**\n\nこと。\n"
+      },
+      {
+        "id": "ch08",
+        "number": 8,
+        "title": "第8章 関手性",
+        "shortTitle": "関手性",
+        "summary": "f:A\\\\to B",
+        "sections": [
+          {
+            "id": "ch08_sec_1",
+            "title": "1. 共変関手"
+          },
+          {
+            "id": "ch08_sec_2",
+            "title": "2. 反変関手"
+          },
+          {
+            "id": "ch08_sec_3",
+            "title": "3. なぜ反転するのか"
+          },
+          {
+            "id": "ch08_sec_4",
+            "title": "4. 双関手"
+          },
+          {
+            "id": "ch08_sec_5",
+            "title": "5. 関数型の分散"
+          }
+        ],
+        "content": "\n# 第8章 関手性\n\n## 1. 共変関手\n\n\\[\nf:A\\to B\n\\]\n\nを、\n\n\\[\nF(f):F(A)\\to F(B)\n\\]\n\nに写す。\n\n矢印の向きを保存する。\n\n## 2. 反変関手\n\n矢印の向きを逆転する。\n\n\\[\nf:A\\to B\n\\]\n\nから、\n\n\\[\nF(f):F(B)\\to F(A)\n\\]\n\n## 3. なぜ反転するのか\n\n関数入力について考える。\n\n```haskell\nf :: A -> B\n```\n\nと、\n\n```haskell\ng :: B -> R\n```\n\nがあれば、\n\n```haskell\ng . f :: A -> R\n```\n\nを作れる。\n\nつまり、\n\n\\[\nA\\to B\n\\]\n\nを使って、\n\n\\[\n(B\\to R)\\to(A\\to R)\n\\]\n\nという逆向き変換ができる。\n\n## 4. 双関手\n\n2つの圏から入力を取る関手。\n\n\\[\nF:\\mathcal C\\times\\mathcal D\\to\\mathcal E\n\\]\n\nたとえば、\n\n\\[\n(A,B)\\mapsto A\\times B\n\\]\n\n## 5. 関数型の分散\n\n関数型\n\n\\[\nA\\to B\n\\]\n\nは、\n\n- Aについて反変\n- Bについて共変\n\nとなる。\n\nこの「入力反変・出力共変」は非常に重要。\n"
+      },
+      {
+        "id": "ch09",
+        "number": 9,
+        "title": "第9章 関数型",
+        "shortTitle": "関数型",
+        "summary": "Haskellでは、",
+        "sections": [
+          {
+            "id": "ch09_sec_1",
+            "title": "1. 関数も型である"
+          },
+          {
+            "id": "ch09_sec_2",
+            "title": "2. 指数"
+          },
+          {
+            "id": "ch09_sec_3",
+            "title": "3. カリー化"
+          },
+          {
+            "id": "ch09_sec_4",
+            "title": "Haskell"
+          },
+          {
+            "id": "ch09_sec_5",
+            "title": "4. デカルト閉圏"
+          },
+          {
+            "id": "ch09_sec_6",
+            "title": "5. プログラミング上の意味"
+          },
+          {
+            "id": "ch09_sec_7",
+            "title": "6. Curry–Howard"
+          }
+        ],
+        "content": "\n# 第9章 関数型\n\n## 1. 関数も型である\n\nHaskellでは、\n\n```haskell\nA -> B\n```\n\nも一つの型。\n\n## 2. 指数\n\n有限集合について、\n\nAからBへの関数の個数は、\n\n\\[\n|B|^{|A|}\n\\]\n\nなので、\n\n\\[\nA\\to B\n\\]\n\nを、\n\n\\[\nB^A\n\\]\n\nと表す。\n\n## 3. カリー化\n\n\\[\n(A\\times B)\\to C\n\\]\n\nと、\n\n\\[\nA\\to(B\\to C)\n\\]\n\nは対応する。\n\n## Haskell\n\n```haskell\ncurry\n  :: ((a,b) -> c)\n  -> a\n  -> b\n  -> c\n```\n\n## 4. デカルト閉圏\n\n概略として、\n\n- 終対象\n- 二項積\n- 指数対象\n\nを持つ圏をデカルト閉圏という。\n\n## 5. プログラミング上の意味\n\n関数を値として扱えること、\n\n高階関数を使えること、\n\nカリー化できることが、\n\n圏論上の構造として表される。\n\n## 6. Curry–Howard\n\n型と論理の対応。\n\n| 型 | 論理 |\n|---|---|\n| \\(A\\times B\\) | \\(A\\land B\\) |\n| \\(A+B\\) | \\(A\\lor B\\) |\n| \\(A\\to B\\) | \\(A\\Rightarrow B\\) |\n| Void | False |\n| Unit | True |\n\nプログラムを、\n\n> 命題の証明\n\nとして見る視点である。\n"
+      },
+      {
+        "id": "ch10",
+        "number": 10,
+        "title": "第10章 自然変換",
+        "shortTitle": "自然変換",
+        "summary": "ここが第一の大きな難所。",
+        "sections": [
+          {
+            "id": "ch10_sec_1",
+            "title": "1. これまで何を変換したか"
+          },
+          {
+            "id": "ch10_sec_2",
+            "title": "2. 定義"
+          },
+          {
+            "id": "ch10_sec_3",
+            "title": "3. ただし「自然」でなければならない"
+          },
+          {
+            "id": "ch10_sec_4",
+            "title": "4. 自然性の四角形"
+          },
+          {
+            "id": "ch10_sec_5",
+            "title": "5. Haskell"
+          },
+          {
+            "id": "ch10_sec_6",
+            "title": "例"
+          },
+          {
+            "id": "ch10_sec_7",
+            "title": "6. なぜ `a` を調べないことが重要か"
+          },
+          {
+            "id": "ch10_sec_8",
+            "title": "7. よくある誤解"
+          },
+          {
+            "id": "ch10_sec_9",
+            "title": "第1部総合整理"
+          }
+        ],
+        "content": "\n# 第10章 自然変換\n\nここが第一の大きな難所。\n\n## 1. これまで何を変換したか\n\n関手は、\n\n> 圏から圏への構造保存写像\n\nだった。\n\nでは、\n\n> 関手から関手への射\n\nを考えられないか。\n\nそれが自然変換。\n\n## 2. 定義\n\n二つの関手、\n\n\\[\nF,G:\\mathcal C\\to\\mathcal D\n\\]\n\nについて、\n\n自然変換\n\n\\[\n\\alpha:F\\Rightarrow G\n\\]\n\nとは、\n\n各対象 \\(A\\) に対して、\n\n\\[\n\\alpha_A:F(A)\\to G(A)\n\\]\n\nを対応させるもの。\n\n## 3. ただし「自然」でなければならない\n\n任意の、\n\n\\[\nf:A\\to B\n\\]\n\nについて、\n\n\\[\nG(f)\\circ\\alpha_A\n=\n\\alpha_B\\circ F(f)\n\\]\n\n## 4. 自然性の四角形\n\n```text\nF(A) -----F(f)----> F(B)\n |                   |\nαA                  αB\n |                   |\n v                   v\nG(A) -----G(f)----> G(B)\n```\n\nどちらの経路でも同じ結果になる。\n\n## 5. Haskell\n\n典型的には、\n\n```haskell\nforall a. F a -> G a\n```\n\nのような多相関数が自然変換になる。\n\n## 例\n\n```haskell\nsafeHead :: [a] -> Maybe a\n```\n\n```haskell\nsafeHead []    = Nothing\nsafeHead (x:_) = Just x\n```\n\n## 6. なぜ `a` を調べないことが重要か\n\n`safeHead` は、\n\n```text\na = Int\n```\n\nか、\n\n```text\na = String\n```\n\nかを知らない。\n\nしたがって型の具体的中身によって処理を変えられない。\n\nこれがparametricityを通して自然性と関係する。\n\n## 7. よくある誤解\n\n### 誤解\n\n「自然」とは、人間の感覚で自然な変換。\n\n### 修正\n\n違う。\n\n自然性とは、\n\n> **関手の射に対する作用と整合している**\n\nという数学的条件。\n\n## 第1部総合整理\n\nここまでで、\n\n```text\n型          = 対象\n関数        = 射\n関数合成    = 射の合成\nMaybe/List  = 関手\nsafeHead    = 自然変換\n```\n\nという階層を作った。\n\nさらに、\n\n```text\n対象\n ↓ 射\n対象\n\n圏\n ↓ 関手\n圏\n\n関手\n ↓ 自然変換\n関手\n```\n\nという一段ずつ抽象度が上がる構造が見える。\n"
+      },
+      {
+        "id": "ch11",
+        "number": 11,
+        "title": "第11章 宣言的プログラミング",
+        "shortTitle": "宣言的プログラミング",
+        "summary": "「どう作るか」を指定する。",
+        "sections": [
+          {
+            "id": "ch11_sec_1",
+            "title": "1. 命令的定義"
+          },
+          {
+            "id": "ch11_sec_2",
+            "title": "2. 宣言的定義"
+          },
+          {
+            "id": "ch11_sec_3",
+            "title": "3. 積を思い出す"
+          },
+          {
+            "id": "ch11_sec_4",
+            "title": "4. この方法の強さ"
+          }
+        ],
+        "content": "\n# 第11章 宣言的プログラミング\n\n## 1. 命令的定義\n\n「どう作るか」を指定する。\n\n## 2. 宣言的定義\n\n「何を満たすものか」を指定する。\n\n圏論の普遍性は極めて宣言的。\n\n## 3. 積を思い出す\n\n積を、\n\n> ペア `(a,b)` の集合\n\nと定義しなくても、\n\n\\[\nX\\to A\n\\]\n\nと、\n\n\\[\nX\\to B\n\\]\n\nを一意にまとめるものとして定義できる。\n\n## 4. この方法の強さ\n\n内部実装を知らなくても定義できる。\n\nこれはプログラミングの、\n\n- interface\n- protocol\n- abstract data type\n\nの思想に近い。\n"
+      },
+      {
+        "id": "ch12",
+        "number": 12,
+        "title": "第12章 極限と余極限",
+        "shortTitle": "極限と余極限",
+        "summary": "積は、",
+        "sections": [
+          {
+            "id": "ch12_sec_1",
+            "title": "1. 積を一般化する"
+          },
+          {
+            "id": "ch12_sec_2",
+            "title": "2. 図式"
+          },
+          {
+            "id": "ch12_sec_3",
+            "title": "3. Cone"
+          },
+          {
+            "id": "ch12_sec_4",
+            "title": "4. Limit"
+          },
+          {
+            "id": "ch12_sec_5",
+            "title": "5. 例"
+          },
+          {
+            "id": "ch12_sec_6",
+            "title": "6. Colimit"
+          },
+          {
+            "id": "ch12_sec_7",
+            "title": "7. 重要ポイント"
+          }
+        ],
+        "content": "\n# 第12章 極限と余極限\n\n## 1. 積を一般化する\n\n積は、\n\n```text\nA    B\n```\n\nという二つの対象に対して、\n\n```text\n    X\n   / \\\n  A   B\n```\n\nというconeを考え、\n\nその中で普遍的なものを選ぶ構成だった。\n\n## 2. 図式\n\n圏 \\(\\mathcal J\\) から圏 \\(\\mathcal C\\) への関手、\n\n\\[\nD:\\mathcal J\\to\\mathcal C\n\\]\n\nを図式と考える。\n\n## 3. Cone\n\n対象 \\(N\\) と、\n\n図式の各対象への射を持ち、\n\n図式の射と整合するもの。\n\n## 4. Limit\n\nすべてのconeから一意に射が入る普遍的cone。\n\n## 5. 例\n\n### 終対象\n\n空図式のlimit。\n\n### 積\n\n離散的な2対象の図式のlimit。\n\n### Equalizer\n\n平行射、\n\n\\[\nA\\rightrightarrows B\n\\]\n\nのlimit。\n\n### Pullback\n\n```text\nA → C ← B\n```\n\nのlimit。\n\n## 6. Colimit\n\nすべての射を逆転したもの。\n\n- 始対象\n- 余積\n- coequalizer\n- pushout\n\nなどを統一する。\n\n## 7. 重要ポイント\n\n圏論では、\n\n> 積、pullback、equalizerという別々の構成\n\nが、\n\n> **limit**\n\nという一つの概念に統一される。\n\nこれこそ圏論の威力。\n"
+      },
+      {
+        "id": "ch13",
+        "number": 13,
+        "title": "第13章 自由モノイド",
+        "shortTitle": "自由モノイド",
+        "summary": "「自由」は、",
+        "sections": [
+          {
+            "id": "ch13_sec_1",
+            "title": "1. 自由とは"
+          },
+          {
+            "id": "ch13_sec_2",
+            "title": "2. 集合からモノイドを作る"
+          },
+          {
+            "id": "ch13_sec_3",
+            "title": "3. モノイド構造"
+          },
+          {
+            "id": "ch13_sec_4",
+            "title": "4. なぜ自由なのか"
+          },
+          {
+            "id": "ch13_sec_5",
+            "title": "5. 次章以降への伏線"
+          }
+        ],
+        "content": "\n# 第13章 自由モノイド\n\n## 1. 自由とは\n\n「自由」は、\n\n> 必要な構造だけを追加し、余計な関係を追加しない\n\nという意味。\n\n## 2. 集合からモノイドを作る\n\n集合、\n\n\\[\nA=\\{a,b,\\dots\\}\n\\]\n\nから、\n\n\\[\n[],[a],[b],[a,a],[a,b],\\dots\n\\]\n\nを作る。\n\nこれがA上のリスト。\n\n## 3. モノイド構造\n\n演算：\n\n```haskell\n(++)\n```\n\n単位元：\n\n```haskell\n[]\n```\n\n## 4. なぜ自由なのか\n\n元のAに、\n\n\\[\na=b\n\\]\n\nなどの余計な関係を追加しない。\n\n唯一必要なのは、\n\nリスト連結に伴うモノイド則。\n\n## 5. 次章以降への伏線\n\n自由構成は後に、\n\n\\[\nFree\\dashv Forgetful\n\\]\n\nという随伴になる。\n\n随伴を理解するための最重要具体例。\n"
+      },
+      {
+        "id": "ch14",
+        "number": 14,
+        "title": "第14章 表現可能関手",
+        "shortTitle": "表現可能関手",
+        "summary": "ここから米田へ向かう。",
+        "sections": [
+          {
+            "id": "ch14_sec_1",
+            "title": "1. Hom集合"
+          },
+          {
+            "id": "ch14_sec_2",
+            "title": "2. Aを固定する"
+          },
+          {
+            "id": "ch14_sec_3",
+            "title": "3. 射への作用"
+          },
+          {
+            "id": "ch14_sec_4",
+            "title": "4. 表現可能関手"
+          },
+          {
+            "id": "ch14_sec_5",
+            "title": "5. 何が嬉しいのか"
+          }
+        ],
+        "content": "\n# 第14章 表現可能関手\n\nここから米田へ向かう。\n\n## 1. Hom集合\n\n圏 \\(\\mathcal C\\) において、\n\n\\[\nHom(A,B)\n\\]\n\nは、\n\nAからBへのすべての射の集合。\n\n## 2. Aを固定する\n\n\\[\nHom(A,-)\n\\]\n\nを考える。\n\n各対象Xに対して、\n\n\\[\nHom(A,X)\n\\]\n\nを対応させる。\n\n## 3. 射への作用\n\n\\[\nf:X\\to Y\n\\]\n\nがあると、\n\n\\[\nHom(A,X)\n\\to\nHom(A,Y)\n\\]\n\nを作れる。\n\n具体的には、\n\n\\[\nh:A\\to X\n\\]\n\nへ、\n\n\\[\nf\\circ h:A\\to Y\n\\]\n\nを対応させる。\n\n## 4. 表現可能関手\n\n関手、\n\n\\[\nF:\\mathcal C\\to Set\n\\]\n\nが、\n\nある対象Aについて、\n\n\\[\nF\\cong Hom(A,-)\n\\]\n\nなら、Fを表現可能という。\n\n## 5. 何が嬉しいのか\n\n複雑そうなFを、\n\n> 「AからXへのすべての射」\n\nという非常に標準的な構造として理解できる。\n"
+      },
+      {
+        "id": "ch15",
+        "number": 15,
+        "title": "第15章 米田の補題",
+        "shortTitle": "米田の補題",
+        "summary": "圏論全体の中心定理の一つ。",
+        "sections": [
+          {
+            "id": "ch15_sec_1",
+            "title": "1. 式"
+          },
+          {
+            "id": "ch15_sec_2",
+            "title": "2. 左辺を読む"
+          },
+          {
+            "id": "ch15_sec_3",
+            "title": "3. 右辺"
+          },
+          {
+            "id": "ch15_sec_4",
+            "title": "4. 驚き"
+          },
+          {
+            "id": "ch15_sec_5",
+            "title": "5. 証明の直観"
+          },
+          {
+            "id": "ch15_sec_6",
+            "title": "6. 逆方向"
+          },
+          {
+            "id": "ch15_sec_7",
+            "title": "7. Haskell版"
+          },
+          {
+            "id": "ch15_sec_8",
+            "title": "8. なぜそうなるのか"
+          },
+          {
+            "id": "ch15_sec_9",
+            "title": "9. 逆"
+          },
+          {
+            "id": "ch15_sec_10",
+            "title": "10. 米田の核心"
+          },
+          {
+            "id": "ch15_sec_11",
+            "title": "11. 重要な誤解"
+          },
+          {
+            "id": "ch15_sec_12",
+            "title": "12. 演習"
+          }
+        ],
+        "content": "\n# 第15章 米田の補題\n\n圏論全体の中心定理の一つ。\n\n## 1. 式\n\n\\[\nNat(Hom(A,-),F)\n\\cong\nF(A)\n\\]\n\n## 2. 左辺を読む\n\n\\[\nHom(A,-)\n\\]\n\nは、\n\n> Aから各対象Xへの射すべて\n\nを集める関手。\n\nそこからFへの自然変換を考える。\n\n## 3. 右辺\n\n単なる、\n\n\\[\nF(A)\n\\]\n\nの要素。\n\n## 4. 驚き\n\n「すべてのXについて整合的な変換」を作るという巨大な情報が、\n\n> **F(A) の値一つ**\n\nだけで完全に決まる。\n\n## 5. 証明の直観\n\n\\(x\\in F(A)\\) を一つ選ぶ。\n\n任意の、\n\n\\[\nf:A\\to X\n\\]\n\nについて、\n\n\\[\nF(f):F(A)\\to F(X)\n\\]\n\nがある。\n\nしたがって、\n\n\\[\nF(f)(x)\\in F(X)\n\\]\n\nを得る。\n\nこれにより、\n\n\\[\n\\alpha_X(f)=F(f)(x)\n\\]\n\nと定義できる。\n\n## 6. 逆方向\n\n自然変換、\n\n\\[\n\\alpha:Hom(A,-)\\Rightarrow F\n\\]\n\nがあるとする。\n\n特にA自身を見ると、\n\n\\[\n\\alpha_A:\nHom(A,A)\\to F(A)\n\\]\n\n恒等射、\n\n\\[\nid_A\\in Hom(A,A)\n\\]\n\nを入力すれば、\n\n\\[\n\\alpha_A(id_A)\\in F(A)\n\\]\n\nが得られる。\n\n## 7. Haskell版\n\n概念的には、\n\n```haskell\nforall x. (a -> x) -> f x\n```\n\nと、\n\n```haskell\nf a\n```\n\nが同じ情報量を持つ。\n\n## 8. なぜそうなるのか\n\n```haskell\nfa :: f a\n```\n\nがあれば、\n\n```haskell\ntoYoneda\n  :: Functor f\n  => f a\n  -> ((a -> x) -> f x)\n\ntoYoneda fa k =\n    fmap k fa\n```\n\nを作れる。\n\n## 9. 逆\n\n```haskell\nfromYoneda y =\n    y id\n```\n\n## 10. 米田の核心\n\n> **対象は、その対象と他の対象との関係によって完全に特徴付けられる。**\n\n## 11. 重要な誤解\n\n米田は、\n\n> 「Aの中身を完全に再構築する」\n\nという素朴な主張ではない。\n\n正確には、\n\n> Hom関手を通した表現が圏論的情報を完全に保持する\n\nという話。\n\n## 12. 演習\n\n次の型について考える。\n\n```haskell\nforall x. (Bool -> x) -> Maybe x\n```\n\n米田より、どの型と同等か。\n\n### 解答\n\n\\[\nMaybe\\ Bool\n\\]\n\nしたがって、\n\n```haskell\nMaybe Bool\n```\n"
+      },
+      {
+        "id": "ch16",
+        "number": 16,
+        "title": "第16章 米田埋め込み",
+        "shortTitle": "米田埋め込み",
+        "summary": "各対象Aを、",
+        "sections": [
+          {
+            "id": "ch16_sec_1",
+            "title": "1. 発想"
+          },
+          {
+            "id": "ch16_sec_2",
+            "title": "2. Yoneda embedding"
+          },
+          {
+            "id": "ch16_sec_3",
+            "title": "3. Fully faithful"
+          },
+          {
+            "id": "ch16_sec_4",
+            "title": "4. プログラマー向け直観"
+          },
+          {
+            "id": "ch16_sec_5",
+            "title": "第2部総整理"
+          }
+        ],
+        "content": "\n# 第16章 米田埋め込み\n\n## 1. 発想\n\n各対象Aを、\n\n\\[\nHom(-,A)\n\\]\n\nという関手として表現する。\n\n## 2. Yoneda embedding\n\n概略的に、\n\n\\[\nY:\\mathcal C\n\\to\n[\\mathcal C^{op},Set]\n\\]\n\n## 3. Fully faithful\n\n米田埋め込みは元の圏の射の情報を失わない。\n\nつまり、\n\n> 対象を関手として表現しても、元の圏の関係構造を保持できる。\n\n## 4. プログラマー向け直観\n\nオブジェクトそのものを扱う代わりに、\n\n> 「そのオブジェクトに対して可能な観測・操作」\n\nをインターフェースとして扱っても、本質を失わないことがある。\n\n## 第2部総整理\n\nここで、\n\n```text\n積\n ↓\n普遍性\n ↓\n極限\n```\n\nという流れと、\n\n```text\nHom\n ↓\n表現可能関手\n ↓\nYoneda\n ↓\nYoneda embedding\n```\n\nという流れを理解する。\n"
+      },
+      {
+        "id": "ch17",
+        "number": 17,
+        "title": "第17章 射こそすべて",
+        "shortTitle": "射こそすべて",
+        "summary": "この章の思想は単純。",
+        "sections": [
+          {
+            "id": "ch17_sec_1",
+            "title": "1. 対象Aを知りたい"
+          },
+          {
+            "id": "ch17_sec_2",
+            "title": "2. 米田との関係"
+          },
+          {
+            "id": "ch17_sec_3",
+            "title": "3. ソフトウェア設計との類似"
+          }
+        ],
+        "content": "\n# 第17章 射こそすべて\n\nこの章の思想は単純。\n\n> **対象を直接見るな。射を見よ。**\n\n## 1. 対象Aを知りたい\n\n通常ならAの内部構造を見る。\n\nしかし圏論では、\n\n\\[\nHom(X,A)\n\\]\n\nあるいは、\n\n\\[\nHom(A,X)\n\\]\n\nを調べる。\n\n## 2. 米田との関係\n\n十分な射の情報を持てば、\n\n対象Aの圏論的特徴を把握できる。\n\n## 3. ソフトウェア設計との類似\n\nクラスの内部状態ではなく、\n\n- 何を入力できるか\n- 何を出力するか\n- 他のコンポーネントとどう接続するか\n\nを見る。\n"
+      },
+      {
+        "id": "ch18",
+        "number": 18,
+        "title": "第18章 随伴",
+        "shortTitle": "随伴",
+        "summary": "本書で最も重要な章の一つ。",
+        "sections": [
+          {
+            "id": "ch18_sec_1",
+            "title": "1. 随伴とは"
+          },
+          {
+            "id": "ch18_sec_2",
+            "title": "2. 日本語にする"
+          },
+          {
+            "id": "ch18_sec_3",
+            "title": "3. カリー化"
+          },
+          {
+            "id": "ch18_sec_4",
+            "title": "4. 随伴は逆関数ではない"
+          },
+          {
+            "id": "ch18_sec_5",
+            "title": "5. Unit"
+          },
+          {
+            "id": "ch18_sec_6",
+            "title": "6. Counit"
+          },
+          {
+            "id": "ch18_sec_7",
+            "title": "7. 三角恒等式"
+          },
+          {
+            "id": "ch18_sec_8",
+            "title": "8. 直観"
+          },
+          {
+            "id": "ch18_sec_9",
+            "title": "9. なぜ重要なのか"
+          }
+        ],
+        "content": "\n# 第18章 随伴\n\n本書で最も重要な章の一つ。\n\nここを急いではいけない。\n\n## 1. 随伴とは\n\n関手、\n\n\\[\nF:\\mathcal C\\to\\mathcal D\n\\]\n\nと、\n\n\\[\nG:\\mathcal D\\to\\mathcal C\n\\]\n\nについて、\n\n\\[\nHom_{\\mathcal D}(F(A),B)\n\\cong\nHom_{\\mathcal C}(A,G(B))\n\\]\n\nがA,Bについて自然に成立するとき、\n\n\\[\nF\\dashv G\n\\]\n\nと書く。\n\n## 2. 日本語にする\n\n左辺：\n\n> F(A)からBへ射を作る方法\n\n右辺：\n\n> AからG(B)へ射を作る方法\n\nが一対一対応する。\n\n## 3. カリー化\n\n\\[\nHom(A\\times B,C)\n\\cong\nHom(A,C^B)\n\\]\n\nこれは、\n\n```haskell\n(A,B) -> C\n```\n\nと、\n\n```haskell\nA -> B -> C\n```\n\nの対応。\n\n## 4. 随伴は逆関数ではない\n\nここが非常に重要。\n\n随伴は、\n\n\\[\nF^{-1}=G\n\\]\n\nではない。\n\n対象そのものが往復して元に戻る必要はない。\n\n対応するのは、\n\n> **Hom集合**\n\nである。\n\n## 5. Unit\n\n随伴、\n\n\\[\nF\\dashv G\n\\]\n\nから、\n\n\\[\n\\eta:\nId_{\\mathcal C}\n\\Rightarrow\nG F\n\\]\n\nという自然変換が得られる。\n\n各対象Aについて、\n\n\\[\n\\eta_A:A\\to GF(A)\n\\]\n\n## 6. Counit\n\n同様に、\n\n\\[\n\\varepsilon:\nFG\n\\Rightarrow\nId_{\\mathcal D}\n\\]\n\nつまり、\n\n\\[\n\\varepsilon_B:FG(B)\\to B\n\\]\n\n## 7. 三角恒等式\n\nunitとcounitは勝手な自然変換ではない。\n\n\\[\nF\n\\xrightarrow{F\\eta}\nFGF\n\\xrightarrow{\\varepsilon F}\nF\n\\]\n\nが恒等変換になる。\n\n同様にG側でも、\n\n\\[\nG\n\\xrightarrow{\\eta G}\nGFG\n\\xrightarrow{G\\varepsilon}\nG\n\\]\n\nが恒等変換。\n\n## 8. 直観\n\n随伴を、\n\n> **異なる表現体系の間で最適な翻訳を提供する関係**\n\nと考える。\n\n## 9. なぜ重要なのか\n\n多くの数学的構成は随伴として現れる。\n\nさらに、\n\n\\[\nF\\dashv G\n\\]\n\nから、\n\n\\[\nGF\n\\]\n\nというモナドが生まれる。\n\nしたがって、\n\n```text\n随伴\n ↓\nモナド\n```\n\nという依存関係は必須。\n"
+      },
+      {
+        "id": "ch19",
+        "number": 19,
+        "title": "第19章 自由/忘却随伴",
+        "shortTitle": "自由/忘却随伴",
+        "summary": "随伴を最も具体的に理解できる例。",
+        "sections": [
+          {
+            "id": "ch19_sec_1",
+            "title": "1. Forgetful functor"
+          },
+          {
+            "id": "ch19_sec_2",
+            "title": "2. Free functor"
+          },
+          {
+            "id": "ch19_sec_3",
+            "title": "3. 随伴"
+          },
+          {
+            "id": "ch19_sec_4",
+            "title": "4. 日本語訳"
+          },
+          {
+            "id": "ch19_sec_5",
+            "title": "5. foldMap"
+          }
+        ],
+        "content": "\n# 第19章 自由/忘却随伴\n\n随伴を最も具体的に理解できる例。\n\n## 1. Forgetful functor\n\nモノイド、\n\n\\[\n(M,\\cdot,e)\n\\]\n\nから、\n\n演算と単位元を「忘れて」単なる集合Mを取り出す。\n\n\\[\nU:Mon\\to Set\n\\]\n\n## 2. Free functor\n\n集合Xから自由モノイドを作る。\n\n\\[\nF:Set\\to Mon\n\\]\n\nプログラミングでは概念的に、\n\n```haskell\nF X = [X]\n```\n\n## 3. 随伴\n\n\\[\nF\\dashv U\n\\]\n\nつまり、\n\n\\[\nHom_{Mon}(F(X),M)\n\\cong\nHom_{Set}(X,U(M))\n\\]\n\n## 4. 日本語訳\n\nXの各要素をMへ写すだけで、\n\nその関数を、\n\n> Xから作られたすべての有限列\n\nに対するモノイド準同型へ一意に拡張できる。\n\n## 5. foldMap\n\nHaskellならこの思想は、\n\n```haskell\nfoldMap\n  :: Monoid m\n  => (a -> m)\n  -> [a]\n  -> m\n```\n\nに近い。\n"
+      },
+      {
+        "id": "ch20",
+        "number": 20,
+        "title": "第20章 モナド：プログラマーの定義",
+        "shortTitle": "モナド：プログラマーの定義",
+        "summary": "次の関数を考える。",
+        "sections": [
+          {
+            "id": "ch20_sec_1",
+            "title": "1. モナドの前に問題を見る"
+          },
+          {
+            "id": "ch20_sec_2",
+            "title": "2. bind"
+          },
+          {
+            "id": "ch20_sec_3",
+            "title": "3. return / pure"
+          },
+          {
+            "id": "ch20_sec_4",
+            "title": "4. Kleisli composition"
+          },
+          {
+            "id": "ch20_sec_5",
+            "title": "5. Monad laws"
+          },
+          {
+            "id": "ch20_sec_6",
+            "title": "左単位元"
+          },
+          {
+            "id": "ch20_sec_7",
+            "title": "右単位元"
+          },
+          {
+            "id": "ch20_sec_8",
+            "title": "結合律"
+          },
+          {
+            "id": "ch20_sec_9",
+            "title": "6. なぜこの法則が必要か"
+          },
+          {
+            "id": "ch20_sec_10",
+            "title": "7. 最大の誤解"
+          },
+          {
+            "id": "ch20_sec_11",
+            "title": "8. より良い定義"
+          }
+        ],
+        "content": "\n# 第20章 モナド：プログラマーの定義\n\n## 1. モナドの前に問題を見る\n\n次の関数を考える。\n\n```haskell\nparse :: String -> Maybe Int\ninverse :: Int -> Maybe Double\n```\n\n普通には合成できない。\n\n## 2. bind\n\n```haskell\n(>>=)\n  :: m a\n  -> (a -> m b)\n  -> m b\n```\n\nこれを使う。\n\n```haskell\nparse s >>= inverse\n```\n\n## 3. return / pure\n\n```haskell\nreturn :: a -> m a\n```\n\n## 4. Kleisli composition\n\n```haskell\n(>=>)\n  :: (a -> m b)\n  -> (b -> m c)\n  -> a\n  -> m c\n```\n\n## 5. Monad laws\n\n## 左単位元\n\n```haskell\nreturn a >>= f\n=\nf a\n```\n\n## 右単位元\n\n```haskell\nm >>= return\n=\nm\n```\n\n## 結合律\n\n```haskell\n(m >>= f) >>= g\n=\nm >>= (\\x -> f x >>= g)\n```\n\n## 6. なぜこの法則が必要か\n\nモナドが、\n\n> 「合成の仕組み」\n\nだから。\n\n圏の合成と同様、\n\n- 単位元\n- 結合律\n\nが必要になる。\n\n## 7. 最大の誤解\n\n### モナド＝箱\n\nではない。\n\n`Maybe` や `List` は箱っぽいが、\n\n`Reader` や `State` はそう理解するとむしろ混乱する。\n\n## 8. より良い定義\n\n> **モナドは特定の計算文脈に入った計算を、法則的に合成するための構造。**\n"
+      },
+      {
+        "id": "ch21",
+        "number": 21,
+        "title": "第21章 モナドと計算効果",
+        "shortTitle": "モナドと計算効果",
+        "summary": "モナドが実務で重要になる章。",
+        "sections": [
+          {
+            "id": "ch21_sec_1",
+            "title": "1. Maybe"
+          },
+          {
+            "id": "ch21_sec_2",
+            "title": "2. Either"
+          },
+          {
+            "id": "ch21_sec_3",
+            "title": "3. List"
+          },
+          {
+            "id": "ch21_sec_4",
+            "title": "4. Reader"
+          },
+          {
+            "id": "ch21_sec_5",
+            "title": "5. Writer"
+          },
+          {
+            "id": "ch21_sec_6",
+            "title": "6. State"
+          },
+          {
+            "id": "ch21_sec_7",
+            "title": "例"
+          },
+          {
+            "id": "ch21_sec_8",
+            "title": "7. 共通パターン"
+          }
+        ],
+        "content": "\n# 第21章 モナドと計算効果\n\nモナドが実務で重要になる章。\n\n## 1. Maybe\n\n失敗可能性。\n\n```haskell\na -> Maybe b\n```\n\n## 2. Either\n\nエラー情報付き失敗。\n\n```haskell\na -> Either Error b\n```\n\n## 3. List\n\n非決定性。\n\n```haskell\na -> [b]\n```\n\n一つの入力に複数結果を持てる。\n\n## 4. Reader\n\n```haskell\ntype Reader r a =\n    r -> a\n```\n\n環境依存計算。\n\n## 5. Writer\n\n概念的に、\n\n```haskell\n(a, Log)\n```\n\nログ生成計算。\n\n## 6. State\n\n\\[\nState\\ S\\ A\n\\cong\nS\\to(A,S)\n\\]\n\n## 例\n\n```haskell\nincrement\n  :: State Int ()\n```\n\nという計算なら、\n\n状態を入力し、\n\n更新された状態を返す。\n\n## 7. 共通パターン\n\n普通の関数、\n\n\\[\nA\\to B\n\\]\n\nではなく、\n\n\\[\nA\\to M(B)\n\\]\n\nという関数を合成する。\n\nこれを可能にするのがMonad。\n"
+      },
+      {
+        "id": "ch22",
+        "number": 22,
+        "title": "第22章 圏論から見たモナド",
+        "shortTitle": "圏論から見たモナド",
+        "summary": "ここでプログラミング上のMonadを圏論へ戻す。",
+        "sections": [
+          {
+            "id": "ch22_sec_1",
+            "title": "1. 自己関手"
+          },
+          {
+            "id": "ch22_sec_2",
+            "title": "2. Unit"
+          },
+          {
+            "id": "ch22_sec_3",
+            "title": "3. Multiplication"
+          },
+          {
+            "id": "ch22_sec_4",
+            "title": "Haskell"
+          },
+          {
+            "id": "ch22_sec_5",
+            "title": "4. Maybeのjoin"
+          },
+          {
+            "id": "ch22_sec_6",
+            "title": "5. Listのjoin"
+          },
+          {
+            "id": "ch22_sec_7",
+            "title": "6. Monad lawの圏論版"
+          },
+          {
+            "id": "ch22_sec_8",
+            "title": "7. モノイドとの対応"
+          },
+          {
+            "id": "ch22_sec_9",
+            "title": "8. 随伴からMonad"
+          }
+        ],
+        "content": "\n# 第22章 圏論から見たモナド\n\nここでプログラミング上のMonadを圏論へ戻す。\n\n## 1. 自己関手\n\nまず、\n\n\\[\nT:\\mathcal C\\to\\mathcal C\n\\]\n\nというendofunctorがある。\n\n## 2. Unit\n\n\\[\n\\eta:\nId\n\\Rightarrow\nT\n\\]\n\n各Aについて、\n\n\\[\n\\eta_A:A\\to T(A)\n\\]\n\nHaskellなら概念的に、\n\n```haskell\nreturn :: a -> m a\n```\n\n## 3. Multiplication\n\n\\[\n\\mu:\nT\\circ T\n\\Rightarrow\nT\n\\]\n\n各Aについて、\n\n\\[\n\\mu_A:T(T(A))\\to T(A)\n\\]\n\n## Haskell\n\n```haskell\njoin\n  :: Monad m\n  => m (m a)\n  -> m a\n```\n\n## 4. Maybeのjoin\n\n```haskell\njoin Nothing         = Nothing\njoin (Just Nothing)  = Nothing\njoin (Just (Just x)) = Just x\n```\n\n## 5. Listのjoin\n\n```haskell\njoin :: [[a]] -> [a]\n```\n\nリストのリストを平坦化する。\n\n## 6. Monad lawの圏論版\n\n\\(\\eta\\) は単位元。\n\n\\(\\mu\\) は積。\n\n\\[\n\\mu\\circ T\\mu\n=\n\\mu\\circ\\mu_T\n\\]\n\nが結合律に相当する。\n\n## 7. モノイドとの対応\n\nモノイド：\n\n\\[\n(M,m,e)\n\\]\n\nモナド：\n\n\\[\n(T,\\mu,\\eta)\n\\]\n\n対応は、\n\n```text\nモノイド      モナド\n-----------------------\n要素の集合      自己関手\n積             μ\n単位元          η\n```\n\n## 8. 随伴からMonad\n\n\\[\nF\\dashv G\n\\]\n\nなら、\n\n\\[\nT=GF\n\\]\n\nはモナドになる。\n\nunitは随伴のunit。\n\nmultiplicationはcounitから構成できる。\n\nここに、\n\n```text\n随伴\n ↓\nモナド\n```\n\nの本当の意味がある。\n"
+      },
+      {
+        "id": "ch23",
+        "number": 23,
+        "title": "第23章 コモナド",
+        "shortTitle": "コモナド",
+        "summary": "モナドの双対。",
+        "sections": [
+          {
+            "id": "ch23_sec_1",
+            "title": "1. モナド"
+          },
+          {
+            "id": "ch23_sec_2",
+            "title": "2. コモナド"
+          },
+          {
+            "id": "ch23_sec_3",
+            "title": "3. Haskell的表現"
+          },
+          {
+            "id": "ch23_sec_4",
+            "title": "4. モナドとの直観的対比"
+          },
+          {
+            "id": "ch23_sec_5",
+            "title": "5. 例"
+          }
+        ],
+        "content": "\n# 第23章 コモナド\n\nモナドの双対。\n\n## 1. モナド\n\n\\[\n\\eta:\nId\\Rightarrow T\n\\]\n\n\\[\n\\mu:T^2\\Rightarrow T\n\\]\n\n## 2. コモナド\n\n矢印を反転。\n\n\\[\n\\varepsilon:\nW\\Rightarrow Id\n\\]\n\n\\[\n\\delta:\nW\\Rightarrow W^2\n\\]\n\n## 3. Haskell的表現\n\n```haskell\nextract :: w a -> a\n```\n\n```haskell\nduplicate :: w a -> w (w a)\n```\n\n## 4. モナドとの直観的対比\n\nMonad：\n\n> 値を計算文脈へ入れ、文脈付き計算を合成する。\n\nComonad：\n\n> 文脈付き値から情報を取り出し、周囲の文脈を利用して計算する。\n\n## 5. 例\n\n- セルオートマトン\n- ストリーム\n- 周辺文脈を持つ計算\n\nなどで現れる。\n"
+      },
+      {
+        "id": "ch24",
+        "number": 24,
+        "title": "第24章 F-代数",
+        "shortTitle": "F-代数",
+        "summary": "ここから後半の大きな難所。",
+        "sections": [
+          {
+            "id": "ch24_sec_1",
+            "title": "1. 再帰型を分解する"
+          },
+          {
+            "id": "ch24_sec_2",
+            "title": "2. F-代数"
+          },
+          {
+            "id": "ch24_sec_3",
+            "title": "3. リストの一段を処理する"
+          },
+          {
+            "id": "ch24_sec_4",
+            "title": "4. 初代数"
+          },
+          {
+            "id": "ch24_sec_5",
+            "title": "5. Catamorphism"
+          },
+          {
+            "id": "ch24_sec_6",
+            "title": "6. foldr"
+          },
+          {
+            "id": "ch24_sec_7",
+            "title": "7. 例"
+          },
+          {
+            "id": "ch24_sec_8",
+            "title": "8. なぜfoldが重要か"
+          },
+          {
+            "id": "ch24_sec_9",
+            "title": "9. F-代数の設計上の意味"
+          }
+        ],
+        "content": "\n# 第24章 F-代数\n\nここから後半の大きな難所。\n\n## 1. 再帰型を分解する\n\nリスト：\n\n```haskell\ndata List a\n    = Nil\n    | Cons a (List a)\n```\n\n一段だけを見ると、\n\n\\[\nF(X)=1+A\\times X\n\\]\n\n## 2. F-代数\n\n関手Fに対し、\n\n対象Aと射、\n\n\\[\n\\alpha:F(A)\\to A\n\\]\n\nの組をF-代数と呼ぶ。\n\n## 3. リストの一段を処理する\n\nたとえばIntのリストを合計する。\n\n一段分の処理は、\n\n```text\nNil          → 0\n\nCons x rest  → x + rest\n```\n\n## 4. 初代数\n\nあるF-代数、\n\n\\[\n(\\mu F,in)\n\\]\n\nが初対象になるとき、\n\nこれをinitial algebraと呼ぶ。\n\n## 5. Catamorphism\n\n初代数から任意のF-代数への射は一意。\n\nこの一意な射がcatamorphism。\n\nプログラミングでは、\n\n> fold\n\nに対応する。\n\n## 6. foldr\n\n```haskell\nfoldr\n  :: (a -> b -> b)\n  -> b\n  -> [a]\n  -> b\n```\n\n## 7. 例\n\n```haskell\nsum =\n    foldr (+) 0\n```\n\n```haskell\nproduct =\n    foldr (*) 1\n```\n\n```haskell\nlength =\n    foldr (\\_ n -> n + 1) 0\n```\n\n## 8. なぜfoldが重要か\n\n再帰を毎回手書きする代わりに、\n\n> **データ構造の再帰パターン**\n\nと、\n\n> **各コンストラクタをどう解釈するか**\n\nを分離できる。\n\n## 9. F-代数の設計上の意味\n\n「リストを走査する」という構造は共通で、\n\n何を計算するかだけを差し替えられる。\n\nこれは構造と意味の分離である。\n"
+      },
+      {
+        "id": "ch25",
+        "number": 25,
+        "title": "第25章 モナドの代数",
+        "shortTitle": "モナドの代数",
+        "summary": "モナドTに対して、",
+        "sections": [
+          {
+            "id": "ch25_sec_1",
+            "title": "1. T-代数"
+          },
+          {
+            "id": "ch25_sec_2",
+            "title": "2. 意味"
+          },
+          {
+            "id": "ch25_sec_3",
+            "title": "3. モナド則との整合"
+          },
+          {
+            "id": "ch25_sec_4",
+            "title": "Unit law"
+          },
+          {
+            "id": "ch25_sec_5",
+            "title": "Multiplication law"
+          },
+          {
+            "id": "ch25_sec_6",
+            "title": "4. 意味を読む"
+          },
+          {
+            "id": "ch25_sec_7",
+            "title": "5. Eilenberg–Moore圏"
+          }
+        ],
+        "content": "\n# 第25章 モナドの代数\n\n## 1. T-代数\n\nモナドTに対して、\n\n\\[\na:T(A)\\to A\n\\]\n\nを考える。\n\n## 2. 意味\n\nTによって作られた構造を、\n\n> どのように「評価」してAへ戻すか\n\nを表す。\n\n## 3. モナド則との整合\n\n単に、\n\n\\[\nT(A)\\to A\n\\]\n\nなら何でもよいわけではない。\n\nunitとmultiplicationに整合する必要がある。\n\n## Unit law\n\n\\[\na\\circ\\eta_A=id_A\n\\]\n\n## Multiplication law\n\n\\[\na\\circ\\mu_A\n=\na\\circ T(a)\n\\]\n\n## 4. 意味を読む\n\n二重にモナド構造を潰してから評価しても、\n\n内側を評価してから外側を評価しても同じ。\n\n## 5. Eilenberg–Moore圏\n\nT-代数を対象、\n\nT-代数準同型を射とする圏を構成できる。\n\nMonadを、\n\n> 効果付きプログラムの仕組み\n\nとして見るだけではなく、\n\n> それが生成する代数構造全体\n\nとして見る段階。\n"
+      },
+      {
+        "id": "ch26",
+        "number": 26,
+        "title": "第26章 エンドとコエンド",
+        "shortTitle": "エンドとコエンド",
+        "summary": "非常に抽象度の高い章。",
+        "sections": [
+          {
+            "id": "ch26_sec_1",
+            "title": "1. Endの直観"
+          },
+          {
+            "id": "ch26_sec_2",
+            "title": "2. 「全部について整合する」"
+          },
+          {
+            "id": "ch26_sec_3",
+            "title": "3. 自然変換との関係"
+          },
+          {
+            "id": "ch26_sec_4",
+            "title": "4. Coend"
+          },
+          {
+            "id": "ch26_sec_5",
+            "title": "5. 直観"
+          },
+          {
+            "id": "ch26_sec_6",
+            "title": "6. 学習方針"
+          }
+        ],
+        "content": "\n# 第26章 エンドとコエンド\n\n非常に抽象度の高い章。\n\n初読では完全理解を要求しない。\n\n## 1. Endの直観\n\nプロ関手、\n\n\\[\nP:\\mathcal C^{op}\\times\\mathcal C\\to Set\n\\]\n\nに対し、\n\n\\[\n\\int_c P(c,c)\n\\]\n\nを考える。\n\n## 2. 「全部について整合する」\n\nEndは概略として、\n\n> 各cに対応する要素の族のうち、すべての射に対して整合するもの\n\nを集める。\n\n## 3. 自然変換との関係\n\n\\[\nNat(F,G)\n\\cong\n\\int_c Hom(Fc,Gc)\n\\]\n\nと表現できる。\n\nつまり自然変換を、\n\n> 各対象における射の整合的な集合\n\nとしてEndで書ける。\n\n## 4. Coend\n\nEndの双対。\n\n\\[\n\\int^c P(c,c)\n\\]\n\n## 5. 直観\n\nEnd：\n\n> 条件を満たすものを一貫して選ぶ。\n\nCoend：\n\n> 共通関係によって情報を貼り合わせる。\n\n## 6. 学習方針\n\n初読で、\n\n- dinatural transformation\n- wedge\n- cowedge\n\nまで完全理解する必要はない。\n\nまず、\n\n> End / Coend は、対象を横断して情報を統合するための普遍構成\n\nと理解する。\n"
+      },
+      {
+        "id": "ch27",
+        "number": 27,
+        "title": "第27章 カン拡張",
+        "shortTitle": "カン拡張",
+        "summary": "圏論の「万能構成」と呼びたくなる概念。",
+        "sections": [
+          {
+            "id": "ch27_sec_1",
+            "title": "1. 問題"
+          },
+          {
+            "id": "ch27_sec_2",
+            "title": "2. 図"
+          },
+          {
+            "id": "ch27_sec_3",
+            "title": "3. Left Kan Extension"
+          },
+          {
+            "id": "ch27_sec_4",
+            "title": "4. Right Kan Extension"
+          },
+          {
+            "id": "ch27_sec_5",
+            "title": "5. 「最適な近似」"
+          },
+          {
+            "id": "ch27_sec_6",
+            "title": "6. なぜ重要なのか"
+          },
+          {
+            "id": "ch27_sec_7",
+            "title": "7. 初学者向け理解"
+          }
+        ],
+        "content": "\n# 第27章 カン拡張\n\n圏論の「万能構成」と呼びたくなる概念。\n\n## 1. 問題\n\n関手、\n\n\\[\nF:\\mathcal C\\to\\mathcal E\n\\]\n\nと、\n\n\\[\nK:\\mathcal C\\to\\mathcal D\n\\]\n\nがある。\n\nFをD上へ延長したい。\n\n## 2. 図\n\n```text\nC ----F----> E\n|\n| K\nv\nD\n```\n\nDからEへの関手を作りたい。\n\n## 3. Left Kan Extension\n\n\\[\nLan_KF\n\\]\n\nは、\n\nFをKに沿って延長する普遍的な方法。\n\n## 4. Right Kan Extension\n\n双対として、\n\n\\[\nRan_KF\n\\]\n\nがある。\n\n## 5. 「最適な近似」\n\nKによって情報が変換されるため、\n\n完全な延長が存在しない場合がある。\n\nそのとき、\n\n> 普遍性によって最良の延長\n\nを選ぶ。\n\n## 6. なぜ重要なのか\n\n多くの圏論的構成をKan extensionとして表現できる。\n\nしたがって、\n\n> Kan extensionは非常に一般的な「普遍的な延長」の枠組み\n\nと理解する。\n\n## 7. 初学者向け理解\n\n最初は数式を追うより、\n\n```text\n既知の構造\n   ↓\n別の世界へ移す\n   ↓\nできるだけ自然に延長\n```\n\nと捉える。\n"
+      },
+      {
+        "id": "ch28",
+        "number": 28,
+        "title": "第28章 豊穣圏",
+        "shortTitle": "豊穣圏",
+        "summary": "二つの対象A,Bについて、",
+        "sections": [
+          {
+            "id": "ch28_sec_1",
+            "title": "1. 普通の圏"
+          },
+          {
+            "id": "ch28_sec_2",
+            "title": "2. 疑問"
+          },
+          {
+            "id": "ch28_sec_3",
+            "title": "3. enriched category"
+          },
+          {
+            "id": "ch28_sec_4",
+            "title": "4. 例：距離"
+          },
+          {
+            "id": "ch28_sec_5",
+            "title": "5. なぜ豊穣化するか"
+          }
+        ],
+        "content": "\n# 第28章 豊穣圏\n\n## 1. 普通の圏\n\n二つの対象A,Bについて、\n\n\\[\nHom(A,B)\n\\]\n\nは集合。\n\n## 2. 疑問\n\nHomが単なる集合以上の構造を持っていたらどうなるか。\n\n## 3. enriched category\n\nHomを、\n\nSetではなく別のモノイダル圏の対象として扱う。\n\n## 4. 例：距離\n\n距離空間を圏論的に扱うと、\n\nAからBへの「射の情報」が、\n\n実数値の距離として表現されるような構造を考えられる。\n\n## 5. なぜ豊穣化するか\n\n射の存在だけでなく、\n\n- 距離\n- 重み\n- 順序\n- 位相的情報\n\nなどをHomに持たせられる。\n"
+      },
+      {
+        "id": "ch29",
+        "number": 29,
+        "title": "第29章 トポス",
+        "shortTitle": "トポス",
+        "summary": "この章では、",
+        "sections": [
+          {
+            "id": "ch29_sec_1",
+            "title": "1. Setの特徴"
+          },
+          {
+            "id": "ch29_sec_2",
+            "title": "2. Subobject"
+          },
+          {
+            "id": "ch29_sec_3",
+            "title": "3. Subobject classifier"
+          },
+          {
+            "id": "ch29_sec_4",
+            "title": "4. 例"
+          },
+          {
+            "id": "ch29_sec_5",
+            "title": "5. Topos"
+          },
+          {
+            "id": "ch29_sec_6",
+            "title": "6. 内部論理"
+          },
+          {
+            "id": "ch29_sec_7",
+            "title": "7. 重要な意味"
+          }
+        ],
+        "content": "\n# 第29章 トポス\n\nこの章では、\n\n> Setに似た非常に豊かな圏\n\nを扱う。\n\n## 1. Setの特徴\n\n集合の圏には、\n\n- 有限極限\n- 指数対象\n- 部分集合\n- 真偽値\n\nなどがある。\n\n## 2. Subobject\n\n部分集合の圏論版。\n\n単射、\n\n\\[\nS\\hookrightarrow A\n\\]\n\nを使って表す。\n\n## 3. Subobject classifier\n\nSetでは、\n\n\\[\n\\Omega=\\{False,True\\}\n\\]\n\nを考える。\n\n部分集合、\n\n\\[\nS\\subseteq A\n\\]\n\nは、\n\n特性関数、\n\n\\[\n\\chi_S:A\\to\\Omega\n\\]\n\nとして表せる。\n\n## 4. 例\n\n偶数集合なら、\n\n```haskell\nisEven :: Int -> Bool\n```\n\n## 5. Topos\n\n大まかには、\n\n> 集合の圏と似た論理的・構成的能力を持つ圏\n\nと捉える。\n\n## 6. 内部論理\n\nTopos内部では独自の論理体系を考えられる。\n\nすべての場合に古典論理になるとは限らない。\n\n## 7. 重要な意味\n\n「集合」と「論理」は別物ではなく、\n\n圏論を通じて密接につながる。\n"
+      },
+      {
+        "id": "ch30",
+        "number": 30,
+        "title": "第30章 ローヴェア理論",
+        "shortTitle": "ローヴェア理論",
+        "summary": "代数を圏として扱う。",
+        "sections": [
+          {
+            "id": "ch30_sec_1",
+            "title": "1. 普通の代数構造"
+          },
+          {
+            "id": "ch30_sec_2",
+            "title": "2. 演算を射として見る"
+          },
+          {
+            "id": "ch30_sec_3",
+            "title": "3. 法則"
+          },
+          {
+            "id": "ch30_sec_4",
+            "title": "4. Lawvere Theory"
+          },
+          {
+            "id": "ch30_sec_5",
+            "title": "5. プログラミングへの接続"
+          },
+          {
+            "id": "ch30_sec_6",
+            "title": "6. Algebraic Effects"
+          }
+        ],
+        "content": "\n# 第30章 ローヴェア理論\n\n代数を圏として扱う。\n\n## 1. 普通の代数構造\n\nモノイドなら、\n\n- 二項演算\n- 単位元\n\nを持つ。\n\n## 2. 演算を射として見る\n\n二項演算、\n\n\\[\nm:A\\times A\\to A\n\\]\n\n単位元、\n\n\\[\ne:1\\to A\n\\]\n\n## 3. 法則\n\n結合律、\n\n\\[\nm(m(a,b),c)\n=\nm(a,m(b,c))\n\\]\n\nなども射の等式として表せる。\n\n## 4. Lawvere Theory\n\n有限積を使い、\n\n> 演算とその法則\n\nを圏論的に表現する枠組み。\n\n## 5. プログラミングへの接続\n\n計算効果を、\n\n> 操作の集合\n\nとして扱う考え方につながる。\n\n状態なら、\n\n```text\nget\nput\n```\n\n例外なら、\n\n```text\nthrow\n```\n\n非決定性なら、\n\n```text\nchoose\n```\n\n## 6. Algebraic Effects\n\nモナドだけでなく、\n\n> どの操作を提供し、それらがどんな法則を満たすか\n\nによって効果を記述する考え方。\n"
+      },
+      {
+        "id": "ch31",
+        "number": 31,
+        "title": "第31章 モナド・モノイド・圏",
+        "shortTitle": "モナド・モノイド・圏",
+        "summary": "最終章では、これまでの抽象化を一段上から見る。",
+        "sections": [
+          {
+            "id": "ch31_sec_1",
+            "title": "1. 最初"
+          },
+          {
+            "id": "ch31_sec_2",
+            "title": "2. 次"
+          },
+          {
+            "id": "ch31_sec_3",
+            "title": "3. さらに"
+          },
+          {
+            "id": "ch31_sec_4",
+            "title": "4. 関手圏"
+          },
+          {
+            "id": "ch31_sec_5",
+            "title": "5. Endofunctor category"
+          },
+          {
+            "id": "ch31_sec_6",
+            "title": "6. 合成"
+          },
+          {
+            "id": "ch31_sec_7",
+            "title": "7. その中のモノイド"
+          },
+          {
+            "id": "ch31_sec_8",
+            "title": "8. 有名な文句の意味"
+          },
+          {
+            "id": "ch31_sec_9",
+            "title": "9. なぜこんな抽象化をするのか"
+          }
+        ],
+        "content": "\n# 第31章 モナド・モノイド・圏\n\n最終章では、これまでの抽象化を一段上から見る。\n\n## 1. 最初\n\n圏の中では、\n\n```text\n対象 --射--> 対象\n```\n\nだった。\n\n## 2. 次\n\n圏同士では、\n\n```text\n圏 --関手--> 圏\n```\n\nを考えた。\n\n## 3. さらに\n\n関手同士では、\n\n```text\n関手 --自然変換--> 関手\n```\n\nを考えた。\n\n## 4. 関手圏\n\n二つの圏、\n\n\\[\n\\mathcal C,\\mathcal D\n\\]\n\nについて、\n\n関手、\n\n\\[\nF:\\mathcal C\\to\\mathcal D\n\\]\n\nを対象、\n\n自然変換を射とする圏、\n\n\\[\n[\\mathcal C,\\mathcal D]\n\\]\n\nを作れる。\n\n## 5. Endofunctor category\n\n特に、\n\n\\[\n[\\mathcal C,\\mathcal C]\n\\]\n\nを考える。\n\n対象は自己関手。\n\n射は自然変換。\n\n## 6. 合成\n\n自己関手同士は合成できる。\n\n\\[\nF\\circ G\n\\]\n\n恒等自己関手、\n\n\\[\nId\n\\]\n\nもある。\n\n## 7. その中のモノイド\n\n自己関手Tについて、\n\n積、\n\n\\[\n\\mu:T\\circ T\\Rightarrow T\n\\]\n\n単位、\n\n\\[\n\\eta:Id\\Rightarrow T\n\\]\n\nを持つ。\n\nこれがMonad。\n\n## 8. 有名な文句の意味\n\n> Monad is a monoid in the category of endofunctors.\n\nを日本語にすると、\n\n> **自己関手を対象、自然変換を射、関手合成をテンソル積とする世界で、モノイド構造を持つものがモナドである。**\n\n## 9. なぜこんな抽象化をするのか\n\n同じパターン、\n\n```text\n結合可能な演算\n+\n単位元\n```\n\nが、\n\n- 数\n- 文字列\n- リスト\n- 自己関手\n\nというまったく異なる世界に現れる。\n\n圏論は、\n\n> 具体物ではなく、その構造パターンそのもの\n\nを研究する。\n"
+      },
+      {
+        "id": "supplement01",
+        "number": 32,
+        "title": "最終統合 31章を一本につなぐ",
+        "shortTitle": "最終統合 31章を一本につなぐ",
+        "summary": "圏・関手・米田・随伴・モナド・F-代数を一つの流れとして整理する",
+        "sections": [
+          {
+            "id": "supplement01_sec_1",
+            "title": "ステップ1"
+          },
+          {
+            "id": "supplement01_sec_2",
+            "title": "ステップ2"
+          },
+          {
+            "id": "supplement01_sec_3",
+            "title": "ステップ3"
+          },
+          {
+            "id": "supplement01_sec_4",
+            "title": "ステップ4"
+          },
+          {
+            "id": "supplement01_sec_5",
+            "title": "ステップ5"
+          },
+          {
+            "id": "supplement01_sec_6",
+            "title": "ステップ6"
+          },
+          {
+            "id": "supplement01_sec_7",
+            "title": "ステップ7"
+          },
+          {
+            "id": "supplement01_sec_8",
+            "title": "ステップ8"
+          },
+          {
+            "id": "supplement01_sec_9",
+            "title": "ステップ9"
+          }
+        ],
+        "content": "\n# 最終統合 31章を一本につなぐ\n\nここが最も重要。\n\n## ステップ1\n\nプログラムを合成したい。\n\n\\[\nA\\to B\\to C\n\\]\n\n↓\n\n**圏**\n\n## ステップ2\n\n圏の構造を別の圏へ移したい。\n\n↓\n\n**関手**\n\n## ステップ3\n\n関手同士を比較したい。\n\n↓\n\n**自然変換**\n\n## ステップ4\n\n対象をその内部ではなく射から理解したい。\n\n↓\n\n**Hom**\n\n↓\n\n**表現可能関手**\n\n↓\n\n**米田**\n\n## ステップ5\n\n普遍的な構成を考える。\n\n↓\n\n**積**\n\n↓\n\n**極限**\n\n↓\n\n**自由構成**\n\n## ステップ6\n\n二つの異なる圏の構成の間に自然な対応を見つける。\n\n↓\n\n**随伴**\n\n## ステップ7\n\n随伴から自己関手を作る。\n\n\\[\nF\\dashv G\n\\]\n\n↓\n\n\\[\nT=GF\n\\]\n\n↓\n\n**モナド**\n\n## ステップ8\n\n再帰構造を普遍的に理解する。\n\n↓\n\n**F-代数**\n\n↓\n\n**fold / catamorphism**\n\n## ステップ9\n\n普遍構成をさらに一般化する。\n\n↓\n\n**End / Coend**\n\n↓\n\n**Kan Extension**\n\n↓\n\n**Enriched Category**\n\n↓\n\n**Topos**\n\n↓\n\n**Lawvere Theory**\n"
+      },
+      {
+        "id": "supplement02",
+        "number": 33,
+        "title": "必ず理解したい30語",
+        "shortTitle": "必ず理解したい30語",
+        "summary": "圏論を理解するための基礎語彙から高度な普遍構成までを確認する",
+        "sections": [
+          {
+            "id": "supplement02_sec_1",
+            "title": "基礎"
+          },
+          {
+            "id": "supplement02_sec_2",
+            "title": "型"
+          },
+          {
+            "id": "supplement02_sec_3",
+            "title": "関手"
+          },
+          {
+            "id": "supplement02_sec_4",
+            "title": "普遍性"
+          },
+          {
+            "id": "supplement02_sec_5",
+            "title": "米田"
+          },
+          {
+            "id": "supplement02_sec_6",
+            "title": "後半"
+          }
+        ],
+        "content": "\n# 必ず理解したい30語\n\n## 基礎\n\n1. Category\n2. Object\n3. Morphism\n4. Identity\n5. Composition\n6. Isomorphism\n7. Opposite category\n\n## 型\n\n8. Initial object\n9. Terminal object\n10. Product\n11. Coproduct\n12. Exponential object\n\n## 関手\n\n13. Functor\n14. Contravariant functor\n15. Bifunctor\n16. Natural transformation\n\n## 普遍性\n\n17. Universal property\n18. Limit\n19. Colimit\n20. Free construction\n\n## 米田\n\n21. Hom functor\n22. Representable functor\n23. Yoneda lemma\n24. Yoneda embedding\n\n## 後半\n\n25. Adjunction\n26. Unit / Counit\n27. Monad\n28. Comonad\n29. F-algebra\n30. Kan extension\n"
+      },
+      {
+        "id": "supplement03",
+        "number": 34,
+        "title": "典型的な誤解集",
+        "shortTitle": "典型的な誤解集",
+        "summary": "圏論、関手、自然変換、米田、モナドなどの誤解を修正する",
+        "sections": [
+          {
+            "id": "supplement03_sec_1",
+            "title": "誤解1"
+          },
+          {
+            "id": "supplement03_sec_2",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_3",
+            "title": "誤解2"
+          },
+          {
+            "id": "supplement03_sec_4",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_5",
+            "title": "誤解3"
+          },
+          {
+            "id": "supplement03_sec_6",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_7",
+            "title": "誤解4"
+          },
+          {
+            "id": "supplement03_sec_8",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_9",
+            "title": "誤解5"
+          },
+          {
+            "id": "supplement03_sec_10",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_11",
+            "title": "誤解6"
+          },
+          {
+            "id": "supplement03_sec_12",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_13",
+            "title": "誤解7"
+          },
+          {
+            "id": "supplement03_sec_14",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_15",
+            "title": "誤解8"
+          },
+          {
+            "id": "supplement03_sec_16",
+            "title": "修正"
+          },
+          {
+            "id": "supplement03_sec_17",
+            "title": "誤解9"
+          },
+          {
+            "id": "supplement03_sec_18",
+            "title": "修正"
+          }
+        ],
+        "content": "\n# 典型的な誤解集\n\n## 誤解1\n\n「圏論は図を描く数学。」\n\n## 修正\n\n図は表現方法。\n\n本質は、\n\n> 射の合成と構造保存。\n\n## 誤解2\n\n「Functorはコンテナ。」\n\n## 修正\n\nコンテナは一例。\n\n本質は、\n\n> 射を構造保存的に持ち上げるもの。\n\n## 誤解3\n\n「自然変換は自然に見える変換。」\n\n## 修正\n\nnaturality conditionを満たす変換。\n\n## 誤解4\n\n「universalは万能。」\n\n## 修正\n\n特定の条件を満たす対象の中で、\n\n> 他の候補が一意にfactorizeする\n\nという意味。\n\n## 誤解5\n\n「米田＝対象は他者との関係で決まる。」\n\n## 修正\n\n直観としてはよいが、それだけでは曖昧。\n\n正式には、\n\n\\[\nNat(Hom(A,-),F)\n\\cong\nF(A)\n\\]\n\nという自然同型が核心。\n\n## 誤解6\n\n「随伴は逆関数。」\n\n## 修正\n\n違う。\n\nHom集合間の自然同型。\n\n## 誤解7\n\n「Monadは副作用。」\n\n## 修正\n\nMonadは副作用そのものではなく、\n\n> 特定の計算形態を合成する構造。\n\n## 誤解8\n\n「IOがMonadだからMonadは入出力。」\n\n## 修正\n\nMaybe、List、Reader、Writer、StateなどもMonad。\n\n## 誤解9\n\n「F-algebraは普通の代数学。」\n\n## 修正\n\n関手Fに対する、\n\n\\[\nF(A)\\to A\n\\]\n\nという構造。\n\n再帰型やfoldを理解する重要概念。\n"
+      },
+      {
+        "id": "supplement04",
+        "number": 35,
+        "title": "学習用総合演習",
+        "shortTitle": "学習用総合演習",
+        "summary": "15の総合問題と4つのHaskell実践課題で理解を確かめる",
+        "sections": [
+          {
+            "id": "supplement04_sec_1",
+            "title": "問1"
+          },
+          {
+            "id": "supplement04_sec_2",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_3",
+            "title": "問2"
+          },
+          {
+            "id": "supplement04_sec_4",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_5",
+            "title": "問3"
+          },
+          {
+            "id": "supplement04_sec_6",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_7",
+            "title": "問4"
+          },
+          {
+            "id": "supplement04_sec_8",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_9",
+            "title": "問5"
+          },
+          {
+            "id": "supplement04_sec_10",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_11",
+            "title": "問6"
+          },
+          {
+            "id": "supplement04_sec_12",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_13",
+            "title": "問7"
+          },
+          {
+            "id": "supplement04_sec_14",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_15",
+            "title": "問8"
+          },
+          {
+            "id": "supplement04_sec_16",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_17",
+            "title": "問9"
+          },
+          {
+            "id": "supplement04_sec_18",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_19",
+            "title": "問10"
+          },
+          {
+            "id": "supplement04_sec_20",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_21",
+            "title": "問11"
+          },
+          {
+            "id": "supplement04_sec_22",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_23",
+            "title": "問12"
+          },
+          {
+            "id": "supplement04_sec_24",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_25",
+            "title": "問13"
+          },
+          {
+            "id": "supplement04_sec_26",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_27",
+            "title": "問14"
+          },
+          {
+            "id": "supplement04_sec_28",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_29",
+            "title": "問15"
+          },
+          {
+            "id": "supplement04_sec_30",
+            "title": "解答"
+          },
+          {
+            "id": "supplement04_sec_31",
+            "title": "実践課題1　Maybe pipeline"
+          },
+          {
+            "id": "supplement04_sec_32",
+            "title": "実践課題2　自然変換"
+          },
+          {
+            "id": "supplement04_sec_33",
+            "title": "実践課題3　Yoneda"
+          },
+          {
+            "id": "supplement04_sec_34",
+            "title": "実践課題4　fold"
+          }
+        ],
+        "content": "\n# 学習用総合演習\n\n## 問1\n\n圏の公理を説明せよ。\n\n## 解答\n\n対象と射があり、\n\n合成、\n\n\\[\ng\\circ f\n\\]\n\nが定義され、\n\n結合律、\n\n\\[\nh\\circ(g\\circ f)\n=\n(h\\circ g)\\circ f\n\\]\n\nを満たす。\n\nまた各対象に恒等射があり、\n\n\\[\nf\\circ id=f\n\\]\n\n\\[\nid\\circ f=f\n\\]\n\n## 問2\n\n積を内部構造を使わず定義せよ。\n\n## 解答\n\n対象Pと、\n\n\\[\n\\pi_1:P\\to A\n\\]\n\n\\[\n\\pi_2:P\\to B\n\\]\n\nについて、\n\n任意の、\n\n\\[\nf:X\\to A\n\\]\n\n\\[\ng:X\\to B\n\\]\n\nに対し唯一の、\n\n\\[\nh:X\\to P\n\\]\n\nが存在し、\n\n\\[\n\\pi_1h=f\n\\]\n\n\\[\n\\pi_2h=g\n\\]\n\nとなるとき、Pが積。\n\n## 問3\n\nFunctor lawを述べよ。\n\n## 解答\n\n\\[\nF(id)=id\n\\]\n\n\\[\nF(g\\circ f)\n=\nF(g)\\circ F(f)\n\\]\n\n## 問4\n\n自然変換のnaturality conditionを書け。\n\n## 解答\n\n\\[\nG(f)\\circ\\alpha_A\n=\n\\alpha_B\\circ F(f)\n\\]\n\n## 問5\n\n米田の補題を書け。\n\n## 解答\n\n\\[\nNat(Hom(A,-),F)\n\\cong\nF(A)\n\\]\n\n## 問6\n\n左辺から右辺を作るには何を使うか。\n\n## 解答\n\n恒等射、\n\n\\[\nid_A\n\\]\n\nを使い、\n\n\\[\n\\alpha_A(id_A)\n\\]\n\nを取る。\n\n## 問7\n\n随伴の定義を書け。\n\n## 解答\n\n\\[\nF\\dashv G\n\\]\n\nとは、\n\n\\[\nHom_{\\mathcal D}(F(A),B)\n\\cong\nHom_{\\mathcal C}(A,G(B))\n\\]\n\nがA,Bについて自然に成立すること。\n\n## 問8\n\n自由モノイド随伴を説明せよ。\n\n## 解答\n\n集合Xから自由モノイドF(X)を作る関手Fと、\n\nモノイドから underlying set を取り出すUについて、\n\n\\[\nF\\dashv U\n\\]\n\nであり、\n\n\\[\nHom_{Mon}(F(X),M)\n\\cong\nHom_{Set}(X,U(M))\n\\]\n\nが成立する。\n\n## 問9\n\nKleisli arrowとは何か。\n\n## 解答\n\nMonad Mについて、\n\n\\[\nA\\to M(B)\n\\]\n\nという形の射。\n\n## 問10\n\nMonad lawsと圏の公理にはどんな類似があるか。\n\n## 解答\n\nどちらも、\n\n- 結合律\n- 単位元\n\nを持つ。\n\nMonadではKleisli compositionが圏の射合成になる。\n\n## 問11\n\nMonadの圏論的定義を書け。\n\n## 解答\n\n自己関手、\n\n\\[\nT:\\mathcal C\\to\\mathcal C\n\\]\n\nと自然変換、\n\n\\[\n\\eta:Id\\Rightarrow T\n\\]\n\n\\[\n\\mu:T^2\\Rightarrow T\n\\]\n\nでモナド則を満たすもの。\n\n## 問12\n\nF-algebraを定義せよ。\n\n## 解答\n\n関手Fに対し、\n\n対象Aと、\n\n\\[\n\\alpha:F(A)\\to A\n\\]\n\nからなる構造。\n\n## 問13\n\nリストのbase functorを書け。\n\n## 解答\n\n要素型Xを固定すると、\n\n\\[\nF(R)=1+X\\times R\n\\]\n\n## 問14\n\nfoldがF-algebraとどう関係するか。\n\n## 解答\n\n初代数から任意のF-algebraへの一意な準同型がcatamorphismであり、\n\nプログラムではfoldに対応する。\n\n## 問15\n\nKan extensionを一言で説明せよ。\n\n## 解答\n\n> 関手を別の圏へ普遍的な方法で延長する構成。\n\n## 実践課題1　Maybe pipeline\n\n次の関数を作る。\n\n```haskell\nparseInt\n  :: String\n  -> Maybe Int\n\nnonZero\n  :: Int\n  -> Maybe Int\n\ninverse\n  :: Int\n  -> Maybe Double\n```\n\nこれを、\n\n```haskell\nparseInt\n>=> nonZero\n>=> inverse\n```\n\nで合成する。\n\n目的：\n\n> Kleisli compositionを身体で理解する。\n\n## 実践課題2　自然変換\n\n次を実装する。\n\n```haskell\nlistToMaybe\n  :: [a]\n  -> Maybe a\n```\n\nそして、\n\n```haskell\nmap f\n```\n\nと、\n\n```haskell\nfmap f\n```\n\nを使い、\n\n```text\nlistToMaybe (map f xs)\n```\n\nと、\n\n```text\nfmap f (listToMaybe xs)\n```\n\nが一致することを確かめる。\n\nこれはnaturality squareの具体例。\n\n## 実践課題3　Yoneda\n\n次を実装する。\n\n```haskell\ntoYoneda\n  :: Functor f\n  => f a\n  -> (forall x. (a -> x) -> f x)\n```\n\nおよび、\n\n```haskell\nfromYoneda\n  :: (forall x. (a -> x) -> f x)\n  -> f a\n```\n\nそして、\n\n```haskell\nfromYoneda . toYoneda\n```\n\nが実質的に `id` になることを確認する。\n\n## 実践課題4　fold\n\n独自Listを定義する。\n\n```haskell\ndata List a\n    = Nil\n    | Cons a (List a)\n```\n\n次をfoldだけで書く。\n\n- sum\n- product\n- length\n- map\n- filter\n\n目的：\n\n> 再帰パターンと代数を分離する。\n"
+      },
+      {
+        "id": "supplement05",
+        "number": 36,
+        "title": "3周学習法",
+        "shortTitle": "3周学習法",
+        "summary": "構造、コードと定義、数式の順に理解を深める学習計画",
+        "sections": [
+          {
+            "id": "supplement05_sec_1",
+            "title": "第1周　構造だけ掴む"
+          },
+          {
+            "id": "supplement05_sec_2",
+            "title": "第2周　コードと定義を一致させる"
+          },
+          {
+            "id": "supplement05_sec_3",
+            "title": "第3周　数式中心に読む"
+          }
+        ],
+        "content": "\n# 3周学習法\n\nこの副読本と本編を次の順番で学ぶ。\n\n## 第1周　構造だけ掴む\n\n各章の、\n\n- この章を学ぶ理由\n- 直観\n- 1分復習\n\nだけ読む。\n\n目標：\n\n> 圏論の地図を作る。\n\nこの段階では証明や高度な数式を飛ばしてよい。\n\n## 第2周　コードと定義を一致させる\n\nたとえば、\n\n### Product\n\n\\[\nA\\times B\n\\]\n\n↓\n\n```haskell\n(a,b)\n```\n\n### Coproduct\n\n\\[\nA+B\n\\]\n\n↓\n\n```haskell\nEither a b\n```\n\n### Functor\n\n\\[\nF(f)\n\\]\n\n↓\n\n```haskell\nfmap f\n```\n\n### Natural transformation\n\n\\[\nF\\Rightarrow G\n\\]\n\n↓\n\n```haskell\nforall a. F a -> G a\n```\n\n### Monad multiplication\n\n\\[\n\\mu:T^2\\Rightarrow T\n\\]\n\n↓\n\n```haskell\njoin :: m (m a) -> m a\n```\n\nという対応を確認する。\n\n## 第3周　数式中心に読む\n\n最後に、\n\n\\[\nNat(Hom(A,-),F)\n\\cong\nF(A)\n\\]\n\nや、\n\n\\[\nHom(FA,B)\n\\cong\nHom(A,GB)\n\\]\n\nなどを見ただけで日本語に翻訳できるようにする。\n"
+      },
+      {
+        "id": "supplement06",
+        "number": 37,
+        "title": "数式翻訳トレーニング",
+        "shortTitle": "数式翻訳トレーニング",
+        "summary": "圏論の主要な式を日本語へ翻訳して意味を定着させる",
+        "sections": [
+          {
+            "id": "supplement06_sec_1",
+            "title": "式1"
+          },
+          {
+            "id": "supplement06_sec_2",
+            "title": "式2"
+          },
+          {
+            "id": "supplement06_sec_3",
+            "title": "式3"
+          },
+          {
+            "id": "supplement06_sec_4",
+            "title": "式4"
+          },
+          {
+            "id": "supplement06_sec_5",
+            "title": "式5"
+          }
+        ],
+        "content": "\n# 数式翻訳トレーニング\n\n## 式1\n\n\\[\nF(g\\circ f)\n=\nF(g)\\circ F(f)\n\\]\n\n日本語：\n\n> 先に合成してからFで写しても、Fで写してから合成しても同じ。\n\n## 式2\n\n\\[\nG(f)\\circ\\alpha_A\n=\n\\alpha_B\\circ F(f)\n\\]\n\n日本語：\n\n> F側で型変換してからGへ移っても、先にGへ移ってからG側で型変換しても同じ。\n\n## 式3\n\n\\[\nNat(Hom(A,-),F)\n\\cong\nF(A)\n\\]\n\n日本語：\n\n> Aから各対象への射をFへ自然に変換する方法は、F(A)の値一つによって完全に決まる。\n\n## 式4\n\n\\[\nHom(FA,B)\n\\cong\nHom(A,GB)\n\\]\n\n日本語：\n\n> F(A)からBへの射を作ることと、AからG(B)への射を作ることは同じ情報を持つ。\n\n## 式5\n\n\\[\n\\mu:T(T(A))\\to T(A)\n\\]\n\n日本語：\n\n> 二重になったモナド文脈を一重に潰す。\n"
+      },
+      {
+        "id": "supplement07",
+        "number": 38,
+        "title": "理解度判定基準",
+        "shortTitle": "理解度判定基準",
+        "summary": "基礎から高度な普遍構成まで5段階で理解度を確認する",
+        "sections": [
+          {
+            "id": "supplement07_sec_1",
+            "title": "Level 1"
+          },
+          {
+            "id": "supplement07_sec_2",
+            "title": "Level 2"
+          },
+          {
+            "id": "supplement07_sec_3",
+            "title": "Level 3"
+          },
+          {
+            "id": "supplement07_sec_4",
+            "title": "Level 4"
+          },
+          {
+            "id": "supplement07_sec_5",
+            "title": "Level 5"
+          }
+        ],
+        "content": "\n# 理解度判定基準\n\n## Level 1\n\n次を説明できる。\n\n- 圏\n- 射\n- 合成\n- 積\n- 余積\n\n→ **基礎理解**\n\n## Level 2\n\n次を説明できる。\n\n- Functor\n- Functor laws\n- Natural transformation\n- Naturality\n\n→ **初級修了**\n\n## Level 3\n\n次を説明できる。\n\n- Universal property\n- Limit\n- Hom functor\n- Representable functor\n- Yoneda\n\n→ **中級入口**\n\n## Level 4\n\n次を説明できる。\n\n- Adjunction\n- Unit\n- Counit\n- Free/Forgetful\n- Monad\n\n→ **中級修了**\n\n## Level 5\n\n次を説明できる。\n\n- F-algebra\n- Catamorphism\n- T-algebra\n- End\n- Coend\n- Kan extension\n- Enriched category\n\n→ **本書をかなり深く理解している**\n"
+      },
+      {
+        "id": "supplement08",
+        "number": 39,
+        "title": "わからなくなったときの戻り先",
+        "shortTitle": "わからなくなったときの戻り先",
+        "summary": "概念ごとに復習すべき章と中心となる問いを確認する",
+        "sections": [
+          {
+            "id": "supplement08_sec_1",
+            "title": "Functorがわからない"
+          },
+          {
+            "id": "supplement08_sec_2",
+            "title": "Natural transformationがわからない"
+          },
+          {
+            "id": "supplement08_sec_3",
+            "title": "Yonedaがわからない"
+          },
+          {
+            "id": "supplement08_sec_4",
+            "title": "Adjunctionがわからない"
+          },
+          {
+            "id": "supplement08_sec_5",
+            "title": "Monadがわからない"
+          },
+          {
+            "id": "supplement08_sec_6",
+            "title": "F-algebraがわからない"
+          }
+        ],
+        "content": "\n# わからなくなったときの戻り先\n\n## Functorがわからない\n\n第1章へ戻る。\n\n> 何を保存している？\n\n答え：\n\n> 合成。\n\n## Natural transformationがわからない\n\nFunctorを二つ並べる。\n\n```text\nF\n↓ α\nG\n```\n\nと考える。\n\n## Yonedaがわからない\n\nHomを、\n\n> AからXへ行く方法全部\n\nと日本語にする。\n\n## Adjunctionがわからない\n\n数式を、\n\n```text\nF(A) → B\n```\n\nと、\n\n```text\nA → G(B)\n```\n\nの変換問題として読む。\n\n## Monadがわからない\n\n第4章へ戻る。\n\n問い：\n\n> なぜ普通の関数合成ができないのか？\n\nから考え直す。\n\n## F-algebraがわからない\n\nリスト、\n\n\\[\nL=1+A\\times L\n\\]\n\nまで戻る。\n"
+      },
+      {
+        "id": "supplement09",
+        "number": 40,
+        "title": "圏論と実務プログラミング",
+        "shortTitle": "圏論と実務プログラミング",
+        "summary": "合成可能性、法則、インターフェース、計算効果を実務へつなげる",
+        "sections": [
+          {
+            "id": "supplement09_sec_1",
+            "title": "1. 合成可能性を考える"
+          },
+          {
+            "id": "supplement09_sec_2",
+            "title": "2. Lawを重視する"
+          },
+          {
+            "id": "supplement09_sec_3",
+            "title": "3. 実装よりinterfaceを見る"
+          },
+          {
+            "id": "supplement09_sec_4",
+            "title": "4. Effectを型へ表す"
+          }
+        ],
+        "content": "\n# 圏論と実務プログラミング\n\n圏論を学ぶ価値は、\n\n`Category` や `Monad` という名前をコードに増やすことではない。\n\n## 1. 合成可能性を考える\n\n悪いAPI：\n\n```text\n呼ぶ\n↓\n内部状態変更\n↓\n別APIが暗黙依存\n↓\nさらに副作用\n```\n\n良いAPI：\n\n```text\nInput\n ↓\nTransform\n ↓\nOutput\n```\n\n## 2. Lawを重視する\n\n単に、\n\n> この関数が動く\n\nではなく、\n\n> この抽象化はどんな法則を満たすべきか\n\nを見る。\n\nFunctorなら、\n\n```haskell\nfmap id = id\n```\n\nなど。\n\n## 3. 実装よりinterfaceを見る\n\n圏論では対象内部を見ない。\n\nソフトウェアでも、\n\n> 内部実装ではなくobservable behavior\n\nを重視する。\n\n## 4. Effectを型へ表す\n\n隠された副作用ではなく、\n\n```haskell\nA -> Maybe B\n```\n\n```haskell\nA -> Either Error B\n```\n\n```haskell\nA -> State S B\n```\n\nのように、\n\n> 計算の性質を型へ露出させる\n\nという思想につながる。\n"
+      },
+      {
+        "id": "supplement10",
+        "number": 41,
+        "title": "最重要理解事項",
+        "shortTitle": "最重要理解事項",
+        "summary": "圏論の学習後に自分の言葉で説明したい7つの原則",
+        "sections": [
+          {
+            "id": "supplement10_sec_1",
+            "title": "1"
+          },
+          {
+            "id": "supplement10_sec_2",
+            "title": "2"
+          },
+          {
+            "id": "supplement10_sec_3",
+            "title": "3"
+          },
+          {
+            "id": "supplement10_sec_4",
+            "title": "4"
+          },
+          {
+            "id": "supplement10_sec_5",
+            "title": "5"
+          },
+          {
+            "id": "supplement10_sec_6",
+            "title": "6"
+          },
+          {
+            "id": "supplement10_sec_7",
+            "title": "7"
+          }
+        ],
+        "content": "\n# 最重要理解事項\n\n最後に、次の7文を自分で説明できればよい。\n\n## 1\n\n**圏論の中心は合成である。**\n\n## 2\n\n**Functorは構造を保って圏を写す。**\n\n## 3\n\n**Natural transformationはFunctor間の構造的な射である。**\n\n## 4\n\n**Universal propertyは対象を内部構造ではなく外部との関係によって特徴付ける。**\n\n## 5\n\n**Yonedaは対象をHomによる関係ネットワークとして捉える原理である。**\n\n## 6\n\n**Adjunctionは二つの異なる圏の構成の間に成立するHom集合レベルの自然な対応である。**\n\n## 7\n\n**Monadは効果付き計算を合成する構造であり、圏論的には自己関手の世界に現れるモノイド構造である。**\n"
+      },
+      {
+        "id": "supplement11",
+        "number": 42,
+        "title": "最後の概念地図",
+        "shortTitle": "最後の概念地図",
+        "summary": "本書で扱った概念間の関係を一枚の地図として統合する",
+        "sections": [
+          {
+            "id": "supplement11_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 最後の概念地図\n\n## 概要\n\n```text\n                     ┌────────────┐\n                     │    合成     │\n                     └─────┬──────┘\n                           │\n                           ▼\n                     ┌────────────┐\n                     │     圏      │\n                     └─────┬──────┘\n                           │\n              ┌────────────┴────────────┐\n              │                         │\n              ▼                         ▼\n         積・余積                     関手\n              │                         │\n              ▼                         ▼\n          普遍性                    自然変換\n              │                         │\n              ▼                         │\n        極限・余極限                    │\n              │                         │\n              └──────────┬──────────────┘\n                         │\n                         ▼\n                    Hom 関手\n                         │\n                         ▼\n                   表現可能関手\n                         │\n                         ▼\n                      Yoneda\n                         │\n                         ▼\n                       随伴\n                         │\n            ┌────────────┴───────────┐\n            │                        │\n            ▼                        ▼\n       自由/忘却                   Monad\n                                     │\n                       ┌─────────────┴────────────┐\n                       │                          │\n                       ▼                          ▼\n                  Kleisli圏                  T-algebra\n                       │\n                       ▼\n                  計算効果\n\n再帰型\n   │\n   ▼\nFunctor\n   │\n   ▼\nF-algebra\n   │\n   ▼\nInitial algebra\n   │\n   ▼\nCatamorphism / Fold\n\nさらに一般化\n   │\n   ├─ End / Coend\n   │\n   ├─ Kan Extension\n   │\n   ├─ Enriched Category\n   │\n   ├─ Topos\n   │\n   └─ Lawvere Theory\n```\n"
+      },
+      {
+        "id": "supplement12",
+        "number": 43,
+        "title": "結論",
+        "shortTitle": "結論",
+        "summary": "複雑なシステムを合成可能な構造として捉えるための総括",
+        "sections": [
+          {
+            "id": "supplement12_sec_1",
+            "title": "概要"
+          }
+        ],
+        "content": "\n# 結論\n\n## 概要\n\nこの本を読む目的は、31個の圏論用語を覚えることではない。\n\n圏論を学び終えたときに身につけたいのは、\n\n> **「この複雑な問題の内部を直接解析する代わりに、構成要素、射、合成、保存される構造、普遍性として捉え直せないか」**\n\nと考える習慣である。\n\n圏論がプログラマーに与える最大の価値は、特定のライブラリでも、Haskellの特定の型クラスでもない。\n\nそれは、\n\n> **複雑なシステムを、合成可能な構造として考えるための言語**\n\nである。\n\nこの視点が、\n\n- 型\n- 関数\n- API\n- エラー処理\n- 状態\n- 再帰\n- データ構造\n- 抽象インターフェース\n\nを一つの体系の中で捉えることを可能にする。\n\nそして本書で何度も現れる、\n\n\\[\n\\text{圏}\n\\rightarrow\n\\text{関手}\n\\rightarrow\n\\text{自然変換}\n\\rightarrow\n\\text{米田}\n\\rightarrow\n\\text{随伴}\n\\rightarrow\n\\text{モナド}\n\\]\n\nという道筋を、自分の言葉とコードで説明できるようになれば、\n\n『プログラマーのための圏論』の主要部分は十分に理解できたと判断してよい。\n"
+      }
+    ],
+    "quizQuestions": []
+  },
   "python_design_patterns": {
     "config": {
       "features": {
