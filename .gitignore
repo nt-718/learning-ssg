@@ -47,7 +47,8 @@ jspm_packages/
 
 # Build & Cache outputs
 dist/
-public/
+public/*
+!public/favicon.png
 dist-ssr/
 .cache/
 .vite/
